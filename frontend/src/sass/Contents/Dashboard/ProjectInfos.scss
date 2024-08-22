@@ -1,0 +1,78 @@
+@import "../../variables";
+.Dashboard,
+.DocTechnic {
+  > .ProjectInfos {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    border-radius: 5px;
+    height: 110px;
+    .BoxImg {
+      position: relative;
+      .pen {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        top: -1px;
+        right: 19px;
+        color: white;
+        padding: 3px;
+        border: 2px solid white;
+        border-radius: 50%;
+      }
+
+      .ImageBox {
+        margin-right: 20px;
+        background-color: $text-back;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 110px;
+        min-height: 100%;
+        border-radius: 5px;
+        img {
+          width: 90px;
+          height: 70px;
+        }
+      }
+    }
+    > .create {
+      $width: 190px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      min-width: $width;
+      max-width: $width;
+      p {
+        line-height: 20px;
+        span {
+          margin-left: 5px;
+          font-weight: 700;
+        }
+      }
+    }
+    > p {
+      font-size: small !important;
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+    > .close {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-left: 10px;
+      margin-right: 10px;
+      .icon {
+        color: gray;
+        padding: 2px;
+        border: 1px solid rgb(217, 217, 217);
+        border-radius: 2px;
+      }
+    }
+  }
+}

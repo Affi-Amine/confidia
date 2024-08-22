@@ -1,0 +1,221 @@
+@import "../../variables";
+.FromCustomer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: $blue3;
+  width: 100%;
+  padding: calc(1em + 2vw) 10vw;
+  color: #353740;
+  h2 {
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 50px;
+  }
+  p {
+    text-align: justify;
+  }
+  section {
+    flex: 1;
+    article {
+      display: flex;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+    .BoxTestimony {
+      display: flex;
+      flex-direction: column;
+      line-height: calc(var(--font-size-p) + 10px);
+      color: white;
+      .info {
+        display: flex;
+        justify-content: flex-end;
+        .name {
+          padding-left: 5px;
+          font-style: normal;
+        }
+        .ImageBox {
+          width: 24px;
+          height: 24px;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+      p {
+        font-style: italic;
+      }
+    }
+    .BoxAllActicleC {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .BoxActicleC {
+      max-width: 500px;
+      .block1 {
+        display: flex;
+        min-width: 500px;
+        max-width: 500px;
+        margin: auto;
+        .BoxT {
+          flex-grow: 1;
+          button {
+            text-align: start;
+          }
+          .text {
+            margin-bottom: 20px;
+            min-width: 100%;
+          }
+          .name {
+            color: black;
+          }
+        }
+        .ImageBox {
+          width: 100px;
+          height: 100px;
+          min-width: 100px;
+          height: 100px;
+          max-width: 100px;
+          max-height: 100px;
+          border-radius: 50%;
+          margin-right: 25px;
+          overflow: hidden;
+          box-shadow: 0px 5px 10px 5px #1d5c7d;
+          background-color: white;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    section {
+      .BoxActicleC {
+        width: 95%;
+        .block1 {
+          min-width: 450px;
+          margin: auto;
+          padding-right: 0px;
+          .BoxT {
+            .text {
+              height: inherit;
+              min-width: 100%;
+              margin-bottom: 15px;
+            }
+            button {
+              text-align: start;
+              width: 95%;
+            }
+          }
+          .ImageBox {
+            width: 55px;
+            height: 55px;
+            min-width: 55px;
+            height: 55px;
+            max-width: 55px;
+            max-height: 55px;
+          }
+        }
+      }
+      .BoxTestimony {
+        h2 {
+          max-width: 300px;
+          margin: auto;
+        }
+        .ArtBox2 {
+          // line-height: calc(var(--font-size-p) + 5px);
+          text-align: justify;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    padding: calc(1em + 2vw) 1vw;
+    section {
+      article {
+        flex-direction: column;
+      }
+      .BoxActicleC {
+        max-width: 580px;
+        .block1 {
+          min-width: 350px;
+          margin: 10px 10px;
+          padding-right: 10px;
+          .BoxT {
+            min-width: auto;
+            .text {
+              height: inherit;
+              min-width: auto;
+              margin-bottom: 15px;
+            }
+            button {
+              text-align: start;
+              width: 95%;
+            }
+          }
+          .ImageBox {
+            width: 55px;
+            height: 55px;
+            min-width: 55px;
+            height: 55px;
+            max-width: 55px;
+            max-height: 55px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    section {
+      article {
+        flex-direction: column;
+      }
+      .BoxActicleC {
+        .block1 {
+          width: 100%;
+          min-width: inherit;
+          margin: 0px 0px;
+          padding-right: 0px;
+          .BoxT {
+            .text {
+              height: inherit;
+              min-width: 100%;
+              margin-bottom: 15px;
+            }
+            button {
+              text-align: start;
+              width: 95%;
+            }
+          }
+          .ImageBox {
+            width: 55px;
+            height: 55px;
+            min-width: 55px;
+            height: 55px;
+            max-width: 55px;
+            max-height: 55px;
+          }
+        }
+      }
+      .BoxTestimony {
+        .block2 {
+          h2 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

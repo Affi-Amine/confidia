@@ -1,0 +1,177 @@
+@import "../../variables";
+@import "../../extends/scrollBarStyle";
+.HeaderLogin {
+  .Notifications {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 3;
+    font-family: $family;
+    top: 80px;
+    right: 0px;
+    width: 600px;
+    background: #ffffff;
+    cursor: auto;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    padding: 27px 10px 32px 27px;
+    .CardsBox {
+      overflow: hidden;
+      overflow-y: auto;
+      height: 71vh;
+      @extend %scrollBarStyle;
+      // overflow: hidden;
+      // overflow-y: auto;
+      // height: 71vh;
+      // &::-webkit-scrollbar {
+      //   width: 7px;
+      // }
+
+      // &::-webkit-scrollbar-track {
+      //   background-color: #f1f1f1;
+      // }
+
+      // &::-webkit-scrollbar-thumb {
+      //   background-color: #888;
+      //   border-radius: 5px;
+      //   &:hover {
+      //     background-color: #555;
+      //   }
+      // }
+    }
+    > p {
+      margin-bottom: 12px;
+    }
+    .intro {
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 8px;
+      h2 {
+        margin-right: 10px;
+        font-size: 11px;
+        &:nth-child(2) {
+          font-weight: 600;
+        }
+        &:nth-child(3) {
+          font-size: 10px;
+          color: rgba(0, 0, 0, 0.7);
+        }
+      }
+
+      .bell {
+        $LH: 20px;
+        width: $LH;
+        height: $LH;
+        margin-right: 10px;
+      }
+    }
+    .TypeSelect {
+      display: flex;
+      align-items: center;
+      width: 288px;
+      height: 33px;
+      padding: 0 4px;
+      border: 1px solid #717171;
+      border-radius: 8px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 25px;
+
+      select {
+        border: none;
+        width: 98%;
+        height: 98%;
+        color: #888;
+        border-radius: 8px;
+        &:focus {
+          outline: none;
+        }
+        option {
+          line-height: 25px;
+          height: 33px;
+          font-size: 15px;
+        }
+      }
+    }
+    .Card {
+      display: flex;
+      padding: 15px;
+      margin-bottom: 8px;
+      margin-right: 15px;
+      background: linear-gradient(0deg, #ffffff, #ffffff), #000000;
+      box-shadow: 0px 1px 4px rgba(24, 74, 101, 0.367);
+      border-radius: 5px;
+      h1 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+      }
+      .time {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .message {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: rgb(76, 76, 76);
+        margin: 8px 0;
+        // background-color: yellowgreen;
+      }
+
+      .ImageBox,
+      .iconSvg {
+        margin-right: 8px;
+      }
+      .ImageBox {
+        $LH: 42px;
+        width: $LH;
+        height: $LH;
+
+        & img {
+          width: $LH;
+          height: $LH;
+          border-radius: 16px;
+        }
+      }
+      .x {
+        $LH: 10px;
+        width: $LH;
+        height: $LH;
+        min-width: $LH;
+        min-height: $LH;
+        cursor: pointer;
+      }
+      .iconSvg {
+        $LH: 24px;
+        width: $LH;
+        height: $LH;
+        min-width: $LH;
+        min-height: $LH;
+        padding: 9px;
+        background-color: rgba(218, 30, 40, 1);
+        border-radius: 16px;
+      }
+      button {
+        color: rgb(77, 77, 77);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0px;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+    .NotNotif {
+      color: #888;
+    }
+  }
+}

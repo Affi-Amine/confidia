@@ -1,0 +1,156 @@
+@import "../variables";
+@import "../extends/fontF";
+.HeaderLogin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding-left: 20px;
+  padding-right: $MR;
+  box-shadow: 0px 5px 8px rgba(79, 70, 229, 0.12);
+  @extend %fontSolution;
+  > .block1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    > .ImageBox {
+      padding-right: 20px;
+      $L-H: 70px;
+      height: $L-H;
+      width: $L-H;
+      cursor: pointer;
+      img {
+        max-width: $L-H;
+        max-height: $L-H;
+      }
+    }
+    .navProject {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-right: 25px;
+      height: 100%;
+      color: gray;
+      cursor: pointer;
+      width: 30px;
+    }
+  }
+  > .block2 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    > .TeamsProject {
+      $radius: 12px;
+      $LH: 42px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-right: 30px;
+      width: 178px;
+      cursor: pointer;
+      > :nth-child(1) {
+        position: absolute;
+        background: #1b5b7db6;
+        right: 0px;
+        z-index: 1;
+      }
+      > :nth-child(2) {
+        position: absolute;
+        background: #a1a3f7;
+        right: calc((#{$LH} - 2px));
+        z-index: 2;
+      }
+      > :nth-child(3) {
+        position: absolute;
+        background: #fed7aa;
+        right: calc((#{$LH} - 2px) * 2);
+        z-index: 3;
+      }
+      > :nth-child(4) {
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+          ),
+          #1b5a7d;
+        right: calc((#{$LH} - 2px) * 3);
+        z-index: 4;
+        position: absolute;
+      }
+      > :nth-child(5) {
+        position: absolute;
+        right: calc((#{$LH} - 2px) * 4);
+        z-index: 5;
+        background: #d1e6d7;
+      }
+      > :nth-child(6) {
+        position: absolute;
+        right: calc((#{$LH} - 2px) * 5);
+
+        z-index: 6;
+        background: #afa4bb;
+      }
+      > div {
+        border: 3px solid white;
+        border-radius: $radius;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      .Boxtext {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-transform: uppercase;
+        width: $LH;
+        height: $LH;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+      }
+      .ImageBox {
+        // $LH: 42px;
+        width: $LH;
+        height: $LH;
+        img {
+          border-radius: $radius;
+          width: $LH;
+          height: $LH;
+        }
+      }
+    }
+    > .BoxNotif {
+      display: flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      margin-right: 20px;
+      height: 100%;
+      .BoxBell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .green {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          right: 2px;
+          top: 5px;
+        }
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    display: flex;
+    padding-right: 0;
+    > .block2 {
+      flex: 1;
+      > .TeamsProject {
+        display: none;
+      }
+    }
+  }
+}

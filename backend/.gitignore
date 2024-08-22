@@ -1,0 +1,9 @@
+# Dossier pycache
+__pycache__
+.env
+confidiaApi\__pycache__
+confidia_back_dev\__pycache__
+check_paths.json
+environnementElements.json
+mappingOut.json
+confidiaApi\utils\__pycache__

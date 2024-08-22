@@ -1,0 +1,18 @@
+{
+  "NotRobot": {
+    "ques": "Une question simple pour s'assurer que tu ne sois pas un robot",
+    "alerte": {
+      "calc": "Le résultat de l'opération est incorrect !",
+      "calc1": "Oups ! La réponse n'est pas la bonne, pour réessayer copie-colle à nouveau ton code ou rafraîchit la page"
+    }
+  },
+  "Policy": {
+    "readA": "J'ai lu et j'accepte ",
+    "la": "la ",
+    "les": "les ",
+    "privacy": "politique de confidentialité",
+    "DemoC": "conditions général de démonstration",
+    "alerte": "Vous devez accepter la politique de confidentialité et les conditions générales de démonstration",
+    "noCookie": "Pas de cookies pour le moment, à venir bientôt"
+  }
+}

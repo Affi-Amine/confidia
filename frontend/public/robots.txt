@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /some-path/
+# TEST
+# Pour ds4ds-web.azurewebsites.net
+Sitemap: https://ds4ds-web.azurewebsites.net/sitemap-test-ds4ds-1.xml
+
+# Pour confidia.dsfords.com
+Sitemap: https://confidia.dsfords.com/sitemap-test-ds4ds-2.xml
+
+# PROD
+# Pour https://dsfords.com/
+Sitemap: https://dsfords.com/sitemap-prod-ds4ds-1.xml

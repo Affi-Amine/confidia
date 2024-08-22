@@ -1,0 +1,55 @@
+@import "../extends/button";
+@import "../extends/fontF";
+.DetailsOffers {
+  padding: 40px 0;
+  .colorOffer1 {
+    color: red;
+  }
+  .colorOffer2 {
+    color: orange;
+  }
+
+  .BoxOffer {
+    position: relative;
+    display: flex;
+    margin: 20px;
+    // background-color: rgb(199, 196, 168);
+
+    padding: 25px 0;
+    border-radius: 20px;
+    border: 2px solid $blue3;
+    margin-bottom: 50px;
+    .btn-offer {
+      position: absolute;
+      @extend %buttons;
+      text-transform: uppercase;
+      border-radius: 20px;
+      width: 150px;
+      top: -0px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &:hover {
+        background-color: white !important;
+      }
+    }
+
+    article {
+      flex: 1;
+      width: 100%;
+      padding: 0 20px;
+      h6 {
+        padding: 10px 0;
+      }
+      .bar {
+        min-width: 100%;
+        height: 1px;
+        background-color: $blue3;
+        margin: 15px 0;
+      }
+      .Elems p {
+        padding: 10px 0;
+        text-wrap: nowrap;
+      }
+    }
+  }
+}

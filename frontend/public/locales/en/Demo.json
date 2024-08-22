@@ -1,0 +1,43 @@
+{
+  "title": {
+    "sub1": "Welcome to the Free Trial Version",
+    "sub2": "of",
+    "sub3": "CONFIDIA"
+  },
+  "askmore": {
+    "title": "Discover the next version",
+    "text": "This is the minimal version (MVP) of ConfidIA, limited in terms of both front and back functionality.\n \nFor a demo of the existing advanced version contact us : \n\tconfidia@ DS FOR DS.fr\n\t+33 (0)6 47 98 65 71"
+  },
+  "form": {
+    "alias": "Demo Name",
+    "userAlias": "Username",
+    "desc": "Describe your code here if you wish!",
+    "write": "Code write your"
+  },
+  "option": {
+    "progress": "Available soon for demo",
+    "python": {
+      "py": "ConfidIA automatically determines the version of python you are using"
+    }
+  },
+  "alerte": {
+    "code": "Missing code!",
+    "limite": "You have exceeded the registration limit for the ConfidIA demo!"
+  },
+  "download": "Download Documentation",
+  "contactUs": "Contact us",
+  "solution": "Interested in the solution?",
+  "contact": "Contact us for a personalized demo of the solution, in the form that suits you the most!",
+  "name": "First name",
+  "surname": "Name",
+  "email": "Email address",
+  "phone": "Phone Number",
+  "message": "message",
+  "question": "A simple question to make sure you're not a robot",
+  "privacy": "I have read the privacy policy",
+  "permission": "I authorize the processing of my data for the designated purposes",
+  "button": "SEND",
+  "isLoading": {
+    "title": "Creating your documentation"
+  }
+}

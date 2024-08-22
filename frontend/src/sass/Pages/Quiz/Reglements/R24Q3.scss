@@ -1,0 +1,9 @@
+@import "../../../extends/fontF";
+.R24Q3 {
+  @extend %fontF;
+  min-height: 100vh;
+  overflow: hidden;
+  object {
+    height: 100vh;
+  }
+}

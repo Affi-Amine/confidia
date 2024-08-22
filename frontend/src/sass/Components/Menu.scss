@@ -1,0 +1,40 @@
+@import "../variables";
+
+.Menu {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 202px;
+  box-shadow: $shadow;
+
+  border-radius: 10px;
+  overflow: hidden;
+  > div {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 50px;
+    border-bottom: 1px solid gainsboro;
+    cursor: pointer;
+    width: 100%;
+    color: $colorDark3;
+    &:hover {
+      background-color: $colorDark3;
+      color: white;
+    }
+    .icon {
+      $LH: 24px;
+      min-width: $LH;
+      min-height: $LH;
+      max-width: $LH;
+      max-height: $LH;
+      margin-right: 20px;
+    }
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+}

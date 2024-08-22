@@ -1,0 +1,27 @@
+{
+  "buttons": { "learnMore": "En savoir plus" },
+  "T": "Mentions légales",
+  "Edit": {
+    "t": "Editeur du site",
+    "desc": {
+      "1": "La société DS for DS, immatriculée au RCS de TROYES sous le n° B 899 722 573, est domiciliée à ROSIERES-PRES-TROYES (n° TVA intracommunautaire FR44899722573), et représentée par Mme Giulia CERNICCHIARO"
+    }
+  },
+  "DirectPublish": {
+    "t": "Directrice de la publication",
+    "desc": { "1": "Email :" }
+  },
+  "CreatGraphic": {
+    "t": "Concept et création du site",
+    "desc": { "1": "Site :", "2": "Design :" }
+  },
+  "Hebergement": { "t": "Hébergement" },
+  "LN_CGU": { "t": "Conditions générales d’utilisations", "desc": { "1": "" } },
+  "Cookies": { "t": "Cookies", "desc": { "1": "" } },
+  "LNContact": {
+    "t": "Contactez-nous",
+    "desc": {
+      "1": "DS FOR DS est à votre disposition pour répondre à vos questions via la rubrique contact de ce site."
+    }
+  }
+}

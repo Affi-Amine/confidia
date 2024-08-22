@@ -1,0 +1,70 @@
+@import "../variables";
+
+// Graphique de la partie qui n'est pas confidia
+// @extend %fontF;
+// @extend %fontFcolor;
+
+// Graphique de la partie qui est confidia
+// @extend %fontSolution;
+
+%fontF {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $title;
+    font-weight: 600;
+    // background-color: yellow;
+  }
+  a,
+  input,
+  textarea,
+  p,
+  pre,
+  button,
+  form {
+    font-family: $text;
+    // background-color: red;
+  }
+}
+%fontFcolor {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button {
+    color: $colorDark1;
+    // background-color: yellow;
+  }
+  p,
+  pre,
+  a {
+    color: $colorDark2;
+  }
+}
+%fontSolution {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $family;
+    font-weight: 600;
+    // background-color: yellow;
+  }
+  a,
+  input,
+  textarea,
+  p,
+  pre,
+  button,
+  form {
+    font-family: $familyGlobal;
+    // background-color: red;
+  }
+}

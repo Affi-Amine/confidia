@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "title": {
+      "t1": "Gérer les accès",
+      "t2": "Gérer les fichiers",
+      "t3": "Gérer les projets",
+      "t4": "Gérer mon offre",
+      "t5": "Gérer les langages",
+      "t6": "Documentation Technique",
+      "t7": "Documenter mon script",
+      "t8": "Remplir le formulaire",
+      "t9": "Souscrire à l'offre Pré Lancement"
+    }
+  }
+}

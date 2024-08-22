@@ -1,0 +1,32 @@
+{
+  "Infos": {
+    "PageConstruct": "La pagina è in costruzione"
+  },
+  "ButtonsConnect": {
+    "subscrib": "Registrati",
+    "quicktour": "Quick tour",
+    "yourOpinion": "La tua opinione",
+    "myOffer": "La mia offerta",
+    "mySetting": "Le mie impostazioni",
+    "docScript": "Documenta il tuo script",
+    "activateOffer": "Attivare"
+  },
+  "ButtonsGlobals": {
+    "RequestDemo": "RICHIEDI UNA DEMO",
+    "FreePlay": "PROVA GRATIS",
+    "SpeTech": "SPECIFICA TECNICA",
+    "WhoAreWe": "CHI SIAMO NOI ?",
+    "OurContacts": "I NOSTRI CONTATTI",
+    "reqRDV": "PRENOTA UN APPUNTAMENTO",
+    "LegalNotices": "MENZIONI LEGALI",
+    "LegalPolicy": "INFORMATIVA SULLA PRIVACY",
+    "FreeConfidia": "PROVA ",
+    "Kookie": "Cookie",
+    "CGD": "Condizioni generali d’uso",
+    "CG": "Condizioni Generali",
+    "LearnMore": "Scopri di più...",
+    "quicktourC": "Breve tour ConfidIA",
+    "Advantages": "I miei vantaggi",
+    "expositions": "Le Nostre Mostre"
+  }
+}

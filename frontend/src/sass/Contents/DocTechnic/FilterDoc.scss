@@ -1,0 +1,138 @@
+@import "../../extends/ScrollBarBasic";
+@import "../../variables";
+
+.FilterDoc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 87%;
+  margin: auto;
+  .Listes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .box {
+      width: 200px;
+      margin: 10px;
+      .BoxTC {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 33px;
+        padding: 0 5px;
+        border: 1px solid #1b5a7d;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: gray;
+        .gray-checkbox {
+          filter: grayscale(100%);
+          background-color: pink;
+          min-width: 15px;
+          min-height: 15px;
+          text-align: center;
+          border: 0.5px solid gray;
+          margin-right: 5px;
+          opacity: 0.5;
+          border-radius: 3px;
+          cursor: not-allowed;
+        }
+        input {
+          cursor: pointer;
+          margin-right: 5px;
+        }
+        input[type="checkbox"] {
+          min-width: 18px;
+          min-height: 18px;
+        }
+        h6 {
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: $colorDark4;
+          font-size: 16px;
+          .icon {
+            margin-left: 5px;
+            color: #888888a6;
+          }
+          .selectedCount {
+            padding: 0 5px;
+            flex: 1;
+            text-align: end;
+          }
+        }
+        &.open {
+          border-radius: 5px 5px 0px 0;
+        }
+        &.close {
+          border-radius: 5px;
+        }
+      }
+      .options {
+        max-height: 100px;
+        border-radius: 0 0 8px 8px;
+        overflow: auto;
+        @extend %ScrollBarBasic;
+        box-shadow: $shadow;
+        border-top: none;
+        :nth-child(2n) {
+          background: linear-gradient(
+              0deg,
+              rgba(255, 255, 255, 0.95),
+              rgba(255, 255, 255, 0.95)
+            ),
+            #989898;
+        }
+        .selected {
+          color: white;
+          background: linear-gradient(
+              0deg,
+              rgba(255, 255, 255, 0.6),
+              rgba(255, 255, 255, 0.6)
+            ),
+            #307194;
+        }
+        p {
+          padding: 7px 0;
+          padding-left: 5px;
+          color: $colorDark4;
+          &:hover {
+            cursor: pointer;
+            color: white;
+            background: none;
+            background-color: $colorDark2;
+          }
+        }
+      }
+    }
+  }
+  .boxButtons {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    button {
+      padding: 5px 0px;
+
+      margin: 0 20px;
+      // margin: 0 auto;
+      width: 150px;
+      border: 1px solid #1b5a7d;
+      border-radius: 7px;
+      font-size: medium;
+      background-color: transparent;
+      cursor: pointer;
+      &:hover {
+        color: white;
+        background-color: $colorDark4;
+      }
+    }
+  }
+
+  .none {
+    display: none;
+  }
+}

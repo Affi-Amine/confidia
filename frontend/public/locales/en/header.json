@@ -1,0 +1,23 @@
+{
+  "registerLogin": "Login",
+  "language": "English",
+  "confida": "ConfidIA",
+  "infos": "About-us",
+  "team": "Team",
+  "contact": "Contact us",
+  "privacy": "Privacy Policy",
+  "knowMore": "TO KNOW MORE",
+  "participate": "PARTICIPATE TO PROJECT",
+  "search": "SEARCH",
+  "home": "Home",
+  "speTech": "Technical specification",
+  "askmore": {
+    "title": "Discover the next version",
+    "text": "This is the minimal version (MVP) of ConfidIA, limited in terms of both front and back functionality.\n \nFor a demo of the existing advanced version contact us : \n\tconfidia@dsfords.fr\n\t+33 (0)6 47 98 65 71"
+  },
+  "consultCondition": {
+    "T": "Ours conditions",
+    "B1": "Privacy Policy",
+    "B2": "General Condition"
+  }
+}

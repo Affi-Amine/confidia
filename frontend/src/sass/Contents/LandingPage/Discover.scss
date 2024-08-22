@@ -1,0 +1,68 @@
+@import "../../variables";
+@import "../../extends/title";
+@import "../../extends/text";
+@import "../../extends//button";
+
+.LandingPage {
+  .Discover {
+    margin: 50px 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      @extend %Title;
+      text-align: center;
+      margin: 50px 0;
+      //   margin: 0;
+    }
+    // background-color: rebeccapurple;
+    .Adventage {
+      //   margin: 40px 0;
+      //   padding: 40px 0;
+      margin-top: 50px;
+      display: flex;
+      //   background-color: yellow;
+      p {
+        @extend %text;
+        width: 500px;
+        margin-right: 40px;
+      }
+      > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        // background-color: cadetblue;
+        flex: 1;
+        h2 {
+          @extend %text;
+          margin: 30px 0;
+        }
+        .imgBox {
+          $imgwidth: 250px;
+          $imgheight: 150px;
+
+          min-width: $imgwidth;
+          max-width: $imgwidth;
+          min-height: $imgheight;
+          max-height: $imgheight;
+          width: $imgwidth;
+          height: $imgheight;
+
+          > img {
+            object-fit: cover;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    button {
+      @extend %button;
+      width: 400px;
+      margin: auto;
+      margin-top: 40px;
+    }
+  }
+}

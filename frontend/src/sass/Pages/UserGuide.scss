@@ -1,0 +1,15 @@
+@import "../variables";
+@import "../extends/fontF";
+.UserGuide {
+  @extend %fontSolution;
+  // background-color: pink;
+  > section {
+    padding-top: 20px;
+  }
+  .Menu {
+    .buttonUserGuide {
+      background-color: $colorDark3;
+      color: white;
+    }
+  }
+}

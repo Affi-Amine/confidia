@@ -1,0 +1,48 @@
+{
+  "headband": " Confidia is available ! Contact us for a personalized demo!",
+  "Buttons": {
+    "registerPreOffer": "Register for the offer",
+    "docScript": "Document my script",
+    "shareExp": "Share my avies",
+    "quicktour": "Quick tour ConfidIA",
+    "myAdventage": "My member benefits",
+    "subNewsletter": "Newsletter subscription",
+    "manageProjects": " Manage my projects"
+  },
+  "myOffer": { "1": "My", "2": "Subscription" },
+  "T": {
+    "1": "Welcome to the ConfidIA community",
+    "2": ""
+  },
+  "Desc": {
+    "1": "Confidia is available !",
+    "2": "Register to take advantage of our pre-launch offer !"
+  },
+  "InscriDesc": {
+    "1": "We are delighted to have you as a member !",
+    "2": {
+      "1": "Take full advantage of the Base offer right ",
+      "2": "now !"
+    },
+    "activate2": {
+      "1": "Congratulations, you won !",
+      "2": ""
+    },
+    "3": "* Until 30/04 subscribe without commitment or credit card !"
+  },
+  "OfferDesc": {
+    "T1": "After subscription you can :",
+    "T2": "From now on you can :",
+    "1": "Document up to 1000 lines of python3 code",
+    "2": "Enjoy 3 months free instead of 1",
+    "3": "Benefit from a 15% discount on the introductory price for the entire first year of subscription"
+  },
+  "DescAdvantages": {
+    "T1": "EVERYTHING THAT AWAITS YOU AS A MEMBER ...",
+
+    "1": "Your access to our Newsletter to stay updated on our events & progress.",
+    "2": "Your free gifts (BBCRM) and White paper on the subject ...",
+    "3": "An advantageous price for our",
+    "4b": "consulting offers"
+  }
+}

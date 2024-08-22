@@ -1,0 +1,88 @@
+{
+  "LearnMoreDocM": {
+    "title": "QUANTO LONTANO VA LA VERSIONE DI PROVA",
+    "testi": {
+      "1": "Linguaggio",
+      "2": "Attualmente ConfidIA è in fase di test su Python3 Qualsiasi altra versione di Python potrebbe causare rallentamenti",
+      "3": "Codice Eseguibile",
+      "4": "Le funzionalità di gestione degli errori di sintassi saranno incluse a breve termine Attualmente, qualsiasi codice che non può essere eseguito può causare rallentamenti",
+      "5": "Definizione rigida di elementi di ambiente",
+      "6": "Attualmente, la presenza di una definizione rigida di oggetti di grandi dimensioni può causare rallentamenti (es. liste/dizionari/ecc. con diverse centinaia di righe e/o oggetti annidiati)"
+    }
+  },
+  "MobileWarningM": {
+    "message": "Si consiglia di utilizzare ConfidIA su un computer!"
+  },
+  "PreLaunchOfferM": {
+    "registerLogin": "Accedi",
+    "buttonDiscover": "Scopri l'offerta ->"
+  },
+  "LimitedOfferM": {
+    "title": "Non hai ancora attivato un'offerta !",
+    "message": "Per usufruire della nostra offerta pre-lancio, ti invitiamo a iscriverti qui.",
+    "emailSendTitle": "Ti sei iscritto con successo alla nostra offerta pre-lancio.",
+    "emailSendMessage": "Riceverai la conferma via e-mail in 1 giorno feriale",
+    "alreadyhave": "Se hai già fatto domanda, ignora questo messaggio !",
+    "button": "Iscriviti"
+  },
+  "LimitedOfferMActivate": {
+    "title": "La tua offerta non è ancora attivata",
+    "message": {
+      "1": "Approfitta del il tuo periodo di prova gratuito di ",
+      "2": " mesi"
+    }
+  },
+  "QuestionnaireM": {
+    "title": "Questionario sul tuo interesse per ConfidIA, la nuova documentazione AI per Automatic Code."
+  },
+  "EarlyAdopterM": {
+    "message": "Hai un codice Early Adopter ?",
+    "T": {
+      "1": "Benvenuti nell'area test ConfidIA !",
+      "2": "Sii tra i primi a testare la nostra soluzione documentando automaticamente il tuo codice online, e ottieni un vantaggio sui prossimi utenti che arriveranno !",
+      "3": "Scopri i vantaggi !",
+      "4": "Preferisci continuare nello spazio di produzione come la maggior parte degli utenti ?",
+      "5": "Il tuo login rimane lo stesso !",
+      "6": ""
+    },
+    "buttons": {
+      "1": "Continua su DS FOR DS",
+      "2": "Diventa un Early Adopter"
+    }
+  },
+  "DataKeepChoice": {
+    "message": "Dati conservati per il tempo della sessione",
+    "buttons": {
+      "keep": "Conservare",
+      "notKeep": "Non tenere"
+    }
+  },
+  "NewFeature": {
+    "message": "Questa funzione sarà presto disponibile",
+    "contactUs": "Contattaci"
+  },
+  "Datalost": {
+    "title": "I tuoi dati non sono stati salvati.",
+    "text": {
+      "1": "La tua pagina contiene dati che non sono stati",
+      "span1": "salvato.",
+      "2": "Se esci senza salvare,",
+      "span2": "questi dati andranno persi.",
+      "3": "Se non desideri perdere i tuoi dati seleziona resta."
+    },
+    "buttons": {
+      "quit": "Esci",
+      "stay": "Resta"
+    }
+  },
+  "BadVersion": {
+    "alert": "La pagina delle offerte è attualmente in costruzione, verrai reindirizzato alla pagina dei contatti",
+    "messages": {
+      "1": "Questa funzione non è disponibile per questa versione",
+      "2": "Per accedervi, iscriviti a un'offerta"
+    },
+    "buttons": {
+      "offer": "Visualizza le offerte"
+    }
+  }
+}

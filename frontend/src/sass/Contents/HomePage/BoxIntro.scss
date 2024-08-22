@@ -1,0 +1,103 @@
+@import "../../variables";
+.AllIntroduction {
+  $textsize: calc(1em + 0.6vw);
+  h1 {
+    text-align: center;
+    color: $title-color;
+    font-size: calc(1em + 2.4vw);
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .NeedOnlyIA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1030px;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 30px;
+    .title {
+      background-color: var(--header-back-color);
+      padding: 20px;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+    p {
+      line-height: calc(1em + 0.4vw);
+      white-space: nowrap;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    h1 {
+      font-size: calc(1em + 1vw);
+      line-height: 38px;
+      font-weight: 1000;
+      color: var(--title-color);
+      margin: 0;
+    }
+    p {
+      font-size: $textsize;
+      color: var(--text-color);
+      padding: 0px 15px;
+    }
+    button {
+      background-color: var(--button-back);
+      color: var(--button-color);
+      font-size: $textsize;
+      font-weight: 900;
+      padding: 5px 20px;
+      border-radius: 10px;
+      border: none;
+      margin-bottom: 30px;
+      cursor: pointer;
+      position: relative;
+      &:hover {
+        background-color: var(--hover-button-back);
+      }
+      .alertRedirect {
+        display: none;
+      }
+      &:hover {
+        opacity: 0.8;
+
+        cursor: pointer;
+        border: none;
+        .alertRedirect {
+          position: absolute;
+          display: flex;
+          opacity: 1;
+          background-color: white;
+          color: black;
+          top: 100%;
+          font-size: 15px;
+          // width: 300px;
+          padding: 5px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  /*
+   
+   
+   RESPONSIVE 
+   
+   
+   */
+  @media (max-width: 1300px) {
+    .NeedOnlyIA {
+      h1 {
+        font-size: calc(1em + 0.5vw);
+        line-height: calc(1em + 0.6vw);
+      }
+      p {
+        white-space: inherit;
+        line-height: calc(1em + 0.2vw);
+        font-size: calc(1em + 0.1vw);
+      }
+    }
+  }
+}

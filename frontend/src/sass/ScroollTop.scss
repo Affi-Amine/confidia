@@ -1,0 +1,20 @@
+#ScrollTop {
+  position: fixed;
+  background-color: black;
+  z-index: 9;
+  opacity: 0.5;
+  padding: 7px;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  :hover {
+    opacity: 0.8;
+  }
+}
+.Activate {
+  display: block;
+}
+.Disable {
+  display: none;
+}

@@ -1,0 +1,9 @@
+@import "../variables";
+@import "../extends/fontF";
+.CGU {
+  @extend %fontF;
+  min-height: 100vh;
+  object {
+    height: 100vh;
+  }
+}

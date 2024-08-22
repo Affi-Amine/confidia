@@ -1,0 +1,115 @@
+@import "../variables";
+@import "../extends/fontF";
+@import "../extends/button";
+
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $text;
+  @extend %fontF;
+  @extend %fontFcolor;
+  .AllSiteGlobalButtonUnderline {
+    @extend %buttonUnderline;
+  }
+  div {
+    z-index: 2;
+  }
+  > .AllBoxButtons {
+    padding-bottom: calc(1em + 2vw);
+    button {
+      @extend %buttons;
+    }
+    .ReqDemo {
+      background-color: $blue1;
+      color: white;
+      &:hover {
+        background-color: transparent;
+        color: $blue1;
+        border: 2px solid $blue1;
+      }
+    }
+    .FreePlay {
+      color: $blue2;
+      background-color: white;
+      border: 2px solid $blue1;
+      &:hover {
+        background-color: $blue1;
+        color: white;
+      }
+    }
+  }
+  .Ready {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    margin: 50px 0px;
+    h1 {
+      color: var(--title-color);
+      background-color: $header-back-color;
+      padding: 25px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 85%;
+      button {
+        position: relative;
+        cursor: pointer;
+        width: 400px;
+        background-color: var(--button-back);
+        color: var(--button-color);
+        font-weight: 900;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: none;
+        &:hover {
+          background-color: var(--hover-button-back);
+        }
+        .alertRedirect {
+          display: none;
+        }
+        &:hover {
+          opacity: 0.8;
+
+          cursor: pointer;
+          border: none;
+          .alertRedirect {
+            position: absolute;
+            display: flex;
+            opacity: 1;
+            background-color: white;
+            color: black;
+            top: 100%;
+            line-height: normal;
+            padding: 5px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .Ready {
+      div {
+        button {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  @media (max-width: 350px) {
+    .Ready {
+      div {
+        width: 95%;
+        button {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}

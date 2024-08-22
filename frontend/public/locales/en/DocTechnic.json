@@ -1,0 +1,51 @@
+{
+  "ButtonDesc": {
+    "1": "Table",
+    "2": "Structure",
+    "3": "Editor",
+    "4": "Script",
+    "5": "Pseudo code",
+    "6": "Comment",
+    "7": "Shyncronize scroll",
+    "8": "Script Comment",
+    "9": "Compact the code",
+    "10": "Color",
+    "11": "Script and Pseudo code merge",
+    "12": "Undo changes",
+    "13": "Create the new technic documentation",
+    "14": "Highlight"
+  },
+  "isLoading": {
+    "title": "Creating your documentation"
+  },
+  "filterDoc": {
+    "buttons": {
+      "valid": "Validate",
+      "sup": "Delete",
+      "cancel": "Cancel"
+    }
+  },
+  "Search": {
+    "explo": "EXPLORE",
+    "type": "Type",
+    "search": "Search",
+    "create": "Create filter",
+    "edit": "Edit a filter",
+    "sauv": "Save this filtering",
+    "resum": "Summarize filters",
+    "takeResum": "Resume filter",
+    "hidden": "Hide filter"
+  },
+  "Scripts": {
+    "code": "VIEW CODE",
+    "returnC": "RETURN TO CODE",
+    "pseudoCode": "PSEUDO CODE",
+    "inject": "INJECT CODE",
+    "comment": "COMMENT"
+  },
+  "Viewer": {
+    "file": "FILEVIEWER",
+    "flow": "FLOW CHART",
+    "teeStruct": "Data Structure"
+  }
+}

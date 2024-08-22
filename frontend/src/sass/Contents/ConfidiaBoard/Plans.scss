@@ -1,0 +1,55 @@
+@import "../../variables";
+
+.PlansContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $text;
+    flex-direction: row;
+    .PlanCard {
+        display: flex;
+        flex-direction: column;
+      border: 1px solid $border-color;
+      border-radius: 5px;
+      padding: 1em;
+      margin: 0.5em;
+      width: 300px;
+      .CardTitle {
+        text-align: center;
+      }
+      .CardDescription {
+        margin-bottom: 0.5em;
+        font-weight: bold;
+      }
+      .CardPrice {
+        font-size: 3.5em;
+        margin: 0.5em 0;
+        text-align: center;
+      }
+      ul {
+        margin: 0.5em 0;
+        li {
+            margin: 0.4em 0;
+        }
+      }
+      button {
+        padding: 0.5em;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: auto;
+      }
+
+      .ChoosePlan {
+        margin-top: auto;
+        background-color: $blue3;
+        &:hover {
+          cursor: pointer;
+          background-color: $blue2;
+        }
+      }
+      .SelectedPlan {
+        cursor: auto;
+        background-color: lightgray;
+      }
+    }
+  }

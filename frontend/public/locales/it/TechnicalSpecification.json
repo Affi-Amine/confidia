@@ -1,0 +1,146 @@
+{
+  "T": {
+    "1": "LA soluzione innovativa",
+    "2": "creazione della documentazione del codice"
+  },
+  "DocTechnic": {
+    "title": "Documentazione tecnica",
+    "DocCode": {
+      "title": "DOCUMENTAZIONE CODICE",
+      "titles": { "1": "DOCUMENTAZIONE", "2": "CODICE" },
+      "space": "",
+      "desc1": "Generazione di pseudocodice (cioè “traduzione in linguaggio umano“) da codice informatico,",
+      "desc2": "con documentazione strutturata da blocchi di runtime",
+      "desc3": "Isolamento dei commenti nello script per restituire il codice ripulito, con documentazione riga per riga",
+      "desc4": "Elenco e documentazione degli elementi dell'ambiente di runtime",
+      "desc5": "(ad es. importazioni di pacchetti/file/database/altri script/etc., definizioni di funzioni/variabili/etc.)",
+      "desc6": "Visualizzazione della “documentazione incrociata“",
+      "desc7": "Selezionate un elemento per vedere tutti i blocchi di esecuzione e le righe di codice in cui compare l'elemento",
+      "desc8": "Selezionate una riga di codice per vedere il blocco di esecuzione a cui appartiene e tutti gli elementi che contiene",
+      "desc9": "Selezionate un blocco di esecuzione per vedere tutte le righe di codice che lo compongono e tutti gli elementi che vi compaiono"
+    },
+
+    "DocDataStruct": {
+      "title": "DOCUMENTAZIONE DATI STRUTTURATI",
+      "titles": { "1": "DOCUMENTAZIONE", "2": "DATI STRUTTURATI" },
+      "desc1": "Elenco delle variabili, per nome e/o posizione (a seconda del tipo di dati strutturati)",
+      "desc2": "Elenco dei formati e/o valori esistenti in una variabile, con identificazione del formato/valore predominante",
+      "desc3": "Identificazione di valori nulli o non validi, per variabile"
+    },
+
+    "DocSemiStructData": {
+      "title": "DOCUMENTAZIONE DATI SEMI-STRUTTURATI",
+      "titles": { "1": "DOCUMENTAZIONE", "2": "DATI SEMI-STRUTTURATI" },
+      "desc1": "Identificazione di modelli esistenti",
+      "desc2": "Regole di parsing suggerite",
+      "desc3": "Interfaccia di test della regola di parsing",
+      "desc4": "Interfaccia di analisi e visualizzazione dei modelli"
+    },
+
+    "DocProject": {
+      "title": "DOCUMENTAZIONE PROGETTO",
+      "titles": { "1": "DOCUMENTAZIONE", "2": "PROGETTO" },
+      "text1": "Identificazione di tutti gli oggetti eseguiti, a partire dallo script principale (cioè non è necessario conoscere la posizione di ogni file di dati, script, pacchetto o altro coinvolto nell'esecuzione, è richiesto solo quello da eseguire per avviare il progetto)",
+      "text2": "Possibilità di documentare l'intero progetto su un'unica interfaccia o di generare un'interfaccia per ogni oggetto con la possibilità di passare dall'una all'altra con un clic dalla tabella degli elementi",
+      "space": "",
+      "desc1": "Identificazione di tutti gli oggetti eseguiti, a partire dallo script principale ",
+      "desc2": "(cioè non è necessario conoscere la posizione di ogni file di dati, script, pacchetto o altro coinvolto nell'esecuzione,",
+      "desc3": "è richiesto solo quello da eseguire per avviare il progetto)",
+      "desc4": "Possibilità di documentare l'intero progetto su un'unica interfaccia o di generare un'interfaccia per ogni oggetto",
+      "desc5": "potendo passare dall'una all'altra con un clic dalla tabella degli elementi"
+    },
+
+    "FunctionaEnrichment": {
+      "title": "ARRICCHIMENTO FUNZIONALE",
+      "titles": { "1": "ARRICCHIMENTO", "2": "FUNZIONALE" },
+      "text1": "Interfacce utente per il team di sviluppo, per arricchire la documentazione generata con qualsiasi informazione funzionale/di business non identificabile dalla macchina",
+      "desc1": "Interfacce utente per il team di sviluppo,",
+      "desc2": " per arricchire la documentazione generata",
+      "desc3": " con qualsiasi informazione funzionale/di business non identificabile dalla macchina"
+    }
+  },
+
+  "ProjectManagement": {
+    "title": "Responsabile del progetto",
+    "Teams": {
+      "title": "GESTIONE PROGETTO",
+      "titles": { "1": "GESTIONE PROGETTO" },
+      "desc1": "Possibilità di creare più utenti",
+      "desc2": "Gestisci i livelli di accesso per ogni utente",
+      "desc3": "Spazi personali per ogni utente"
+    },
+    "Connector": {
+      "title": "CONNETTORI",
+      "titles": { "1": "CONNETTORI" },
+      "desc1": "Possibilità di connettere ConfidIA a uno spazio di archiviazione (GitHub, Bitbucket, Cloud, VM, disco locale, ecc.) per la lettura di progetti",
+      "desc2": "Possibilità di connettere ConfidIA a uno spazio di archiviazione (GitHub, Bitbucket, Cloud, VM, disco locale, ecc.) per la scrittura della documentazione",
+      "desc3": "Gestisci l'accesso a cartelle / file disponibili negli spazi connessi",
+      "desc4": "Rilevamento dei formati di file esistenti negli spazi connessi",
+      "desc5": "Gestione delle versioni di cartelle/file disponibili negli spazi connessi"
+    }
+  },
+
+  "ProjectManager": {
+    "title": "Documentazione del Project Manager",
+    "ProjectManagement": {
+      "title": "GESTIONE PROGETTO",
+      "titles": { "1": "GESTIONE PROGETTO" },
+      "desc1": "Descrizione e dettaglio del progetto per una documentazione rapida e completa",
+      "desc2": "Informazioni sul tipo di script, la lingua e il ramo di origine del progetto",
+      "desc3": "Rilevamenti di errori del codice funzionale",
+      "desc4": "Avvisi e dettagli sulla pulizia del codice e best practice",
+      "desc5": "Allerta e informazioni su etica e rispetto delle norme europee sull'IA",
+      "desc6": "Aggiunte regole necessarie per stabilire un punteggio di qualità del codice"
+    },
+    "TFDocumentation": {
+      "title": "DOCUMENTAZIONE TECNICA E FUNZIONALE",
+      "titles": { "1": "DOCUMENTAZIONE", "2": "TECNICA & FUNZIONALE" },
+      "desc1": "Descrizione sommaria dell'ambiente di runtime (pacchetti/script/file/dati importati, udfs, variabili definite, ecc.)",
+      "desc2": "Descrizione sommaria dei percorsi di esecuzione (numero di interfacce, numero massimo di pagine, ecc.)"
+    }
+  },
+  "Promote": {
+    "Demo": {
+      "title": "Scopri un nuovo modo per documentare automaticamente il tuo codice... ",
+
+      "subTitles": {
+        "1": "Prova il nostro strumento ConfidIA gratuitamente,",
+        "2": "senza impegno !"
+      },
+      "desc1": "Documenta fino a 100 righe gratuitamente.",
+      "desc2": "Documenta il codice Python (e altro in caso di abbonamento...)",
+      "desc3": "Scarica il tuo file documentato",
+      "desc4": "Inserisci il tuo codice per documentarlo in modo semplicissimo",
+      "desc5": "Accedi a uno pseudo-codice generato automaticamente",
+      "desc6": "Filtra quello che vuoi per ottenere i dati che vuoi"
+    },
+    "Dashboard": {
+      "title": "Gestisci il tuo progetto, il tuo codice e le tue equipe in modo semplice e intuitivo … ",
+      "subTitles": {
+        "1": "Lasciati guidare",
+        "2": "da un’interfaccia integralmente personalizzabile!"
+      },
+      "desc1": "Supervisiona gli alert del tuo codice",
+      "desc2": "Visualizza le metriche che descrivono il tuo codice …",
+      "desc3": "Scegli solo i dati che ti interessano …",
+      "desc4": "Costruisci i KPI che vuoi seguire a partire da una tabella modulabile",
+      "desc5": "Connetti applicazioni terze a ConfidIA per maggiori opportunità",
+      "desc6": "Crea, aggiungi e modifica il tuo progetto e il tuo team"
+    },
+    "DocTech": {
+      "title": "Una soluzione completa a portata di mano per generare la documentazione... ",
+      "subTitle": "Documenta tutto il codice e i progetti in pochi clic !",
+      "subTitles": {
+        "1": "Documenta tutto il codice e i progetti",
+        "2": "in pochi clic !"
+      },
+      "desc1": "Ritrova tutte le funzionalità della versione di prova e molto altro...",
+      "desc2": "Accedi ai tuoi vari Input & Output",
+      "desc3": "Crea i tuoi filtri e salvali !",
+      "desc4": "Consulta dinamicamente le tue variabili",
+      "desc5": "Osserva le interazioni incrociate per facilitare le tue azioni",
+      "desc6": "Aggiorna il tuo codice in tempo reale in qualsiasi momento",
+      "desc7": "Aggiungi descrizioni funzionali al tuo codice"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import "../variables";
+@import "../extends/fontF";
+@import "../extends/ModalsStyles.scss";
+@import "../mixins/close";
+
+.LimitedOfferM {
+  font-family: $familyGlobal;
+  @extend %ModalsStyles;
+
+  align-items: flex-end;
+  justify-content: space-around;
+  max-width: 360px;
+  width: 50vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h2 {
+    font-weight: 800;
+    text-align: center;
+    line-height: calc(var(--font-size-h2) + 2px);
+  }
+  .earlyhave {
+    color: red;
+    font-size: 9px;
+  }
+  p {
+    padding: 20px;
+    font-size: 17px;
+    text-align: center;
+  }
+  .close {
+    @include close;
+  }
+  .boxButtons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    button,
+    a {
+      font-size: 15px;
+      border-radius: 4px;
+      border: 1px solid gray;
+      padding: 5px;
+      box-shadow: $shadow;
+      padding: 10px 25px;
+      color: white;
+      background-color: $colorDark4;
+      text-decoration: none;
+      font-weight: 700;
+      margin: auto;
+      letter-spacing: 1px;
+      transition: all 0.5s ease-in;
+      &:active,
+      &:after {
+        color: white;
+      }
+      &:hover {
+        opacity: 0.8;
+        color: $colorDark4;
+        letter-spacing: 1.5px;
+        background-color: white;
+        border: 1px dashed $colorDark4;
+      }
+    }
+    a {
+      letter-spacing: 2px;
+    }
+    .blocked {
+      cursor: not-allowed;
+    }
+  }
+  @media (max-width: 700px) {
+    width: 250px;
+    max-width: 250px;
+    h1 {
+      font-size: 20px;
+      line-height: calc(0.8em + 0.8vw);
+
+      font-size: calc(0.8em + 0.5vw);
+    }
+    p {
+      padding: 20px;
+      font-size: 17px;
+      font-size: calc(0.8em + 0.3vw);
+    }
+    .CheckboxText {
+      font-size: calc(0.8em + 0.3vw);
+    }
+    .boxButtons {
+      button,
+      a {
+        font-size: small;
+        padding: 5px 20px;
+      }
+    }
+  }
+}

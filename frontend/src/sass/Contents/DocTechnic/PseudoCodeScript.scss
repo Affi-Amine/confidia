@@ -1,0 +1,131 @@
+@import url(../../Animations/pulse.scss);
+@import "../../extends/fontF";
+@import "../../mixins/close";
+@import "../../variables";
+@import "../../extends/scrollBarStyle";
+@import "../../extends/button";
+
+.PseudoCodeScript {
+  display: flex;
+  .BoxCicleIcon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    .icon {
+      position: absolute;
+      color: red;
+      top: -25%;
+      left: -15%;
+      cursor: pointer;
+      &:hover {
+        animation: pulse 1s infinite;
+      }
+    }
+  }
+  @extend %fontF;
+  .boxResumTabSignalPs {
+    box-shadow: 0px 0px 100px rgba(246, 216, 216, 0.267);
+    background-color: white;
+    border: 1px solid gray;
+
+    padding: 10px 20px;
+    border-radius: 4px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    min-height: 340px;
+    resize: vertical;
+    overflow: hidden;
+
+    width: 70vw;
+
+    h4 {
+      padding-bottom: 20px;
+    }
+    .listTab {
+      @extend %scrollBarStyle;
+      overflow-y: scroll;
+      flex: 1;
+      article {
+        display: flex;
+        min-height: min-content;
+        margin-bottom: 40px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        .sup {
+          min-height: 60px;
+          padding-right: 10px;
+          color: $colorDark1;
+          height: auto;
+          color: #719ad1;
+          border: 2px solid #88b9c2;
+          border-radius: 8px 0 0 8px;
+          transition: all 0.4s ease-in-out;
+          outline: none;
+          &:hover {
+            color: #88b9c2;
+            border: 2px solid #719ad1;
+            .icon {
+              animation: pulse 1s infinite;
+            }
+          }
+        }
+        textarea {
+          resize: none;
+          width: 250px;
+          // min-height: 60px;
+          // height: min-content;
+          height: calc(auto - 3px);
+          box-sizing: border-box;
+          padding: 10px 5px;
+          outline: none;
+          border: 1px solid $colorDark2;
+          border-radius: 0px 8px 8px 0px;
+          margin-right: 5px;
+        }
+        .boxlines {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          min-height: 60px;
+          .lineCode,
+          .linePsCode {
+            flex: 1;
+            padding: 10px;
+            color: black;
+          }
+          .lineCode {
+            background-color: #719ad1;
+          }
+          .linePsCode {
+            background-color: #88b9c2;
+          }
+        }
+      }
+    }
+    .close {
+      @include close;
+      width: 30px;
+      margin-left: 98%;
+      text-align: center;
+    }
+    .BoxButtons {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      .validB {
+        @extend %buttons;
+        color: white;
+        border: 1px solid $text-back;
+        background-color: $text-back;
+        &:hover {
+          background-color: white;
+          color: $text-back;
+        }
+      }
+    }
+  }
+}

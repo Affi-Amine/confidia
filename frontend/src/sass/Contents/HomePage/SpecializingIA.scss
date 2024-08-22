@@ -1,0 +1,65 @@
+@import "../../variables";
+@import "../../extends/button";
+.SpecializingIA {
+  padding: calc(1em + 2vw) 0;
+  h2 {
+    padding-bottom: calc(var(--font-size-h2) + 1vw);
+    font-weight: 900;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  .Texts {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    div {
+      p {
+        text-align: justify;
+        line-height: calc(var(--font-size-p) + 0.5vw);
+        padding-bottom: calc(var(--font-size-p) + 1vw);
+      }
+    }
+    .block1,
+    .block2 {
+      flex: 1;
+      padding: 0 30px;
+    }
+    // .block2 {
+    //
+    //   flex: 2;
+    // }
+  }
+  .BoxButtons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    button {
+      @extend %buttons;
+    }
+    .WhoAreWe {
+      background-color: $blue1;
+      color: white;
+      &:hover {
+        background-color: transparent;
+        color: $blue1;
+        border: 2px solid $blue1;
+      }
+    }
+    .OurContacts {
+      color: $blue2;
+      background-color: white;
+      border: 2px solid $blue1;
+      &:hover {
+        background-color: $blue1;
+        color: white;
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .Texts {
+      flex-direction: column;
+      width: 90%;
+    }
+  }
+}

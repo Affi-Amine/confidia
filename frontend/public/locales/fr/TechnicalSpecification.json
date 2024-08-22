@@ -1,0 +1,144 @@
+{
+  "T": {
+    "1": "LA solution innovante",
+    "2": "de création de documentation de code"
+  },
+  "DocTechnic": {
+    "title": "Documentation Technique",
+    "DocCode": {
+      "title": "DOCUMENTATION CODE",
+      "titles": { "1": "DOCUMENTATION", "2": "CODE" },
+      "space": "",
+      "desc1": "Génération du pseudo-code (i.e. “traduction en langage humain”) à partir du code informatique, avec documentation,",
+      "desc2": "avec documentation structurée par blocs d'exécution",
+      "desc3": "Isolation des commentaires dans le script pour restituer le code nettoyé, avec documentation ligne par ligne.",
+      "desc4": "Listing et documentation des éléments de l’environnement d'exécution ",
+      "desc5": "(ex.. imports de packages / fichiers / bases de données / autres scripts / etc., définitions de fonctions / variables / etc.)",
+      "desc6": "Visualisation de la “documentation croisée”",
+      "desc7": "Sélectionner un élément pour voir tous les blocs d'exécution et toutes les lignes de code dans lesquelles l'élément apparaît",
+      "desc8": "Sélectionner une ligne de code pour voir le bloc d'exécution auquel celle-ci appartient et tous tes les éléments qu’elle contient",
+      "desc9": "Sélectionner un bloc d'exécution pour voir toutes les lignes de code que la composent et tous les éléments qui y apparaissent"
+    },
+
+    "DocDataStruct": {
+      "title": "DOCUMENTATION DONNÉE \n",
+      "titles": { "1": "DOCUMENTATION", "2": "DONNÉE STRUCTURÉE" },
+      "desc1": "Listing des variables, par nom et/ou position (selon le type de donnée structurée)",
+      "desc2": "Listing des formats et/ou valeurs existants dans une variable, avec identification du format / valeur prédominant",
+      "desc3": "Identification des valeurs nulles ou incorrectes, par variable"
+    },
+
+    "DocSemiStructData": {
+      "title": "DOCUMENTATION DONNÉE SEMI-STRUCTURÉE",
+      "titles": { "1": "DOCUMENTATION", "2": "DONNÉE SEMI-STRUCTURÉE" },
+      "desc1": "Identifications des patterns existants",
+      "desc2": "Suggestion de règles d'analyse",
+      "desc3": "Interface de test de règles d'analyse",
+      "desc4": "Interface d’analyse et visualisation par pattern"
+    },
+
+    "DocProject": {
+      "title": "DOCUMENTATION PROJET",
+      "titles": { "1": "DOCUMENTATION", "2": "PROJET" },
+      "space": "",
+      "desc1": "Identification de tous les objets exécutés, à partir du script principale",
+      "desc2": "(i.e. pas besoin de connaître l’emplacement de chaque fichier de donnée, script, package ou autre impliqué dans l'exécution,",
+      "desc3": " seul celui à exécuter pour tout lancer est requis)",
+      "desc4": "Possibilité de documenter le projet entier sur une seule interface  ou de générer une interface par objet",
+      "desc5": "avec l'option de passer de l’une à l’autre en un clic depuis le tableau des éléments"
+    },
+
+    "FunctionaEnrichment": {
+      "title": "ENRICHISSEMENT FONCTIONNEL",
+      "titles": { "1": "ENRICHISSEMENT", "2": "FONCTIONNEL" },
+      "text1": "Interfaces utilisateur à destination de l’équipe dev, afin d’enrichir la documentation générée avec toute information fonctionnelle / métier non identifiable par la machine",
+      "desc1": "Interfaces utilisateur à destination de l’équipe dev,",
+      "desc2": "afin d’enrichir la documentation générée",
+      "desc3": "avec toute information fonctionnelle / métier non identifiable par la machine"
+    }
+  },
+
+  "ProjectManagement": {
+    "title": "Chef de Projet",
+    "Teams": {
+      "title": "GESTION PROJET",
+      "titles": { "1": "GESTION PROJET" },
+      "desc1": "Possibilité de créer plusieurs utilisateurs",
+      "desc2": "Gestion des niveaux d'accès par utilisateur",
+      "desc3": "Espaces personnels pour chaque utilisateur"
+    },
+    "Connector": {
+      "title": "CONNECTEURS",
+      "titles": { "1": "CONNECTEURS" },
+      "desc1": "Possibilité de connecter ConfidIA à un espace de stockage (GitHub, Bitbucket, Cloud, VM, disque local, etc.) pour la lecture des projets",
+      "desc2": "Possibilité de connecter ConfidIA à un espace de stockage (GitHub, Bitbucket, Cloud, VM, disque local, etc.) pour l’écriture de là documentation",
+      "desc3": "Gestion des accès aux dossiers / fichiers disponibles dans les espaces connectés",
+      "desc4": "Détection des formats de fichier existants dans les espaces connectés",
+      "desc5": "Gestion des versions des dossiers / fichiers disponibles dans les espaces connectés"
+    }
+  },
+  "ProjectManager": {
+    "title": "Documentation Chef de Projet ",
+    "ProjectManagement": {
+      "title": "GESTION PROJET",
+      "titles": { "1": "GESTION PROJET" },
+      "desc1": "Description et détail du projet pour une documentation rapide et complète ",
+      "desc2": "Information sur le type de script, le langage et la branche d’origine du projet ",
+      "desc3": "Détections des erreurs fonctionnelles du code  ",
+      "desc4": "Alertes et détails sur la propreté du code et bonnes pratiques  ",
+      "desc5": "Alerte et informations sur l’éthique et  le respect des règles européennes de L’IA ",
+      "desc6": "Ajout de règles en fonction de ses besoins pour établir un score de qualité de code "
+    },
+    "TFDocumentation": {
+      "title": "DOCUMENTATION TECHNIQUE & FONCTIONNELLE ",
+      "titles": { "1": "DOCUMENTATION", "2": "TECHNIQUE & FONCTIONNELLE" },
+      "desc1": "Description synthétique de l’environnement d'exécution (packages/scripts/fichiers/données importés, udfs, variables définies, etc.) ",
+      "desc2": "Description synthétique des parcours d'exécution (nombre d’interfaces, de pages max, etc.) "
+    }
+  },
+  "Promote": {
+    "Demo": {
+      "title": "Découvrez une nouvelle façon de documenter votre code automatiquement... ",
+      "subTitle": "Essayez sans frais notre outil ConfidIA, et ce sans engagement ! ",
+      "subTitles": {
+        "1": "Essayez sans frais notre outil ConfidIA,",
+        "2": "et ce sans engagement !"
+      },
+      "desc1": "Documentez jusqu'à 100 lignes possibles gratuitement. ",
+      "desc2": "Documentez le code Python (Et plus si souscription ...) ",
+      "desc3": "Téléchargez votre fichier documenté ",
+      "desc4": "Injectez votre code pour le documenter ultra facilement",
+      "desc5": "Accédez à un Pseudo-code généré automatiquement ",
+      "desc6": "Filtrez ce que vous souhaitez pour avoir les données que vous voulez "
+    },
+    "Dashboard": {
+      "title": "Gérez votre projet, votre code et vos équipes de façon simple et intuitive... ",
+      "subTitle": "Laissez-vous guider par une interface entièrement personnalisable !",
+      "subTitles": {
+        "1": "Laissez-vous guider",
+        "2": "par une interface entièrement personnalisable !"
+      },
+      "desc1": "Supervisez les alertes de votre code  ",
+      "desc2": "Visualisez les métriques qui décrivent votre code … ",
+      "desc3": "Choisissez seulement les données qui vous intéressent … ",
+      "desc4": "Construisez les KPI que vous souhaitez suivre à partir d’un tableau modulable ",
+      "desc5": "Connectez des applications tierces à ConfidIA pour plus de possibilités ",
+      "desc6": "Créez, ajoutez et modifiez votre projet et votre équipe "
+    },
+    "DocTech": {
+      "title": "Une solution complète à portée de main pour generer la documentation... ",
+      "subTitle": "Documentez l’ensemble de votre code et de vos projets en quelques clics ! ",
+      "subTitles": {
+        "1": "Documentez l’ensemble de votre code",
+        "2": "et de vos projets en quelques clics !"
+      },
+      "desc1": "Retrouvez tout ce que vous avez dans la démo et bien plus encore ... ",
+      "desc2": "Accédez à vos différents Inputs & Outputs ",
+      "desc3": "Sauvegardez vos filtres tout en filtrant ce que vous souhaitez ! ",
+      "desc4": "Consultez dynamique de vos variables ",
+      "desc5": "Observez les interactions croisées pour faciliter vos démarches ",
+      "desc6": "Mettez à jour à tout moment votre code dans la solution en temps réel ",
+      "desc7": "Ajoutez des descriptifs fonctionnels à votre code "
+    }
+  }
+}

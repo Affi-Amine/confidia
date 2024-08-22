@@ -1,0 +1,81 @@
+
+// JSON Activité
+ {
+    "id": "",
+    "image": "",
+    "NameActivity": "",
+    "desc": {
+      "fr":  "",
+      "it": "",
+      "en": ""    
+    },
+    "descDetail": {
+      "fr": "",
+      "it": "",
+      "en": ""
+    },
+    "participants": [
+      {
+        "id": "",
+        "name": "",
+        "image": "",
+        "text": [
+          "",
+          ""
+        ]
+      },
+      {
+        "id": "",
+        "name": "",
+        "image": "",
+        "text": ""
+      }
+    ],
+    idReplayVideos:""
+  }
+
+
+
+
+
+
+
+  // JSON Replay
+
+ {
+    "id": "",
+    "date": "23/05/2024",
+    "time": "heure",
+    "image": "CONFIDIA.png",
+    "theme": { "fr": "", "it": "", "en": "" },
+    "eventName": {
+      "fr": "",
+      "it": "",
+      "en": ""
+    },
+    "descDetail": {
+      "fr": [
+        "",
+        "1• affichage interligne ",
+      ],
+      "it": [
+        "",
+       ],
+      "en": [
+        "",
+         ]
+    },
+    "desc": {
+      "fr": "",
+      "it": "",
+    },
+    "adress": "url map Liey",
+    "lieu": "nom lieu",
+    "type": "",
+    "access": "",
+    "meetuplink": "",
+    "replayUrl": "youtubeUrl",
+    "redirectLinkSubscribe": "lien D'inscription",
+    "id_activity": "",
+    "textActivityBTN": ""
+  }

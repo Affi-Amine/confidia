@@ -1,0 +1,50 @@
+{
+  "form": {
+    "replaceData": "Inviando questo modulo, la tua documentazione attuale verrà sostituita da questa",
+    "title": "Aggiungi un titolo al tuo script",
+    "desc": "Per orientarti meglio, dopo aver inviato il tuo codice, aggiungi una descrizione se lo desideri! \n ConfidIA non ne ha bisogno per documentare, ma può comunque esserti utile :)",
+    "DefTitle": "Il mio progetto",
+    "DefDesc": "Aggiungi descrizione predefinita",
+    "write": "Copia e incolla il codice che vuoi documentare",
+    "button": "INVIA"
+  },
+  "option": {
+    "progress": {
+      "1": "Presto disponibile per demo",
+      "2": "Integrazione in arrivo, contattaci se sei interessato"
+    },
+    "python": {
+      "py": "ConfidIA determina automaticamente la versione di python che stai utilizzando"
+    }
+  },
+  "alerte": {
+    "code": "Codice mancante!",
+    "limite": "Hai superato il limite di registrazione per la demo di ConfidIA!"
+  },
+  "isLoading": {
+    "title": "Creazione della tua documentazione",
+    "cancel": "Annulla"
+  },
+  "Logs": {
+    "1": "Avvio del processo di documentazione del tuo codice...",
+    "2": "Analisi iniziale del codice in corso...",
+    "3": "Integrazione della documentazione con gli strumenti di gestione delle versioni...",
+    "4": "Estrazione commenti e metadati...",
+    "5": "Analisi dei commenti per la documentazione dettagliata delle funzioni...",
+    "6": "Estrazione di strutture dati e tipi personalizzati...",
+    "7": "Elaborazione delle librerie e delle dipendenze utilizzate nel tuo progetto...",
+    "8": "Elaborazione e organizzazione delle informazioni sulle variabili globali...",
+    "9": "Generazione di sezioni di documentazione per funzioni e metodi...",
+    "10": "Verifica la coerenza della documentazione con gli ultimi aggiornamenti del codice...",
+    "11": "Ottimizzazione delle immagini e dei diagrammi inclusi nella documentazione...",
+    "12": "Verifica collegamenti e riferimenti incrociati nel documento...",
+    "13": "Messa in evidenza di sezioni critiche del codice e punti di attenzione...",
+    "14": "Preparazione del documento per l'esportazione e la condivisione...",
+    "15": "Finalizzazione del layout e degli stili della documentazione...",
+    "16": "Finalizzazione e preparazione del documento per la visualizzazione o il download...",
+    "17": "Creazione della documentazione...",
+    "18": "Questa operazione potrebbe richiedere diversi minuti se usi collezioni o librerie",
+    "19": "Resta in attesa...",
+    "buttons": { "learnMore": "Per saperne di più", "cancel": "Annulla" }
+  }
+}

@@ -1,0 +1,116 @@
+{
+    "BoardLayout": {
+        "projects": "Projects",
+        "users": "Users",
+        "connectors": "Connectors",
+        "notifications": "Notifications",
+        "dashboard": "Dashboard"
+    },
+    "ActionButton": {
+        "view": "View",
+        "remove": "Remove",
+        "edit": "Edit",
+        "delete": "Delete"
+    },
+    "Notifications": {
+        "notifications": "Notifications",
+        "newNotification": "New Notification",
+        "selectNotificationType": "Select Notification Type",
+        "types": {
+            "activity": "Activity",
+            "message": "Message",
+            "alert": "Alert",
+            "report": "Report"
+        },
+        "table": {
+            "author": "Author",
+            "type": "Type",
+            "title": "Title",
+            "message": "Message"
+        }
+    },
+    "Connectors": {
+        "connectors": "Connectors",
+        "addConnector": "Add Connector",
+        "selectConnectorType": "Select Connector Type",
+        "connectorId": "Connector ID",
+        "viewConnector": "View Connector",
+        "connectorName": "Connector Name",
+        "connectorType": "Connector Type",
+        "adminId": "Admin ID",
+        "users": "Users",
+        "repo": "Repository",
+        "table": {
+            "connectorId": "Connector ID",
+            "type": "Type",
+            "entities": "Entities",
+            "projectUsing": "ProjectUsing"
+        },
+        "GitHub": {
+            "name": "Name",
+            "user": "User",
+            "password": "Password",
+            "token": "Token",
+            "connectorAdmin": "Connector Admin",
+            "connectorUsers": "Connector Users",
+            "userId": "User ID",
+            "selectUserToAdd": "Select User to add to this project",
+            "reposToInclude": "Repos to include",
+            "repoUser": "Repo User",
+            "repoName": "Repo Name",
+            "submit": "Submit",
+            "table": {
+                "owner": "Owner",
+                "forked": "Forked",
+                "private": "Private",
+                "all": "All",
+                "yes": "Yes",
+                "no": "No"
+            }
+        }
+    },
+    "Users": {
+        "users": "Users",
+        "addUser": "Add User",
+        "sendInvitation": "Send Invitation",
+        "viewUser": "View User",
+        "userId": "User ID",
+        "userName": "User name",
+        "submit": "Submit",
+        "editUser": "Edit User",
+        "table": {
+            "userId": "User ID",
+            "projectId": "Project ID",
+            "role": "Role",
+            "name": "Name",
+            "admin": "Admin",
+            "viewer": "Viewer",
+            "contributor": "Contributor"
+        }
+    },
+    "Projects": {
+        "projects": "Projects",
+        "newProject": "New Project",
+        "projectId": "Project ID",
+        "projectName": "Project Name",
+        "projectDescription": "Project Description",
+        "viewProject": "View Project",
+        "editProject": "Edit Project",
+        "selectedConnector": "Selected Connector",
+        "selectConnector": "Select the connector",
+        "selectUserToAdd": "Select User to add to this project",
+        "addUser": "Add User",
+        "submit": "Submit",
+        "table": {
+            "language": "Language",
+            "users": "Users",
+            "project": "Project",
+            "userId": "User ID",
+            "userName": "User Name",
+            "role": "Role",
+            "admin": "Admin",
+            "viewer": "Viewer",
+            "contributor": "Contributor"
+        }
+    }
+}

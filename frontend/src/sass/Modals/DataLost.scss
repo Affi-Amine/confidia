@@ -1,0 +1,47 @@
+@import "../variables";
+@import "../extends/ModalsStyles.scss";
+.DataLost {
+  @extend %ModalsStyles;
+
+  position: fixed;
+  width: 400px;
+  top: calc(50% - 130px);
+  left: calc(50% - 200px);
+  h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(215, 6, 6);
+  }
+  p {
+    font-size: 20px;
+    text-align: center;
+    text-align: start;
+    span {
+      font-size: 21px;
+      font-weight: 600;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    button {
+      font-size: 15px;
+      background-color: white;
+      border-radius: 4px;
+      border: 1px solid gray;
+      padding: 5px 20px;
+      box-shadow: $shadow;
+      &:hover {
+        opacity: 0.8;
+        color: white;
+        background-color: $colorDark4;
+        cursor: pointer;
+        border: none;
+      }
+    }
+  }
+}

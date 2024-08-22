@@ -1,0 +1,214 @@
+@import "../../variables";
+@import "../../extends/button";
+@import "../../Animations/slideBackground.scss";
+@import "../../extends/fontF";
+
+.HomeNotAcsess {
+  display: flex;
+  background-color: #060724;
+  min-height: 80vh;
+  position: relative;
+  @extend %fontSolution;
+  section {
+    color: white;
+  }
+  h1 {
+    text-align: center;
+    padding-bottom: var(--font-size-h2);
+  }
+  h2 {
+    padding-bottom: 10px;
+  }
+  h3 {
+    text-align: center;
+    line-height: calc(var(--font-size-h3) + 3px);
+    text-transform: uppercase;
+  }
+  .AllSiteGlobalButtonUnderline {
+    @extend %buttonUnderline;
+    font-size: var(--font-size-p);
+
+    color: $blue1;
+    &:hover {
+      color: white;
+    }
+  }
+  .blockAdvantages {
+    padding: calc(1em + 1vw) 1vw calc(1em + 1vw) 4vw;
+    .Blocks2 {
+      display: flex;
+      justify-content: space-around;
+
+      .DetailAdvantages {
+        width: 50%;
+        padding: 0vw 4vw;
+        h5 {
+          text-align: center;
+          padding: 40px 0;
+        }
+        p {
+          padding-bottom: 20px;
+        }
+        .BoxButtons {
+          display: flex;
+          justify-content: space-around;
+          padding-top: 20px;
+          button {
+            @extend %buttons;
+            background-color: white;
+            color: $blue4;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: 1px solid white;
+            &:hover {
+              background-color: $blue4;
+              color: white;
+            }
+          }
+        }
+      }
+
+      .BAdvantages {
+        width: 200px;
+        color: white;
+        border-radius: 8px;
+        border: 1px solid white;
+        animation: pulseModeDiscret 3s infinite;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          background-color: $blue4;
+        }
+        .ImageBox {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      .boxLogo {
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        .icon {
+          font-size: 60px;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+          &.meetup {
+            color: #f64060;
+          }
+          &.linkdin {
+            color: #0073b2;
+          }
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .blockNoSubscrib {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: calc(1em + 1vw) 5vw calc(1em + 1vw) 3vw;
+    width: 80%;
+    box-sizing: border-box;
+    background-image: url("../../../assets/img/BlueSky.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slideBackground 100s linear infinite;
+    .backC {
+      padding: 10px;
+      background-color: $blue4;
+      border-radius: 8px;
+    }
+    .boxTitleButt {
+      display: flex;
+      padding: 2vw 0;
+      h3 {
+        text-align: center;
+        line-height: calc(var(--font-size-h3) + 3px);
+        text-transform: uppercase;
+        padding-right: 25px;
+      }
+      button {
+        @extend %buttons;
+        font-weight: 700;
+        text-transform: uppercase;
+        // height: 50%;
+        padding: 5px 20px;
+        margin: auto;
+        min-width: 130px;
+        background-color: white;
+        border: 1px solid white;
+        color: $blue4;
+        &:hover {
+          background-color: $blue4;
+          color: white;
+        }
+      }
+    }
+    .descOffer {
+      p {
+        padding-bottom: 5px;
+        text-align: center;
+      }
+      .limitOffer {
+        padding-top: 5px;
+        font-size: calc(var(--font-size-p) - 3px);
+      }
+    }
+    .BoxButtons {
+      display: flex;
+      justify-content: space-around;
+      padding: calc(1em + 1vw) 0;
+      button {
+        @extend %buttons;
+        background-color: white;
+        color: $blue4;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 1px solid white;
+        &:hover {
+          background-color: $blue4;
+          color: white;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .blockNoSubscrib {
+      width: 100%;
+      padding: calc(1em + 0.2vw) 0;
+      margin: auto;
+    }
+    .blockAdvantages {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 10vw;
+    h1 {
+      text-transform: uppercase;
+    }
+    .blockNoSubscrib {
+      margin: auto;
+      .boxTitleButt {
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          padding: 20px 0;
+        }
+        button {
+          width: auto;
+        }
+      }
+      .descOffer {
+        padding-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "../variables";
+@import "../extends/fontF";
+.TechnicalSpecification {
+  h1,
+  h2 {
+    text-align: center;
+  }
+  span {
+    color: $blue2;
+  }
+  .Title {
+    padding: calc(1em + 4vw) 10vw;
+    h1 {
+      padding-bottom: 40px;
+    }
+  }
+  @extend %fontF;
+  @extend %fontFcolor;
+}

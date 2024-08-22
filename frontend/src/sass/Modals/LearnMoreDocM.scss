@@ -1,0 +1,15 @@
+@import "../variables";
+@import "../extends/fontF";
+@import "../extends/ModalsStyles.scss";
+@import "../mixins/close";
+
+.LearnMoreDocM {
+  font-family: $familyGlobal;
+  @extend %ModalsStyles;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .close {
+    @include close;
+  }
+}

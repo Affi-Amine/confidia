@@ -1,0 +1,121 @@
+{
+  "T": { "1": "Discover your", "2": " Benefits" },
+  "buttons": {
+    "event": "Event",
+    "blog": "Blogs",
+    "freebies": "Freebies",
+    "whiteBook": "White Book",
+    "subNewsletters": "Subscribe to the Newsletter",
+    "consulting": "Discover Consulting !",
+    "advantage": "Advantages",
+    "homeConfidia": "Home Confidia"
+  },
+  "checkMessage": {
+    "1": "Your feedback has been sent",
+    "2": "Thank you for your integration",
+    "3": "Your responses have been sent to us",
+    "4": ""
+  },
+  "T-event": {
+    "1": "Our upcoming events...",
+    "2": "Our consulting offer...",
+    "3": "Our events",
+    "4": "Our Replays",
+    "5": "Our upcoming events"
+  },
+  "eventList": {
+    "1": "VIP DEMO ConfidIA",
+    "2": "AI and its Ethical Challenges",
+    "3": "How to Develop a Data Tool"
+  },
+  "eventReplay": {
+    "T": "Watch also our other events"
+  },
+  "Desc": {
+    "1": "PROJECT TAKEOVER",
+    "2": "PROJECT DEVELOPMENT",
+    "3": "HELP WITH DOCUMENTATION"
+  },
+  "newsletters": {
+    "T": "Newsletter Subscription",
+    "L-1": { "1": "Join our exclusive community!" },
+    "L-2": {
+      "1": "Be informed about our events/webinars, the advancements of ConfidIA, and various topics on AI, data science, and software development with our newsletter!"
+    },
+    "L-3": {
+      "1": "Your privacy is important to us. We do not share your information with third parties and you can unsubscribe at any time."
+    },
+    "check": {
+      "1": "I want to be informed about events",
+      "2": "I want to be informed about the advancements and features of ConfidIA"
+    },
+    "btn": "Subscribe"
+  },
+  "blog": {
+    "T": "The Blogs",
+    "L-1": { "1": "Our Blog is Under Construction!" },
+    "L-2": {
+      "1": "We are currently working on creating a blog to provide you with the best possible content!"
+    },
+    "L-3": {
+      "1": "This privileged space is your opportunity to learn about unique and high-value topics, exclusive for our members."
+    },
+    "L-4": {
+      "1": "In the meantime, follow us to stay informed of our latest advancements and discover exciting and informative articles and posts!"
+    },
+    "check": {
+      "1": "Linear Regression",
+      "2": "AI and its applications",
+      "3": "Ethical challenges of AI"
+    },
+    "btn": "Follow us (Linkedin)",
+    "articles": {
+      "1": {
+        "T": "FOLLOW US"
+      }
+    }
+  },
+  "freebies": {
+    "T": "Your Freebies",
+    "L-1": { "1": "Discover our upcoming freebies..." },
+    "L-2": {
+      "1": "We are excited to announce the upcoming launch of handy and entertaining little applications such as the Sudoku Solver, our little Python CRM 'BB-CRM', the Bird's Eye GPS, the Django Manager, and the Human Detector!"
+    },
+    "L-3": {
+      "1": "These tools are designed to enrich your everyday life or entertain you, and will be perfect examples of usage with ConfidIA."
+    },
+    "L-4": {
+      "1": "As a member, you enjoy privileged access to our different applications, and you have priority for events and support!"
+    },
+    "L-5": {
+      "1": "Which applications interest you the most? Tell us which ones you would like to use and we will keep you informed of their availability."
+    },
+
+    "check": {
+      "1": "Python BB-CRM",
+      "2": "Sudoku Solver",
+      "3": "Bird's Eye GPS",
+      "4": "Django Manager",
+      "5": "Human Video Detector"
+    },
+    "btn": "Express my interest"
+  },
+  "whiteBook": {
+    "T": "Your White Book",
+    "L-1": { "1": "Upcoming topics not to be missed..." },
+    "L-2": {
+      "1": "We are preparing a series of captivating white book that explore different aspects of artificial intelligence and mathematics."
+    },
+    "L-3": {
+      "1": "These books will cover varied themes such as AI ethics, AI documentation, the statistical and mathematical foundations of machine learning, and many other topics that you will discover by downloading them!"
+    },
+    "L-4": {
+      "1": "Which book intrigues you the most? Let us know your preference so that your choice can be the first available!"
+    },
+    "check": {
+      "1": "AI Ethics",
+      "2": "Statistical and mathematical foundations of machine learning"
+    },
+    "btn": "Submit my opinion"
+  }
+}

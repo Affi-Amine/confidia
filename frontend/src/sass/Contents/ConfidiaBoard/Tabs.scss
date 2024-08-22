@@ -1,0 +1,31 @@
+@import "../../variables";
+
+.TabSelect {
+  width: 100%;
+  min-height: 500px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  border-radius: 1em;
+  .Tabs {
+    border-bottom: 1px solid #e0e0e0;
+    & > button {
+      border-right: 1px solid #e0e0e0;
+      padding: 1em;
+    }
+    button {
+      background-color: #f9f9f9;
+      &:first-child {
+        border-top-left-radius: 1em;
+      }
+      &:hover {
+        background-color: $blue3;
+      }
+    }
+    .active {
+      background-color: $blue3;
+    }
+  }
+  .ActiveTab {
+    padding: 1em;
+  }
+}

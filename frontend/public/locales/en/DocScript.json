@@ -1,0 +1,50 @@
+{
+  "form": {
+    "replaceData": "By submitting this form, your current documentation will be replaced by this one",
+    "title": "Add a title to your script",
+    "desc": "To better find your way around, after sending your code, add a description if you wish! \n ConfidIA does not need it to document, but it can still be useful to you :) ",
+    "DefTitle": "My project",
+    "DefDesc": "Add Default Description",
+    "write": "Copy paste the code you want to document",
+    "button": "SEND"
+  },
+  "option": {
+    "progress": {
+      "1": "Available soon for demo",
+      "2": "Integration to come, contact us if you are interested"
+    },
+    "python": {
+      "py": "ConfidIA automatically determines the version of python you are using"
+    }
+  },
+  "alerte": {
+    "code": "Missing code!",
+    "limite": "You have exceeded the registration limit for the ConfidIA demo!"
+  },
+  "isLoading": {
+    "title": "Creating your documentation",
+    "cancel": "Cancel"
+  },
+  "Logs": {
+    "1": "Initiating the process of documenting your code...",
+    "2": "Initial code analysis in progress...",
+    "3": "Documentation integration with version management tools...",
+    "4": "Extracting comments and metadata...",
+    "5": "Analysis of comments for detailed documentation of functions...",
+    "6": "Extracting data structures and custom types...",
+    "7": "Processing libraries and dependencies used in your project...",
+    "8": "Processing and organizing information about global variables...",
+    "9": "Generating documentation sections for functions and methods...",
+    "10": "Checking documentation consistency with the latest code updates...",
+    "11": "Optimization of images and diagrams included in the documentation...",
+    "12": "Checking links and cross-references in the document...",
+    "13": "Highlighting critical code sections and points of attention...",
+    "14": "Preparing the document for export and sharing...",
+    "15": "Finalizing the layout and styles of the documentation...",
+    "16": "Finalizing and preparing the document for viewing or downloading...",
+    "17": "Creating your documentation...",
+    "18": "This operation may take several minutes if you use collections or packages",
+    "19": "Please wait...",
+    "buttons": { "learnMore": "Learn More", "cancel": "Cancel" }
+  }
+}

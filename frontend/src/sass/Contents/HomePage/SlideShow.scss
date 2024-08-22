@@ -1,0 +1,69 @@
+.SlideShow {
+  /* background-color: #ff00ff; */
+  width: var(--VideoPhotoSlide-width);
+  height: var(--VideoPhotoSlide-height);
+  margin-bottom: var(--VideoPhotoMarginBottom);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  > .BoxImg {
+    width: var(--VideoPhotoSlide-width);
+    height: var(--VideoPhotoSlide-height);
+    > img {
+      float: left;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  } /* /
+  
+  
+  RESPONSIVE
+ 
+  
+*/
+
+  @media screen and (min-width: 1024px) and (max-width: 1290px) {
+  }
+  /* /
+  
+
+  
+  
+  
+  
+  TOUCH PAD, LANDSAPE
+  / */
+  @media screen and (min-width: 900px) and (max-width: 1024px) {
+  }
+  /* /
+  
+  
+  
+  
+  
+  TOUCH PAD, PORTRAIT
+  / */
+  @media screen and (min-width: 760px) and (max-width: 900px) {
+  }
+  /* /
+  
+  
+  
+  
+  
+  PHONE
+  / */
+  @media (max-width: 760px) {
+    /* background-color: #ff00ff; */
+    width: var(--VideoPhotoSlide-width);
+    height: 50vh;
+    margin-bottom: var(--VideoPhotoMarginBottom);
+
+    > .BoxImg {
+      width: var(--VideoPhotoSlide-width);
+      height: 50vh;
+    }
+  }
+}

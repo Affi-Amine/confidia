@@ -1,0 +1,286 @@
+[
+  {
+    "email": "doriane.lollia@gmail.com",
+    "date": "06/18/2024",
+    "key_earlyAdopter": "HF5mq5h9u639xfi4eYcJ9DK6wL4UDxnT78Ca5dT9jM89e2aU",
+    "key_freeTrial": {
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "doriane.lollia@3wa.io",
+    "date": "13/12/2023",
+    "key_earlyAdopter": "rz684aku2y7d68orzdrt2rwj68ui684j5t8",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "eines.bekri@gmail.com",
+    "date": "21/08/2024",
+    "key_earlyAdopter": "t798r4yjhg4jh5hg8i74fg651h5gk4",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+
+  {
+    "email": "julien.varoqueaux@gmail.com",
+    "date": "01/08/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "2",
+      "freeTrial_toActivate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "2", "access": "free" }
+    }
+  },
+  {
+    "email": "anne.coreau@orange.com",
+    "date": "08/01/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "2",
+      "freeTrial_Activate": "false"
+    },
+    "AccessType": {
+      "confidia": { "duration": "2", "access": "free" }
+    }
+  },
+  {
+    "email": "sylvie.bagnuls@orange.com",
+    "date": "08/01/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "2",
+      "freeTrial_Activate": "false"
+    },
+    "AccessType": {
+      "confidia": { "duration": "2", "access": "free" }
+    }
+  },
+  {
+    "email": "info@koralliance.fr",
+    "date": "08/01/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "2",
+      "freeTrial_Activate": "false"
+    },
+    "AccessType": {
+      "confidia": { "duration": "2", "access": "free" }
+    }
+  },
+  {
+    "email": "sophie@sophielagaude.com",
+    "date": "08/01/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "3",
+      "freeTrial_Activate": "false"
+    },
+    "AccessType": {
+      "confidia": { "duration": "3", "access": "free" }
+    }
+  },
+  {
+    "email": "anthony.schauer@quillskeeper.com",
+    "date": "08/01/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "3",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "3", "access": "free" }
+    }
+  },
+  {
+    "email": "ammour.florent@icloud.com",
+    "date": "08/01/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "3",
+      "freeTrial_Activate": "false"
+    },
+    "AccessType": {
+      "confidia": { "duration": "3", "access": "free" }
+    }
+  },
+  {
+    "email": "lionel.enderlin@adec.fr",
+    "date": "08/01/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "4",
+      "freeTrial_Activate": "false"
+    },
+    "AccessType": {
+      "confidia": { "duration": "4", "access": "free" }
+    }
+  },
+
+  {
+    "email": "robertovilla.to@libero.it",
+    "date": "26/02/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "otmanealamihamedane@gmail.com",
+    "date": "14/02/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "kinzelinr@gmail.com",
+    "date": "14/02/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "annesophie.cayzac@icloud.com",
+    "date": "13/02/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "antoinehennion2001@yahoo.fr",
+    "date": "28/12/2023",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "herve@kiosk-it.fr",
+    "date": "18/12/2023",
+    "key_earlyAdopter": "IdB5x6560T$VW3T8810#5ireP[RQ1-rTO6H",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "thomas@kiosk-it.fr",
+    "date": "18/12/2023",
+    "key_earlyAdopter": "8JO5]kFH9=mN6eTSZ:5k0csL73e5M4$oDbP",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "t.thuillier@technopole-aube.fr",
+    "date": "14/12/2023",
+    "key_earlyAdopter": "BXdZvdQ60ClQL9B",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "wrl.business55@gmail.com",
+    "date": "13/12/2023",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "Razyell.John@gmail.com",
+    "date": "08/12/2023",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "nath-tye@sfr.fr",
+    "date": "05/12/2023",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "chauchard.nathalie@dsfords.fr",
+    "date": "06/12/2023",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+  {
+    "email": "cernicchiaro.giulia@dsfords.fr",
+    "date": "05/12/2023",
+    "key_earlyAdopter": "0lfU5[b45$c4v#N3p!494$Fv5V61z",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  },
+
+  {
+    "email": "enzo.noel@utt.fr",
+    "date": "22/04/2024",
+    "key_freeTrial": {
+      "freeTrial_duration": "1",
+      "freeTrial_Activate": "true"
+    },
+    "AccessType": {
+      "confidia": { "duration": "noLimit", "access": "noLimit" }
+    }
+  }
+]

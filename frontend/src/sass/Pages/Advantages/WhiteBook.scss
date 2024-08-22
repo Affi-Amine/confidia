@@ -1,0 +1,26 @@
+@import "../../variables";
+@import "../../extends/fontF";
+@import "../../extends/button";
+
+.WhiteBook {
+  @extend %fontSolution;
+  background-color: $colorDark5;
+  color: white;
+  padding: calc(1em + 2vw) 6vw calc(1em + 2vw) 7vw;
+  h1,
+  h5,
+  h3,
+  p {
+    text-align: center;
+  }
+  h1 {
+    white-space: nowrap;
+  }
+
+  .BoxYoutubes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+  }
+}

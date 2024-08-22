@@ -1,0 +1,86 @@
+// $h1size: calc(1em + 1.4vw);
+$h1size: 40px;
+$h1res4: calc(1em + 1vw); // 390px
+$h1res5: calc(1em + 0.8vw); // 320px
+
+$h2size: calc(1em + 0.8vw);
+$h2res4: calc(1em + 2vw); // 390px
+
+$h3size: 18px;
+$h3res4: calc(1em + 1vw);
+// $h3size: calc(1em + 1.1vw);
+
+// $p1size: calc(1em + 0.3vw);
+$p1size: 16px;
+$p2size: calc(0.8em + 0.1vw); // 390px
+
+// 1280 px et plus
+// 1024 px
+// 768 px
+// 480 px
+// 320 px
+
+$p3size: calc(0.6em + 0.1vw);
+
+$title: "Roboto", sans-serif;
+$text: "Poppins", sans-serif;
+
+$header-back-color: #a7d8d1;
+$footer-back-color: #1d5c7d;
+
+$colorDark1: #0d3155;
+$colorDark2: #335578;
+$colorDark3: #155e75;
+$colorDark4: #1d5c7d;
+$colorDark5: #060724;
+
+$blue: #8290fe;
+$blue1: #0c71c3;
+$blue2: #3366ff;
+$blue3: #cbe9ff;
+$blue4: #2e51a6;
+
+$title-color: #0d3155;
+
+$text-color: #335578;
+
+$border-color: rgb(229, 231, 235);
+
+$button-back: #0d3155;
+$hover-button-back: #13aff0;
+$button-color: #ffff;
+
+$size-titleH2: 30px;
+$size-titleH1: 38px;
+$size-text: 25px;
+
+$weight-title: 800;
+$weight-text: 700;
+
+$otionSelect: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.6)
+  ),
+  #1b5a7d;
+
+//Solution
+$text-back: #155e75;
+$shadow: 0px 4px 4px rgba(79, 70, 229, 0.2);
+$family: Verdana, Geneva, Tahoma, sans-serif;
+$familyGlobal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$number: 55px;
+//Margin
+$Margin: 25px;
+$MR: 88px;
+$ModalTop: 100%;
+//Menu hamburger
+$widthMenu: 170px;
+$red: #da1e28;
+/*Components Photo, SlideShow*/
+$VideoPhotoSlide-width: 100%;
+$VideoPhotoSlide-height: 600px;
+$VideoPhotoMarginBottom: 40px;
+
+//DocTechnic
+$DTheightBlocks: 46vh;

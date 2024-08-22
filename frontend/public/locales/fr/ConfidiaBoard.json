@@ -1,0 +1,116 @@
+{
+    "BoardLayout": {
+        "projects": "Projets",
+        "users": "Utilisateurs",
+        "connectors": "Connecteurs",
+        "notifications": "Notifications",
+        "dashboard": "Tableau de bord"
+    },
+    "ActionButton": {
+        "view": "Voir",
+        "remove": "Retirer",
+        "edit": "Modifier",
+        "delete": "Supprimer"
+    },
+    "Notifications": {
+        "notifications": "Notifications",
+        "newNotification": "Nouvelle notification",
+        "selectNotificationType": "Sélectionner le type de notification",
+        "types": {
+            "activity": "Activité",
+            "message": "Message",
+            "alert": "Alerte",
+            "report": "Rapport"
+        },
+        "table": {
+            "author": "Auteur",
+            "type": "Type",
+            "title": "Titre",
+            "message": "Message"
+        }
+    },
+    "Connectors": {
+        "connectors": "Connecteurs",
+        "addConnector": "Ajouter un connecteur",
+        "selectConnectorType": "Sélectionner le type de connecteur",
+        "connectorId": "ID du connecteur",
+        "viewConnector": "Voir le connecteur",
+        "connectorName": "Nom du connecteur",
+        "connectorType": "Type de connecteur",
+        "adminId": "ID de l'administrateur",
+        "users": "Utilisateurs",
+        "repo": "Dépôt",
+        "table": {
+            "connectorId": "ID du connecteur",
+            "type": "Type",
+            "entities": "Entités",
+            "projectUsing": "Projet utilisant"
+        },
+        "GitHub": {
+            "name": "Nom",
+            "user": "Utilisateur",
+            "password": "Mot de passe",
+            "token": "Jeton",
+            "connectorAdmin": "Administrateur du connecteur",
+            "connectorUsers": "Utilisateurs du connecteur",
+            "userId": "ID de l'utilisateur",
+            "selectUserToAdd": "Sélectionner l'utilisateur à ajouter à ce projet",
+            "reposToInclude": "Dépôts à inclure",
+            "repoUser": "Utilisateur du dépôt",
+            "repoName": "Nom du dépôt",
+            "submit": "Soumettre",
+            "table": {
+                "owner": "Propriétaire",
+                "forked": "Forké",
+                "private": "Privé",
+                "all": "Tous",
+                "yes": "Oui",
+                "no": "Non"
+            }
+        }
+    },
+    "Users": {
+        "users": "Utilisateurs",
+        "addUser": "Ajouter un utilisateur",
+        "sendInvitation": "Envoyer une invitation",
+        "viewUser": "Voir l'utilisateur",
+        "userId": "ID de l'utilisateur",
+        "userName": "Nom de l'utilisateur",
+        "submit": "Soumettre",
+        "editUser": "Modifier l'utilisateur",
+        "table": {
+            "userId": "ID de l'utilisateur",
+            "projectId": "ID du projet",
+            "role": "Rôle",
+            "name": "Nom",
+            "admin": "Administrateur",
+            "viewer": "Spectateur",
+            "contributor": "Contributeur"
+        }
+    },
+    "Projects": {
+        "projects": "Projets",
+        "newProject": "Nouveau projet",
+        "projectId": "ID du projet",
+        "projectName": "Nom du projet",
+        "projectDescription": "Description du projet",
+        "viewProject": "Voir le projet",
+        "editProject": "Modifier le projet",
+        "selectedConnector": "Connecteur sélectionné",
+        "selectConnector": "Sélectionner le connecteur",
+        "selectUserToAdd": "Sélectionner l'utilisateur à ajouter à ce projet",
+        "addUser": "Ajouter un utilisateur",
+        "submit": "Soumettre",
+        "table": {
+            "language": "Langue",
+            "users": "Utilisateurs",
+            "project": "Projet",
+            "userId": "ID de l'utilisateur",
+            "userName": "Nom de l'utilisateur",
+            "role": "Rôle",
+            "admin": "Administrateur",
+            "viewer": "Spectateur",
+            "contributor": "Contributeur"
+        }
+    }
+}

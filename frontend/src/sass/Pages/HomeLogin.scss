@@ -1,0 +1,19 @@
+@import "../variables";
+@import "../extends/button";
+@import "../extends/fontF";
+.HomeLogin {
+  @extend %fontSolution;
+  .headband {
+    text-align: center;
+    padding: 0.2vw;
+    animation: defilement 15s linear infinite;
+  }
+}
+@keyframes defilement {
+  from {
+    transform: translateX(100%); /* Commence à droite (hors de l'écran) */
+  }
+  to {
+    transform: translateX(-100%); /* Se termine à gauche (hors de l'écran) */
+  }
+}

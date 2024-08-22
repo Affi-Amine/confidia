@@ -1,0 +1,72 @@
+[
+  {
+    "id": "fg8uj44jkd7yuh6d8s3gf1hd5f4h8",
+    "date": "26/11/2024",
+    "time": "2 jours",
+    "image": "4.png",
+    "theme": {
+      "fr": "Thématiques de l’Industrie 4.0 ",
+      "it": "Tematiche dell'Industria 4.0",
+      "en": "Industry 4.0 Themes"
+    },
+    "eventName": {
+      "fr": "Salon BE 5.0 - Industries du futur",
+      "it": "Salon BE 5.0 - Industries du futur",
+      "en": "Salon BE 5.0 - Industries du futur"
+    },
+    "descDetail": {
+      "fr": "",
+      "it": "",
+      "en": ""
+    },
+    "desc": {
+      "fr": [
+        "Un espace de démonstration de ConfidIA et un séminaire en live. Visitez notre stand pour un moment de partage autour de l'ethique de l'IA, ses implications et les solutions possibles grace à notre outil !"
+      ],
+      "it": [
+        "Uno spazio dimostrativo ConfidIA e un seminario dal vivo. Visita il nostro stand per un momento di condivisione sull'etica dell'IA, sulle sue implicazioni e sulle possibili soluzioni grazie al nostro strumento!"
+      ],
+      "en": [
+        "A ConfidIA demonstration space and a live seminar. Visit our stand for a moment of sharing around the ethics of AI, its implications and the possible solutions thanks to our tool!"
+      ]
+    },
+    "adress": "https://www.google.com/maps/place/Parc+Expo+Mulhouse/@47.7646179,7.335605,17z/data=!3m1!4b1!4m6!3m5!1s0x47919b7c02ddac67:0x4287ddb07e05c058!8m2!3d47.7646179!4d7.335605!16s%2Fg%2F1tfqdqsj?entry=ttu",
+    "lieu": "Parc des Expositions de Mulhouse",
+    "type": "",
+    "access": "",
+    "meetuplink": "",
+    "replayUrl": "",
+    "redirectLinkSubscribe": "https://www.industriesdufutur.eu/",
+    "id_activity": ""
+  },
+  {
+    "id": "65f8h9g8h7f8h7g9f8h7g98h7f98h7g9f8h7f9",
+    "date": "",
+    "time": "Date à venir",
+    "image": "CommentFonctionneuUnOutilData.png",
+    "theme": { "fr": "", "it": "", "en": "" },
+    "eventName": {
+      "fr": "Comment développer un outil Data",
+      "it": "Come sviluppare uno strumento di dati",
+      "en": "How to Develop a Data Tool"
+    },
+    "descDetail": {
+      "fr": "",
+      "it": "",
+      "en": ""
+    },
+    "desc": {
+      "fr": "Un voyage à la découverte des applications informatique, leur fonctionnement et défis. Venez décortiquer avec nous un CRM pour un exemple concret !",
+      "it": "Un viaggio alla scoperta delle applicazioni informatiche, del loro funzionamento e delle sfide. Vieni a sezionare con noi un CRM per un esempio concreto!",
+      "en": "A journey to discover computer applications, their functioning and challenges. Come and dissect a CRM with us for a concrete example!"
+    },
+    "adress": "",
+    "lieu": "",
+    "type": "",
+    "access": "",
+    "meetuplink": "",
+    "replayUrl": "",
+    "redirectLinkSubscribe": "",
+    "id_activity": ""
+  }
+]

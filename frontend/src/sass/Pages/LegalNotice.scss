@@ -1,0 +1,22 @@
+@import "../variables";
+@import "../extends/fontF";
+.LegalNotice {
+  // height: calc(100vh - 80px);
+  @extend %fontF;
+  @extend %fontFcolor;
+
+  h1 {
+    text-align: center;
+    line-height: calc(var(--font-size-h1) + 3vw);
+  }
+  h2 {
+    line-height: calc(var(--font-size-h2) + 2vw);
+  }
+  div {
+    padding: calc(1em + 1vw) 10vw;
+    button {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+}

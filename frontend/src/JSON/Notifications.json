@@ -1,0 +1,52 @@
+[
+  {
+      "notification_id": 1,
+      "type": "activity",
+      "author_id": "doighqiogdifgjdfig",
+      "notification_title": "New Comment on Your Post",
+      "notification_message": "Alice commented on your post 'How to Learn SQL'.",
+      "context": "{\"post_id\": 101, \"comment_id\": 202}",
+      "created_at": "2024-05-01T08:30:00",
+      "updated_at": "2024-05-01T08:30:00"
+  },
+  {
+      "notification_id": 2,
+      "type": "message",
+      "author_id": "dquisfgazuioehgfrjghg",
+      "notification_title": "New Message from Bob",
+      "notification_message": "Bob sent you a new message.",
+      "context": "{\"message_id\": 303}",
+      "created_at": "2024-05-02T09:45:00",
+      "updated_at": "2024-05-02T09:45:00"
+  },
+  {
+      "notification_id": 3,
+      "type": "alert",
+      "author_id": "doighqiogdifgjdfig",
+      "notification_title": "System Maintenance",
+      "notification_message": "Scheduled maintenance will occur on 2024-05-05.",
+      "context": "{\"maintenance_start\": \"2024-05-05T02:00:00\", \"maintenance_end\": \"2024-05-05T04:00:00\"}",
+      "created_at": "2024-05-03T10:00:00",
+      "updated_at": "2024-05-03T10:00:00"
+  },
+  {
+      "notification_id": 4,
+      "type": "report",
+      "author_id": "doighqiogdifgjdfig",
+      "notification_title": "Monthly Sales Report",
+      "notification_message": "Your monthly sales report is ready.",
+      "context": "{\"report_id\": 404, \"period\": \"April 2024\"}",
+      "created_at": "2024-05-04T11:15:00",
+      "updated_at": "2024-05-04T11:15:00"
+  },
+  {
+      "notification_id": 5,
+      "type": "activity",
+      "author_id": "doighqiogdifgjdfig",
+      "notification_title": "New Like on Your Comment",
+      "notification_message": "Charlie liked your comment on 'How to Learn SQL'.",
+      "context": "{\"post_id\": 101, \"comment_id\": 202, \"like_id\": 505}",
+      "created_at": "2024-05-04T12:30:00",
+      "updated_at": "2024-05-04T12:30:00"
+  }
+]

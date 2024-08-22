@@ -1,0 +1,770 @@
+{
+  "conts": "Serilaize <class 'django.db.models.query.QuerySet'> : <QuerySet [<Contributor: Base User>, <Contributor: Maulad Paul>, <Contributor: Doriane Lollia>]>",
+  "loginUser": "Serilaize <class 'ConfidIA_demoAPP.models.Contributor'> : Base User",
+  "selectedContr": "Serilaize <class 'ConfidIA_demoAPP.models.Contributor'> : Base User",
+  "selectedProject": "Serilaize <class 'ConfidIA_demoAPP.models.Project'> : Built Standard Name",
+  "selectedRepo": "Serilaize <class 'ConfidIA_demoAPP.models.Repository'> : A-Rasty - ViaggiaConTatto",
+  "dashboardDoc": {
+    "id_project": "sdgeryrthrhutrysfy",
+    "name": "SYSLOG Parser",
+    "date": "14/03/2023",
+    "update": "21-02-2023",
+    "creator": "Giulia CERNICCHIARO",
+    "statement": [
+      {
+        "id_stms": "erhrehhhfdfsh",
+        "title": "variables",
+        "num": 245,
+        "rangUtilisation": 99.9
+      },
+      {
+        "id_stms": "rreyhtzyreyfs",
+        "title": "variables utilisées",
+        "num": 244,
+        "rangUtilisation": 80
+      },
+      {
+        "id_stms": "rpieruiabeafy",
+        "title": "commentaires",
+        "num": 15,
+        "rangUtilisation": 50
+      },
+      {
+        "id_stms": "euizybetjahgu",
+        "title": "lignes code",
+        "num": 871,
+        "rangUtilisation": 100
+      },
+      { "id_stms": "eazuyeazgbfui", "title": "packages", "num": 15 },
+      { "id_stms": "duifyqzeuirhb", "title": "packages utilisés", "num": 14 },
+      { "id_stms": "ofgudqsyeuohz", "title": "script", "num": 14 }
+    ],
+    "image": "",
+    "desc": "Processus de Parsing des Syslog, réalisé en python. Dans la version actuelle, le process est adapté au syslog OLT, qui sont parsés intégralement à plus de 99.998 %",
+    "Alertes": { "functionning": 2, "folders": 0, "Ethics": 0 },
+    "Teams": [
+      { "id_user": "ioyhdgioaioekngvhfgu" },
+      { "id_user": "kgiohuhfysdhebhgujs" },
+      { "id_user": "rfhztjeytiyoghgrt" },
+      { "id_user": "mlioguiohbkergfd" },
+      { "id_user": "rhreherzje" }
+    ],
+    "Quality": [
+      { "title": "Complétion du code", "number": 5 },
+      { "title": "Utilisation des éléments", "number": 35 }
+    ],
+    "DocTech": { "date": "10-12-2022", "update": "13-02-2023" },
+    "UserGuide": { "date": "10-12-2022", "update": "13-02-2023" },
+    "Testing": {
+      "date": "13-02-2023",
+      "status": true
+    },
+    "Connector": {}
+  },
+
+  "filterElemnts": {
+    "type": [
+      { "name": "class" },
+      { "name": "function" },
+      { "name": "mandator" },
+      { "name": "multioutputTOvals-functio" },
+      { "name": "output-Complex Mi" },
+      { "name": "output-metho" },
+      { "name": "packag" },
+      { "name": "package element" }
+    ]
+  },
+
+  "columnsElementsDoc": [
+    { "title": "order", "see": true },
+    { "title": "name", "see": true },
+    { "title": "type", "see": true },
+    { "title": "modif", "see": true },
+    { "title": "use", "see": true },
+    { "title": "global", "see": true },
+    { "title": "origin", "see": true },
+    { "title": "desc", "see": true }
+  ],
+  "techDoc": {
+    "scriptDoc": {
+      "1": {
+        "rid": "01",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "#!/usr/bin/env python\n",
+        "str_clean": "",
+        "str_pseudo": ".",
+        "has_comment": true,
+        "is_comments": true,
+        "one_line": false,
+        "show_compact": true
+      },
+      "2": {
+        "rid": "02",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "\"\"\"Django's command-line utility for administrative tasks.\"\"\"\n",
+        "str_clean": "",
+        "str_pseudo": ".",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true
+      },
+      "3": {
+        "rid": "03",
+        "blkid": "1",
+        "level": 0,
+        "rblkid": "1",
+        "elms_output": ["1"],
+        "elms_input": [],
+        "str": "import os\n",
+        "str_clean": "import os",
+        "str_pseudo": "0 - Import du package os avec nom os",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "type": "package",
+          "packages_split": [["os"]],
+          "package_dict": {
+            "os": "os"
+          },
+          "fullRow": "import os"
+        }
+      },
+      "4": {
+        "rid": "04",
+        "blkid": "2",
+        "level": 0,
+        "rblkid": "2",
+        "elms_output": ["2"],
+        "elms_input": [],
+        "str": "import sys\n",
+        "str_clean": "import sys",
+        "str_pseudo": "1 - Import du package sys avec nom sys",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "type": "package",
+          "packages_split": [["sys"]],
+          "package_dict": {
+            "sys": "sys"
+          },
+          "fullRow": "import sys"
+        }
+      },
+      "5": {
+        "rid": "05",
+        "blkid": "3",
+        "level": 0,
+        "rblkid": "3",
+        "elms_output": ["3"],
+        "elms_input": [],
+        "str": "from django.core.management.commands.runserver import Command as runserver \n",
+        "str_clean": "from django.core.management.commands.runserver import Command as runserver",
+        "str_pseudo": "2 - Import de l'element Command depuis le package django.core.management.commands.runserver avec nom runserver",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "type": "element",
+          "package_split": [
+            "django",
+            "core",
+            "management",
+            "commands",
+            "runserver"
+          ],
+          "package_dict": {
+            "Command": "runserver"
+          },
+          "fullRow": "from django.core.management.commands.runserver import Command as runserver"
+        }
+      },
+      "6": {
+        "rid": "06",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "\n",
+        "str_clean": "",
+        "str_pseudo": ".",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true
+      },
+      "7": {
+        "rid": "07",
+        "blkid": "4",
+        "level": 0,
+        "rblkid": "4",
+        "elms_output": ["4"],
+        "elms_input": [],
+        "str": "def main():\n",
+        "str_clean": "def main():",
+        "str_pseudo": "3 - Definition de la fonction main sans parametres",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "type": "def",
+          "replacement_dict": {},
+          "name": "main",
+          "params": [""],
+          "fullRow": "def main():"
+        }
+      },
+      "8": {
+        "rid": "08",
+        "blkid": "4",
+        "level": 1,
+        "rblkid": "4-0",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'viaggiaConTattoPRJ.settings')\n",
+        "str_clean": "    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'viaggiaConTattoPRJ.settings')",
+        "str_pseudo": "3.1 - ",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "replacement_dict": {
+            "$INTERNALBLOCK0$": "('DJANGO_SETTINGS_MODULE', 'viaggiaConTattoPRJ.settings')"
+          },
+          "type": "Complex Mix",
+          "cleanScript": "os.environ.setdefault$INTERNALBLOCK0$",
+          "fullRow": "os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'viaggiaConTattoPRJ.settings')"
+        }
+      },
+      "9": {
+        "rid": "09",
+        "blkid": "4",
+        "level": 1,
+        "rblkid": "4-1",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "    try:\n",
+        "str_clean": "    try:",
+        "str_pseudo": "3.2 - Test d'execution",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "type": "try",
+          "inner_action": "block",
+          "fullRow": "try:"
+        }
+      },
+      "10": {
+        "rid": "10",
+        "blkid": "4",
+        "level": 2,
+        "rblkid": "4-1-0",
+        "elms_output": ["5"],
+        "elms_input": [],
+        "str": "        from django.core.management import execute_from_command_line\n",
+        "str_clean": "        from django.core.management import execute_from_command_line",
+        "str_pseudo": "3.2.1 - Import de l'element execute_from_command_line depuis le package django.core.management avec nom execute_from_command_line",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "type": "element",
+          "package_split": ["django", "core", "management"],
+          "package_dict": {
+            "execute_from_command_line": "execute_from_command_line"
+          },
+          "fullRow": "from django.core.management import execute_from_command_line"
+        }
+      },
+      "11": {
+        "rid": "11",
+        "blkid": "4",
+        "level": 1,
+        "rblkid": "4-2",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "    except ImportError as exc:\n",
+        "str_clean": "    except ImportError as exc:",
+        "str_pseudo": "3.3 - Execution en cas d'exception ImportError, sous le nom exc",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "type": "except",
+          "inner_action": "block",
+          "action": "ImportError",
+          "name": "exc",
+          "fullRow": "except ImportError as exc:"
+        }
+      },
+      "12": {
+        "rid": "12",
+        "blkid": "4",
+        "level": 2,
+        "rblkid": "4-2-0",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "        raise ImportError(\n",
+        "str_clean": "        raise ImportError( \"Couldn't import Django. Are you sure it's installed and \" \"available on your PYTHONPATH environment variable? Did you \" \"forget to activate a virtual environment?\" ) from exc",
+        "str_pseudo": "3.3.1 - ",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "replacement_dict": {
+            "$INTERNALBLOCK0$": "( \"Couldn't import Django. Are you sure it's installed and \" \"available on your PYTHONPATH environment variable? Did you \" \"forget to activate a virtual environment?\" )"
+          },
+          "type": "Complex Function",
+          "cleanScript": "raise ImportError$INTERNALBLOCK0$ from exc",
+          "fullRow": "raise ImportError( \"Couldn't import Django. Are you sure it's installed and \" \"available on your PYTHONPATH environment variable? Did you \" \"forget to activate a virtual environment?\" ) from exc"
+        }
+      },
+      "13": {
+        "rid": "13",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "            \"Couldn't import Django. Are you sure it's installed and \"\n",
+        "str_clean": "            ",
+        "str_pseudo": ".",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true
+      },
+      "14": {
+        "rid": "14",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "            \"available on your PYTHONPATH environment variable? Did you \"\n",
+        "str_clean": "            ",
+        "str_pseudo": ".",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true
+      },
+      "15": {
+        "rid": "15",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "            \"forget to activate a virtual environment?\"\n",
+        "str_clean": "            ",
+        "str_pseudo": ".",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true
+      },
+      "16": {
+        "rid": "16",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "        ) from exc\n",
+        "str_clean": "        ",
+        "str_pseudo": ".",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true
+      },
+      "17": {
+        "rid": "17",
+        "blkid": "4",
+        "level": 1,
+        "rblkid": "4-3",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "    execute_from_command_line(sys.argv)\n",
+        "str_clean": "    execute_from_command_line(sys.argv)",
+        "str_pseudo": "3.4 - Execution de la fonction execute_from_command_line",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "replacement_dict": {
+            "$INTERNALBLOCK0$": "(sys.argv)"
+          },
+          "type": "function",
+          "name": "execute_from_command_line",
+          "params": ["(sys.argv)"],
+          "fullRow": "execute_from_command_line(sys.argv)"
+        }
+      },
+      "18": {
+        "rid": "18",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "\n",
+        "str_clean": "",
+        "str_pseudo": ".",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true
+      },
+      "19": {
+        "rid": "19",
+        "blkid": "5",
+        "level": 0,
+        "rblkid": "5",
+        "elms_output": ["3"],
+        "elms_input": [],
+        "str": "runserver.default_port = \"8000\"\n",
+        "str_clean": "runserver.default_port = \"8000\"",
+        "str_pseudo": "4 - Modification, de type quoteSE, d'un attribut de la variable runserver",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "type": "quoteSE",
+          "replacement_dict": {
+            "$INTERNALBLOCK0$": "\"8000\""
+          },
+          "content": "$INTERNALBLOCK0$",
+          "output": "runserver.default_port",
+          "fullRow": "runserver.default_port = \"8000\""
+        }
+      },
+      "20": {
+        "rid": "20",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "\n",
+        "str_clean": "",
+        "str_pseudo": ".",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true
+      },
+      "21": {
+        "rid": "21",
+        "blkid": "6",
+        "level": 0,
+        "rblkid": "6",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "if __name__ == '__main__':\n",
+        "str_clean": "if __name__ == '__main__':",
+        "str_pseudo": "5 - Execution su condition specifi\u00e9",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "type": "if",
+          "replacement_dict": {
+            "$INTERNALBLOCK0$": "'__main__'",
+            "$INNERCONDITION1$": "__name__ $EQcheck$ $INTERNALBLOCK0$"
+          },
+          "condition": "$INNERCONDITION1$",
+          "fullRow": "if __name__ == '__main__':"
+        }
+      },
+      "22": {
+        "rid": "22",
+        "blkid": "6",
+        "level": 1,
+        "rblkid": "6-0",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "    main()\n",
+        "str_clean": "    main()",
+        "str_pseudo": "5.1 - Execution de la fonction main",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true,
+        "detail": {
+          "replacement_dict": {
+            "$INTERNALBLOCK0$": "()"
+          },
+          "type": "function",
+          "name": "main",
+          "params": ["()"],
+          "fullRow": "main()"
+        }
+      },
+      "23": {
+        "rid": "23",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "\n",
+        "str_clean": "",
+        "str_pseudo": ".",
+        "has_comment": false,
+        "is_comments": false,
+        "one_line": false,
+        "show_compact": true
+      }
+    },
+    "elementsDoc": {
+      "0": {
+        "rows": ["0"],
+        "board": [
+          { "order": "order" },
+          { "name": "name" },
+          { "type": "type" },
+          { "modif": "modif" },
+          { "use": "use" },
+          { "global": "global" },
+          { "origin": "origin" },
+          { "desc": "decription" }
+        ],
+
+        "order": "TEST2",
+        "name": "TEST",
+        "type": "TESt",
+        "modif": false,
+        "use": "NA",
+        "global": "NA",
+        "origin": "TEST",
+        "desc": "TEST",
+        "blks": ["0"]
+      },
+      "1": {
+        "rows": ["3"],
+        "board": [
+          { "order": "2" },
+          { "name": "os" },
+          { "type": "package" },
+          { "modif": false },
+          { "use": "NA" },
+          { "global": "NA" },
+          { "origin": "os" },
+          { "desc": "import from base package : os" }
+        ],
+
+        "order": "2",
+        "name": "os",
+        "type": "package",
+        "modif": false,
+        "use": "NA",
+        "global": "NA",
+        "origin": "os",
+        "desc": "import from base package : os",
+        "blks": ["1"]
+      },
+      "2": {
+        "rows": ["4"],
+        "board": [
+          { "order": "3" },
+          { "name": "sys" },
+          { "type": "package" },
+          { "modif": false },
+          { "use": "NA" },
+          { "global": "NA" },
+          { "origin": "sys" },
+          { "desc": "import from base package : sys" }
+        ],
+        "order": "3",
+        "name": "sys",
+        "type": "package",
+        "modif": false,
+        "use": "NA",
+        "global": "NA",
+        "origin": "sys",
+        "desc": "import from base package : sys",
+        "blks": ["2"]
+      },
+      "3": {
+        "rows": ["5", "19"],
+
+        "board": [
+          { "order": "4" },
+          { "name": "runserver" },
+          { "type": "package element" },
+          { "modif": true },
+          { "use": "NA" },
+          { "global": "NA" },
+          { "origin": "django.core.management.commands.runserver" },
+          {
+            "desc": "import from base package : django.core.management.commands.runserver"
+          }
+        ],
+        "order": "4",
+        "name": "runserver",
+        "type": "package element",
+        "modif": true,
+        "use": "NA",
+        "global": "NA",
+        "origin": "django.core.management.commands.runserver",
+        "desc": "import from base package : django.core.management.commands.runserver",
+        "blks": ["3", "5"]
+      },
+      "4": {
+        "rows": ["7"],
+        "board": [
+          { "order": "6" },
+          { "name": "main" },
+          { "type": "function" },
+          { "modif": false },
+          { "use": "NA" },
+          { "global": "NA" },
+          { "origin": "" },
+          { "desc": "definition" }
+        ],
+        "order": "6",
+        "name": "main",
+        "type": "function",
+        "modif": false,
+        "use": "NA",
+        "global": "NA",
+        "origin": "",
+        "desc": "definition",
+        "blks": ["4"]
+      },
+      "5": {
+        "rows": ["10"],
+        "board": [
+          { "order": "9" },
+          { "name": "execute_from_command_line" },
+          { "type": "package element" },
+          { "modif": false },
+          { "use": "NA" },
+          { "global": "YES" },
+          { "origin": "django.core.management" },
+          { "desc": "import from base package : django.core.management" }
+        ],
+        "order": "9",
+        "name": "execute_from_command_line",
+        "type": "package element",
+        "modif": false,
+        "use": "NA",
+        "global": "YES",
+        "origin": "django.core.management",
+        "desc": "import from base package : django.core.management",
+        "blks": ["4"]
+      }
+    },
+    "blockDoc": {
+      "1": {
+        "0": {
+          "mainType": "import-package",
+          "blockCase": 0,
+          "rows": ["3"]
+        }
+      },
+      "2": {
+        "0": {
+          "mainType": "import-package",
+          "blockCase": 0,
+          "rows": ["4"]
+        }
+      },
+      "3": {
+        "0": {
+          "mainType": "import-specific",
+          "blockCase": 0,
+          "rows": ["5"]
+        }
+      },
+      "4": {
+        "0": {
+          "mainType": "assignement-function",
+          "blockCase": 2,
+          "rows": ["7", "8", "9", "10", "11", "12", "17"]
+        },
+        "1": {
+          "3-0": {
+            "mainType": "action-full",
+            "blockCase": 0,
+            "rows": ["8"]
+          },
+          "3-1": {
+            "mainType": "action-test",
+            "blockCase": 1,
+            "rows": ["9", "10"]
+          },
+          "3-2": {
+            "mainType": "action-test",
+            "blockCase": 1,
+            "rows": ["11", "12"]
+          },
+          "3-3": {
+            "mainType": "action-full",
+            "blockCase": 0,
+            "rows": ["17"]
+          }
+        },
+        "2": {
+          "3-1-0": {
+            "mainType": "import-specific",
+            "blockCase": 0,
+            "rows": ["10"]
+          },
+          "3-2-0": {
+            "mainType": "action-full",
+            "blockCase": 0,
+            "rows": ["12"]
+          }
+        }
+      },
+      "5": {
+        "0": {
+          "mainType": "assignement-text",
+          "blockCase": 0,
+          "rows": ["19"]
+        }
+      },
+      "6": {
+        "0": {
+          "mainType": "action-condition",
+          "blockCase": 1,
+          "rows": ["21", "22"]
+        },
+        "1": {
+          "5-0": {
+            "mainType": "action-full",
+            "blockCase": 0,
+            "rows": ["22"]
+          }
+        }
+      }
+    }
+  }
+}

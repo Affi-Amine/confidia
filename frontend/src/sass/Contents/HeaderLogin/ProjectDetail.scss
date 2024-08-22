@@ -1,0 +1,33 @@
+@import "../../variables";
+.ProjectDetail {
+  display: flex;
+  align-items: center;
+  > h3 {
+    font-weight: 600;
+    margin-right: 15px;
+  }
+  > .DescProject {
+    $descLH: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: $descLH;
+    height: $descLH;
+
+    color: gray;
+    border: 2px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .pen {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    &:hover {
+      color: $colorDark4;
+      transform: scale(1.1);
+    }
+  }
+}

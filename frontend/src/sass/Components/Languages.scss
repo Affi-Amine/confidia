@@ -1,0 +1,130 @@
+.Language {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  img {
+    height: 14px;
+    max-height: 14px;
+    max-width: 19px;
+    width: 19px;
+    padding: 10px;
+    object-fit: cover;
+  }
+  .seeAllLang {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    p {
+      display: none;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .Icon {
+      margin-left: 4px;
+    }
+  }
+
+  .Langbutton {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: rgb(0, 153, 255);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(0, 153, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 10;
+    top: 100%;
+
+    .NButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        > p {
+          display: none; // Fait disparaitre les vignettes de languages
+          font-size: 15px;
+          font-weight: bold;
+          padding: 5px;
+          margin-left: 5px;
+        }
+        &:hover {
+          opacity: 0.6;
+          border-radius: 5px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .hidden {
+    display: none;
+    margin-top: 0px;
+    width: 0px;
+    padding: 0px;
+  }
+  /* 
+  
+  
+  /RESPONSIVE
+  
+  
+  
+  
+   */
+  @media screen and (max-width: 1024px) {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    min-width: 170px;
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.199);
+      opacity: 1;
+    }
+    .Langbutton {
+      .NButton {
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+
+          > p {
+            display: flex; //  Fait apparaitre les vignettes de changement de language
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px;
+            margin-left: 5px;
+          }
+        }
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.199);
+          opacity: 1;
+        }
+      }
+    }
+
+    .seeAllLang p {
+      display: block;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+  /* @media screen and (min-width: 900px) and (max-width: 1024px) {
+  } */
+}

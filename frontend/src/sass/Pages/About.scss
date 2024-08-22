@@ -1,0 +1,419 @@
+@import "../variables";
+@import "../extends/centerDisplay";
+@import "../extends/fontF";
+@import "../extends/button";
+.App {
+  > .About {
+    @extend %fontF;
+    @extend %fontFcolor;
+    .AllSiteGlobalButtonUnderline {
+      @extend %buttonUnderline;
+    }
+    button {
+      cursor: pointer;
+      letter-spacing: 3px;
+    }
+    $paddingC: 5vw 20vw;
+    $styleText: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    $h1size: calc(1em + 2.5vw);
+    $h2size: calc(1em + 2.5vw);
+    $h3size: calc(1em + 1vw);
+    $h4size: calc(1em + 0.2vw);
+
+    $psize: calc(1em + 0.1vw);
+    $pLH: calc(1em + 2vw);
+
+    h2 {
+      color: $colorDark1;
+      font-weight: 600;
+    }
+
+    p {
+      text-align: justify;
+      font-weight: 500;
+    }
+    .BoxButtons {
+      z-index: 2;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 30px;
+      button {
+        opacity: 1;
+        font-weight: bold;
+        background-color: $blue1;
+        border-color: $blue1;
+        color: white;
+        @extend %buttons;
+        &:hover {
+          background-color: white;
+          border-color: $blue1;
+          color: $blue1;
+        }
+      }
+    }
+    > .imgBox {
+      position: relative;
+      height: 30vw;
+      @include centerDisplay;
+
+      h1 {
+        z-index: 2;
+        position: absolute;
+        color: white;
+        font-weight: 600;
+        font-size: 5vw;
+      }
+      img {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .Intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $blue3;
+      padding: calc(1em + 2vw) 10vw;
+
+      h2 {
+        margin-bottom: var(--font-size-h2);
+      }
+      .Block1 {
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        .ImageBox {
+          width: 30vw;
+          height: 70vh;
+          max-height: 500px;
+          // max-width: 400px;
+          padding-right: 30px;
+          img {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+        .texts {
+          flex: 1;
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          p {
+            line-height: calc(var(--font-size-p) + 0.8vw);
+            padding-bottom: var(--font-size-p);
+
+            &:last-child {
+              padding-bottom: 0px;
+            }
+          }
+        }
+      }
+      // .BoxButtons {
+      //   button {
+      //     background-color: white;
+      //     border-color: white;
+      //     color: $blue1;
+      //     &:hover {
+      //       background-color: $blue1;
+      //       border-color: $blue1;
+      //       color: white;
+      //     }
+      //   }
+      // }
+    }
+    .ourValue {
+      padding-top: calc(1em + 2vw);
+      // padding: 80px 0;
+      h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .imgtitle {
+        // padding: calc(1em + 2vw) 10vw;
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        p {
+          width: 55%;
+          padding-right: 60px;
+          line-height: calc(var(--font-size-p) + 10px);
+        }
+        .ImgBox {
+          width: 30vw;
+          overflow: hidden;
+          img {
+            height: 100%;
+            width: 100%;
+            object-position: center;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+    .blocks {
+      padding: calc(1em + 2vw) 10vw;
+      @include centerDisplay;
+      .BlocksImg_TD {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(1em + 40vw);
+        flex: 1;
+        .block {
+          flex: 1;
+          display: flex;
+          padding-left: 20px;
+          img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+          }
+          h3 {
+            padding-bottom: 0px;
+          }
+          p {
+            line-height: 2vw;
+            line-height: calc(1em + 1vw);
+          }
+        }
+      }
+    }
+    .tools {
+      background-color: $blue3;
+      padding: calc(1em + 2vw) 10vw;
+      h2 {
+        text-align: center;
+        padding-bottom: var(--font-size-h2);
+      }
+      > div {
+        @include centerDisplay;
+        justify-content: center;
+        align-items: center;
+        .block {
+          @include centerDisplay;
+          padding-right: 5vw;
+          flex-direction: column;
+          p {
+            line-height: calc(var(--font-size-p) + 12px);
+          }
+        }
+        .ImageBox {
+          z-index: 1;
+          width: 550vw;
+          max-width: 550px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+      }
+      button {
+        position: relative;
+        @extend %buttons;
+        background-color: $blue1;
+        border-color: $blue1;
+        color: white;
+        font-weight: 600;
+        .alertRedirect {
+          display: none;
+        }
+        &:hover {
+          background-color: white;
+          border-color: $blue1;
+          color: $blue1;
+          .alertRedirect {
+            position: absolute;
+            letter-spacing: normal;
+            text-align: start;
+            display: flex;
+            opacity: 1;
+            background-color: white;
+            color: black;
+            top: 105%;
+            font-size: 15px;
+            line-height: normal;
+            padding: 5px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    /*
+   
+   
+   RESPONSIVE 
+   
+   
+   */
+
+    /* /
+    
+    
+   
+    
+    
+    
+    
+    TOUCH PAD, LANDSAPE
+    / */
+
+    @media screen and (max-width: 1400px) {
+    }
+    @media screen and (max-width: 1290px) {
+      .blocks {
+        flex-direction: column;
+        .BlocksImg_TD {
+          width: 100%;
+          .block {
+            flex: none;
+            width: 95%;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      .Intro {
+        .Block1 {
+          z-index: 2;
+          display: flex;
+          .ImageBox {
+            display: none;
+          }
+          div {
+            p {
+              padding: 10px 0;
+            }
+          }
+        }
+        > div {
+          flex: 1;
+        }
+      }
+      .blocks {
+        flex-direction: column;
+        justify-content: center;
+        .ImgBox {
+          display: none;
+        }
+        .BlocksImg_TD {
+          padding-left: 0px;
+          width: 100%;
+          .block {
+            width: 100%;
+            margin: auto;
+            padding-left: 0px;
+          }
+        }
+      }
+      .tools {
+        > div {
+          padding-left: 0;
+          width: 100%;
+          margin: auto;
+          flex-direction: column-reverse;
+          .ImageBox {
+            margin: auto;
+            width: 60vw;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+    @media (max-width: 800px) {
+      .ourValue {
+        .imgtitle {
+          width: 90%;
+        }
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .Intro {
+        padding: calc(1em + 4vw) 10vw;
+        .Block1 {
+          z-index: 2;
+          display: flex;
+          .ImageBox {
+            display: none;
+          }
+        }
+        > div {
+          flex: 1;
+        }
+      }
+      .ourValue {
+        .imgtitle {
+          width: 95%;
+          flex-direction: column;
+          p {
+            width: 95%;
+            margin: auto;
+            padding-right: 0px;
+            padding-bottom: 20px;
+          }
+          .ImgBox {
+            margin: auto;
+            width: 85%;
+            overflow: hidden;
+            img {
+              height: 100%;
+              width: 100%;
+              object-position: center;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+      .blocks,
+      .tools {
+        padding: calc(1em + 4vw) 5vw;
+      }
+      .tools {
+        > div {
+          .block {
+            @include centerDisplay;
+            padding-right: 0px;
+            flex-direction: column;
+            p {
+              line-height: $pLH;
+            }
+          }
+        }
+      }
+      .BoxTeams > div {
+        min-width: 100%;
+        padding-bottom: 30px;
+      }
+    }
+    @media screen and (max-width: 400px) {
+    }
+    /* /
+      
+      
+      
+      
+      
+      TOUCH PAD, PORTRAIT
+      / */
+
+    /* /
+      
+      
+      
+      
+      
+      PHONE
+      / */
+  }
+}

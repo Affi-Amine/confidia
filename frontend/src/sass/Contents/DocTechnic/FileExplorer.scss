@@ -1,0 +1,67 @@
+.FileExplorer {
+  height: 100%;
+  height: 260px;
+  overflow: hidden;
+  padding-left: 10px;
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px #f4f3f3d5;
+  h1 {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #818a94;
+    height: 40px;
+  }
+  .BoxFiles {
+    padding-bottom: 10px;
+    height: 210px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 5px;
+      &:hover {
+        background-color: #555;
+      }
+    }
+    span,
+    .Item {
+      display: flex;
+      align-items: center;
+    }
+    span {
+      cursor: pointer;
+      height: 40px;
+      padding: 0 15px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      &:hover {
+        border: 1px solid #75a8d776;
+        background-color: #d6e4fa;
+      }
+    }
+    .Item {
+      min-width: 100%;
+
+      border-bottom: 1px solid #f8f8f8;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #4d5a69;
+    }
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    fill: #d6e4fa;
+    stroke: #75a8d7;
+    margin-right: 10px;
+  }
+}

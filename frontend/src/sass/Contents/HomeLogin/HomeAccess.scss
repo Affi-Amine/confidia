@@ -1,0 +1,119 @@
+@import "../../variables";
+@import "../../extends/button";
+@import "../../Animations/pulse.scss";
+.HomeAccess {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: calc(1em + 1vw) 7vw;
+  min-height: 80vh;
+  background-color: hsl(238, 71%, 8%);
+  color: white;
+  h1,
+  h3,
+  h2 {
+    text-align: center;
+  }
+  h1 {
+    padding-bottom: var(--font-size-h2);
+  }
+  h3 {
+    width: 70%;
+    margin: auto;
+    line-height: calc(var(--font-size-h3) + 3px);
+    text-transform: uppercase;
+  }
+  .backC {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: $blue4;
+    border-radius: 8px;
+  }
+  section {
+    display: flex;
+    justify-content: space-around;
+    padding-top: calc(1em + 1vw);
+    .blockCenter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      button {
+        margin: 1em 0;
+        @extend %buttons;
+        background-color: white;
+        color: $blue4;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 1px solid white;
+        &:hover {
+          background-color: $blue4;
+          color: white;
+        }
+      }
+    }
+    .BSetting,
+    .BOffer {
+      width: 200px;
+      color: white;
+      border-radius: 8px;
+      border: 1px solid white;
+      animation: pulseModeDiscret 3s infinite;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        background-color: $blue4;
+      }
+      .ImageBox {
+        width: 100%;
+        // height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .BoxButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    button {
+      margin: 1em auto;
+      max-width: 200px;
+      @extend %buttons;
+      background-color: white;
+      color: $blue4;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: 1px solid white;
+      &:hover {
+        background-color: $blue4;
+        color: white;
+      }
+    }
+  }
+  .HorizontalButtons {
+    flex-direction: row;
+  }
+  @media screen and (max-width: 950px) {
+    h1 {
+      text-transform: uppercase;
+    }
+    section {
+      align-items: center;
+      flex-wrap: wrap;
+      .blockCenter {
+        order: 1;
+        background-color: d;
+        width: 100%;
+      }
+      .BOffer,
+      .BSetting {
+        order: 2;
+      }
+    }
+  }
+}

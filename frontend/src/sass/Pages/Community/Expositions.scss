@@ -1,0 +1,80 @@
+@import "../../variables";
+@import "../../extends/fontF";
+@import "../../extends/button";
+
+.Expositions {
+  @extend %fontSolution;
+  background-color: $colorDark5;
+  min-height: 90vh;
+  padding: calc(1em + 2vw) 6vw calc(1em + 2vw) 7vw;
+
+  color: white !important;
+  h1,
+  h5,
+  h3,
+  p {
+    text-align: center;
+  }
+  h1 {
+    white-space: nowrap;
+    padding-bottom: 60px;
+  }
+  h3 {
+    background-color: $blue1;
+    padding: 20px;
+  }
+  .BoxActivity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+    article {
+      color: $colorDark1;
+      display: flex;
+      flex-direction: column;
+      margin: 20px 10px;
+      h6 {
+        padding-bottom: 20px;
+        font-size: calc(var(--font-size-h6) - 2px);
+      }
+
+      .ImageBox {
+        height: 190px;
+        width: 400px;
+        border-radius: 8px;
+        margin-bottom: 25px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          // height: 100%;
+          object-fit: cover;
+        }
+      }
+      .texts {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        // margin: 25px 25px 0px 25px;
+        box-sizing: border-box;
+        color: $colorDark2;
+        flex: 1;
+        margin: auto;
+        padding: 10px 12px;
+        background-color: white;
+        width: 350px;
+        .description {
+          flex: 1;
+          pre {
+            text-wrap: wrap;
+          }
+        }
+        .AllSiteGlobalButtonUnderline {
+          @extend %buttonUnderline;
+          width: 100%;
+          text-align: end;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}

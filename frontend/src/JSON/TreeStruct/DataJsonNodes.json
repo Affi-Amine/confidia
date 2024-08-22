@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "type": "custom",
+    "data": {
+      "label": "Index.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 150, "y": 100 }
+  },
+  {
+    "id": "2",
+    "type": "custom",
+    "data": {
+      "label": "App.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 300, "y": 100 }
+  },
+  {
+    "id": "3",
+    "type": "custom",
+    "data": {
+      "label": "Pages.jsx",
+      "sourcePosition": "right",
+      "targetPosition": "top",
+      "type": "file"
+    },
+    "position": { "x": 400, "y": 200 }
+  },
+  {
+    "id": "4",
+    "type": "custom",
+    "data": {
+      "label": "Pages",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "folder",
+      "evenClick": { "idnewJsonNode": "newJsonNode", "id": "newJsonEdge" }
+    },
+    "position": { "x": 550, "y": 200 }
+  }
+]

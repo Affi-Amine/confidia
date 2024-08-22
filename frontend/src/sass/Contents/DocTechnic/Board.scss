@@ -1,0 +1,217 @@
+// DLO-1007
+@import "../../variables";
+@import "../../mixins/close";
+@import "../../extends/ModalsStyles.scss";
+.BoxDetailLineBlock {
+  position: fixed;
+
+  z-index: 5;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  max-height: 90vh;
+
+  box-shadow: 0px 0px 100px rgba(246, 216, 216, 0.267);
+
+  .detailLinesCode {
+    overflow: auto;
+    max-height: 80%;
+    article {
+      margin-top: 40px;
+      padding: 30px;
+      cursor: pointer;
+      border: 1px solid $blue;
+      border-radius: 8px;
+      transition: all 1s;
+      div {
+        display: flex;
+        justify-content: space-around;
+      }
+      .scriptLine {
+        padding: 10px;
+        border-radius: 8px;
+        position: relative;
+        border: 1px dashed rgb(201, 181, 181);
+        box-shadow: 0 5px 5px rgb(201, 181, 181);
+        background-color: white;
+        span {
+          position: absolute;
+          font-size: small;
+          border-radius: 4px;
+          top: -10px;
+          padding: 0 20px;
+          background-color: white;
+        }
+      }
+      &:hover {
+        border: 1px dashed $colorDark1;
+        background-color: gainsboro;
+      }
+    }
+  }
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    @include close;
+  }
+  @extend %ModalsStyles;
+}
+.Board {
+  width: 100%;
+  height: $DTheightBlocks;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  align-content: flex-start;
+  overflow: auto;
+  z-index: 1;
+  &::-webkit-scrollbar {
+    width: 8px;
+    overflow: hidden;
+    height: 8px;
+    padding: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+  .Colums {
+    display: flex;
+    justify-content: flex-start;
+    flex: auto;
+    position: relative;
+    min-height: 60px;
+    max-height: 60px;
+    cursor: pointer;
+    p {
+      display: flex;
+      span {
+        width: 10px;
+        text-align: center;
+      }
+    }
+    &:hover {
+      border: 0.1px solid gray;
+    }
+    &:nth-child(2n) {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.95),
+          rgba(255, 255, 255, 0.95)
+        ),
+        #000000;
+      // background: none;
+    }
+    &:first-child {
+      &:hover {
+        border: none;
+      }
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      h6 {
+        position: sticky;
+        top: 0;
+        font-weight: 100;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+        position: sticky;
+        top: 0;
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+          ),
+          #1b5a7d;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        .boxEyes {
+          cursor: pointer;
+        }
+      }
+    }
+
+    > div {
+      height: 100%;
+      min-width: 160px;
+      width: 100%;
+      overflow: hidden;
+      .title {
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        z-index: 3;
+        h6 {
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
+      }
+      .postbox {
+        z-index: 1;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        .postArray {
+          display: flex;
+          // flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          height: 100%;
+          position: relative;
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+            font-size: small;
+            font-style: oblique;
+            padding-top: 10px;
+            height: 100%;
+            width: 40px;
+            // position: absolute;
+          }
+        }
+        .inputText {
+          flex: 1;
+          margin: 0 auto;
+          border: 1px solid gainsboro;
+          border-radius: 58px;
+          // width: 92%;
+          max-width: 92%;
+          width: auto;
+          padding: 5px;
+        }
+        p {
+          overflow-wrap: break-word;
+          overflow: auto;
+          &::-webkit-scrollbar {
+            width: 1px;
+            height: 1px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.TrustedUs {
+  h1 {
+    text-align: center;
+    font-size: var(--size-titleH1);
+    color: var(--title-color);
+    font-weight: var(--weight-title);
+    margin: 50px 0px;
+  }
+  .BoxCompany {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    .NameCompany {
+      width: 300px;
+      height: 200px;
+      border-radius: 90%;
+      background-color: var(--header-back-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px;
+    }
+  }
+}

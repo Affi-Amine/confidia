@@ -1,0 +1,43 @@
+{
+  "title": {
+    "sub1": "Bienvenue dans la Version d'Essai Gratuite",
+    "sub2": "de",
+    "sub3": "CONFIDIA"
+  },
+  "askmore": {
+    "title": "Découvrez la prochaine version",
+    "text": "Celle-ci est la version minimum (MVP) de ConfidIA, limitée en termes de fonctionnalités aussi bien front que back.\n \nPour une démo de la version avancée existante contactez-nous : \n\tconfidia@dsfords.fr\n\t+33 (0)6 47 98 65 71"
+  },
+  "form": {
+    "alias": "Nom Démo",
+    "userAlias": "Nom User",
+    "desc": "Pour mieux t'y retrouver, après l'envoi de ton code, ajoute une description si tu le souhaites ! \n ConfidIA n'en a pas besoin pour documenter, mais ça peut toujours t'être utile :)",
+    "write": "Copie colle le code que tu souhaites documenter"
+  },
+  "option": {
+    "progress": "Bientôt disponible pour la démo",
+    "python": {
+      "py": "ConfidIA détermine automatiquement la version du python que vous utiliser"
+    }
+  },
+  "alerte": {
+    "code": "Code manquant !",
+    "limite": "Vous avez dépasser la limite d'inscription pour la démo de ConfidIA !"
+  },
+  "download": "Télécharger la documentation",
+  "contactUs": "Contactez-nous",
+  "solution": "La solution t'intéresse ?",
+  "contact": "Contacte-nous pour une démo personnalisée de la solution,sous la forme qui te convient le plus!",
+  "name": "Prénom",
+  "surname": "Nom",
+  "email": "Adresse mail",
+  "phone": "Numéro de téléphone",
+  "message": "Message",
+  "question": "Une Question simple pour s'assurer que tune sois pas un robot",
+  "privacy": "J'ai lu la politique de confidentialité",
+  "permission": "J'autorise le traitement de mes données pour les finalités indiquées",
+  "button": "ENVOYER",
+  "isLoading": {
+    "title": "Création de votre documentation"
+  }
+}

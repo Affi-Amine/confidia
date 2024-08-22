@@ -1,0 +1,218 @@
+@import "../../variables";
+@import "../../extends/ScrollBarBasic";
+@import "../../extends/button";
+.DocTechnic {
+  .Search {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    > button {
+      margin-right: auto;
+      cursor: pointer;
+      margin-bottom: 15px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.7);
+
+      &:hover {
+        color: $text-back;
+        font-size: 15px;
+      }
+    }
+    .boxCS p,
+    .boxISearch {
+      display: flex;
+      align-items: center;
+    }
+    .boxCS p span {
+      @extend %buttonUnderline;
+    }
+    .boxISearch {
+      border: 1px solid #1b5a7d;
+      border-radius: 5px;
+      padding: 1px;
+      margin-bottom: 10px;
+      padding-right: 8px;
+    }
+    .boxISearch {
+      .inputSearch {
+        flex: 1;
+        outline: none;
+        border: none;
+        height: 33px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        color: #1b5a7d;
+        padding-left: 8px;
+      }
+    }
+    .SelectInOutPut {
+      display: flex;
+      button {
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+        input {
+          cursor: pointer;
+        }
+      }
+    }
+    .ResumeFilterBox {
+      max-width: 400px;
+
+      h6 {
+        color: rgba(0, 0, 0, 0.7);
+        margin-bottom: 10px;
+      }
+      .Listes {
+        max-height: 140px;
+        @extend %ScrollBarBasic;
+        overflow: auto;
+        input {
+          cursor: pointer;
+        }
+        input[type="checkbox"] {
+          min-width: 10px;
+        }
+        .BoxType {
+          display: flex;
+          align-items: center;
+          margin-bottom: 5px;
+          .BoxTC {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            padding-left: 5px;
+            border: 1px solid $colorDark4;
+            border-radius: 8px;
+            p {
+              padding-left: 5px;
+              padding-right: 10px;
+              width: 70px;
+              right: -10px;
+            }
+            span {
+              background-color: white;
+              position: absolute;
+              width: 10px;
+              height: 20px;
+              right: -5px;
+            }
+          }
+          .options {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            flex: 1;
+            border: 1px solid $colorDark4;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+    .BoxType {
+      .Types {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        cursor: pointer;
+
+        max-width: 98%;
+        height: 33px;
+
+        padding: 0 9px;
+        border: 1px solid #1b5a7d;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: gray;
+        .icon {
+          color: #888888a6;
+        }
+        &.open {
+          border-radius: 5px 5px 0px 0;
+        }
+        &.close {
+          border-radius: 5px;
+        }
+      }
+    }
+    .boxCS {
+      margin-top: 17px;
+      p {
+        color: rgba(0, 0, 0, 0.7);
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        height: 21px;
+        cursor: pointer;
+        &:hover {
+          color: $colorDark1;
+          font-size: 16.1px;
+        }
+        span {
+          margin-left: 5px;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+    }
+    .ManageSee {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      stroke: white;
+      margin-top: 20px;
+      > .icon,
+      .Fusionicon {
+        cursor: pointer;
+        border-radius: 8px;
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+          ),
+          #1b5a7d;
+        width: 28px;
+        height: 28px;
+        padding: 8px;
+      }
+      .select {
+        background: none;
+        background-color: $text-back;
+      }
+      .Fusionicon,
+      > .icon {
+        border: 1px solid white;
+      }
+      .Fusionicon {
+        position: relative;
+        .icon {
+          width: 20px;
+          height: 20px;
+          &:first-child {
+            position: absolute;
+            left: 5px;
+          }
+          &:last-child {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+          }
+        }
+        .FAIicon {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "../variables";
+
+.HeaderLoginUser {
+  $LH: 42px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  .initial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $LH;
+    height: $LH;
+    margin-right: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
+      ),
+      #1b5a7d;
+    /* White */
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  > .ImageBox {
+    width: $LH;
+    height: $LH;
+    margin-right: 10px;
+
+    img {
+      border-radius: 15px;
+      width: $LH;
+      height: $LH;
+    }
+  }
+  .boxUsername {
+    display: flex;
+    align-items: center;
+    height: min-content;
+    flex-direction: row;
+    > p {
+      .icon {
+        margin-left: 5px;
+      }
+    }
+  }
+}

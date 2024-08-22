@@ -1,0 +1,55 @@
+{
+  "ButtonDesc": {
+    "1": "Tableau",
+    "2": "Structure",
+    "3": "Éditeur",
+    "4": "Script",
+    "5": "Pseudo code",
+    "6": "Commentaire",
+    "7": "Synchroniser scroll",
+    "8": "Commentaire du script",
+    "9": "Compacter le code",
+    "10": "Couleur",
+    "11": "Script et Pseudo-code fusionné",
+    "12": "Annuler les modifications",
+    "13": "Créer la nouvelle documentation technique",
+    "14": "Surligner"
+  },
+  "isLoading": {
+    "title": "Création de votre documentation"
+  },
+  "askmore": {
+    "title": "Découvrez la prochaine version",
+    "text": "Celle-ci est la version minimum (MVP) de ConfidIA, limitée en termes de fonctionnalités aussi bien front que back.\n \nPour une démo de la version avancée existante contactez-nous : \n\tconfidia@dsfords.fr\n\t+33 (0)6 47 98 65 71"
+  },
+  "filterDoc": {
+    "buttons": {
+      "valid": "Valider",
+      "sup": "Supprimer",
+      "cancel": "Annuler"
+    }
+  },
+  "Search": {
+    "explo": "EXPLORER",
+    "type": "Type",
+    "search": "Rechercher",
+    "create": "Créer un filtre",
+    "edit": "Modifier un filtre",
+    "sauv": "Sauvegarder ce filtrage",
+    "resum": "Résumé des filtres",
+    "takeResum": "Reprendre le filtre",
+    "hidden": "Masquer le filtre"
+  },
+  "Scripts": {
+    "code": "VUE CODE",
+    "returnC": "RETOUR AU CODE",
+    "pseudoCode": "PSEUDO CODE",
+    "inject": "INJECTER CODE",
+    "comment": "COMMENTAIRE"
+  },
+  "Viewer": {
+    "file": "VISIONNEUSE DE FICHIERS",
+    "flow": "ORGANIGRAMME",
+    "teeStruct": "Structure des données"
+  }
+}

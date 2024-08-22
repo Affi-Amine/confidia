@@ -1,0 +1,107 @@
+// DLO-1007
+@import "../../variables";
+.ManageSee {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  transform: translate(0%, -50%);
+  z-index: 5;
+  .boxManageSee {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    stroke: white;
+    margin-top: 20px;
+    .boxButton,
+    .Fusionicon {
+      margin-bottom: 5px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    button {
+      position: relative;
+      .descIcon {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        color: $text-back;
+        transition: opacity 0.2s ease, visibility 0.2s ease;
+        position: absolute;
+        padding: 3px;
+        top: 20%;
+        right: 90%;
+        background-color: white;
+        text-wrap: nowrap;
+      }
+      &:hover {
+        .descIcon {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    .boxButton > .icon,
+    .Fusionicon {
+      cursor: pointer;
+      color: white;
+      border-radius: 8px;
+      width: 28px;
+      height: 28px;
+      padding: 8px;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    .ActivateT {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0.2)
+        ),
+        #1b5a7d;
+    }
+    .ActivateF {
+      background: gray;
+    }
+    .select {
+      background: none;
+      background-color: $text-back;
+    }
+    .Fusionicon,
+    .boxButton > .icon {
+      border: 1px solid white;
+    }
+    .Fusionicon {
+      position: relative;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // background-color: red;
+      // width: 36px;
+      // height: 36px;
+      .icon {
+        width: 20px;
+        height: 20px;
+
+        // background-color: red;
+        &:first-child {
+          position: absolute;
+          left: 5px;
+          // background-color: palegoldenrod;
+        }
+        &:last-child {
+          position: absolute;
+          right: 5px;
+          bottom: 5px;
+          // background-color: palegoldenrod;
+        }
+      }
+      .FAIicon {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "./variables";
+
+.btn-dark {
+  background-color: $blue1 !important;
+  color: white !important;
+  border: 2px solid $blue1 !important;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background-color: transparent !important;
+    color: $blue1 !important;
+    border: 2px solid $blue1 !important;
+  }
+}
+.btn-clear {
+  color: $blue2 !important;
+  background-color: white !important;
+  border: 2px solid $blue1 !important;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background-color: $blue1 !important;
+    color: white !important;
+  }
+}

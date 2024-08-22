@@ -1,0 +1,58 @@
+@import "../variables";
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin: 0.5em 0;
+  }
+  .FormButton {
+    padding: 0.5em;
+    margin: 0 0.5em;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    &:hover {
+      cursor: pointer;
+      background-color: $blue3;
+    }
+  }
+  input {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+  }
+  input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    cursor: pointer;
+    &:hover {
+        background-color: $blue3;
+    }
+}
+  textarea {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    resize: vertical;
+  }
+  select {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    min-width: 200px;
+  }
+  .FormButton {
+    margin: 0 1em;
+    border: 1px solid $border-color;
+    padding: 0.5em;
+    border-radius: 5px;
+    .icon {
+      margin-right: 0.5em;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $blue3;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../variables";
+
+%ModalsStyles {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  border: 3px solid $colorDark4;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: $colorDark4;
+  box-shadow: $shadow;
+  background-color: white;
+}
+// @extend %ModalsStyles;

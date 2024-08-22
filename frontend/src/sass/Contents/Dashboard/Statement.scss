@@ -1,0 +1,189 @@
+@import "../../variables";
+.Dashboard {
+  .BoxStatements {
+    position: relative;
+    margin-right: 25px;
+    .elipse {
+      width: 20px;
+      height: 18px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      z-index: 3;
+    }
+    .ParamStatement {
+      position: absolute;
+      overflow: inherit;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      width: 250px;
+      top: 0px;
+      left: 98%;
+      border-radius: 8px;
+      background-color: white;
+      border: 1px solid wheat;
+      .X {
+        margin-left: auto;
+        margin-bottom: 15px;
+      }
+      .viewMetric {
+        display: flex;
+        h2,
+        button {
+          margin-right: 5px;
+        }
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 10px;
+          height: 20px;
+          width: 20px;
+          cursor: pointer;
+          background-color: $colorDark3;
+          transition: background-color 0.3s ease;
+          border-radius: 4px;
+          .icon {
+            color: white;
+            width: 10px;
+            height: 10px;
+          }
+          &:hover {
+            background-color: $colorDark1;
+          }
+        }
+      }
+      .addMetric {
+        display: flex;
+        align-items: center;
+        padding: 20px 0px;
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 10px;
+          height: 20px;
+          width: 20px;
+          border-radius: 4px;
+          color: white;
+          background-color: $colorDark3;
+          transition: background-color 0.3s ease;
+          &:hover {
+            background-color: $colorDark1;
+          }
+        }
+      }
+    }
+
+    .Statement {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      box-shadow: 1px 1px 10px 1px rgb(199, 199, 199);
+      border-radius: 8px;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+        overflow: hidden;
+        height: 8px;
+        padding: 5px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: #555;
+        }
+      }
+      .numMetricPage {
+        z-index: 4;
+        position: absolute;
+        display: flex;
+        background-color: white;
+        padding: 1px;
+
+        top: -10px;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        height: 20px;
+        padding-left: 5px;
+        border: 1px solid $colorDark3;
+        border-radius: 8px;
+        input,
+        p {
+          flex: 1;
+          margin-right: 5px;
+        }
+        input {
+          width: 5ch;
+          min-width: 0;
+          outline: none;
+          border: none;
+          min-width: auto;
+          box-sizing: content-box;
+          background-color: none;
+        }
+      }
+      .iconArrowL,
+      .iconArrowR {
+        position: absolute;
+        bottom: 45%;
+        height: 30px;
+        width: 30px;
+        border: 1px solid $colorDark3;
+        border-radius: 50%;
+        color: white;
+        z-index: 4;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .iconArrowL {
+        left: -18px;
+      }
+      .iconArrowR {
+        right: -18px;
+      }
+      .Block {
+        width: 170px;
+        height: 150px;
+        margin: 4px 6.5px;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        .elipse {
+          position: absolute;
+          right: 11px;
+          top: 7px;
+        }
+        p {
+          overflow-wrap: break-word;
+          color: $text-back;
+          font-weight: 600;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .number {
+          font-size: $number !important;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+          margin-bottom: 5px;
+        }
+        .text {
+          font-size: 20px !important;
+          color: rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+  }
+}

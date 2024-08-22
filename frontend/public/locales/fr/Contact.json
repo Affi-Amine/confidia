@@ -1,0 +1,41 @@
+{
+  "Title": "CONTACTEZ-NOUS",
+  "Subtitle": { "1": "Entrez en contact", "2": "avec nos experts !" },
+  "mail": "Email",
+  "phone": "Téléphone",
+  "address": "Adresse",
+  "button": "Envoyez",
+  "Buttons": {
+    "1": "Devenez Early Adopter !",
+    "2": "Découvrez le Consulting !"
+  },
+  "Block1": {
+    "title": {
+      "1": "Commençons votre projet ensemble ... ",
+      "2": "Contactez-nous !"
+    },
+    "desc": {
+      "text1": {
+        "1": "Vous souhaitez nous faire part de vos besoins pour un devis personnalisé ou pour un renseignement ?"
+      },
+      "text2": {
+        "1": "Contactez-nous via le formulaire de contact, par mail ou par téléphone !"
+      },
+      "text3": {
+        "1": "Nous vous répondrons le plus rapidement possible afin de vous assister au mieux"
+      }
+    },
+    "form": {
+      "name": "Nom",
+      "mail": "Adresse e-mail",
+      "message": "Message",
+      "title": "Titre",
+      "options": {
+        "1": "FR-Num1",
+        "2": "FR-Num2",
+        "3": "FR-num3"
+      }
+    },
+    "linkBook": { "1": "Prendre rendez-vous", "2": "choisir un horaire !" }
+  }
+}

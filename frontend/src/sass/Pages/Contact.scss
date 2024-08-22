@@ -1,0 +1,408 @@
+@import "../extends/centerDisplay";
+@import "../extends/fontF";
+@import "../variables";
+@import "../extends/button";
+.Contact {
+  @include centerDisplay;
+  @extend %fontF;
+  @extend %fontFcolor;
+  .AllSiteGlobalButtonUnderline {
+    @extend %buttonUnderline;
+  }
+  flex-direction: column;
+  h1 {
+    text-align: center;
+  }
+  h3,
+  h1 {
+    font-weight: 600;
+  }
+  h3 {
+    color: $blue1;
+    padding-top: calc(1em + 4vw);
+    padding-bottom: calc(1em + 0.4vw);
+  }
+  h1 {
+    padding-bottom: calc(1em + 0.1vw);
+  }
+  a,
+  .link {
+    cursor: pointer;
+    color: white;
+    line-height: normal;
+    &:visited {
+      color: white;
+    }
+    &:active {
+      color: white;
+    }
+    &:hover {
+      color: $blue1;
+    }
+  }
+  .BoxButtons {
+    padding-bottom: calc(1em + 2vw);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    button {
+      @extend %buttons;
+      background-color: white;
+      padding: 2vw;
+      border-color: white;
+      .icon {
+        margin-top: 20px;
+      }
+      .icon2 {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      h4,
+      .icon,
+      .icon2 {
+        color: $blue1;
+      }
+      &:hover {
+        background-color: $blue1;
+        border-color: $blue1;
+        h4,
+        .icon {
+          color: white;
+        }
+      }
+    }
+  }
+  .BoxButtons2 {
+    // padding-bottom: calc(1em + 2vw);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    button {
+      display: flex;
+      align-items: center;
+      @extend %buttons;
+      background-color: white;
+      padding: 1vw;
+      border-color: white;
+      .icon {
+        margin-top: 20px;
+      }
+      .icon2 {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      h4,
+      h6,
+      p,
+      .icon,
+      .icon2 {
+        color: $blue1;
+      }
+      &:hover {
+        background-color: $blue1;
+        border-color: $blue1;
+        h4,
+        h6,
+        p,
+        .icon,
+        .icon2 {
+          color: white;
+        }
+      }
+    }
+  }
+  .mobile,
+  .location,
+  .email {
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    .boxIcon {
+      @include centerDisplay;
+      background-color: #01012c;
+      border-radius: 50%;
+      height: 40px;
+      min-width: 40px;
+      .icon {
+        height: 20px;
+        min-width: 20px;
+      }
+    }
+    .boxT {
+      h4 {
+        margin-top: 15px;
+      }
+      margin-left: 20px;
+      a:hover {
+        color: $blue1;
+      }
+    }
+  }
+  .Block1 {
+    width: 100%;
+    background-color: #1f2941;
+    color: white;
+    padding: calc(1em + 4vw) 10vw;
+    h2,
+    p {
+      color: white;
+    }
+    h2 {
+      line-height: calc(var(--font-size-h2) + 10px);
+      padding-bottom: 40px;
+      text-align: center;
+    }
+    section {
+      padding: calc(1em + 0.2vw) 10vw;
+      color: white;
+      display: flex;
+      justify-content: center;
+
+      .link {
+        margin-top: 30px;
+      }
+      > div,
+      .boxForm {
+        width: 33%;
+      }
+      .intro {
+        padding-right: 130px;
+
+        p,
+        a {
+          font-size: calc(1em + 0.1vw);
+          line-height: calc(1em + 0.5vw);
+          padding-bottom: 20px;
+        }
+      }
+      .boxForm {
+        display: flex;
+        flex-direction: column;
+        form {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          margin-top: 30px;
+          margin-bottom: 40px;
+          background-color: #f1f5f9;
+          padding: 40px 30px;
+          overflow: hidden; // Empeche l'image de dépasser
+          .title {
+            position: relative;
+            margin-bottom: 20px;
+            color: rgb(101, 101, 101);
+            p {
+              display: flex;
+              align-items: center;
+              height: 40px;
+              padding-left: 10px;
+              background-color: white;
+            }
+            .options {
+              width: calc(100%);
+              background-color: white;
+              border-radius: 0 0 8px 8px;
+              position: absolute;
+              box-shadow: $shadow;
+              overflow: hidden;
+              option {
+                display: flex;
+                align-items: center;
+                height: 40px;
+                padding-left: 10px;
+                cursor: pointer;
+
+                &:hover {
+                  color: white;
+                  background-color: $colorDark4;
+                }
+              }
+            }
+          }
+          .imgWork {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: 2;
+            left: 0px;
+            top: 20px;
+            opacity: 0.7;
+            cursor: no-drop;
+          }
+          input {
+            height: 40px;
+            width: calc(100% - 10px);
+            font-size: calc(1em + 0.01vw);
+            padding-left: 10px;
+            border: none;
+            outline: none;
+            margin-bottom: 20px;
+          }
+          textarea {
+            font-size: calc(1em + 0.01vw);
+            padding-left: 10px;
+            padding-top: 10px;
+            width: calc(100% - 10px);
+            border: none;
+            margin-bottom: 30px;
+          }
+          div {
+            align-self: flex-end;
+            button {
+              display: inline-block;
+              background-color: $blue1;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              outline: none;
+              font-size: calc(1em + 0.1vw);
+              cursor: pointer;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+
+        a {
+          text-align: center;
+          padding: 5px;
+          margin-bottom: 20px;
+          z-index: 3;
+          font-size: calc(1em + 0.5vw);
+        }
+      }
+    }
+    .detail {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 10vw;
+      h4 {
+        display: none;
+      }
+      .mobile,
+      .location,
+      .email {
+        width: max-content;
+      }
+    }
+  }
+  .Block3 {
+    padding: calc(1em + 4vw) 10vw;
+    display: flex;
+    color: black;
+    > div {
+      margin: 0 20px;
+      padding-left: 20px;
+      box-shadow: 0px 10px 15px 5px rgba(52, 47, 135, 0.2);
+    }
+    h4 {
+      font-size: calc(1em + 0.1vw);
+      font-weight: 600;
+      padding-bottom: 10px;
+    }
+    .boxIcon {
+      background-color: #000000;
+      .icon {
+        color: white;
+      }
+    }
+    .boxT {
+      color: $colorDark2;
+      padding-top: 0px;
+      padding-bottom: 30px;
+    }
+    a {
+      font-weight: 600;
+      font-size: calc(1em + 0.05vw);
+      line-height: calc(1em + 0.5vw);
+      color: $colorDark2;
+      text-decoration: none;
+      &:hover {
+        color: $blue1;
+      }
+      &:visited {
+        color: $colorDark2;
+      }
+      &:active {
+        color: $colorDark2;
+      }
+    }
+  }
+  @media screen and (max-width: 1400px) {
+  }
+  @media screen and (max-width: 1000px) {
+    .Block1 {
+      section {
+        flex-direction: column;
+        align-items: center;
+
+        > div,
+        .boxForm {
+          width: 80%;
+        }
+        .intro {
+          padding-right: 0px;
+          padding-bottom: 20px;
+          h2 {
+            padding-top: 40px;
+            padding-bottom: 20px;
+          }
+          p,
+          a {
+            padding-bottom: 15px;
+          }
+          .detail {
+            padding-top: 20px;
+          }
+        }
+        form {
+          margin-top: 0px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .Block3 {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
+      > div {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+      .boxT {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 650px) {
+    .intro {
+      padding-right: 0px;
+    }
+    .mobile,
+    .location,
+    .email {
+      width: auto;
+    }
+    .detail {
+      flex-direction: column;
+      text-wrap: nowrap;
+    }
+    .Block1 {
+      .detail {
+        .mobile,
+        .location,
+        .email {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}

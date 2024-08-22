@@ -1,0 +1,62 @@
+.VideoDemo {
+  position: relative;
+
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  overflow: hidden;
+  padding-top: 46.25%;
+  .PlayerVideoDemo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  /* /
+      
+      
+      RESPONSIVE
+     
+      
+    */
+
+  @media screen and (min-width: 1024px) and (max-width: 1290px) {
+  }
+  /* /
+      
+    
+      
+      
+      
+      
+      TOUCH PAD, LANDSAPE
+      / */
+  @media screen and (min-width: 900px) and (max-width: 1024px) {
+    /* .Videos {
+        margin-bottom: 0px;
+      } */
+  }
+  /* /
+      
+      
+      
+      
+      
+      TOUCH PAD, PORTRAIT
+      / */
+  @media screen and (min-width: 760px) and (max-width: 900px) {
+    margin-bottom: 0px;
+  }
+  /* /
+      
+      
+      
+      
+      
+      PHONE
+      / */
+  @media (max-width: 760px) {
+    margin-bottom: 0px;
+  }
+}

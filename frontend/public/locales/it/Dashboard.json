@@ -1,0 +1,59 @@
+{
+  "UpdateProjectInfos": {
+    "change": "CAMBIARE"
+  },
+  "Statement": {
+    "script": "script",
+    "var": "variabili",
+    "fonction": "funzioni",
+    "row": "righe",
+    "param": {
+      "addMetric": "Aggiungi una metrica:"
+    }
+  },
+  "AddWidget": "Aggiungi widget",
+  "Alertes": {
+    "alertes": "Avvisi",
+    "operation": "Operazione",
+    "files": "File",
+    "ethic": "Etica",
+    "consult": "consultare"
+  },
+  "GuideconfidIA": {
+    "platform": "LA PIATTAFORMA",
+    "embark": "Imbarcati in ConfidIA",
+    "learn": "Impara ConfidIA in 30 min",
+    "download": "Scarica la guida"
+  },
+  "Quality": {
+    "evaluation": "Imposta gli indicatori di valutazione del codice!",
+    "select": "Seleziona o crea i tuoi indicatori",
+    "indicator": "I miei indicatori",
+    "param": "definito dalle tue impostazioni",
+    "completion": "Proposta Confidia",
+    "quality": "Qualità del codice",
+    "where": "OPPURE",
+    "suggestion": "Indicatori suggeriti da ConfidIA:",
+    "create": "Crea il mio indicatore",
+    "buttonConf": "Sto configurando",
+    "buttonValidate": "Convalido"
+  },
+  "Video": {
+    "platform": "LA PIATTAFORMA",
+    "demo": "Video dimostrativo",
+    "learn": "Impara le confidenze in 3 minuti",
+    "visio": "Guarda il Quicktour"
+  },
+  "kpi": {
+    "T": "Crea il mio indicatore",
+    "1": "Nome dell'indicatore",
+    "message": {
+      "1": "L'indicatore non è valido",
+      "2": "Un elemento dello stesso tipo non può essere aggiunto consecutivamente",
+      "3": "Devi nominare il tuo indicatore"
+    },
+    "btn": {
+      "1": "Crea"
+    }
+  }
+}

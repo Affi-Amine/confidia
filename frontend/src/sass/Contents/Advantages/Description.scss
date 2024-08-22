@@ -1,0 +1,67 @@
+@import "../../variables";
+@import "../../extends/button";
+
+.Description {
+  width: 75%;
+
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  color: white;
+  border: 1px dashed white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .BoxText {
+    width: 70%;
+    padding-right: 20px;
+    p {
+      padding: 10px;
+      line-height: calc(var(--font-size-p) + 5px);
+    }
+  }
+  section {
+    background: linear-gradient(20deg, #316dd61f, #491d7764);
+    border: 0.01px solid $blue1;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px $blue1;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    .allCheckbox {
+      opacity: 1;
+      div {
+        padding: 5px 0;
+        font-size: var(--font-size-p);
+        input {
+          cursor: pointer;
+        }
+      }
+    }
+    .BoxButtons {
+      display: flex;
+      justify-content: center;
+      .btn-Valid {
+        margin-top: 30px;
+
+        @extend %buttons;
+        font-weight: 500;
+        background-color: white;
+        border: 1px solid $colorDark1;
+        color: $colorDark1 !important;
+
+        transition: all ease 0.5s;
+        &:hover {
+          background-color: transparent;
+          border: 1px solid white;
+          color: white !important;
+        }
+      }
+    }
+    .boxMessages {
+      padding-top: 30px;
+    }
+  }
+}

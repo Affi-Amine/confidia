@@ -1,0 +1,126 @@
+{
+  "LearnMoreDocM": {
+    "title": "HOW FAR THE TEST VERSION GOES",
+    "texts": {
+      "1": "Language",
+      "2": "Currently ConfidIA is being tested on Python3 Any other version of Python could cause slowdowns",
+      "3": "Executable code",
+      "4": "Syntax error handling features will be included in the short term Currently, any code that cannot be executed can cause slowdowns",
+      "5": "Hard-Defining Environment Elements",
+      "6": "At the moment, having a hard definition of large objects can lead to slowdowns (e.g., lists/dictionaries/etc. with several hundred lines and/or nested objects)"
+    }
+  },
+  "MobileWarningM": {
+    "message": "We recommend using ConfidIA on a computer!"
+  },
+  "PreLaunchOfferM": {
+    "registerLogin": "Login",
+    "buttonDiscover": "Discover the -> offer"
+  },
+  "LimitedOfferM": {
+    "title": "You didn't activate an offer yet !",
+    "message": "To take advantage of our pre-launch offer, we invite you to subscribe here.",
+    "emailSendTitle": "You have successfully subscribed to our pre-launch offer.",
+    "emailSendMessage": "You will receive confirmation by email within 1 working day",
+    "alreadyhave": "If you have already applied, disregard this message !",
+    "button": "Subscribe"
+  },
+  "LimitedOfferMActivate": {
+    "title": "Your offer is not yet activated ",
+    "message": {
+      "1": "Enjoy your ",
+      "2": " month free trial period"
+    }
+  },
+  "QuestionnaireM": {
+    "title": "Questionnaire about your interest in ConfidIA, the new AI documentation for Automatic Code."
+  },
+  "EarlyAdopterM": {
+    "message": "Do you have a Early Adopter code ?",
+    "T": {
+      "1": "Welcome to the ConfidIA test area !",
+      "2": "Be among the first to test our solution by documenting your code online automatically, and get a head start on the next users to come !",
+      "3": "Discover the benefits !",
+      "4": "Do you prefer to continue on the production space like most users ?",
+      "5": "Your login remains the same !",
+      "6": ""
+    },
+    "buttons": { "1": "Continue on DS FOR DS", "2": "Become an Early Adopter" }
+  },
+  "DataKeepChoice": {
+    "message": "Data kept for session time",
+    "buttons": {
+      "keep": "Keep",
+      "notKeep": "Do not keep"
+    }
+  },
+  "NewFeature": {
+    "message": "This feature is coming soon",
+    "contactUs": "Contact us"
+  },
+  "Datalost": {
+    "title": "Your data has not been saved.",
+    "text": {
+      "1": "Your page contains data that has not been ",
+      "span1": "saved.",
+      "2": "If you exit without saving,",
+      "span2": "this data will be lost.",
+      "3": "If you do not wish to lose your data please select stay."
+    },
+    "buttons": {
+      "quit": "Quit",
+      "stay": "Stay"
+    }
+  },
+  "BadVersion": {
+    "alert": "The offers page is currently under construction, you will be redirected to the contact page",
+    "messages": {
+      "1": "This feature is not available for this version",
+      "2": "To access it, please subscribe to an offer"
+    },
+    "buttons": {
+      "offer": "View offers"
+    }
+  },
+  "SendReport": {
+    "title": "Send a report",
+    "project": "Project",
+    "notifTitle": "Title",
+    "notifMessage": "Additional message",
+    "notifContext": "Context to report",
+    "buttons": {
+      "reportConfidia": "Report to Confidia",
+      "reportBoth": "Report also to the team",
+      "close": "Close"
+    }
+  },
+  "SendMessage": {
+    "title": "Send a message to a user",
+    "notifTitle": "Title",
+    "message": "Message",
+    "buttons": {
+      "send": "Send",
+      "close": "Close"
+    }
+  },
+  "SendAlert": {
+    "title": "Send an alert",
+    "project": "Project",
+    "notifTitle": "Title",
+    "message": "Message",
+    "context": "Context",
+    "buttons": {
+      "send": "Send",
+      "close": "Close"
+    }
+  },
+  "SendActivity": {
+    "project": "Project",
+    "notifTitle": "Title",
+    "message": "Message",
+    "context": "Context",
+    "buttons": {
+      "send": "Send"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Notifications": {
+    "title": "NOTICE",
+    "thereIs": "There is",
+    "consult": "Consult your notifications here",
+    "all": "All",
+    "notNotif": "You have no notification",
+    "discover": "Discover more",
+    "debug": "Debug immediately",
+    "types": { "all": "All", "notif": "Notifications", "alerte": "Alerts" }
+  },
+  "Nav": {
+    "update": "Change the",
+    "create": "Create it",
+    "finish": "Finished on",
+    "progress": "In progress",
+    "myProjects": {
+      "title": "MY PROJECTS",
+      "button": "Add project"
+    },
+    "docTechnic": { "title": "TECHNICAL DOCUMENTATION", "button": "See all" },
+    "useGuide": { "title": "USER GUIDE", "button": "See all" },
+    "testing": {
+      "title": "TESTING",
+      "button": "My tests"
+    },
+    "connecteur": { "title": "MY CONNECTORS", "button": "My tests" }
+  },
+  "Configuration": {
+    "creatDoc": "Document my script",
+    "manageProjects": "Manage my projects",
+    "setting": "My settings",
+    "offer": "My offer",
+    "userGuide": "My user guides",
+    "disconnect": "Disconnect me"
+  },
+  "Menu": {
+    "dashboard": "Dashboard",
+    "docTechnic": "Technical documentation",
+    "userGuide": "User Guide",
+    "testing": "Testing"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "Title": "CONTACT US",
+  "Subtitle": { "1": "Get in touch", "2": "with our experts!" },
+  "mail": "Email",
+  "phone": "Phone",
+  "address": "Address",
+  "button": "Send",
+  "Buttons": {
+    "1": "Become an Eraly Adopter !",
+    "2": "Discover Consulting !"
+  },
+  "Block1": {
+    "title": {
+      "1": "Let's start your project together ...",
+      "2": "Contact us !"
+    },
+    "desc": {
+      "text1": {
+        "1": "Would you like to tell us about your requirements for a personalised quote or information ?"
+      },
+      "text2": {
+        "1": "Contact us using the contact form, by email or by phone !"
+      },
+      "text3": {
+        "1": "We'll get back to you as soon as possible to follow up your enquiry."
+      }
+    },
+    "form": {
+      "name": "Name",
+      "mail": "Email address",
+      "message": "Message",
+      "title": "Title",
+      "options": {
+        "1": "EN-Num1",
+        "2": "EN-Num2",
+        "3": "EN-num3"
+      }
+    },
+    "linkBook": { "1": "Make an appointment", "2": "choose a time!" }
+  }
+}

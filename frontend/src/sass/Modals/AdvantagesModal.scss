@@ -1,0 +1,40 @@
+@import "../variables";
+@import "../extends/fontF";
+@import "../extends/ModalsStyles.scss";
+@import "../mixins/close";
+@import "../extends/button";
+.AdvantagesModal {
+  position: absolute;
+  font-family: $familyGlobal;
+  @extend %ModalsStyles;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .close {
+    @include close;
+  }
+  h2 {
+    padding-bottom: 10px;
+  }
+  .BoxText {
+    padding-bottom: 10px;
+    p {
+      padding-bottom: 20px;
+    }
+  }
+  .allCheckbox {
+    padding-bottom: 20px;
+  }
+  .btn-Valid {
+    background-color: $blue1;
+    color: white;
+    text-transform: uppercase;
+
+    @extend %buttons;
+    &:hover {
+      background-color: transparent;
+      color: $blue1;
+      border: 2px solid $blue1;
+    }
+  }
+}

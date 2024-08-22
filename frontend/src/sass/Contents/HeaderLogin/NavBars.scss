@@ -1,0 +1,107 @@
+@import "../../variables";
+.HeaderLogin .NavBars {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 4;
+  cursor: auto;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 0px 4px 4px rgba(79, 70, 229, 0.2);
+  top: $ModalTop;
+  left: 0px;
+  padding: 0px 32px;
+  background-color: white;
+
+  font-family: $family;
+
+  > .Block {
+    height: 222px;
+    margin: 10px;
+    .desc {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      > .imgTitle {
+        $LH: 24px;
+        width: $LH;
+        height: $LH;
+        stroke: black;
+        margin-right: 5px;
+      }
+      > h1 {
+        color: black;
+        min-height: 100%;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    }
+
+    > button {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      text-decoration-line: underline;
+      text-underline-offset: 4px;
+      font-size: 14px;
+      margin-top: 16px;
+      color: rgba(0, 0, 0, 0.7);
+      font-style: normal;
+      font-weight: 500;
+      &:hover {
+        color: black;
+        font-size: 15px;
+      }
+    }
+
+    .Card {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      width: 195px;
+      color: white;
+      margin-bottom: 5px;
+      padding-left: 16px;
+
+      padding: 8px 16px 8px 16px;
+      h1 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      p {
+        line-height: 15px;
+        font-size: 12px;
+      }
+      border-radius: 4px;
+      &:nth-child(1n) {
+        background-color: red;
+        background: linear-gradient(
+            96.01deg,
+            rgba(49, 116, 153, 0.4) 0.3%,
+            #09a1f3 100%
+          ),
+          #ffffff;
+      }
+      &:nth-child(2n) {
+        // background-color: none;
+
+        background: linear-gradient(
+            96.01deg,
+            rgba(27, 90, 125, 0.4) 0.3%,
+            #1b5a7d 100%
+          ),
+          #ffffff;
+        // background-color: #1b5a7d;
+        // background-color: pink;
+      }
+
+      .imgicon {
+        $whicon: 24px;
+        margin-right: 10px;
+
+        width: $whicon;
+        height: $whicon;
+        stroke: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "Title": "CONTATTACI",
+  "Subtitle": { "1": "Entra in contatto", "2": "con i nostri esperti!" },
+  "mail": "E-mail",
+  "phone": "Telefono",
+  "address": "Indirizzo",
+  "button": "Invia",
+  "Buttons": {
+    "1": "Become an Eraly Adopter !",
+    "2": "Scopri il Consulting ! "
+  },
+  "Block1": {
+    "title": {
+      "1": "Cominciamo insieme il tuo progetto ...",
+      "2": "Contattaci !"
+    },
+    "desc": {
+      "text1": {
+        "1": "Vuoi comunicarci le tue esigenze per avere un preventivo personalizzato o informazioni ?"
+      },
+      "text2": {
+        "1": "Contattaci tramite il modulo di contatto, via e-mail o per telefono !"
+      },
+      "text3": {
+        "1": "Ti risponderemo al più presto per dare seguito alla tua richiesta."
+      }
+    },
+    "form": {
+      "name": "Nome",
+      "mail": "Indirizzo email",
+      "message": "Messaggio",
+      "title": "Titolo",
+      "options": {
+        "1": "IT-Num1",
+        "2": "IT-Num2",
+        "3": "IT-num3"
+      }
+    },
+    "linkBook": { "1": "Fissa un appuntamento", "2": "scegli un orario !" }
+  }
+}

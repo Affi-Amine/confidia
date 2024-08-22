@@ -1,0 +1,14 @@
+[
+  { "id": "e1-2", "source": "1", "target": "2", "type": "smoothstep" },
+  { "id": "e2-3", "source": "2", "target": "3", "type": "smoothstep" },
+  { "id": "e3-4", "source": "3", "target": "4", "type": "smoothstep" },
+  { "id": "e1-5", "source": "4", "target": "5", "type": "smoothstep" },
+  { "id": "e1-6", "source": "4", "target": "6", "type": "smoothstep" },
+  { "id": "e1-7", "source": "4", "target": "7", "type": "smoothstep" },
+  { "id": "e1-8", "source": "4", "target": "8", "type": "smoothstep" },
+  { "id": "e1-9", "source": "8", "target": "9", "type": "smoothstep" },
+  { "id": "e1-10", "source": "8", "target": "10", "type": "smoothstep" },
+  { "id": "e1-11", "source": "8", "target": "11", "type": "smoothstep" },
+  { "id": "e1-12", "source": "8", "target": "12", "type": "smoothstep" },
+  { "id": "e1-13", "source": "8", "target": "13", "type": "smoothstep" }
+]

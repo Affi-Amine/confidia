@@ -1,0 +1,21 @@
+@import "../variables";
+
+%BlockDashboard {
+  margin-left: $Margin;
+  width: 365px;
+  height: 325px;
+  padding: 11px 11px 0px 12px;
+  box-shadow: 0px 4px 4px rgba(79, 70, 229, 0.2);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+%Blocks2 {
+  margin-left: $Margin;
+  height: 230px;
+  padding: 11px 11px 0px 12px;
+  box-shadow: 0px 4px 4px rgba(79, 70, 229, 0.2);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+// @extend %BlockDashboard;
+// @extend %Blocks2;

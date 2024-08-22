@@ -1,0 +1,76 @@
+@import "../variables";
+@import "../extends/fontF";
+@import "../extends/button";
+.Dashboard {
+  @extend %fontSolution;
+  padding-right: $MR;
+  .Menu {
+    min-width: 220px;
+    .buttonDashboard {
+      background-color: $colorDark3;
+      color: white;
+    }
+  }
+  > section {
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 125px;
+    > .AllBlock {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .Widget {
+        text-align: end;
+        font-size: small !important;
+        color: rgb(108, 108, 108);
+        margin-bottom: 14px;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        @extend %buttonUnderline;
+      }
+      > .MultiStatement {
+        display: flex;
+        width: 100%;
+        .GuideConfidIA,
+        .Quality {
+          margin-left: 0px;
+          height: 325 + 45px;
+        }
+        .Statement {
+          min-width: 380px;
+        }
+        .Demonstration {
+          width: 365px;
+          > .ImageBox {
+            width: 200px;
+            img {
+              border-radius: 8px 0 0 8px;
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+        .Alertes {
+          width: 365px;
+        }
+      }
+      > .page {
+        width: 100%;
+        display: flex;
+      }
+      .Blocks {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .Blocks2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: $Margin;
+      }
+    }
+  }
+}

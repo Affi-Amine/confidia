@@ -1,0 +1,14 @@
+@mixin flexContent($display, $flex, $align, $justify) {
+  @if $display != "never" {
+    display: $display;
+  }
+  @if $flex != "never" {
+    flex-direction: $flex;
+  }
+  @if align != "never" {
+    align-items: $align;
+  }
+  @if $justify != "never" {
+    justify-content: $justify;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "T": "Note legali",
+  "Edit": {
+    "t": "Editore del sito",
+    "desc": {
+      "1": "La società DS per DS, iscritta al RCS di TROYES con il numero B 899 722 573, ha sede a ROSIERES-PRES-TROYES (partita IVA intracomunitaria FR44899722573), e rappresentata dalla Sig.ra Giulia CERNICCHIARO"
+    }
+  },
+  "DirectPublish": {
+    "t": "Direttore editoriale",
+    "desc": { "1": "E-mail :" }
+  },
+  "CreatGraphic": {
+    "t": "Concetto e realizzazione del sito",
+    "desc": { "1": "Sito:", "2": "Progettazione:" }
+  },
+  "Hebergement": { "t": "Alloggio" },
+  "LN_CGU": { "t": "Condizioni generali d'uso", "desc": { "1": "" } },
+  "Cookies": { "t": "Cookies", "desc": { "1": "" } },
+  "LNContact": {
+    "t": "Contattaci",
+    "disc": {
+      "1": "DS FOR DS è disponibile a rispondere alle tue domande tramite la sezione contatti di questo sito."
+    }
+  }
+}

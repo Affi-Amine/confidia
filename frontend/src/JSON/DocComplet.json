@@ -1,0 +1,819 @@
+{
+  "conts": "Serilaize <class 'django.db.models.query.QuerySet'> : <QuerySet [<Contributor: Base User>, <Contributor: Maulad Paul>, <Contributor: Doriane Lollia>]>",
+  "loginUser": "Serilaize <class 'ConfidIA_demoAPP.models.Contributor'> : Base User",
+  "selectedContr": "Serilaize <class 'ConfidIA_demoAPP.models.Contributor'> : Base User",
+  "selectedProject": "Serilaize <class 'ConfidIA_demoAPP.models.Project'> : Built Standard Name",
+  "selectedRepo": "Serilaize <class 'ConfidIA_demoAPP.models.Repository'> : A-Rasty - ViaggiaConTatto",
+
+  "dashboardDoc": {
+    "id_project": "oiregjrofgfdigdfgfd",
+    "name": "Demo Alias",
+    "desc": "Ce script Python utilise une variable globale global_var et la modifie en ajoutant une valeur et en soustrayant une autre valeur. Il effectue ensuite des calculs en utilisant cette variable modifiée. Le script contient également 4 commentaires numérotés pour expliquer certaines parties du code.\n\nLa sortie du script affiche les résultats des calculs effectués avec la variable globale modifiée.\n\nLe script respecte la limite de 10 lignes maximum, en comptant les lignes vides et les commentaires.",
+    "date": "22-06-2023",
+    "update": "22-06-2023",
+    "creator": "Doriane Lollia",
+    "nbperpg": 7,
+    "statement": [
+      {
+        "title": "lignes",
+        "num": 17,
+        "checked": true,
+        "class": "script"
+      },
+      {
+        "title": "lignes code",
+        "num": 0,
+        "checked": true,
+        "class": "lignes"
+      },
+      {
+        "title": "lignes code compact",
+        "num": 0,
+        "checked": true,
+        "class": "lignes"
+      },
+      {
+        "title": "commentaires",
+        "num": 9,
+        "checked": true,
+        "class": "lignes"
+      },
+      {
+        "title": "elements",
+        "num": 3,
+        "checked": true,
+        "class": "script"
+      },
+      {
+        "title": "-object",
+        "num": 2,
+        "checked": false,
+        "class": "elements"
+      },
+      {
+        "title": "Numeric",
+        "num": 1,
+        "checked": false,
+        "class": "elements"
+      }
+    ],
+    "image": "https://bestofbusinessanalyst.fr/wp-content/uploads/2018/01/Gestion-de-Projets_Accueil1.jpg",
+    "Alertes": {
+      "functionning": 12,
+      "folders": 0,
+      "Ethics": 0
+    },
+    "Teams": [
+      {
+        "id_user": "ioyhdgioaioekngvhfgu"
+      },
+      {
+        "id_user": "iodfghiioeaziotfgf"
+      },
+      {
+        "id_user": "dquisfgazuioehgfrjghg"
+      },
+      {
+        "id_user": "doighqiogdifgjdfig"
+      }
+    ],
+    "Quality": [
+      {
+        "title": "Complétion",
+        "number": 0
+      },
+      {
+        "title": "Part de -object",
+        "number": 67
+      },
+      {
+        "title": "Part de Numeric",
+        "number": 33
+      }
+    ],
+    "DocTech": {
+      "date": "22-06-2023",
+      "update": "22-06-2023"
+    },
+    "UserGuide": {
+      "date": "22-06-2023",
+      "update": "22-06-2023"
+    },
+    "Testing": {
+      "date": "22-06-2023",
+      "status": true
+    },
+    "Connector": {}
+  },
+  "columnsElementsDoc": [
+    { "title": "order", "see": true },
+    { "title": "name", "see": true },
+    { "title": "type", "see": true },
+    { "title": "modif", "see": true },
+    { "title": "use", "see": true },
+    { "title": "global", "see": true },
+    { "title": "origin", "see": true },
+    { "title": "desc", "see": true }
+  ],
+  "filterElemnts": {
+    "rows": [
+      {
+        "name": "['14']"
+      },
+      {
+        "name": "['2']"
+      },
+      {
+        "name": "['6']"
+      }
+    ],
+    "order": [
+      {
+        "name": "1"
+      },
+      {
+        "name": "13"
+      },
+      {
+        "name": "5"
+      }
+    ],
+    "name": [
+      {
+        "name": "global_var"
+      },
+      {
+        "name": "result"
+      },
+      {
+        "name": "result2"
+      }
+    ],
+    "type": [
+      {
+        "name": "-object"
+      },
+      {
+        "name": "Numeric"
+      }
+    ],
+    "modif": [
+      {
+        "name": "False"
+      }
+    ],
+    "use": [
+      {
+        "name": "NA"
+      }
+    ],
+    "global": [
+      {
+        "name": "NA"
+      }
+    ],
+    "origin": [
+      {
+        "name": ""
+      }
+    ],
+    "desc": [
+      {
+        "name": "assignement"
+      }
+    ],
+    "blks": [
+      {
+        "name": "['1']"
+      },
+      {
+        "name": "['3']"
+      },
+      {
+        "name": "['6']"
+      }
+    ]
+  },
+
+  "techDoc": {
+    "scriptDoc": {
+      "1": {
+        "rid": "01",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "# Variables globales\n",
+        "str_clean": "\n",
+        "str_pseudo": ".",
+        "show_compact": true,
+        "is_comments": true,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id100",
+            "code": "# Variables globales\n",
+            "code_oneline": "# Variables globales\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ]
+      },
+      "2": {
+        "rid": "02",
+        "blkid": "1",
+        "level": 0,
+        "rblkid": "1",
+        "elms_output": ["1"],
+        "elms_input": [],
+        "str": "global_var = 10\n",
+        "str_clean": "global_var = 10\n",
+        "str_pseudo": "0 - Definition de la variable 'global_var' de type numerique",
+        "show_compact": true,
+        "is_comments": false,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id200",
+            "code": "global_var",
+            "code_oneline": "global_var",
+            "color": "#2596be",
+            "is_comment": false
+          },
+          {
+            "id1": "id210",
+            "code": " = 10",
+            "code_oneline": " = 10",
+            "color": "#BABABA",
+            "is_comment": false
+          },
+          {
+            "id1": "id215",
+            "code": "\n",
+            "code_oneline": "\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ],
+        "detail": {
+          "type": "Numeric",
+          "replacement_dict": {},
+          "content": "10",
+          "output": "global_var",
+          "fullRow": "global_var = 10"
+        }
+      },
+      "3": {
+        "rid": "03",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "# Modification de la variable globale\n",
+        "str_clean": "\n",
+        "str_pseudo": ".",
+        "show_compact": true,
+        "is_comments": true,
+        "has_comments": true,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id300",
+            "code": "# Modification de la variable globale\n",
+            "code_oneline": "# Modification de la variable globale\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ]
+      },
+      "4": {
+        "rid": "04",
+        "blkid": "2",
+        "level": 0,
+        "rblkid": "2",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "global_var += 5\n",
+        "str_clean": "global_var += 5\n",
+        "str_pseudo": "1 - Ajout à la variable 'global_var'",
+        "show_compact": true,
+        "is_comments": false,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id400",
+            "code": "global_var += 5",
+            "code_oneline": "global_var += 5",
+            "color": "#BABABA",
+            "is_comment": false
+          },
+          {
+            "id1": "id415",
+            "code": "\n",
+            "code_oneline": "\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ],
+        "detail": {
+          "type": "+=",
+          "replacement_dict": {},
+          "inputs": ["global_var", "5"],
+          "output": "global_var",
+          "fullRow": "global_var += 5"
+        }
+      },
+      "5": {
+        "rid": "05",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "# Commentaire 1\n",
+        "str_clean": "\n",
+        "str_pseudo": ".",
+        "show_compact": true,
+        "is_comments": true,
+        "has_comments": true,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id500",
+            "code": "# Commentaire 1\n",
+            "code_oneline": "# Commentaire 1\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ]
+      },
+      "6": {
+        "rid": "06",
+        "blkid": "3",
+        "level": 0,
+        "rblkid": "3",
+        "elms_output": ["2"],
+        "elms_input": [],
+        "str": "result = global_var * 2  # Commentaire 2\n",
+        "str_clean": "result = global_var * 2\n",
+        "str_pseudo": "2 - Definition de la variable 'result' comme output d'une action",
+        "show_compact": true,
+        "is_comments": false,
+        "has_comments": true,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id600",
+            "code": "result",
+            "code_oneline": "result",
+            "color": "#2596be",
+            "is_comment": false
+          },
+          {
+            "id1": "id606",
+            "code": " = global_var * 2",
+            "code_oneline": " = global_var * 2",
+            "color": "#BABABA",
+            "is_comment": false
+          },
+          {
+            "id1": "id623",
+            "code": "  # Commentaire 2\n",
+            "code_oneline": "  # Commentaire 2\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ],
+        "detail": {
+          "type": "object",
+          "replacement_dict": {},
+          "input": "global_var * 2",
+          "output": "result",
+          "fullRow": "result = global_var * 2"
+        }
+      },
+      "7": {
+        "rid": "07",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "# Commentaire 3\n",
+        "str_clean": "\n",
+        "str_pseudo": ".",
+        "show_compact": true,
+        "is_comments": true,
+        "has_comments": true,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id700",
+            "code": "# Commentaire 3\n",
+            "code_oneline": "# Commentaire 3\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ]
+      },
+      "8": {
+        "rid": "08",
+        "blkid": "4",
+        "level": 0,
+        "rblkid": "4",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "print(\"Résultat :\", result)  # Commentaire 4\n",
+        "str_clean": "print(\"Résultat :\", result)\n",
+        "str_pseudo": "3 - Execution de la fonction \"print\"",
+        "show_compact": true,
+        "is_comments": false,
+        "has_comments": true,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id800",
+            "code": "print(\"Résultat :\", result)",
+            "code_oneline": "print(\"Résultat :\", result)",
+            "color": "#BABABA",
+            "is_comment": false
+          },
+          {
+            "id1": "id827",
+            "code": "  # Commentaire 4\n",
+            "code_oneline": "  # Commentaire 4\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ],
+        "detail": {
+          "replacement_dict": {
+            "$INTERNALBLOCK0$": "(\"Résultat :\", result)"
+          },
+          "type": "function",
+          "name": "print",
+          "params": ["(\"Résultat :\"", " result)"],
+          "fullRow": "print(\"Résultat :\", result)"
+        }
+      },
+      "9": {
+        "rid": "09",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "\n",
+        "str_clean": "\n",
+        "str_pseudo": ".",
+        "show_compact": true,
+        "is_comments": false,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id90",
+            "code": "\n",
+            "code_oneline": "\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ]
+      },
+      "10": {
+        "rid": "10",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "\n",
+        "str_clean": "\n",
+        "str_pseudo": ".",
+        "show_compact": false,
+        "is_comments": false,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id100",
+            "code": "\n",
+            "code_oneline": "\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ]
+      },
+      "11": {
+        "rid": "11",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "# Autre modification de la variable globale\n",
+        "str_clean": "\n",
+        "str_pseudo": ".",
+        "show_compact": false,
+        "is_comments": true,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id1100",
+            "code": "# Autre modification de la variable globale\n",
+            "code_oneline": "# Autre modification de la variable globale\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ]
+      },
+      "12": {
+        "rid": "12",
+        "blkid": "5",
+        "level": 0,
+        "rblkid": "5",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "global_var -= 3\n",
+        "str_clean": "global_var -= 3\n",
+        "str_pseudo": "4 - ",
+        "show_compact": true,
+        "is_comments": false,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id1200",
+            "code": "global_var -= 3",
+            "code_oneline": "global_var -= 3",
+            "color": "#BABABA",
+            "is_comment": false
+          },
+          {
+            "id1": "id1215",
+            "code": "\n",
+            "code_oneline": "\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ],
+        "detail": {
+          "fullRow": "global_var -= 3",
+          "type": "Unknown"
+        }
+      },
+      "13": {
+        "rid": "13",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "# Utilisation de la variable globale modifiée\n",
+        "str_clean": "\n",
+        "str_pseudo": ".",
+        "show_compact": true,
+        "is_comments": true,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id1300",
+            "code": "# Utilisation de la variable globale modifiée\n",
+            "code_oneline": "# Utilisation de la variable globale modifiée\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ]
+      },
+      "14": {
+        "rid": "14",
+        "blkid": "6",
+        "level": 0,
+        "rblkid": "6",
+        "elms_output": ["3"],
+        "elms_input": [],
+        "str": "result2 = global_var + 7\n",
+        "str_clean": "result2 = global_var + 7\n",
+        "str_pseudo": "5 - Definition de la variable 'result2' comme output d'une action",
+        "show_compact": true,
+        "is_comments": false,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id1400",
+            "code": "result2",
+            "code_oneline": "result2",
+            "color": "#2596be",
+            "is_comment": false
+          },
+          {
+            "id1": "id1407",
+            "code": " = global_var + 7",
+            "code_oneline": " = global_var + 7",
+            "color": "#BABABA",
+            "is_comment": false
+          },
+          {
+            "id1": "id1424",
+            "code": "\n",
+            "code_oneline": "\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ],
+        "detail": {
+          "type": "object",
+          "replacement_dict": {},
+          "input": "global_var + 7",
+          "output": "result2",
+          "fullRow": "result2 = global_var + 7"
+        }
+      },
+      "15": {
+        "rid": "15",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "# Affichage du résultat final\n",
+        "str_clean": "\n",
+        "str_pseudo": ".",
+        "show_compact": true,
+        "is_comments": true,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id1500",
+            "code": "# Affichage du résultat final\n",
+            "code_oneline": "# Affichage du résultat final\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ]
+      },
+      "16": {
+        "rid": "16",
+        "blkid": "7",
+        "level": 0,
+        "rblkid": "7",
+        "elms_output": [],
+        "elms_input": [],
+        "str": "print(\"Résultat 2 :\", result2)\n",
+        "str_clean": "print(\"Résultat 2 :\", result2)\n",
+        "str_pseudo": "6 - Execution de la fonction \"print\"",
+        "show_compact": true,
+        "is_comments": false,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id1600",
+            "code": "print(\"Résultat 2 :\", result2)",
+            "code_oneline": "print(\"Résultat 2 :\", result2)",
+            "color": "#BABABA",
+            "is_comment": false
+          },
+          {
+            "id1": "id1630",
+            "code": "\n",
+            "code_oneline": "\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ],
+        "detail": {
+          "replacement_dict": {
+            "$INTERNALBLOCK0$": "(\"Résultat 2 :\", result2)"
+          },
+          "type": "function",
+          "name": "print",
+          "params": ["(\"Résultat 2 :\"", " result2)"],
+          "fullRow": "print(\"Résultat 2 :\", result2)"
+        }
+      },
+      "17": {
+        "rid": "17",
+        "blkid": ".",
+        "level": null,
+        "rblkid": null,
+        "elms_output": [],
+        "elms_input": [],
+        "str": "\n",
+        "str_clean": "\n",
+        "str_pseudo": ".",
+        "show_compact": true,
+        "is_comments": false,
+        "has_comments": false,
+        "one_line": false,
+        "row": [
+          {
+            "id1": "id170",
+            "code": "\n",
+            "code_oneline": "\n",
+            "color": "#BABABA",
+            "is_comment": true
+          }
+        ]
+      }
+    },
+    "elementsDoc": {
+      "1": {
+        "rows": ["2"],
+        "order": "1",
+        "name": "global_var",
+        "type": "Numeric",
+        "modif": false,
+        "use": "NA",
+        "global": "NA",
+        "origin": "",
+        "desc": "assignement",
+        "blks": ["1"]
+      },
+      "2": {
+        "rows": ["6"],
+        "order": "5",
+        "name": "result",
+        "type": "-object",
+        "modif": false,
+        "use": "NA",
+        "global": "NA",
+        "origin": "",
+        "desc": "assignement",
+        "blks": ["3"]
+      },
+      "3": {
+        "rows": ["14"],
+        "order": "13",
+        "name": "result2",
+        "type": "-object",
+        "modif": false,
+        "use": "NA",
+        "global": "NA",
+        "origin": "",
+        "desc": "assignement",
+        "blks": ["6"]
+      }
+    },
+    "blockDoc": {
+      "1": {
+        "0": {
+          "mainType": "assignement-number",
+          "blockCase": 0,
+          "rows": ["2"]
+        }
+      },
+      "2": {
+        "0": {
+          "mainType": "action-add",
+          "blockCase": 0,
+          "rows": ["4"]
+        }
+      },
+      "3": {
+        "0": {
+          "mainType": "assignement-",
+          "blockCase": 0,
+          "rows": ["6"]
+        }
+      },
+      "4": {
+        "0": {
+          "mainType": "action-full",
+          "blockCase": 0,
+          "rows": ["8"]
+        }
+      },
+      "5": {
+        "0": {
+          "mainType": "action-substract",
+          "blockCase": 0,
+          "rows": ["12"]
+        }
+      },
+      "6": {
+        "0": {
+          "mainType": "assignement-",
+          "blockCase": 0,
+          "rows": ["14"]
+        }
+      },
+      "7": {
+        "0": {
+          "mainType": "action-full",
+          "blockCase": 0,
+          "rows": ["16"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "headband": " Confidia est disponible ! Contactez nous pour une démo personnalisée !  ",
+  "Buttons": {
+    "registerPreOffer": "S'inscrire à l'offre",
+
+    "docScript": "Documenter mon script",
+    "shareExp": "Partager mon avis",
+    "quicktour": "Quick tour ConfidIA",
+    "myAdventage": "Mes avantages membres",
+    "subNewsletter": "Inscription newsletter",
+    "manageProjects": "Gérer mes projets"
+  },
+  "myOffer": { "1": "Mon", "2": "abonnement" },
+  "T": {
+    "1": "Bienvenue dans la communauté ConfidIA",
+    "2": ""
+  },
+  "Desc": {
+    "1": " Confidia est disponible !",
+    "2": "Souscrivez des maintenant à l'offre base preview !"
+  },
+  "InscriDesc": {
+    "1": "Nous sommes ravis de vous compter parmi nos membres !",
+    "2": {
+      "1": "Profitez pleinement de l'offre Base dès ",
+      "2": "maintenant !"
+    },
+    "activate2": {
+      "1": "Bravo vous avez gagné !",
+      "2": ""
+    },
+    "3": "* Jusqu’au 30/04 souscrivez sans engagement ni carte bancaire !"
+  },
+  "OfferDesc": {
+    "T1": "Après suscription vous pourrez :",
+    "T2": "Dès maintenant vous pouvez :",
+    "1": "Documentez jusqu'à 1000 lignes de code python3",
+    "2": "Pour 1 mois gratuit sans engagement",
+    "3": "Bénéficiez d'une remise de 15% sur le prix de la première année d'abonnement"
+  },
+  "DescAdvantages": {
+    "T1": "TOUT CE QUI VOUS ATTEND EN TANT QUE MEMBRE ...",
+
+    "1": "Votre accès à notre Newsletter pour être tenus au courant de nos évents & avancées.",
+    "2": "Vos cadeaux gratuit (BBCRM) et Livre blanc sur le sujet ...",
+    "3": "Un Prix avantageux pour nos",
+    "4b": "offres de consulting"
+  }
+}

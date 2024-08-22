@@ -1,0 +1,159 @@
+@import "../../variables";
+@import "../../extends/fontF";
+@import "../../extends/button";
+
+.Evenements {
+  @extend %fontSolution;
+  background-color: $colorDark5;
+  min-height: 90vh;
+  padding: calc(1em + 2vw) 6vw calc(1em + 2vw) 7vw;
+
+  color: white !important;
+  h1,
+  h5,
+  h3,
+  p {
+    text-align: center;
+  }
+  h1 {
+    white-space: nowrap;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 30px 0;
+    article {
+      color: $colorDark1;
+      display: flex;
+      flex-direction: column;
+      margin: 20px 10px;
+      h6 {
+        padding-bottom: 20px;
+        font-size: calc(var(--font-size-h6) - 2px);
+      }
+      .description {
+        color: $colorDark2;
+        padding-bottom: 10px;
+        pre {
+          text-wrap: wrap;
+          font-size: calc(var(--font-size-p) - 2px);
+          text-align: start;
+        }
+      }
+      .ImageBox {
+        height: 190px;
+        width: 400px;
+        border-radius: 8px;
+        margin-bottom: 25px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          // height: 100%;
+          object-fit: cover;
+        }
+      }
+      .texts {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        // margin: 25px 25px 0px 25px;
+        box-sizing: border-box;
+
+        flex: 1;
+        margin: auto;
+        padding: 10px 12px;
+        background-color: white;
+        width: 350px;
+        .top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 20px;
+          .lieu {
+            display: flex;
+            align-items: center;
+            text-align: end;
+          }
+          .icon {
+            font-size: 25px;
+            margin-left: 10px;
+            color: $blue1;
+            cursor: pointer;
+            transition: all ease 0.5s;
+            &:hover {
+              color: $colorDark1;
+            }
+          }
+          .dateEvent {
+            text-align: start;
+            font-size: calc(var(--font-size-p) - 2px);
+            span {
+              font-size: calc(var(--font-size-p) - 3px);
+              font-style: italic;
+            }
+          }
+        }
+        .description {
+          flex: 1;
+        }
+
+        .boxLogo {
+          display: flex;
+          justify-content: flex-end;
+          .icon {
+            cursor: pointer;
+            font-size: 25px;
+          }
+          .meetup,
+          .activity {
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+              color: $colorDark1;
+            }
+          }
+        }
+      }
+      .AllSiteGlobalButtonUnderline {
+        @extend %buttonUnderline;
+        width: 100%;
+        text-align: end;
+        padding-right: 20px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  > .BoxButtons {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .iconLeft {
+      padding-right: 15px;
+    }
+    .iconRight {
+      padding-left: 15px;
+    }
+    button {
+      @extend %buttons;
+      margin: 0 40px;
+      border: 1px solid white;
+      font-weight: 700;
+      background-color: white;
+      color: $colorDark1;
+      transition: all ease 0.5s;
+      &:hover {
+        background-color: $colorDark5;
+        color: white !important;
+      }
+    }
+  }
+  > .eventNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

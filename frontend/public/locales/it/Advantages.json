@@ -1,0 +1,121 @@
+{
+  "T": { "1": "Scopri i tuoi", "2": " Vantaggi" },
+  "buttons": {
+    "event": "Eventi",
+    "blog": "Blog",
+    "freebies": "Freebies",
+    "whiteBook": "Libro Bianco",
+    "subNewsletters": "Iscriviti alle Newsletter",
+    "consulting": "Scopri il Consulting!",
+    "advantage": "Vantaggi",
+    "homeConfidia": "Home Confidia"
+  },
+  "checkMessage": {
+    "1": "Your feedback has been sent",
+    "2": "Thank you for your integration",
+    "3": "Your responses have been sent to us",
+    "4": ""
+  },
+  "T-event": {
+    "1": "I nostri prossimi eventi...",
+    "2": "La nostra offerta di consulting...",
+    "3": "I nostri eventi",
+    "4": "I nostri replay",
+    "5": "I nostri prossimi eventi"
+  },
+  "eventList": {
+    "1": "DEMO VIP ConfidIA",
+    "2": "L'IA e le sue sfide etiche",
+    "3": "Come sviluppare uno strumento di Data"
+  },
+  "eventReplay": {
+    "T": "Guarda anche i nostri altri eventi"
+  },
+  "Desc": {
+    "1": "RIPRESA DI PROGETTO",
+    "2": "SVILUPPO DI PROGETTO",
+    "3": "AIUTO ALLA DOCUMENTAZIONE"
+  },
+  "newsletters": {
+    "T": "Iscrizione alla newsletter",
+    "L-1": { "1": "Unisciti alla nostra comunità esclusiva!" },
+    "L-2": {
+      "1": "Rimani informato sui nostri eventi/webinar, gli avanzamenti di ConfidIA e su vari argomenti riguardanti l'IA, la data science e lo sviluppo software con la nostra newsletter!"
+    },
+    "L-3": {
+      "1": "La tua privacy è importante per noi. Non condividiamo le tue informazioni con terzi e puoi disiscriverti in qualsiasi momento."
+    },
+    "check": {
+      "1": "Voglio essere informato sugli eventi",
+      "2": "Voglio essere informato sugli avanzamenti e le funzionalità di ConfidIA"
+    },
+    "btn": "Iscriviti"
+  },
+  "blog": {
+    "T": "Il Blog",
+    "L-1": { "1": "Il nostro Blog è in Costruzione!" },
+    "L-2": {
+      "1": "Stiamo attualmente lavorando alla creazione di un blog per offrirti il miglior contenuto possibile!"
+    },
+    "L-3": {
+      "1": "Questo spazio privilegiato è l'occasione per te di prendere conoscenza di argomenti inediti e di grande valore aggiunto, esclusivi per i nostri membri."
+    },
+    "L-4": {
+      "1": "Nel frattempo, seguici per rimanere informato sui nostri ultimi avanzamenti e scoprire articoli e post appassionanti e istruttivi!"
+    },
+    "check": {
+      "1": "Regressione lineare",
+      "2": "L'IA e le sue applicazioni",
+      "3": "Le sfide etiche dell'IA"
+    },
+    "btn": "Seguici (Linkedin)",
+    "articles": {
+      "1": {
+        "T": "SEGUICI"
+      }
+    }
+  },
+  "freebies": {
+    "T": "I tuoi freebies",
+    "L-1": { "1": "Scopri i nostri prossimi freebies..." },
+    "L-2": {
+      "1": "Siamo entusiasti di annunciare il prossimo lancio di piccole applicazioni utili e divertenti come il Sudoku Solver, il nostro piccolo CRM in Python 'BB-CRM', il GPS a volo d'uccello, il Django Manager e il Rilevatore Umano!"
+    },
+    "L-3": {
+      "1": "Questi strumenti sono progettati per arricchire la tua vita quotidiana o per divertirti, e saranno esempi perfetti di utilizzo con ConfidIA."
+    },
+    "L-4": {
+      "1": "Come membro, godi di un accesso privilegiato alle nostre diverse applicazioni e hai la priorità per gli eventi e il supporto!"
+    },
+    "L-5": {
+      "1": "Quali applicazioni ti interessano di più? Dicci quali vorresti utilizzare e ti terremo informato sulla loro disponibilità."
+    },
+
+    "check": {
+      "1": "BB-CRM Python",
+      "2": "Sudoku Solver",
+      "3": "GPS a volo d'uccello",
+      "4": "Django Manager",
+      "5": "Rilevatore video umano"
+    },
+    "btn": "Esprimi il mio interesse"
+  },
+  "whiteBook": {
+    "T": "Il tuo Libro bianco",
+    "L-1": { "1": "Argomenti imminenti da non perdere..." },
+    "L-2": {
+      "1": "Stiamo preparando una serie di libri bianchi affascinanti che esplorano diversi aspetti dell'intelligenza artificiale e della matematica."
+    },
+    "L-3": {
+      "1": "Questi libri tratteranno temi vari come l'etica dell'IA, la documentazione dell'IA, le basi statistiche e matematiche del machine learning e molti altri argomenti che scoprirai scaricandoli!"
+    },
+    "L-4": {
+      "1": "Quale libro ti incuriosisce di più? Faccelo sapere così che la tua scelta possa essere la prima disponibile!"
+    },
+    "check": {
+      "1": "Etica dell'IA",
+      "2": "Fondamenti statistici e matematici del machine learning"
+    },
+    "btn": "Invia la mia opinione"
+  }
+}

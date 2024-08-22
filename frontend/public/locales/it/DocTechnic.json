@@ -1,0 +1,51 @@
+{
+  "ButtonDesc": {
+    "1": "Tabella",
+    "2": "Struttura",
+    "3": "Editore",
+    "4": "Script",
+    "5": "Pseudo codice",
+    "6": "Commento",
+    "7": "Pergamena di Shincroniz",
+    "8": "Commento script",
+    "9": "Compatta il codice",
+    "10": "Colore",
+    "11": "Script e pseudo codice si fondono",
+    "12": "Annulla le modifiche",
+    "13": "Crea la nuova documentazione tecnica",
+    "14": "In evidenza"
+  },
+  "isLoading": {
+    "title": "Creazione della tua documentazione"
+  },
+  "filterDoc": {
+    "buttons": {
+      "valid": "Validate",
+      "sup": "Cancellare",
+      "cancel": "Annulla"
+    }
+  },
+  "Search": {
+    "explo": "ESPLORA",
+    "type": "Tipo",
+    "search": "Cerca",
+    "create": "Crea filtro",
+    "edit": "Modificare un filtro",
+    "sauv": "Salva questo filtro",
+    "resum": "Riassumi i filtri",
+    "takeResum": "Riprendi filtro",
+    "hidden": "Nascondi filtro"
+  },
+  "Scripts": {
+    "code": "VISUALIZZA CODICE",
+    "returnC": "RITORNO AL CODICE",
+    "pseudoCode": "CODICE PSEUDO",
+    "inject": "INSERISCI CODICE",
+    "comment": "COMMENTO"
+  },
+  "Viewer": {
+    "file": "VISUALIZZATORE DI FILE",
+    "flow": "DIAGRAMMA DI FLUSSO",
+    "teeStruct": "Struttura dati"
+  }
+}

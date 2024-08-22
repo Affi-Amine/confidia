@@ -1,0 +1,141 @@
+{
+  "T": {
+    "1": "THE innovative solution",
+    "2": "code documentation creation"
+  },
+  "DocTechnic": {
+    "title": "Technical Documentation",
+    "DocCode": {
+      "title": "DOCUMENTATION CODE",
+      "titles": { "1": "CODE", "2": "DOCUMENTATION" },
+      "space": "",
+      "desc1": "Generation of pseudo-code (i.e. ”human language translation”) from computer code,",
+      "desc2": "with documentation structured by runtime blocks",
+      "desc3": "Listing and documentation of runtime environment elements",
+      "desc4": "Isolation of comments in the script to restore the cleaned up code, with line by line documentation",
+      "desc5": "(e.g. package / file / database / other scripts / etc. imports, function / variable / etc. definitions)",
+      "desc6": "View ”cross documentation”",
+      "desc7": "Select an item to see all execution blocks and all lines of code in which the item appears",
+      "desc8": "Select a line of code to see the execution block to which it belongs and all the elements it contains",
+      "desc9": "Select an execution block to see all the lines of code that compose it and all the elements that appear in it"
+    },
+
+    "DocDataStruct": {
+      "title": " DOCUMENTATION",
+      "titles": { "1": "STRUCTURED DATA", "2": "DOCUMENTATION" },
+      "desc1": "Listing of variables, by name and/or position (depending on the type of structured data)",
+      "desc2": "Listing of existing formats and/or values in a variable, with identification of the predominant format/value",
+      "desc3": "Identification of null or invalid values, by variable"
+    },
+
+    "DocSemiStructData": {
+      "title": "SEMI-STRUCTURED DATA DOCUMENTATION",
+      "titles": { "1": "SEMI-STRUCTURED DATA", "2": "DOCUMENTATION" },
+      "desc1": "Identifications of existing patterns",
+      "desc2": "Suggested parsing rules",
+      "desc3": "Parsing rules test interface",
+      "desc4": "Pattern analysis and visualization interface"
+    },
+
+    "DocProject": {
+      "title": "PROJECT DOCUMENTATION",
+      "titles": { "1": "PROJECT", "2": "DOCUMENTATION" },
+      "desc1": "Identification of all executed objects, starting from the main script",
+      "desc2": "(i.e. no need to know the location of each data file, script, package or other involved in the execution,",
+      "desc3": "only the one to be executed to start everything is required)",
+      "desc4": "Possibility to document the whole project on a single interface or to generate an interface per object",
+      "desc5": "with the possibility to switch from one to the other in one click from the table of elements"
+    },
+
+    "FunctionaEnrichment": {
+      "title": "FUNCTIONAL ENRICHMENT",
+      "titles": { "1": "FUNCTIONAL", "2": "ENRICHMENT" },
+      "TERT": "User interfaces to the dev team, to enrich the generated documentation with any functional/business information not identifiable by the machine",
+      "desc1": "User interfaces to the dev team,",
+      "desc2": "to enrich the generated documentation with any functional/business information",
+      "desc3": "not identifiable by the machine"
+    }
+  },
+
+  "ProjectManagement": {
+    "title": "Project Manager",
+    "Teams": {
+      "title": "PROJECT MANAGEMENT",
+      "titles": { "1": "PROJECT MANAGEMENT" },
+      "desc1": "Ability to create multiple users",
+      "desc2": "Manage access levels per user",
+      "desc3": "Personal spaces for each user"
+    },
+    "Connector": {
+      "title": "CONNECTORS",
+      "titles": { "1": "CONNECTORS" },
+      "desc1": "Ability to connect ConfidIA to a storage space (GitHub, Bitbucket, Cloud, VM, local disk, etc.) for reading projects",
+      "desc2": "Ability to connect ConfidIA to a storage space (GitHub, Bitbucket, Cloud, VM, local disk, etc.) for writing documentation",
+      "desc3": "Manage access to folders / files available in connected spaces",
+      "desc4": "Detecting existing file formats in connected spaces",
+      "desc5": "Managing versions of folders / files available in connected spaces"
+    }
+  },
+
+  "ProjectManager": {
+    "title": "Project Manager Documentation",
+    "ProjectManagement": {
+      "title": "PROJECT MANAGEMENT",
+      "desc1": "Description and detail of the project for quick and complete documentation",
+      "desc2": "Information about the type of script, the language and the branch of origin of the project",
+      "desc3": "Functional code error detections",
+      "desc4": "Alerts and details on code cleanliness and best practices",
+      "desc5": "Alert and information on ethics and compliance with European AI rules",
+      "desc6": "Added rules as needed to establish a code quality score"
+    },
+    "TFDocumentation": {
+      "title": "TECHNICAL & FUNCTIONAL DOCUMENTATION",
+      "titles": { "1": "TECHNICAL & FUNCTIONAL", "2": "DOCUMENTATION" },
+      "desc1": "Summary description of the runtime environment (imported packages/scripts/files/data, udfs, defined variables, etc.)",
+      "desc2": "Summary description of execution paths (number of interfaces, max pages, etc.)"
+    }
+  },
+  "Promote": {
+    "Demo": {
+      "title": "Discover a new way to document your code automatically... ",
+
+      "subTitles": {
+        "1": "Try our ConfidIA tool free of charge,",
+        "2": "without obligation !"
+      },
+      "desc1": "Document up to 100 possible lines for free.",
+      "desc2": "Get Python code documentation (And more if subscription...)",
+      "desc3": "Uploade your documented file",
+      "desc4": "Inject your code to document it super easy",
+      "desc5": "Access an automatically generated Pseudo-code",
+      "desc6": "Filter what you want to get the data you want"
+    },
+    "Dashboard": {
+      "title": "Manage your project, your code and your teams in a simple and intuitive way... ",
+      "subTitles": {
+        "1": "Let yourself be guided",
+        "2": "by a fully customizable interface !"
+      },
+      "desc1": "Monitor alerts from your code",
+      "desc2": "View metrics that describe your code...",
+      "desc3": "Choose only the data you are interested in...",
+      "desc4": "Build the KPIs you want to track from a modular table",
+      "desc5": "Connect third-party applications to ConfidIA for more possibilities",
+      "desc6": "Create, add and edit your project and team"
+    },
+    "DocTech": {
+      "title": "A complete solution at your fingertips to generate documentation... ",
+      "subTitles": {
+        "1": "Documents all of your code",
+        "2": "and projects in just a few clicks !"
+      },
+      "desc1": "Find everything you have in the demo and much more...",
+      "desc2": "Access to your various Inputs & Outputs",
+      "desc3": "Save your filters while filtering what you want!",
+      "desc4": "Get a dynamic consultation of your variables",
+      "desc5": "Observe the cross-interactions to facilitate your steps",
+      "desc6": "Update your code in the real-time solution at any time",
+      "desc7": "Add functional descriptions to your code"
+    }
+  }
+}

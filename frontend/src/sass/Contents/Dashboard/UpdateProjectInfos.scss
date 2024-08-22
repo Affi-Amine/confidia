@@ -1,0 +1,147 @@
+@import "../../variables";
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.UpdateProjectInfos {
+  display: flex;
+  animation: slideDown 0.3s forwards;
+  // background-color: yellow;
+  width: 87%;
+  height: 120px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  > .ImageBox {
+    width: 150px;
+    height: 100%;
+
+    // overflow: hidden;
+    border: none;
+    img {
+      border-radius: 8px 0px 0px 8px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .newImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 0 4px 8px 0;
+    background-color: $colorDark1;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    p {
+      // font-size: 10px !important;
+      font-weight: 700;
+      margin-bottom: 5px;
+      text-align: center;
+      writing-mode: vertical-rl;
+      text-orientation: sideways-right;
+      letter-spacing: 2px;
+    }
+    .icon {
+      font-size: 15px !important;
+    }
+    &:hover {
+      background-color: $colorDark3;
+    }
+  }
+
+  form {
+    flex: 1;
+    display: flex;
+    .newImg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      cursor: pointer;
+      width: 30px;
+      border-radius: 0 4px 8px 0;
+      background-color: $colorDark1;
+      transition: background-color 0.3s ease;
+      margin-right: 10px;
+      p {
+        // font-size: 10px !important;
+        font-weight: 700;
+        margin-bottom: 5px;
+        text-align: center;
+        writing-mode: vertical-rl;
+        text-orientation: sideways-right;
+        letter-spacing: 1px;
+      }
+      .icon {
+        font-size: 15px !important;
+      }
+      &:hover {
+        background-color: $colorDark3;
+      }
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      .title,
+      .Desc {
+        border-radius: 4px;
+        padding: 3px;
+        padding-left: 10px;
+        outline: none;
+        border: 0.1px solid rgb(212, 212, 212);
+        box-shadow: 0.1px 0.1px 0px rgb(187, 187, 187);
+      }
+      .title {
+        width: 200px;
+        margin-bottom: 10px;
+      }
+      .Desc {
+        box-sizing: border-box;
+        resize: none;
+        width: 100%;
+        height: 87px;
+      }
+    }
+    .Bsubmit {
+      padding: 10px;
+      background-color: $colorDark3;
+
+      overflow: hidden;
+      animation: slideFromRight 0.3s forwards;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $colorDark1;
+      }
+
+      .icon {
+        color: white;
+
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

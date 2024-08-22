@@ -1,0 +1,59 @@
+.Photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff00ff;
+  width: var(--VideoPhotoSlide-width);
+  height: var(--VideoPhotoSlide-height);
+  margin-bottom: var(--VideoPhotoMarginBottom);
+
+  > h2 {
+    font-weight: 600;
+    font-size: 100px;
+    color: #ff8cff;
+  }
+  /* /
+  
+  
+  RESPONSIVE
+ 
+  
+*/
+
+  @media screen and (min-width: 1024px) and (max-width: 1290px) {
+  }
+  /* /
+  
+
+  
+  
+  
+  
+  TOUCH PAD, LANDSAPE
+  / */
+  @media screen and (min-width: 900px) and (max-width: 1024px) {
+  }
+  /* /
+  
+  
+  
+  
+  
+  TOUCH PAD, PORTRAIT
+  / */
+  @media screen and (min-width: 760px) and (max-width: 900px) {
+  }
+  /* /
+  
+  
+  
+  
+  
+  PHONE
+  / */
+  @media (max-width: 760px) {
+    > h2 {
+      font-size: 60px;
+    }
+  }
+}

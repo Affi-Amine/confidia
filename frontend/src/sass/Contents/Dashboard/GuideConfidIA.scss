@@ -1,0 +1,72 @@
+@import "../../variables";
+@import "../../extends/BlocksDashboard";
+@import "../../extends/button";
+.Dashboard .GuideConfidIA {
+  display: flex;
+  @extend %BlockDashboard;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  > div {
+    width: 100%;
+    margin-right: 11px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    .Image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 14px;
+      border-radius: 8px;
+      min-height: 170px;
+      max-height: 170px;
+      overflow: hidden;
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.6),
+          rgba(255, 255, 255, 0.6)
+        ),
+        #1b5a7d;
+      .picture {
+        background-color: #f9f6f6;
+        margin-top: 15px;
+        padding: 10px;
+        top: 10px;
+        box-shadow: 0px 4px 20px rgba(0, 178, 255, 0.4);
+      }
+    }
+    .text {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-left: 20 - 11px;
+      h2,
+      p {
+        color: rgba(0, 0, 0, 0.7);
+      }
+      h1 {
+        font-size: 24px !important;
+      }
+      h2 {
+        font-size: 12px !important;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 14px !important;
+        margin-top: 3px;
+      }
+    }
+    > .Download {
+      display: flex;
+      align-items: center;
+      height: 20px;
+      margin-top: 35px;
+      p {
+        @extend %buttonUnderline;
+        cursor: pointer;
+        margin-left: 8px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+}

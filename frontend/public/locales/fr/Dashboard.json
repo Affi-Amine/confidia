@@ -1,0 +1,59 @@
+{
+  "UpdateProjectInfos": {
+    "change": "CHANGER"
+  },
+  "Statement": {
+    "script": "scripts",
+    "var": "variables",
+    "fonction": "fonctions",
+    "row": "rows",
+    "param": {
+      "addMetric": "Ajouter une métrique: "
+    }
+  },
+  "AddWidget": "Ajouter un widget",
+  "Alertes": {
+    "alertes": "Alertes",
+    "operation": "Fonctionnement",
+    "files": "Fichier",
+    "ethic": "Éthique",
+    "consult": "Consulter"
+  },
+  "GuideconfidIA": {
+    "platform": "LA PLATEFORME",
+    "embark": "Embarquez dans ConfidIA",
+    "learn": "Apprenez ConfidIA en 30 min",
+    "download": "Télécharger le guide"
+  },
+  "Quality": {
+    "evaluation": "Définissez vos indicateurs d'évaluation du code !",
+    "select": "Sélectionnez ou créez vos indicateurs",
+    "indicator": "Mes indicateurs",
+    "param": "défini par vos paramètres",
+    "completion": "Proposition de ConfidIA",
+    "quality": "Qualité du code",
+    "where": "OU",
+    "suggestion": "Indicateurs suggérés par ConfidIA :",
+    "create": "Créer mon indicateur",
+    "buttonConf": "Je configure",
+    "buttonValidate": "Je valide"
+  },
+  "Video": {
+    "platform": "LA PLATEFORME",
+    "demo": "Démonstration vidéo",
+    "learn": "Apprenez Confidia en 3 min",
+    "visio": "Visioner la visite rapide"
+  },
+  "kpi": {
+    "T": "Créer mon indicateur",
+    "1": "Nom de l'indicateur",
+    "message": {
+      "1": "L'indicateur est invalide",
+      "2": "Un élément du même type ne peut pas être ajouté consécutivement",
+      "3": "Vous devez nommer votre indicateur"
+    },
+    "btn": {
+      "1": "Créez"
+    }
+  }
+}

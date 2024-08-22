@@ -1,0 +1,37 @@
+@import "../variables";
+@import "../extends/fontF";
+.NotFound {
+  @extend %fontF;
+  @extend %fontFcolor;
+  top: 0px;
+  width: 100%;
+  max-height: 100vh;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 900;
+  background-color: white;
+  z-index: 5;
+  h1 {
+    margin: 20px;
+    font-size: 40px;
+    color: $title-color;
+  }
+  .text {
+    width: 60%;
+    text-align: center;
+    font-size: 30px;
+    color: $text-back;
+    margin: 20px;
+    line-height: 45px;
+  }
+  .num {
+    font-size: 40vh;
+    margin-bottom: 40px;
+
+    color: $text-back;
+    text-shadow: 2px 2px 4px #a7d8d1;
+  }
+}

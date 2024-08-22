@@ -1,0 +1,15 @@
+%ScrollBarBasic {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+    &:hover {
+      background-color: #1b5a7d;
+    }
+  }
+}
+// @extend %ScrollBarBasic;

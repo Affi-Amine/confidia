@@ -1,0 +1,14 @@
+.NotRobot {
+  padding: 20px 0;
+  p {
+    padding-bottom: 10px;
+  }
+  div {
+    display: flex;
+    p {
+      padding-left: 10px;
+      //   font-size: 20px;
+      color: red;
+    }
+  }
+}

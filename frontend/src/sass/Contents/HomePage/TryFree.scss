@@ -1,0 +1,81 @@
+.TryFree {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  margin: 10vh 0px;
+  img {
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+  }
+  > div {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    h1 {
+      font-size: 80px;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 100px;
+    }
+    > div {
+      &:last-child {
+        display: flex;
+        justify-content: space-around;
+        width: 85%;
+      }
+      button {
+        position: relative;
+        background-color: rgba(43, 43, 43, 0.775);
+        border: solid 2px white;
+        border-radius: 15px;
+        width: 350px;
+        width: 300px;
+        max-width: 300px;
+        color: white;
+        font-size: 23px;
+        line-height: 35px;
+        margin-bottom: 0px;
+        font-weight: bold;
+        padding: 10px 25px;
+        cursor: pointer;
+        &:hover {
+          background-color: transparent;
+        }
+        .alertRedirect {
+          display: none;
+        }
+        &:hover {
+          opacity: 0.8;
+
+          cursor: pointer;
+          border: none;
+          .alertRedirect {
+            position: absolute;
+            display: flex;
+            opacity: 1;
+            background-color: white;
+            color: black;
+            top: 100%;
+            font-size: 15px;
+            line-height: normal;
+            // width: 300px;
+            padding: 5px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}

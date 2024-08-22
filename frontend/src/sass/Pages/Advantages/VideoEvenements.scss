@@ -1,0 +1,104 @@
+@import "../../variables";
+@import "../../extends/fontF";
+@import "../../extends/button";
+@import "../../extends/scrollBarStyle";
+
+.VideoEvenements {
+  @extend %fontSolution;
+  background-color: $colorDark5;
+  color: white !important;
+  padding: calc(1em + 2vw) 6vw calc(1em + 2vw) 7vw;
+  cursor: default;
+  section {
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    padding-top: 20px;
+    .videoContainer {
+      flex: 1.5;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .detailsVideo {
+      flex: 1;
+      padding-left: 25px;
+      article {
+        h3 {
+          padding-bottom: 20px;
+        }
+        .theme {
+          padding-bottom: 10px;
+        }
+        .box {
+          display: flex;
+          justify-content: center;
+          padding-top: 20px;
+          button {
+            color: white;
+            .icon {
+              padding-right: 10px;
+            }
+            &:hover {
+              color: $blue1;
+            }
+          }
+          .dateEvent {
+            flex: 1;
+            font-style: italic;
+            text-align: end;
+            font-size: calc(var(--font-size-p) - 5px);
+          }
+        }
+
+        .desciptionEvent {
+          overflow: auto;
+          max-height: 50vh;
+          @extend %scrollBarStyle;
+          padding-right: 10px;
+          pre {
+            text-wrap: wrap;
+            line-height: calc(var(--font-size-p) + 1px);
+          }
+        }
+      }
+    }
+  }
+  .boxReplay {
+    padding-top: 50px;
+    h6 {
+      text-align: center;
+    }
+    .listReplay {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 20px;
+      article {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        border-radius: 8px;
+        margin: 10px 10px;
+        padding: 10px;
+        border: 1px solid white;
+        transition: all ease 0.5s;
+        &:hover {
+          background-color: $colorDark1;
+        }
+        p,
+        pre {
+          color: white !important;
+        }
+        .description {
+          padding-top: 10px;
+          pre {
+            font-size: calc(var(--font-size-p) - 3px);
+            font-style: italic;
+            text-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}

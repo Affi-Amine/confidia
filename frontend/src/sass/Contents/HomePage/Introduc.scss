@@ -1,0 +1,70 @@
+@import "../../variables";
+@import "../../extends/button";
+.Introduc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  background-color: $blue;
+  background-image: url("../../../assets/HomePage/DesignBlue.png");
+  background-size: cover;
+  width: 100%;
+  padding: calc(1em + 4vw) 0;
+  span {
+    color: $blue2;
+  }
+  h2,
+  h1,
+  p,
+  button {
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 2;
+  }
+
+  .background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(24, 24, 24, 0.5);
+  }
+
+  .Subtitle {
+    z-index: 2;
+    width: 95%;
+    padding-top: 30px;
+    padding: calc(var(--font-size-h2) + 2.7vw) 0;
+
+    line-height: calc(var(--font-size-h2) + 1vw);
+  }
+  button {
+    z-index: 2;
+    @extend %buttons;
+    color: $blue2;
+    background-color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    &:hover {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 390px) {
+    h2 {
+      width: 98%;
+    }
+  }
+  @media screen and (max-width: 320px) {
+  }
+}

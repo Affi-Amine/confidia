@@ -1,0 +1,32 @@
+{
+  "Infos": {
+    "PageConstruct": "Page is under construction"
+  },
+  "ButtonsConnect": {
+    "subscrib": "Register",
+    "quicktour": "Quick tour",
+    "yourOpinion": "Your opinion",
+    "myOffer": "My offer",
+    "mySetting": "My settings",
+    "docScript": "Document my script",
+    "activateOffer": "Activate"
+  },
+  "ButtonsGlobals": {
+    "RequestDemo": "REQUEST A DEMO",
+    "FreePlay": "TRY FOR FREE",
+    "SpeTech": "TECHNICAL SPECIFICATION",
+    "WhoAreWe": "WHO ARE WE ?",
+    "OurContacts": "OUR CONTACTS",
+    "reqRDV": "BOOK AN APPOINTMENT",
+    "LegalNotices": "LEGAL NOTICES",
+    "LegalPolicy": "PRIVACY POLICY",
+    "FreeConfidia": "TRY ",
+    "Kookie": "Cookies",
+    "CGD": "General conditions of use",
+    "CG": "General Conditions",
+    "LearnMore": "Learn more...",
+    "quicktourC": "Quick tour ConfidIA",
+    "Advantages": "My advantages",
+    "expositions": "Our Exhibitions"
+  }
+}

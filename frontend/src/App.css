@@ -1,0 +1,159 @@
+/* CSS Global */
+.tranlateNoSelect {
+  color: transparent;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+.AllSiteGlobalButtonUnderline{ 
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  text-decoration-color: currentColor; /* Ou spécifiez une couleur */
+  text-decoration-thickness: 1px; /* Contrôle l'épaisseur du soulignement */
+  transition: all 0.4s ease-in-out;
+  
+}
+.AllSiteGlobalButtonUnderline :hover {
+  color: #0c71c3;
+}
+.AllBoxButtons{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.textNoWrap{
+  text-wrap: nowrap;
+}
+.icon{  transition: all 0.5s ease-in-out;}
+
+/* Styles par défaut pour les grands écrans (ordinateurs de bureau) */
+/* Définition des variables de taille de police */
+/* Définition des variables de base dans :root */
+:root {
+  --font-size-h1: 80px;
+  --font-size-h2: 40px;
+  --font-size-h3: 28px;
+  --font-size-h4: 24px;
+  --font-size-h5: 22px;
+  --font-size-h6: 20px;
+  --font-size-h7: 18px;
+  --font-size-p: 18px;
+  --font-size-button: 16px;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./Fonts/Roboto.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./Fonts//Poppins.ttf") format("truetype");
+}
+body {
+  overflow-x: hidden;
+  margin:0;
+  padding: 0;
+}
+html{margin:0 ;padding: 0;}
+:root {
+  --header-back-color: #a7d8d1;
+  --title-color: #0d3155;
+  --text-color: #335578;
+  --button-back: #0d3155;
+  --hover-button-back: #13aff0;
+  --button-color: #ffff;
+  --size-titleH1: 38px;
+  --size-titleH2: 30px;
+  --weight-title: 800;
+
+  /*Components Photo, SlideShow*/
+  --VideoPhotoSlide-width: 100%;
+  --VideoPhotoSlide-height: 600px;
+  --VideoPhotoMarginBottom: 40px;
+}
+.App{
+  position: relative;
+  cursor: default;
+}
+hr {
+  display: block;
+  width: 100%; 
+  height: 1px;
+  border: none;
+  border-top: 1px solid #000; 
+  margin: 10px auto; 
+  padding: 0;
+  /* max-width: valeur souhaité */
+}
+
+/* Styles pour tablettes (768px) */
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size-h1: 32px;
+    --font-size-h2: 26px;
+    --font-size-h3: 22px;
+    --font-size-h4: 20px;
+    --font-size-h5: 18px;
+    --font-size-h6: 16px;
+    --font-size-p: 16px; 
+    /* 'p' et 'button' restent inchangés */
+  }
+}
+
+/* Styles pour mobiles (480px) */
+@media screen and (max-width: 480px) {
+  :root {
+    --font-size-h1: 28px;
+    --font-size-h2: 24px;
+    --font-size-h3: 20px;
+    --font-size-h4: 18px;
+    --font-size-h5: 16px;
+    --font-size-h6: 15px;
+    --font-size-p: 15px;
+    --font-size-button: 15px;
+    /* 'p' et 'button' restent inchangés */
+  }
+}
+
+/* Styles pour très petits écrans (320px) */
+@media screen and (max-width: 320px) {
+  :root {
+    --font-size-h1: 24px;
+    --font-size-h2: 22px;
+    --font-size-h3: 20px;
+    --font-size-h4: 18px;
+    --font-size-h5: 16px;
+    --font-size-h6: 14px;
+    --font-size-p: 14px;
+    --font-size-button: 13px;
+    /* 'p' et 'button' restent inchangés */
+  }
+}
+
+/* Utilisation des variables dans les styles */
+h1 {
+  font-size: var(--font-size-h1) !important; 
+}
+h2 {
+  font-size: var(--font-size-h2) !important;
+}
+h3 {
+  font-size: var(--font-size-h3) !important;
+}
+h4 {
+  font-size: var(--font-size-h4) !important;
+}
+h5 {
+  font-size: var(--font-size-h5) !important;
+}
+h6 {
+  font-size: var(--font-size-h6) !important;
+}
+p {
+  font-size: var(--font-size-p) !important;
+}
+button {
+  font-size: var(--font-size-button) !important;
+}
+

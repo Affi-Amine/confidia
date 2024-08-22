@@ -1,0 +1,148 @@
+[
+  {
+    "id": "1",
+    "type": "custom",
+    "data": {
+      "label": "Index.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 150, "y": 100 }
+  },
+  {
+    "id": "2",
+    "type": "custom",
+    "data": {
+      "label": "App.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 300, "y": 100 }
+  },
+  {
+    "id": "3",
+    "type": "custom",
+    "data": {
+      "label": "Pages.jsx",
+      "sourcePosition": "right",
+      "targetPosition": "top",
+      "type": "file"
+    },
+    "position": { "x": 400, "y": 200 }
+  },
+  {
+    "id": "4",
+    "type": "custom",
+    "data": {
+      "label": "Pages",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "folder",
+      "evenClick": { "idnewJsonNode": "newJsonNode", "id": "newJsonEdge" }
+    },
+    "position": { "x": 550, "y": 200 }
+  },
+  {
+    "id": "5",
+    "type": "custom",
+    "data": {
+      "label": "About.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 700, "y": 100 }
+  },
+  {
+    "id": "6",
+    "type": "custom",
+    "data": {
+      "label": "Contact.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 700, "y": 200 }
+  },
+  {
+    "id": "7",
+    "type": "custom",
+    "data": {
+      "label": "CGU.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 700, "y": 300 }
+  },
+  {
+    "id": "8",
+    "type": "custom",
+    "data": {
+      "label": "Advantage",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "folder",
+      "evenClick": { "idnewJsonNode": "newJsonNode", "id": "advantages" }
+    },
+    "position": { "x": 700, "y": 400 }
+  },
+
+  {
+    "id": "9",
+    "type": "custom",
+    "data": {
+      "label": "Blog.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 900, "y": 200 }
+  },
+  {
+    "id": "10",
+    "type": "custom",
+    "data": {
+      "label": "Evenements.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 900, "y": 300 }
+  },
+  {
+    "id": "11",
+    "type": "custom",
+    "data": {
+      "label": "Freebies.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 900, "y": 400 }
+  },
+  {
+    "id": "12",
+    "type": "custom",
+    "data": {
+      "label": "VideoEvenements.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 900, "y": 500 }
+  },
+  {
+    "id": "13",
+    "type": "custom",
+    "data": {
+      "label": "WhiteBook.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 900, "y": 600 }
+  }
+]

@@ -1,0 +1,79 @@
+@import "../../variables";
+@import "../../extends/BlocksDashboard";
+@import "../../extends/button";
+
+.Dashboard .Alertes {
+  display: flex;
+  flex-direction: column;
+
+  @extend %Blocks2;
+  margin-left: 0px;
+  width: 100%;
+  background: #fffcf1;
+  > .icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  > section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    .compteur {
+      color: $red;
+      text-align: center;
+      font-weight: 600;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding-bottom: 30px;
+      margin-left: 10px;
+      .number {
+        text-align: center;
+        font-size: $number;
+        margin: auto;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .text {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+        font-size: 20px;
+      }
+    }
+    .details {
+      color: $red;
+      & :nth-child(2) {
+        color: #de5c00;
+      }
+      & :nth-child(3) {
+        color: #f8cc34;
+      }
+      .AlertesDetails {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        .number {
+          font-size: 40px;
+          margin-right: 25px;
+          font-weight: 600;
+          width: 100px;
+          text-align: end;
+        }
+        h2 {
+          font-size: 20px !important;
+          color: black;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          margin-bottom: 2px;
+        }
+        .consult {
+          @extend %buttonUnderline;
+          cursor: pointer;
+          font-size: 13px;
+          color: black;
+          text-decoration-line: underline;
+          text-underline-offset: 2px;
+        }
+      }
+    }
+  }
+}

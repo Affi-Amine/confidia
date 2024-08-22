@@ -1,0 +1,43 @@
+{
+  "title": {
+    "sub1": "Benvenuto alla Versione di Prova Gratuita",
+    "sub2": "di",
+    "sub3": "CONFIDIA"
+  },
+  "askmore": {
+    "title": "Scopri la prossima versione",
+    "text": "Questa è la versione minimale (MVP) di ConfidIA, limitata in termini di funzionalità sia front che back.\n \nPer una demo della versione avanzata esistente contattaci : \n\tconfidia@dsfords.fr\n\t+33 (0)6 47 98 65 71"
+  },
+  "form": {
+    "alias": "Nome dimostrativo",
+    "userAlias": "Nome utente",
+    "desc": "Descrivi qui il tuo codice se lo desideri!",
+    "write": "Codice scrivi il tuo"
+  },
+  "option": {
+    "progress": "Presto disponibile per demo",
+    "python": {
+      "py": "ConfidIA determina automaticamente la versione di python che stai utilizzando"
+    }
+  },
+  "alerte": {
+    "code": "Codice mancante!",
+    "limite": "Hai superato il limite di registrazione per la demo di ConfidIA!"
+  },
+  "download": "Scarica la documentazione",
+  "contactUs": "Contattaci",
+  "solution": "Interessato alla soluzione?",
+  "contact": "Contattaci per una demo personalizzata della soluzione, nella forma che più ti si addice!",
+  "name": "",
+  "surname": "",
+  "email": "Indirizzo email",
+  "phone": "Numero di telefono",
+  "message": "messaggio",
+  "question": "Una semplice domanda per assicurarti di non essere un robot",
+  "privacy": "Ho letto l'informativa sulla privacy",
+  "permission": "Autorizzo il trattamento dei miei dati per le finalità designate",
+  "button": "INVIA",
+  "isLoading": {
+    "title": "Creazione della tua documentazione"
+  }
+}

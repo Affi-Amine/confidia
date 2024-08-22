@@ -1,0 +1,84 @@
+@import "variables";
+@import "mixins/flexContent";
+@import "mixins/BarsButton";
+
+$buttonBottomMargin: 2px;
+
+.scrollButton {
+  @include BarsButton;
+
+  background-color: #0f3760;
+  color: white;
+  cursor: pointer;
+  width: 170px;
+
+  :first-child {
+    margin-left: 0px;
+  }
+  :hover {
+    background-color: #13aff0;
+  }
+
+  /* 
+
+
+
+
+
+
+TOUCH PAD ,LANDSAPE
+/ */
+  @media screen and (min-width: 900px) and (max-width: 1024px) {
+    margin-left: 0px;
+    // margin: 3px 0px;
+    min-width: 100%;
+    width: $widthMenu;
+    margin-left: 0px;
+    margin-bottom: $buttonBottomMargin;
+
+    :hover {
+      background-color: #13aff0;
+    }
+  }
+
+  /* /
+
+
+
+
+TOUCH PAD ,PORTRAIT
+/ */
+  @media screen and (min-width: 760px) and (max-width: 900px) {
+    margin-left: 0px;
+    width: $widthMenu;
+    margin-bottom: $buttonBottomMargin;
+    /* .scrollButton {
+      width: 150px;
+     
+    } */
+  }
+  /* /
+  
+  
+  
+  
+  PHONE
+  / */
+  @media (max-width: 760px) {
+    margin-left: 0px;
+    width: $widthMenu;
+    margin-bottom: $buttonBottomMargin;
+    /*  
+  .scrollButton {
+    padding: 10px 0px;
+    font-size: 10px;
+    margin-left: 0px;
+    min-width: 100%;
+    max-width: 140px;
+    :first-child {
+      margin-bottom: 10px;
+    }
+  }
+   */
+  }
+}

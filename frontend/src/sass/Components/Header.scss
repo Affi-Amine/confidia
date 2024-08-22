@@ -1,0 +1,471 @@
+// DLO-1007
+@import "../variables";
+@import "../mixins/flexContent";
+@import "../extends/borderStyle";
+@import "../mixins/BarsButton";
+@import "../extends/fontF";
+
+.Header {
+  @extend %fontF;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 5px 8px rgba(79, 70, 229, 0.12);
+  // background-color: $header-back-color;
+  padding-left: 9%;
+  // padding-right: 5%;
+  height: 80px;
+  .Logo {
+    max-height: 80px;
+    max-height: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    min-width: 80px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      cursor: pointer;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .HeaderBox {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    .AllBox {
+      flex-direction: row-reverse;
+      align-items: center;
+      min-height: 100%;
+      .BConnect {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        width: 150px;
+        height: 100%;
+        border-radius: 8px;
+        .Usericon {
+          margin: auto;
+          width: 30px;
+          height: 30px;
+          border: 1px solid black;
+          border-radius: 50%;
+          border-radius: 8px;
+          padding: 5px 5px 0 5px;
+        }
+        span {
+          position: absolute;
+          visibility: hidden;
+          font-weight: bold;
+          white-space: nowrap;
+          box-sizing: border-box;
+          text-align: center;
+          bottom: 1%;
+          font-size: 15px;
+          min-width: 100%;
+          width: 150px;
+          opacity: 0;
+          padding-right: 15px;
+          transition: all 0.5s ease-in;
+        }
+        &:hover span {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .buttonsCondition {
+    border: none;
+    background-color: transparent;
+
+    z-index: 2;
+    cursor: pointer;
+    position: relative;
+    button .Icon {
+      margin-left: 10px;
+    }
+    .DeroulanteListe {
+      display: none;
+    }
+    &:hover {
+      z-index: 5;
+      .DeroulanteListe {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75%;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 5px rgb(178, 178, 178);
+        p {
+          box-sizing: border-box;
+          border-radius: 8px;
+          padding: 10px;
+          line-height: 30px;
+          border: none;
+          font-size: 15px;
+          font-weight: bold;
+          color: black;
+          cursor: pointer;
+          width: 100%;
+          white-space: nowrap;
+          &:hover {
+            color: var(--hover-button-color);
+            opacity: 0.8;
+            background-color: gainsboro;
+          }
+          a {
+            color: black;
+            text-decoration: none;
+          }
+          & a:visited {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .seeMenu {
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+    width: 60px;
+    margin-top: 40px;
+  }
+  .BoxIconMenu {
+    width: 100%;
+    display: flex;
+  }
+  .boxMenu {
+    height: 100%;
+    button {
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
+      color: black;
+      cursor: pointer;
+      width: 100%;
+      min-height: 100%;
+      white-space: nowrap;
+      margin-right: 5px;
+      &:hover {
+        color: var(--hover-button-color);
+        opacity: 0.8;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      & a:visited {
+        color: black;
+      }
+    }
+  }
+
+  .BoxInfos {
+    z-index: 2;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    min-height: 100%;
+    .seeInfos {
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
+      color: black;
+      cursor: pointer;
+      width: max-content;
+      min-height: 100%;
+      &:hover {
+        color: var(--hover-button-color);
+      }
+      .Icon {
+        margin-left: 5px;
+      }
+    }
+    .Infos {
+      @include borderStyle;
+      background-color: white;
+      position: absolute;
+      flex-direction: column;
+      top: 100%;
+      border-radius: 10px;
+      > button {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px;
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.199);
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .Header-Activate,
+  .Header-Disable,
+  .allBox-Activate,
+  .allBox-Disable,
+  .search-Activate,
+  .seeSearch-Activate,
+  .seeSearch-Disable,
+  .seeInfos-Activate,
+  .seeInfos-Disable,
+  .infos-Activate {
+    display: flex;
+  }
+  .seeMenu,
+  .search-Disable,
+  .infos-Disable {
+    display: none;
+  }
+  /*
+
+/RESPONSIVE
+
+ */
+  @media screen and (max-width: 1024px) {
+    .Logo {
+      max-height: 80px;
+      max-width: 80px;
+      min-height: 80px;
+      min-width: 80px;
+      img {
+        max-height: 100%;
+        max-width: 100%;
+        cursor: pointer;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .HeaderBox {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .AllBox {
+        background-color: white;
+        position: absolute;
+        z-index: 9;
+        top: 100%;
+        margin-top: 0px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 10px;
+        width: 180px;
+        padding: 10px 3px;
+        @include borderStyle;
+        .BConnect {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          width: 100%;
+          .Usericon {
+            margin-right: 5px;
+          }
+          span {
+            position: inherit;
+            display: flex;
+            width: auto;
+            max-height: inherit;
+            max-width: inherit;
+            visibility: inherit;
+            text-align: center;
+            margin: auto;
+            opacity: 1;
+            min-width: inherit;
+          }
+          &:hover {
+            background-color: rgba(128, 128, 128, 0.199);
+            border-radius: 10px;
+            span {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+        }
+        .order1 {
+          order: 1;
+        }
+        // > div:nth-child(1) {
+        //   order: 1;
+        // }
+        // > div:nth-child(3) {
+        //   order: 2;
+        // }
+        // > div:nth-child(2) {
+        //   order: 4;
+        // }
+        // > div:nth-child(4) {
+        //   order: 3;
+        // }
+        .BoxLanguage {
+          order: 1;
+        }
+        .BoxIconMenu {
+          min-width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .boxMenu,
+        .boxMenu > div {
+          flex-direction: column-reverse;
+          align-items: center;
+          button {
+            padding: 10px 0px;
+            white-space: inherit;
+            margin-right: 0px;
+            &:hover {
+              background-color: rgba(128, 128, 128, 0.199);
+              border-radius: 10px;
+            }
+          }
+        }
+        .BoxSearch {
+          .search {
+            position: inherit;
+            top: 0px;
+            right: 0px;
+            width: $widthMenu;
+            max-width: 100%;
+            min-height: 100%;
+            max-height: 100%;
+            text-align: center;
+            padding-right: 0px;
+            padding-left: 0px;
+            right: 0;
+            @include BarsButton;
+            margin-left: 0px;
+            border: 1px solid black;
+          }
+        }
+        .BoxInfos {
+          display: contents;
+          position: inherit;
+          width: 100%;
+          max-width: 100%;
+          min-height: 20px;
+          max-height: 40px;
+
+          .seeInfos {
+            width: $widthMenu;
+            margin-left: 0px;
+            min-width: $widthMenu;
+            max-width: $widthMenu;
+            padding: 10px 0px;
+            border-radius: 10px;
+            max-height: inherit;
+            &:hover {
+              background-color: rgba(128, 128, 128, 0.199);
+              color: black;
+            }
+            .Icon {
+              margin-left: 0px;
+              display: none;
+            }
+          }
+          .Infos {
+            width: $widthMenu;
+            position: inherit;
+            bottom: 0px;
+            border: none;
+          }
+        }
+      }
+      .buttonsCondition {
+        button {
+          display: flex;
+          align-items: center;
+          .Icon {
+            margin-left: 10px;
+            margin-right: 20px;
+          }
+        }
+        &:hover {
+          .DeroulanteListe {
+            top: 0%;
+            right: 100%;
+          }
+        }
+      }
+    }
+    .seeMenu {
+      min-height: inherit;
+    }
+    .Header-Activate,
+    .Header-Disable,
+    .allBox-Activate,
+    .seeMenu,
+    .seeSearch-Activate,
+    .search-Activate,
+    .infos-Disable,
+    .search-Disable {
+      display: flex;
+    }
+    .allBox-Disable,
+    .seeSearch-Activate,
+    .seeSearch-Disable {
+      display: none;
+    }
+  }
+  /*RESPONSIVE
+
+  / */
+
+  /*
+
+  TOUCH PAD ,LANDSAPE
+
+   */
+  @media screen and (min-width: 900px) and (max-width: 1024px) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .search {
+      margin-left: 0px;
+      margin: 3px 0px;
+      min-width: 100%;
+      margin: 0px 0px;
+      padding: 10px 0px;
+      border-radius: 13px;
+      min-width: 170px;
+      margin-bottom: 5px;
+    }
+  }
+  /*
+
+  TOUCH PAD ,PORTRAIT
+
+   */
+  @media screen and (min-width: 760px) and (max-width: 900px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  /*
+
+  PHONE
+
+   */
+  @media (max-width: 760px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

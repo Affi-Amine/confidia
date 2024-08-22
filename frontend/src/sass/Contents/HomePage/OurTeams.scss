@@ -1,0 +1,77 @@
+@import "../../variables";
+.OurTeams {
+  padding: calc(1em + 2vw) 0;
+  h2 {
+    font-weight: 900;
+    text-align: center;
+    // padding-bottom: var(--font-size-h1);
+  }
+  p {
+    text-align: justify;
+  }
+  .desc {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    line-height: calc(var(--font-size-p) + 1vw);
+    padding: calc(1em + 2vw) 0vw;
+  }
+  .Box {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    article {
+      display: flex;
+      padding: 20px;
+      min-width: 510px;
+      max-width: 510px;
+
+      section {
+        padding-left: 30px;
+        .text {
+          line-height: calc(var(--font-size-p) + 1vw);
+        }
+        h6 {
+          padding-top: 20px;
+          line-height: calc(var(--font-size-h6) + 1vw);
+        }
+      }
+      .ImageBox {
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+        img {
+          min-width: 100%;
+          min-height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .desc {
+      margin-bottom: 30px;
+      width: 80%;
+    }
+    .Box {
+      flex-direction: column;
+      padding: 0;
+      article {
+        min-width: inherit;
+        margin: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .desc {
+      width: 90%;
+    }
+    .Box {
+      article {
+        padding: 5px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

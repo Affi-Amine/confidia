@@ -1,0 +1,20 @@
+@import "../variables";
+@import "../extends/fontF";
+@import "../extends/ModalsStyles.scss";
+@import "../mixins/close";
+
+.MobileWarningM {
+  display: none;
+  z-index: 1;
+  @extend %ModalsStyles;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  p {
+    text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+  }
+}

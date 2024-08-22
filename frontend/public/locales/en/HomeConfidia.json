@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "title": {
+      "t1": "Manage access",
+      "t2": "Manage files",
+      "t3": "Manage projects",
+      "t4": "Manage my offer",
+      "t5": "Manage languages",
+      "t6": "Technical Documentation",
+      "t7": "Document my script",
+      "t8": "Fill out the form",
+      "t9": "Subscribe to the Pre-Launch offer"
+    }
+  }
+}

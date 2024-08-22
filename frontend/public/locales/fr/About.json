@@ -1,0 +1,68 @@
+{
+  "askmore": {
+    "title": "Découvrez la prochaine version",
+    "text": "Celle-ci est la version minimum (MVP) de ConfidIA, limitée en termes de fonctionnalités aussi bien front que back.\n \nPour une démo de la version avancée existante contactez-nous : \n\tconfidia@dsfords.fr\n\t+33 (0)6 47 98 65 71"
+  },
+  "intro": {
+    "title": "Une entreprise spécialisée dans l’IA.",
+    "text1": "Giulia, passionnée de mathématiques depuis sa jeunesse, a nourri son ambition jusqu'à devenir Data Scientist avant l'heure dès son arrive en France en 2007. Sa rencontre en 2008 avec Jordan, un partenaire solide, l'a encouragée à poursuivre sa passion jusqu'à Singapour, où elle a travaillé sur un projet novateur au MIT.",
+    "text2": "De retour en France, elle a troqué la recherche académique pour le monde de l'entreprise, devenant consultante en Science des données. ",
+    "text3": "Au fil de sa carrière, elle a identifié des problèmes cruciaux liés à la documentation, cherchant activement des solutions.",
+    "text4": "Avec le soutien constant de Jordan, depuis fin 2019, elle s'est formée à l'entrepreneuriat, donnant naissance à  DS FOR DS, dont elle est la présidente et Jordan, le cofondateur. Nathalie a rejoint l'équipe ensuite, apportant ses compétences commerciales et RH pour dynamiser le développement de  DS FOR DS.",
+    "text5": "Giulia dévéloppe également ConfidIA, la solution de l'entreprise, tandis qu'un développeur web full-stack, en alternance, se consacre à son interface.",
+    "text6": "",
+    "text7": ""
+  },
+  "ourValue": {
+    "title": "Nos valeurs et Engagements",
+    "text": "Chez DS for DS, placer nos valeurs et engagements au premier plan est essentiel ! Nous mettons en avant une technologie maîtrisée, respectueuse de l’environnement, mais surtout éthique et transparente pour améliorer demain et contribuer à un meilleur futur."
+  },
+  "blocks": {
+    "techno": {
+      "title": "Technologie maîtrisée",
+      "text": "Nous sommes aussi convaincus qu’une technologie insuffisamment maîtrisée ne permettra pas d’atteindre cet objectif augmentant ainsi le risque d'instauration de l'algocratie."
+    },
+    "ethic": {
+      "title": "Éthique et Transparence",
+      "text": "Animés par une sincère volonté de contribuer à l'avenir, nous aspirons à rendre l'IA accessible à tous, en respectant les données, avec transparence et éthique !"
+    },
+    "future": {
+      "title": "Un meilleur futur",
+      "text": "Nous faisons le choix d'utiliser l'IA et les évolutions technologiques pour faciliter la coordination de l'humanité et optimiser la répartition des ressources"
+    },
+    "environment": {
+      "title": "Respectueux de l'environnement",
+      "text": " DS FOR DS et son Outil ConfidIA s’engagent pleinement pour l'écologie en optimisant leurs processus et en réduisant la duplication non essentielle de fichiers."
+    }
+  },
+  "tools": {
+    "title": "ConfidIA, l’outil de documentation automatique !",
+    "text": "Chez  DS FOR DS nous avons créé la première solution de documentation automatique de code pour vous aider à optimiser vos ressources, économiser du temps et gérer votre budget de manière efficace ! Véritable révolution en tant qu’outil basé sur l’IA, notre solution offre de nombreuses possibilités, et permet une personnalisation à votre image. Composé d’un Tableau de bord pour la gestion de projet et d’un Smart IDE pour vos besoins de documentation, ConfidIA est un outil complet et convivial ! Ne tardez pas à découvrir nos offres. Vous méritez le meilleur et ConfidIA est là pour vous aider !",
+    "offers": "NOS OFFRES"
+  },
+  "teams": {
+    "title": "Notre équipe",
+    "text": "Découvrez l’équipe fondatrice de  DS FOR DS, ainsi que ses collaborateurs. Parcourez nos membres pour faire connaissance avec les visages derrière notre solution.",
+    "Founder": "Fondatrice",
+    "MarketingCommercial": "Marketing/Commercial",
+    "CommunicationMarketing": "Chargé de Communication & Marketing",
+    "Technic": { "DevFront": "Développeur Web/Front React JS" },
+    "Associated": {
+      "Future": "Future associée",
+      "CoFounder": "Co-fondateur"
+    },
+    "responsable": "Responsable",
+    "jobs": {
+      "president": "Mme Giulia CERNICCHIARO - Présidente",
+      "cofond": "M. Jordan DELIESSCHE - Co-fondateur et responsable du suivi employé",
+      "partner": "Mme Nathalie CHAUCHARD - Associée"
+    },
+    "Desc": {
+      "1": "Giulia, co-fondatrice et présidente de DS FOR DS, est diplômée d'un doctorat en économétrie et économie quantitative de l'Université Panthéon-Sorbonne.",
+      "2": "Forte d'une expérience significative en tant que Data Scientist, elle a contribué à des projets avec des clients prestigieux tels que Bouygues, Enedis, et Omnicom Media Group. En plus de son parcours en entreprise, elle a occupé des postes de chercheur postdoctoral, apportant ainsi sa contribution aux avancées en économie quantitative et économétrie. Passionnée par la recherche et experte en sciences des données, elle a fondé DS FOR DS en octobre 2020, assumant aujourd'hui le rôle de présidente.",
+      "3": "Jordan, titulaire d'un BTS en commerce, cumule plus de 16 années d'expérience en tant que Team Leader à Disneyland Paris. Il est également co-fondateur et responsable du suivi employé au sein de DS FOR DS.",
+      "4": "Forte d'une expérience de plus de 20 ans dans le commerce et en tant que manager d'équipe, elle a su développer un réseau et une réelle appétence pour la fibre commerciale. Reconnue comme une leader facilitatrice, elle crée les conditions propices pour rester constamment proche de son équipe et de ses clients, tout en favorisant un environnement favorable.",
+      "5": "Experte dans la gestion d'équipe, son expertise de coach et d'entrepreneur en team building lui permet d'être totalement autonome dans la gestion et transformation des équipes."
+    }
+  }
+}

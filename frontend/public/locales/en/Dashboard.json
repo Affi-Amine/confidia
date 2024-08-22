@@ -1,0 +1,59 @@
+{
+  "UpdateProjectInfos": {
+    "change": "CHANGE"
+  },
+  "Statement": {
+    "script": "scripts",
+    "var": "variables",
+    "fonction": "functions",
+    "row": "rows",
+    "param": {
+      "addMetric": "Add a metric:"
+    }
+  },
+  "AddWidget": "Add Widget",
+  "Alertes": {
+    "alertes": "Alerts",
+    "operation": "Operation",
+    "files": "File",
+    "ethic": "Ethics",
+    "consult": "Consult"
+  },
+  "GuideconfidIA": {
+    "platform": "THE PLATFORM",
+    "embark": "Embark in ConfidIA",
+    "learn": "Learn ConfidIA in 30 min",
+    "download": "Download guide"
+  },
+  "Quality": {
+    "evaluation": "Set your code evaluation indicators!",
+    "select": "Select or create your indicators",
+    "indicator": "My indicators",
+    "param": "defined by your settings",
+    "completion": "Confidia proposal",
+    "quality": "Code quality",
+    "where": "OR",
+    "suggestion": "Indicators suggested by ConfidIA:",
+    "create": "Create my indicator",
+    "buttonConf": "I'm configuring",
+    "buttonValidate": "I validate"
+  },
+  "Video": {
+    "platform": "THE PLATFORM",
+    "demo": "Video demonstration",
+    "learn": "Learn Confidia in 3 min",
+    "visio": "Watch the Quicktour"
+  },
+  "kpi": {
+    "T": "Create My Indicator",
+    "1": "Indicator Name",
+    "message": {
+      "1": "The indicator is invalid",
+      "2": "An element of the same type cannot be added consecutively",
+      "3": "You must name your indicator"
+    },
+    "btn": {
+      "1": "Create"
+    }
+  }
+}

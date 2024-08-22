@@ -1,0 +1,124 @@
+[
+  {
+    "id": "7fgh7gjghngh4j8fgh45gf5hg5h85fg4h5g57h7g",
+    "image": "Factory2.png",
+    "NameActivity": "Factory 2024",
+    "desc": {
+      "fr": [
+        "Si tu pouvais avoir l'IA dont tu as toujours rêvé, à quoi ressemblerait-elle ?"
+      ],
+      "it": ["Se potessi avere l'IA che hai sempre sognato, come sarebbe ?"],
+      "en": [
+        "If you could have the AI you've always dreamed of, what would it look like ?"
+      ]
+    },
+    "descDetail": {
+      "fr": [
+        "C'est le jour J 🥳",
+        "Impatient de retrouver le Village des StartUps Innovantes .... 🌆",
+        "Si tu pouvais avoir l'IA dont tu as toujours rêvé, à quoi ressemblerait-elle ?",
+        "Nous te proposons aujourd'hui d'y répondre en décrivant sous forme textuel à quoi elle ressemblerait ! 🤖",
+        "Tu peux aussi nous rendre visite sur notre stand, et venir nous l'illustrer, ou en parler avec nous afin de laisser libre cours à ton imagination et tes envies créatifs ! ",
+        "Parmi les participants, 10 d'entre vous auront la chance de profiter de ConfidIA gratuitement lors d'un tirage au sort organisé le 17 Juillet ! 🎁",
+        "Cette participation est totalement gratuite et sera validé lorsque toutes les informations du questionnaire seront remplies ! 📝"
+      ],
+      "it": [
+        "E' il D-Day 🥳",
+        "Impaziente di scoprire il Villaggio delle Start-Up Innovative.... 🌆",
+        "Se potessi avere l'IA che hai sempre sognato, come sarebbe ?",
+        "Oggi vi proponiamo di rispondere descrivendo in forma testuale come sarebbe ! 🤖",
+        "Potete anche venirci a trovare al nostro stand, e venire a illustrarcelo, oppure parlarne con noi per dare libero sfogo alla vostra fantasia e ai vostri desideri creativi !",
+        "alla vostra fantasia e ai vostri desideri creativi !",
+        "Tra i partecipanti, 10 di voi avranno la possibilità di provare gratuitamente ConfidIA durante un'estrazione organizzata il 17 luglio ! 🎁",
+        "Questa partecipazione è completamente gratuita e sarà convalidata quando tutte le informazioni contenute nel questionario saranno completate ! 📝"
+      ],
+      "en": [
+        "It's D-Day 🥳",
+        "Looking forward to the Village of Innovative StartUps.... 🌆",
+        "If you could have the AI you've always dreamed of, what would it look like ?",
+        "Today we propose you to answer it by describing in textual form what it would look like ! 🤖",
+        "You can also visit us on our stand, and come and illustrate it to us, or talk about it with us in order to give free rein to your imagination and your creative desires ! ",
+        "Among the participants, 10 of you will have the chance to enjoy ConfidIA for free in a draw organized on July 17th ! 🎁",
+        "This participation is completely free and will be validated when all ",
+        "the information in the questionnaire is completed ! 📝"
+      ]
+    },
+    "participants": [
+      {
+        "id": "s8g79sr84gr",
+        "name": "Ako Anthony",
+        "image": "IA_DE_RÊVE.png",
+        "text": [
+          "Connecté à toutes les ressources, elle prends des décisions et la parole sans qu'on lui demande.",
+          "In évènement à venir, un rendez-vous, une sortie, elle te le dit via ton appareil (smartphone, PC, montre).",
+          "Elle gère tout ton agenda et tes tâches en gérant tes trajets (temps, distance, route), les objets à rapporter (cadeau pour un anniversaire, carte vitale pour un rendez vous chez le médecin,...).",
+          "Un IA qui est un vrai assistant de ton emploi du temps."
+        ]
+      },
+      {
+        "id": "gdh8gf4dh",
+        "name": "Ammour Florent",
+        "image": "IA_DE_RÊVE.png",
+        "text": [
+          "Une IA qui construit une histoire interactive entre les jouets et les enfants (ou adultes, les legos c’est pour tous les âges 😉) pendant le jeu, en temps réel.",
+          " Avec interaction entre les personnages selon les actions qu’on souhaite faire, génère une ambiance sonore ou des bruitages, etc… "
+        ]
+      },
+
+      {
+        "id": "dfgh8g8dfd7hjg7",
+        "name": "Lagaude Sophie",
+        "image": "IA_DE_RÊVE.png",
+        "text": "Une IA de gestion des tâches et de suivi de projets "
+      },
+      {
+        "id": "dfgh8g87hjg7",
+        "name": "Klein Cora",
+        "image": "IA_DE_RÊVE.png",
+        "text": "Me faciliter les formations, gagner du temps dans la recherche d’idées innovantes "
+      },
+      {
+        "id": "fdgifdgior",
+        "name": "Bagnuls Sylvie",
+        "image": "Bagnuls_Sylvie.png",
+        "text": "Une boussole portative pour identifier les bons projets et toute nouvelle idée innovante "
+      },
+      {
+        "id": "fdh8g7rth4g",
+        "name": "Enderlin Lionel",
+        "image": "IA_DE_RÊVE.png",
+        "text": "Une IA qui gère toutes les démarches administratives à ma place ;-)"
+      },
+      {
+        "id": "dgfdgsfg",
+        "name": "Anne Coreau",
+        "image": "Anne_Coreau.png",
+        "text": "Une IA qui me rende le quotidien plus simple en renforçant et augmentant mes capacités, tout en étant éthique, fiable et transparent"
+      },
+      {
+        "id": "fghfghghgf",
+        "name": "Anna Rastello",
+        "image": "IA_DE_RÊVE.png",
+        "text": "Une IA qui identifie les besoins de déplacement de chacun pour proposer aux utilisateurs de mon application ViaggiaConTatto la meilleure experience de voyage "
+      },
+      {
+        "id": "gfhgherty",
+        "name": "Jordan Deliessche",
+        "image": "IA_DE_RÊVE.png",
+        "text": "Une IA qui organise et structure mes annonces pour me permettre de me concentrer sur les tâches intéressantes de mon activité de collectionneur, explorer l'histoire de mes objets et échanger avec les autres passionnés "
+      },
+      {
+        "id": "dhttdhthtyh",
+        "name": "Julien Varoqueaux",
+        "image": "IA_DE_RÊVE.png",
+        "text": "Une IA qui sache prévoir les bons numéros du loto pour des gains assurés à chaque tirage qui me permettent de profiter à fond de la vie !"
+      }
+    ],
+    "winner": {
+      "fr": "👑 Félicitations à nos 10 gagnants  👑 ",
+      "it": "👑 Congratulazioni ai nostri 10 vincitori 👑 ",
+      "en": "👑 Congratulations to our 10 winners  👑 "
+    },
+    "idReplayVideos": "r98st98uyj15k45ui8tio461fy5364t8sr48"
+  }
+]

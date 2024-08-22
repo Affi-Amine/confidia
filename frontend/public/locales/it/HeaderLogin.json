@@ -1,0 +1,43 @@
+{
+  "Notifications": {
+    "title": "AVVISO",
+    "thereIs": "c'è",
+    "consult": "Consulta qui le tue notifiche",
+    "all": " Tutto",
+    "notNotif": "Non hai alcuna notifica",
+    "discover": "Scopri di più",
+    "debug": "Debug immediato",
+    "types": { "all": "Tutto", "notif": "Notifiche", "alerte": "Avvisi" }
+  },
+  "Nav": {
+    "update": "Cambia il",
+    "create": "Crealo",
+    "finish": "Finito il",
+    "progress": "In corso",
+    "myProjects": {
+      "title": "I MIEI PROGETTI",
+      "button": "Aggiungi progetto"
+    },
+    "docTechnic": { "title": "DOCUMENTAZIONE TECNICA", "button": "Vedi tutto" },
+    "useGuide": { "title": "GUIDA UTENTE", "button": "Vedi tutto" },
+    "testing": {
+      "title": "PROVA",
+      "button": "I miei test"
+    },
+    "connecteur": { "title": "I MIEI CONNETTORI", "button": "I miei test" }
+  },
+  "Configuration": {
+    "creatDoc": "Documenta il mio script",
+    "manageProjects": "Gestisci i miei progetti",
+    "setting": "Le mie impostazioni",
+    "offer": "La mia offerta",
+    "userGuide": "Le mie guide utente",
+    "disconnect": "Disconnettimi"
+  },
+  "Menu": {
+    "dashboard": "cruscotto",
+    "docTechnic": "Documentazione tecnica",
+    "userGuide": "Guida per l'utente",
+    "testing": "Testare"
+  }
+}

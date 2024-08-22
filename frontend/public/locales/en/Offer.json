@@ -1,0 +1,34 @@
+{
+  "h1": "Our offers",
+  "Intro": {
+    "T": "ConfidIA - Automatic documentation",
+    "t1": "The first automatic code documentation tool to allow you to maximize your time & budget. Consisting of a Dashboard for the Project Management side and a documentation part for the development part, it will be your essential tool in your projects.",
+    "b1": "TRY FOR FREE"
+  },
+  "boxQuestion": {
+    "H2": "Frequently Asked Questions",
+    "Q1": {
+      "T": "What is ConfidIA?",
+      "p1": "ConfidIA is an AI that aims to automatically document your code. It allows you to drastically reduce the time and budget allocated to this task. In addition, it allows…"
+    },
+    "Q2": {
+      "T": "How does the Dashboard work?",
+      "p1": "The Dashboard part is the part of ConfidIA which will interest most Project Managers or Freelancers aiming to have a complete solution. It allows you to manage the project and have real-time alerts and recommendations on your code, but also a code coverage that you have established. Finally, it allows you to manage your teams and your connectors."
+    },
+    "Q3": {
+      "T": "What language can I document?",
+      "p1": "ConfidIA is an AI in constant evolution.",
+      "p2": "It is specialized in Python language and will have other programming languages ​​such as HTML, CSS, JavaScript... And continues to evolve in order to be able to cover as many languages ​​as possible. Little by little, a large number of languages ​​will be available so be ready!",
+      "p3": "If you need a specific language, do not hesitate to let us know by contacting us and we will take your request into consideration"
+    },
+    "Q4": {
+      "T": "My need is specific and not available in the offers ...",
+      "p1": "Do you have a specific need that you cannot find in the offers? Do not hesitate to contact us by email or telephone so that we can discuss your request and provide a unique service for you."
+    },
+    "Q5": {
+      "T": "How does the consulting part work?",
+      "p1": "The consulting part is only accessible for premium offers at first. The time allocated to this will be defined during your request and the quote you will have.",
+      "p2": "Soon, slots dedicated to consulting for ConfidIA or your projects will be available in order to be able to support you in your analysis and inventory of data, prototyping of tools and finally debugging of existing code. The order is not exhaustive, you can do everything in the order you wish!"
+    }
+  }
+}

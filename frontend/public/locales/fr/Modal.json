@@ -1,0 +1,126 @@
+{
+  "LearnMoreDocM": {
+    "title": "JUSQU'OÙ VA LA VERSION DE TEST",
+    "texts": {
+      "1": "Language",
+      "2": "Actuellement ConfidIA est testée sur Python3 Tout autre version de Python pourrait être cause de ralentissements",
+      "3": "Code Exécutable",
+      "4": "Les fonctionnalités de traitement des erreurs de syntaxe seront incluses à cour terme Actuellement tout code non executable peut être cause de ralentissements",
+      "5": "Définition en dur des éléments d'environnement",
+      "6": "Actuellement la présence de définition en dur d'objet volumineux peut être cause de ralentissements (i.e. listes/dictionnaires/etc. comportant plusieurs centaines de lignes et/ou objets imbriquées)"
+    }
+  },
+  "MobileWarningM": {
+    "message": "Nous vous recommandons d'utiliser ConfidIA sur ordinateur !"
+  },
+  "PreLaunchOfferM": {
+    "registerLogin": "Se Connecter",
+    "buttonDiscover": "Découvrir l'offre ->"
+  },
+  "LimitedOfferM": {
+    "title": "Vous ne bénéficiez pas encore d'une offre !",
+    "message": "Pour profiter de notre offre pré-lancement, nous vous invitons à souscrire ici.",
+    "emailSendTitle": "Vous avez souscrit à notre offre de pré-lancement avec succès.",
+    "emailSendMessage": "Vous recevrez la confirmation par mail en 1 jour ouvré",
+    "alreadyhave": "Si vous avez déjà fait une demande, ne tenez pas compte de ce message !",
+    "button": "Souscrire"
+  },
+  "LimitedOfferMActivate": {
+    "title": "Votre offre n'est pas encore activée",
+    "message": {
+      "1": "Profitez de votre période d'essai gratuite de ",
+      "2": " mois"
+    }
+  },
+  "QuestionnaireM": {
+    "title": "Questionnaire sur votre intérêt concernant ConfidIA, la nouvelle IA de documentation de Code Automatique."
+  },
+  "EarlyAdopterM": {
+    "message": "Avez-vous un code Early Adopter ?",
+    "T": {
+      "1": "Bienvenue sur l'espace de test de ConfidIA ! ",
+      "2": "Soyez parmi les premiers à tester notre solution en documentant votre code en ligne automatiquement, et prenez de l'avance sur les prochains utilisateurs à venir ! ",
+      "3": "Découvrez les avantages !",
+      "4": "Vous préférez continuer sur l'espace de production comme la plupart des utilisateurs ?",
+      "5": "Votre login reste le même !",
+      "6": ""
+    },
+    "buttons": { "1": "Continuez sur DS FOR DS", "2": "Devenez Early Adopter" }
+  },
+  "DataKeepChoice": {
+    "message": "Les données seront conservées le temps de la session",
+    "buttons": {
+      "keep": "Conserver",
+      "notKeep": "Ne pas conserver"
+    }
+  },
+  "NewFeature": {
+    "message": "Cette fonctionnalité arrive prochainement",
+    "contactUs": "Contactez-nous"
+  },
+  "Datalost": {
+    "title": "Vos données n'ont pas été enregistrées.",
+    "text": {
+      "1": "Votre page contient des données qui  n'ont pas été  ",
+      "span1": "enregistrées.",
+      "2": "Si vous quittez sans enregistrer,",
+      "span2": "ces données seront perdues.",
+      "3": "Si vous ne souhaitez pas perdre vos données, veuillez sélectionner rester."
+    },
+    "buttons": {
+      "quit": "Quitter",
+      "stay": "Rester"
+    }
+  },
+  "BadVersion": {
+    "alert": "La page des offres est actuellement en construction, vous allez être redirigés vers la page de contact",
+    "messages": {
+      "1": "Cette fonctionnalité n'est pas disponible pour cette version",
+      "2": "Pour y accéder veuillez souscrire à une offre"
+    },
+    "buttons": {
+      "offer": "Voir les offres"
+    }
+  },
+  "SendReport": {
+    "title": "Envoyer un rapport",
+    "project": "Projet",
+    "notifTitle": "Titre",
+    "notifMessage": "Message supplémentaire",
+    "notifContext": "Contexte à signaler",
+    "buttons": {
+      "reportConfidia": "Signaler à Confidia",
+      "reportBoth": "Signaler aussi à l'équipe",
+      "close": "Fermer"
+    }
+  },
+  "SendMessage": {
+    "title": "Envoyer un message à un utilisateur",
+    "notifTitle": "Titre",
+    "message": "Message",
+    "buttons": {
+      "send": "Envoyer",
+      "close": "Fermer"
+    }
+  },
+  "SendAlert": {
+    "title": "Envoyer une alerte",
+    "project": "Projet",
+    "notifTitle": "Titre",
+    "message": "Message",
+    "context": "Contexte",
+    "buttons": {
+      "send": "Envoyer",
+      "close": "Fermer"
+    }
+  },
+  "SendActivity": {
+    "project": "Projet",
+    "notifTitle": "Titre",
+    "message": "Message",
+    "context": "Contexte",
+    "buttons": {
+      "send": "Envoyer"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "T": { "1": "Découvrez vos", "2": " Avantages" },
+  "buttons": {
+    "event": "Évènements",
+    "blog": "Blogs",
+    "freebies": "Freebies",
+    "whiteBook": "Livre blanc",
+    "subNewsletters": "S'inscrire a la NewsLetter",
+    "consulting": "Découvrez le Consulting !",
+    "advantage": "Avantages",
+    "homeConfidia": "Accueil ConfidIA"
+  },
+  "checkMessage": {
+    "1": "Votre avis a été envoyé",
+    "2": "Merci pour votre intégration",
+    "3": "Vos réponses nous ont été envoyées",
+    "4": ""
+  },
+  "T-event": {
+    "1": "Nos événements à venir ... ",
+    "2": "Notre offre de consulting ...",
+    "3": "Nos évènement",
+    "4": "Nos Replays",
+    "5": "Nos événements à venir"
+  },
+  "eventList": {
+    "1": "DEMO VIP ConfidIA",
+    "2": "L'IA et ses défis éthiques",
+    "3": "Comment développer un outil Data"
+  },
+  "eventReplay": {
+    "T": "Visionner aussi nos autres événements"
+  },
+  "Desc": {
+    "1": "REPRISE DE PROJET",
+    "2": "DEVELOPPEMENT DE PROJET",
+    "3": "AIDE À LA DOCUMENTATION"
+  },
+  "newsletters": {
+    "T": "Inscrition à la newsletter",
+    "L-1": { "1": "Rejoignez notre communauté exclusive !" },
+    "L-2": {
+      "1": "Soyez informer de nos évènements/webinaires, des avancées de ConfidIA et des différents sujets portant sur l'IA, la data science et le développement informatique avec notre newsletter !"
+    },
+    "L-3": {
+      "1": "Votre confidentialité est importante pour nous. Nous ne partageons pas vos informations avec des tiers et vous pouvez vous désinscrire à tout moment."
+    },
+    "check": {
+      "1": "Je veux être informé sur les évènements",
+      "2": "Je veux être informé des avancées et fonctionnalités de ConfidIA"
+    },
+    "btn": "S'inscrire"
+  },
+  "blog": {
+    "T": "Le Blog",
+    "L-1": { "1": "Notre Blog est en Construction !" },
+    "L-2": {
+      "1": "Nous travaillons actuellement à la création d'un blog pour vous offrir le meilleur contenu possible !    "
+    },
+    "L-3": {
+      "1": "Cet espace privilégié est l'occassion pour vous de prendre connaissance de sujet inédit et à forte valeurs ajoutés, exclusif pour nos membres.      "
+    },
+    "L-4": {
+      "1": "En attendant, suivez-nous pour rester informé de nos dernières avancées et découvrir des articles et des Posts, passionnants et instructifs !"
+    },
+    "check": {
+      "1": "La régression linéaire",
+      "2": "L'IA et ses applications",
+      "3": "Les défis éthiques de l'IA"
+    },
+    "btn": "Nous suivre (Linkedin)",
+    "articles": {
+      "1": {
+        "T": "SUIVEZ-NOUS"
+      }
+    }
+  },
+  "freebies": {
+    "T": "Vos Freebies",
+    "L-1": { "1": "Découvrez nos prochains freebies...    " },
+    "L-2": {
+      "1": "Nous sommes ravis de vous annoncer le lancement prochain de petites applications utiles et divertissantes telles que le Sudoku Solver, notre petit CRM Python “BB-CRM”, le GPS à vol d'oiseau, le Django Manager et le Human Detector !      "
+    },
+    "L-3": {
+      "1": "Ces outils sont conçus pour enrichir votre quotidien ou vous divertir, et seront des exemples parfaits d'utilisation avec ConfidIA.      "
+    },
+    "L-4": {
+      "1": "En tant que membre, vous bénéficiez d'un accès privilégié à nos différentes applications, et vous êtes prioritaire pour les événements et le support !    "
+    },
+    "L-5": {
+      "1": "Quelles applications vous intéressent le plus ? Dites-nous lesquelles vous aimeriez utiliser et nous vous tiendrons informé de leur disponibilité.      "
+    },
+
+    "check": {
+      "1": "BB-CRM Python",
+      "2": "Sudoku Solver",
+      "3": "GPS à Vol d'Oiseau",
+      "4": "Django Manager",
+      "5": "Human Vidéo Detector"
+    },
+    "btn": "Exprimer mon intérêt"
+  },
+  "whiteBook": {
+    "T": "Vos Livre Blanc",
+    "L-1": { "1": "Des sujets à venir qu'il ne faut pas manquer ...   " },
+    "L-2": {
+      "1": "Nous préparons une série de livre blanc captivant qui explore les différents aspects de l'intelligence artificielle et des mathématiques.    "
+    },
+    "L-3": {
+      "1": "Ces livres aborderont des thèmes variés tels que l'éthique de l'IA, la documentation de l'IA, les bases statistiques et mathématiques du machine learning et pleins d'autre sujets que vous découvrirez en les téléchargeant !    "
+    },
+    "L-4": {
+      "1": "Quel livre vous intrigue le plus ? Faites-nous part de votre préférence pour que votre choix soit le premier à être disponible !   "
+    },
+
+    "check": {
+      "1": "L'éthique de l'IA",
+      "2": "Les bases statistiques et mathématiques du machine learning"
+    },
+    "btn": "Soumettre mon avis"
+  }
+}

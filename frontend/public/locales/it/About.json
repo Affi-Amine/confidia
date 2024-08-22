@@ -1,0 +1,64 @@
+{
+  "intro": {
+    "title": "Un'azienda specializzata in IA.",
+    "text1": "Giulia, appassionata di matematica fin da giovane, ha coltivato l'ambizione di diventare una Data Scientist prima del tempo, da quando è arrivata in Francia nel 2007. L'incontro con Jordan nel 2008, un partner forte, l'ha incoraggiata a perseguire la sua passione fino a Singapore, dove ha lavorato a un progetto innovativo al MIT.",
+    "text2": "Tornata in Francia, ha lasciato la ricerca accademica per il mondo degli affari, diventando consulente in Data Science",
+    "text3": "Nel corso della sua carriera, ha individuato problemi cruciali legati alla documentazione, cercando attivamente delle soluzioni.",
+    "text4": "Con il costante supporto di Jordan, dalla fine del 2019 si è formata come imprenditrice, dando vita a  DS FOR DS, di cui è presidente e Jordan co-fondatore. Successivamente è entrata a far parte del team Nathalie, che ha portato le sue competenze commerciali e HR per dare impulso allo sviluppo di  DS FOR DS.",
+    "text5": "Giulia sta anche sviluppando ConfidIA, la soluzione dell'azienda, mentre uno sviluppatore web full-stack che sta seguendo un corso di formazione sta lavorando alla sua interfaccia.",
+    "text6": "",
+    "text7": ""
+  },
+  "ourValue": {
+    "title": "I nostri valori e impegni",
+    "text": "Per DS for DS, mettere al primo posto i nostri valori e impegni è fondamentale! Puntiamo su una tecnologia controllata, rispettosa dell'ambiente, ma soprattutto etica e trasparente, per migliorare il domani e contribuire a un future Migliore. "
+  },
+  "blocks": {
+    "techno": {
+      "title": "Tecnologia gestita",
+      "text": "Siamo inoltre convinti che una padronanza insufficiente della tecnologia non ci permetterà di raggiungere questo obiettivo, aumentando così il rischio di algocrazia."
+    },
+    "ethic": {
+      "title": "Etica e trasparenza",
+      "text": "Spinti da un sincero desiderio di contribuire al futuro, ci proponiamo di rendere l'IA accessibile a tutti, nel rispetto dei dati, della trasparenza e dell'etica!"
+    },
+    "future": {
+      "title": "Un futuro migliore",
+      "text": "Abbiamo scelto di utilizzare l'IA e gli sviluppi tecnologici per facilitare il coordinamento dell'umanità e ottimizzare la Distribuzione delle risorse."
+    },
+    "environment": {
+      "title": "Rispetto dell'ambiente",
+      "text": " DS FOR DS e il suo strumento ConfidIA si impegnano a rispettare l'ambiente ottimizzando i processi e riducendo la duplicazione di file non essenziali."
+    }
+  },
+  "tools": {
+    "title": "ConfidIA, lo strumento di documentazione automatica!",
+    "text": "Noi di  DS FOR DS abbiamo creato la prima soluzione di documentazione automatica del codice per aiutarvi a ottimizzare le vostre risorse, risparmiare tempo e gestire il vostro budget in modo efficiente! Vera e propria rivoluzione in quanto strumento basato sull'intelligenza artificiale, la nostra soluzione offre un'ampia gamma di possibilità e può essere personalizzata in base alla vostra immagine. Comprendendo una dashboard per la gestione dei progetti e uno Smart IDE per le vostre esigenze di documentazione, ConfidIA è uno strumento completo e di facile utilizzo! Non indugiate a scoprire ciò che abbiamo da offrire. Vi meritate il meglio e ConfidIA è qui per aiutarvi!",
+    "offers": "LE NOSTRE OFFERTE"
+  },
+  "teams": {
+    "title": "La nostra squadra",
+    "text": "Incontra il team fondatore di DSforDS e i suoi collaboratori. Conosci i volti delle persone che danno vita alla nostra soluzione.",
+    "Founder": "Fondatore",
+    "MarketingCommerciale": "Marketing/Commerciale",
+    "CommunicationMarketing": "Responsabile comunicazione e marketing",
+    "Technic": { "DevFront": "Web Developer/React JS Front" },
+    "Associated": {
+      "Future": "Futuro associato",
+      "CoFounder": "Co-fondatore"
+    },
+    "responsable": "Responsabile",
+    "jobs": {
+      "president": "Sig.ra Giulia CERNICCHIARO - Presidente",
+      "cofond": "Sig. Jordan DELIESSCHE - Co-fondatore e responsabile del follow-up dei dipendenti",
+      "partner": "Sig.ra Nathalie CHAUCHARD - Socia"
+    },
+    "Desc": {
+      "1": "Giulia, co-fondatrice e presidente di DS FOR DS, ha conseguito un dottorato di ricerca in Econometria ed Economia Quantitativa presso l'Università Panthéon-Sorbonne.",
+      "2": "Con una significativa esperienza come Data Scientist, ha contribuito a progetti con clienti prestigiosi come Bouygues, Enedis e Omnicom Media Group. Oltre alla sua carriera nel mondo degli affari, ha ricoperto posizioni di ricerca post-dottorato, contribuendo ai progressi dell'economia quantitativa e dell'econometria. Appassionata di ricerca ed esperta di data science, ha fondato DS FOR DS nell'ottobre 2020, assumendo ora il ruolo di Presidente",
+      "3": "Jordan, che detiene un BTS in affari, ha più di 16 anni di esperienza come Team Leader a Disneyland Paris. È anche co-fondatore e responsabile del supporto ai dipendenti di DS FOR DS.",
+      "4": "Con più di 20 anni di esperienza nelle vendite e come team manager, è stata in grado di sviluppare una rete e un vero e proprio appetito per la fibra commerciale. Riconosciuta come leader facilitatrice, crea le giuste condizioni per stare costantemente vicino al suo team e ai suoi clienti, promuovendo al contempo un ambiente di supporto",
+      "5": "Esperta di team management, la sua competenza come coach e imprenditrice nel team building le permette di essere totalmente autonoma nella gestione e trasformazione dei team."
+    }
+  }
+}

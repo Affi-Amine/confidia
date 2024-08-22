@@ -1,0 +1,567 @@
+// DLO-1007
+@import "../variables";
+@import "../mixins/flexContent";
+@import "../extends/borderStyle";
+@import "../mixins/BarsButton";
+@import "../extends/fontF";
+
+.MenuBurger {
+  @extend %fontF;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  .AllBox {
+    background-color: white;
+    position: absolute;
+    z-index: 9;
+    top: 100%;
+    margin-top: 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 180px;
+    padding: 10px 3px;
+    @include borderStyle;
+    .BConnect {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      width: 100%;
+      .Usericon {
+        margin-right: 5px;
+      }
+      span {
+        position: inherit;
+        display: flex;
+        width: auto;
+        max-height: inherit;
+        max-width: inherit;
+        visibility: inherit;
+        text-align: center;
+        margin: auto;
+        opacity: 1;
+        min-width: inherit;
+      }
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.199);
+        border-radius: 10px;
+        span {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+    .order1 {
+      order: 1;
+    }
+    // > div:nth-child(1) {
+    //   order: 1;
+    // }
+    // > div:nth-child(3) {
+    //   order: 2;
+    // }
+    // > div:nth-child(2) {
+    //   order: 4;
+    // }
+    // > div:nth-child(4) {
+    //   order: 3;
+    // }
+    .BoxLanguage {
+      order: 1;
+      .seeAllLang,
+      .NButton > div {
+        p {
+          display: inherit;
+        }
+      }
+    }
+    .BoxIconMenu {
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .boxMenu,
+    .boxMenu > div {
+      flex-direction: column-reverse;
+      align-items: center;
+      button {
+        padding: 10px 0px;
+        white-space: inherit;
+        margin-right: 0px;
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.199);
+          border-radius: 10px;
+        }
+      }
+    }
+    .BoxSearch {
+      .search {
+        position: inherit;
+        top: 0px;
+        right: 0px;
+        width: $widthMenu;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0px;
+        right: 0;
+        @include BarsButton;
+        margin-left: 0px;
+        border: 1px solid black;
+      }
+    }
+    .BoxInfos {
+      display: contents;
+      position: inherit;
+      width: 100%;
+      max-width: 100%;
+      min-height: 20px;
+      max-height: 40px;
+
+      .seeInfos {
+        width: $widthMenu;
+        margin-left: 0px;
+        min-width: $widthMenu;
+        max-width: $widthMenu;
+        padding: 10px 0px;
+        border-radius: 10px;
+        max-height: inherit;
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.199);
+          color: black;
+        }
+        .Icon {
+          margin-left: 0px;
+          display: none;
+        }
+      }
+      .Infos {
+        width: $widthMenu;
+        position: inherit;
+        bottom: 0px;
+        border: none;
+      }
+    }
+  }
+  .buttonsCondition {
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+    cursor: pointer;
+    position: relative;
+    button {
+      display: flex;
+      align-items: center;
+      .Icon {
+        margin-left: 10px;
+        margin-right: 20px;
+      }
+    }
+
+    .DeroulanteListe {
+      display: none;
+    }
+    &:hover {
+      .DeroulanteListe {
+        display: flex;
+        flex-direction: column;
+        // height: 100px;
+        position: absolute;
+        top: 75%;
+        top: 0%;
+        right: 100%;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 5px rgb(178, 178, 178);
+        p {
+          box-sizing: border-box;
+          border-radius: 8px;
+          padding: 10px;
+          line-height: 30px;
+          border: none;
+          font-size: 15px;
+          font-weight: bold;
+          color: black;
+          cursor: pointer;
+          width: 100%;
+          white-space: nowrap;
+          &:hover {
+            color: var(--hover-button-color);
+            opacity: 0.8;
+            background-color: gainsboro;
+          }
+          a {
+            color: black;
+            text-decoration: none;
+          }
+          & a:visited {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.seeMenu {
+  align-items: center;
+  justify-content: flex-end;
+  //   height: 40px;
+  min-height: 100%;
+  width: 60px;
+  margin-top: 40px;
+}
+.BoxIconMenu {
+  width: 100%;
+  display: flex;
+}
+.boxMenu {
+  height: 100%;
+  button {
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    min-height: 100%;
+    white-space: nowrap;
+    margin-right: 5px;
+    &:hover {
+      color: var(--hover-button-color);
+      opacity: 0.8;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    & a:visited {
+      color: black;
+    }
+  }
+}
+
+.BoxInfos {
+  z-index: 2;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  min-height: 100%;
+  .seeInfos {
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    width: max-content;
+    min-height: 100%;
+    &:hover {
+      color: var(--hover-button-color);
+    }
+    .Icon {
+      margin-left: 5px;
+    }
+  }
+  .Infos {
+    @include borderStyle;
+    background-color: white;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    border-radius: 10px;
+    > button {
+      font-size: 15px;
+      font-weight: bold;
+      padding: 5px;
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.199);
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.BoxSearch {
+  position: relative;
+  align-items: center;
+  display: flex;
+  min-height: 100%;
+  .search {
+    position: absolute;
+    border: none;
+    top: 100%;
+    right: -0px;
+    width: 260px;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    @include BarsButton;
+    @include borderStyle;
+    // padding: 0px 0px;
+    &:focus {
+      outline: none; /*Enleve la bordure au click*/
+    }
+  }
+}
+
+.Header-Activate,
+.Header-Disable,
+.allBox-Activate,
+.seeMenu,
+.seeSearch-Activate,
+.search-Activate,
+.infos-Disable,
+.search-Disable {
+  display: flex;
+}
+.allBox-Disable,
+.seeSearch-Activate,
+.seeSearch-Disable {
+  display: none;
+}
+/* 
+
+
+/RESPONSIVE
+
+
+
+
+
+ */
+@media screen and (max-width: 1024px) {
+  .MenuBurger {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    .AllBox {
+      background-color: white;
+      position: absolute;
+      z-index: 9;
+      top: 100%;
+      margin-top: 0px;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 10px;
+      width: 180px;
+      padding: 10px 3px;
+      @include borderStyle;
+      .order1 {
+        order: 1;
+      }
+      // > div:nth-child(1) {
+      //   order: 1;
+      // }
+      // > div:nth-child(3) {
+      //   order: 2;
+      // }
+      // > div:nth-child(2) {
+      //   order: 4;
+      // }
+      // > div:nth-child(4) {
+      //   order: 3;
+      // }
+      .BoxLanguage {
+        order: 1;
+      }
+      .BoxIconMenu {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .boxMenu,
+      .boxMenu > div {
+        flex-direction: column-reverse;
+        align-items: center;
+        button {
+          padding: 10px 0px;
+          white-space: inherit;
+          margin-right: 0px;
+          &:hover {
+            background-color: rgba(128, 128, 128, 0.199);
+            border-radius: 10px;
+          }
+        }
+      }
+      .BoxSearch {
+        .search {
+          position: inherit;
+          top: 0px;
+          right: 0px;
+          width: $widthMenu;
+          max-width: 100%;
+          min-height: 100%;
+          max-height: 100%;
+          text-align: center;
+          padding-right: 0px;
+          padding-left: 0px;
+          right: 0;
+          @include BarsButton;
+          margin-left: 0px;
+          border: 1px solid black;
+        }
+      }
+      .BoxInfos {
+        display: contents;
+        position: inherit;
+        width: 100%;
+        max-width: 100%;
+        min-height: 20px;
+        max-height: 40px;
+
+        .seeInfos {
+          width: $widthMenu;
+          margin-left: 0px;
+          min-width: $widthMenu;
+          max-width: $widthMenu;
+          padding: 10px 0px;
+          border-radius: 10px;
+          max-height: inherit;
+          &:hover {
+            background-color: rgba(128, 128, 128, 0.199);
+            color: black;
+          }
+          .Icon {
+            margin-left: 0px;
+            display: none;
+          }
+        }
+        .Infos {
+          width: $widthMenu;
+          position: inherit;
+          bottom: 0px;
+          border: none;
+        }
+      }
+    }
+  }
+  .Header-Activate,
+  .Header-Disable,
+  .allBox-Activate,
+  .seeMenu,
+  .seeSearch-Activate,
+  .search-Activate,
+  .infos-Disable,
+  .search-Disable {
+    display: flex;
+  }
+  .allBox-Disable,
+  .seeSearch-Activate,
+  .seeSearch-Disable {
+    display: none;
+  }
+}
+/*RESPONSIVE
+
+
+
+
+  / */
+@media screen and (max-width: 1024px) {
+  .search {
+    margin-left: 0px;
+    margin: 3px 0px;
+    min-width: 100%;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    border-radius: 13px;
+    min-width: 170px;
+    margin-bottom: 5px;
+  }
+}
+/* 
+  
+  
+  
+  
+  
+  
+  TOUCH PAD ,LANDSAPE
+  
+   */
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .search {
+    margin-left: 0px;
+    margin: 3px 0px;
+    min-width: 100%;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    border-radius: 13px;
+    min-width: 170px;
+    margin-bottom: 5px;
+  }
+}
+/* 
+  
+  
+  
+  
+  TOUCH PAD ,PORTRAIT
+  
+   */
+@media screen and (min-width: 760px) and (max-width: 900px) {
+  .Logo {
+    max-height: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    min-width: 150px;
+  }
+  .search {
+    margin-left: 0px;
+    margin: 3px 0px;
+    min-width: 100%;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    border-radius: 13px;
+    min-width: 170px;
+    margin-bottom: 5px;
+  }
+}
+
+/* 
+  
+  
+  
+  
+  PHONE
+  
+   */
+@media (max-width: 760px) {
+  .Logo {
+    max-height: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    min-width: 100px;
+  }
+  .search {
+    margin-left: 0px;
+    margin: 3px 0px;
+    min-width: 100%;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    border-radius: 13px;
+    min-width: 170px;
+    margin-bottom: 5px;
+  }
+  // .search {
+  //   padding: 10px 0px;
+  //   font-size: 10px;
+  //   margin-left: 0px;
+  // }
+}

@@ -1,0 +1,200 @@
+{
+  "OurTeams": {
+    "LearnMore": "Who are we ",
+    "T": "OUR TEAM",
+    "desc1": "Here are the founders of  DS FOR DS who created CondidIA for transparent AI, clear code and always up-to-date documentation. Discover the rest of the team by visiting the page ! ",
+    "job": {
+      "dsFond": "Founder",
+      "coFond": "Co-founder",
+      "futurAssos": "Future Associate - CEO",
+      "dsDev": "Web/Front React JS Developer",
+      "dsComMark": "Communication and Marketing Manager"
+    },
+    "IAcitation": {
+      "1": "« Behind Artificial Intelligence there is always Human Intelligence »",
+      "2": "« Artificial intelligence: a promise of infinite progress, but also the eternal challenge of maintaining our humanity »",
+      "3": "« Artificial intelligence is not a rival, but a partner. Together, we are writing the future »",
+      "4": "« At the heart of AI lies the power to transform our world. The question is: how do we direct that power ? »",
+      "5": "« True intelligence is not to replace man, but to collaborate with him to reach unexplored heights »"
+    }
+  },
+  "SpecializingIA": {
+    "title": "A COMPANY COMMITTED TO IA AT YOUR SERVICE",
+    "text1": "At DS for DS, our values and commitments are a priority! We want to promote technology that is controlled, environmentally friendly and, above all, ethical and transparent, with a view to a promising future.",
+    "text2": "With a 13-year career as a Data Scientist under her belt, the founder of the company has had first-hand experience of what it's like to work in a Data team, and this has led her to make the expertise she has acquired along the way available to as many people as possible.",
+    "text3": "As a result, we now offer what we believe to be THE ultimate companion for any Data Scientist team, enabling them to share their developments seamlessly and always up to date, and to document them at all times.",
+    "text4": "Driven by a real desire to contribute to the future, we aim to make AI accessible to everyone, while respecting data with transparency and ethics!",
+    "text5": "",
+    "text6": "",
+    "text7": ""
+  },
+  "PromiseOfValue": {
+    "T": "CONFIDIA",
+    "B1": {
+      "T": "ALGORITHMIC EXPERTISE AT THE SERVICE OF YOUR PROJECTS",
+      "t1": "ConfidIA, an AI revolution for automatic code documentation. Accessible and powerful, this unique solution optimises your workflow, saving you precious time. Accelerate your projects without compromising on quality, maximising your output and your profits.",
+      "t2": "Our ethical approach underpins every aspect of ConfidIA, ensuring respect for your users and your projects. Online, it meticulously analyses your code, generating clear and exhaustive documentation, even for non-experts.",
+      "t3": "Developed on a modular basis, our platform offers total flexibility. Customise your subscription according to your needs, and invest intelligently in the essential modules.",
+      "t4": "With ConfidIA, you can combine efficiency and transparency to make every project a success!"
+    },
+    "B2": {
+      "T": {
+        "1": "PROJECT MANAGEMENT",
+        "2": "AT A GLANCE"
+      },
+      "t1": "Accelerate your project development and stay in control easily at all times."
+    },
+    "B3": {
+      "T": {
+        "1": "ETHICAL IA",
+        "2": "FOR YOU AND YOUR CUSTOMERS"
+      },
+      "t1": "Take advantage of ConfidIA for total transparency while preserving your intellectual property."
+    },
+    "B4": {
+      "T": {
+        "1": "INSTANT DOCUMENTATION",
+        "2": "MAXIMUM PRODUCTIVITY"
+      },
+      "t1": "Up-to-date documentation available in just a few clicks to boost your performance."
+    }
+  },
+  "FromCustomer": {
+    "T1": "THEY SUPPORT THE PROJECT",
+    "T2": "THEY TESTED CONFIDIA",
+    "t1": "“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration by injected humour.”",
+    "testimonials": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    }
+  },
+  "Stat": {
+    "t1": "PROJECTS",
+    "t2": "SATISFIED CUSTOMERS",
+    "t3": "PROJECTS IN PROGRESS",
+    "t4": "CUPS OF COFFEE"
+  },
+  "BoxIntro": {
+    "desc1": {
+      "1": "ConfidIA, is the only AI allowing you to document your code automatically",
+      "2": "in order to save precious time and close your projects quicker",
+      "3": "to increase your yield and your profits,",
+      "4": "and this with an ethical approach that respects your users and your project."
+    },
+    "desc2": {
+      "1": "Available online, it reads your codes and/or databases",
+      "2": "in order to give you clear and complete documentation of everything they contain.",
+      "3": "Developed in a modular way, you can compose your subscription as you wish ,",
+      "4": "by including only the modules you really need!",
+      "5": "You can choose the languages of the scripts",
+      "6": " as well as the type of documentation produced."
+    },
+    "button": "Discover our offers"
+  },
+  "Intro": "Technical Documentation",
+  "IntroDesc": {
+    "desc1": "Need a data dictionary?",
+    "desc2": "Or quickly identify what happens to a specific variable in the code?",
+    "desc3": "Come and discover how the technical documentation of ConfidIA will help you!"
+  },
+  "UserGuide": "Dynamic User Guide",
+  "UserGuideDesc": {
+    "desc1": "Need a reliable instruction manual?",
+    "desc2": "Or a relevant and very quick to set up test booklet?",
+    "desc3": "Come find out how ConfidIA's user guide will help you!"
+  },
+  "SasS": "Purchase SaaS plans",
+  "SasSDesc": {
+    "desc1": "More like Python or JavaScript?",
+    "desc2": "Mono language or the more the merrier?",
+    "desc3": "Technical or functional documentation?",
+    "desc4": "With or without assistance?",
+    "desc5": "Come and discover the subscription that is made for you!"
+  },
+
+  "participate": "Participate in the Project!",
+  "Survey": "Take the Survey!",
+  "SurveyDesc": "Some answers to know better your needs and experiences.ConfidIA wants to be the best solution for you!",
+  "BetaTest": "Become a Early Adopter!",
+  "BetaTestDesc": {
+    "desc1": "Do you want to be a protagonist of the ConfidIA adventure?",
+    "desc2": "Join the small group of those who can test ConfidIA in preview!"
+  },
+  "Interview": "Leave us an interview!",
+  "InterviewDesc": "We are writing a White Book: some interviews about the documentation exercise. Would you like to participate?",
+  "NeedOnlyIA": {
+    "title1": "The only AI you need",
+    "title2": "to document your code automatically",
+    "desc": "ConfidIA, is the only AI that allows you to document your code automatically to save precious time and close your projects faster to increase your Performance and your profits all in an ethical approach that respects your users and your project.",
+    "button": "Contact us/Demo/Offers"
+  },
+  "TryFree": {
+    "title": "Try ConfidIA for free",
+    "request": "ASK FOR A DEMO",
+    "register": "TRY FOR FREE",
+    "seeOffers": "DISCOVER OUR OFFERS"
+  },
+  "TrustedUs": {
+    "title": "They trusted us"
+  },
+  "ReadyAdventure": {
+    "title": "Are you ready to try the ConfidIA adventure?",
+    "request": "Request a Demo",
+    "seeOffers": "See the Offers"
+  },
+  "SaveTime": {
+    "title1": "Optimize and save",
+    "title2": "up to ",
+    "ts2": " of",
+    "tSpan1": "25%",
+    "title3": "your ",
+    "tSpan2": "time ",
+    "title5": "and your ",
+    "tspan3": "budget",
+    "DocAutoCode": {
+      "title1": "Automatic Documentation",
+      "title2": "of your code",
+      "desc1": "Have your documentation available",
+      "desc2": "and updated daily ",
+      "desc3": "to increase your productivity."
+    },
+    "IAEthic": {
+      "title1": "Ethical AI",
+      "desc1": "ConfidIA allows transparency ",
+      "desc2": "and respects the data",
+      "desc3": "of ours customers"
+    }
+  },
+  "askmore": {
+    "title": "Discover the next version",
+    "text": "This is the minimal version (MVP) of ConfidIA, limited in terms of both front and back functionality.\n \nFor a demo of the existing advanced version contact us : \n\tconfidia@dsfords.fr\n\t+33 (0)6 47 98 65 71"
+  },
+  "Title": "Confid",
+  "SubTitle": {
+    "title1": "Document",
+    "title2": "your code",
+    "title3": "automatically"
+  },
+  "Introduction": {
+    "subtitle": {
+      "1": "The essential AI for documenting your code",
+      "2": "and revealing your true value"
+    }
+  },
+  "ButtonsGlobals": {
+    "RequestDemo": "REQUEST A DEMO",
+    "FreePlay": "TRY FOR FREE",
+    "SpeTech": "TECHNICAL SPECIFICATION",
+    "WhoAreWe": "WHO ARE WE ?",
+    "OurContacts": "OUR CONTACTS",
+    "reqRDV": "BOOK AN APPOINTMENT"
+  },
+  "Login": "Login",
+  "Create": "Create an account",
+  "RequestDemo": "Try for free",
+  "CreatDoc": "Document my script"
+}

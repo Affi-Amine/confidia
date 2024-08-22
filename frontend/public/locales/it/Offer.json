@@ -1,0 +1,34 @@
+{
+  "h1": "Le nostre offerte",
+  "Intro": {
+    "T": "ConfidIA - Documentazione automatica",
+    "t1": "Il primo strumento di documentazione automatica del codice che ti consente di massimizzare tempo e budget. Composto da una Dashboard per la parte di Project Management e da una parte di documentazione per la parte di sviluppo, sarà il tuo strumento essenziale nei tuoi progetti.",
+    "b1": "PROVA GRATIS"
+  },
+  "boxQuestion": {
+    "H2": "Domande frequenti",
+    "Q1": {
+      "T": "Cos'è ConfidIA?",
+      "p1": "ConfidIA è un'IA che mira a documentare automaticamente il tuo codice. Ti consente di ridurre drasticamente il tempo e il budget assegnati a questa attività. Inoltre, consente…"
+    },
+    "Q2": {
+      "T": "Come funziona la Dashboard?",
+      "p1": "La parte Dashboard è la parte di ConfidIA che interesserà la maggior parte dei Project Manager o dei Freelancer che mirano ad avere una soluzione. Ti consente di gestire il progetto e di avere avvisi e raccomandazioni in tempo reale sul tuo codice, ma anche una copertura del codice che hai stabilito. Infine, ti consente di gestire i tuoi team e i tuoi connettori."
+    },
+    "Q3": {
+      "T": "Quale linguaggio posso documentare?",
+      "p1": "ConfidIA è un'IA in continua evoluzione.",
+      "p2": "È specializzata nel linguaggio Python e avrà altri linguaggi di programmazione come HTML, CSS, JavaScript... E continua a evolversi per poter coprire il maggior numero possibile di linguaggi. A poco a poco, saranno disponibili un gran numero di linguaggi, quindi sii pronto!",
+      "p3": "Se hai bisogno di un linguaggio specifico, non esitare a farcelo sapere contattandoci e prenderemo in considerazione la tua richiesta"
+    },
+    "Q4": {
+      "T": "La mia esigenza è specifica e non disponibile nelle offerte ...",
+      "p1": "Hai un'esigenza specifica che non riesci a trovare nelle offerte? Non esitare a contattarci via e-mail o telefono in modo che possiamo discutere la tua richiesta e fornirti un servizio unico."
+    },
+    "Q5": {
+      "T": "Come funziona la parte di consulenza?",
+      "p1": "La parte di consulenza è inizialmente accessibile solo per le offerte premium. Il tempo assegnato a questa sarà definito durante la tua richiesta e il preventivo che avrai.",
+      "p2": "A breve saranno disponibili degli slot dedicati alla consulenza per ConfidIA o per i tuoi progetti, per poterti supportare nell'analisi e nell'inventario dei dati, nella prototipazione degli strumenti e infine nel debug del codice esistente. L'ordine non è esaustivo, puoi fare tutto nell'ordine che desideri!"
+    }
+  }
+}

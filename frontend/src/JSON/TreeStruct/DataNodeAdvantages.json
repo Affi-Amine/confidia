@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "type": "custom",
+    "data": {
+      "label": "Advantage",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "folder"
+    },
+    "position": { "x": 150, "y": 250 }
+  },
+  {
+    "id": "2",
+    "type": "custom",
+    "data": {
+      "label": "Blog.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 300, "y": 100 }
+  },
+  {
+    "id": "3",
+    "type": "custom",
+    "data": {
+      "label": "Evenements.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 300, "y": 200 }
+  },
+  {
+    "id": "4",
+    "type": "custom",
+    "data": {
+      "label": "Freebies.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 300, "y": 300 }
+  },
+  {
+    "id": "5",
+    "type": "custom",
+    "data": {
+      "label": "VideoEvenements.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 300, "y": 400 }
+  },
+  {
+    "id": "6",
+    "type": "custom",
+    "data": {
+      "label": "WhiteBook.js",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "type": "file"
+    },
+    "position": { "x": 300, "y": 500 }
+  }
+]
