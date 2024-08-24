@@ -35,21 +35,21 @@ DEBUG = True
 ALLOWED_HOSTS = env("LOCAL_ALLOWED_HOSTS").split(",")
 
 # Application definition
-
 INSTALLED_APPS = [
+  'corsheaders', #added corsheaders dependency
   'django.contrib.admin',
   'django.contrib.auth',
   'django.contrib.contenttypes',
   'django.contrib.sessions',
   'django.contrib.messages',
   'django.contrib.staticfiles',
-  'corsheaders',
   'rest_framework',
   'rest_framework.authtoken',
   'confidiaApi',
 ]
 
 MIDDLEWARE = [
+  'corsheaders.middleware.CorsMiddleware',
   'django.middleware.security.SecurityMiddleware',
   'django.contrib.sessions.middleware.SessionMiddleware',
   'django.middleware.common.CommonMiddleware',
@@ -62,7 +62,10 @@ MIDDLEWARE = [
 
 # White listing the localhost:3000 port
 
-CORS_ALLOWED_ORIGINS = env("LOCAL_REACT_CORS_ALLOWED_ORIGINS").split(",")
+#CORS_ALLOWED_ORIGINS = env("LOCAL_REACT_CORS_ALLOWED_ORIGINS").split(",")
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Replace with your React front-end's origin
+]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
