@@ -14,13 +14,18 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf import settings
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from rest_framework.authtoken.views import obtain_auth_token
+from ms_identity_web.django.msal_views_and_urls import MsalViews
+
+msal_urls = MsalViews (settings.MS_IDENTITY_WEB).url_patterns()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('confidiaApi/', include ('confidiaApi.urls')),
-    path('auth/', obtain_auth_token),
+    #path('auth/', obtain_auth_token),
+    path(f'{settings.AAD_CONFIG.django.auth_endpoints.prefix}/', include(msal_urls)),
 ]

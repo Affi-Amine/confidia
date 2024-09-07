@@ -13,6 +13,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import environ
+from ms_identity_web.configuration import AADConfig
+from ms_identity_web import IdentityWebPython
+
+AAD_CONFIG = AADConfig.parse_json(file_path='aad.config.json') 
+MS_IDENTITY_WEB = IdentityWebPython (AAD_CONFIG)
+ERROR_TEMPLATE = 'auth/{).html' # for rendering 401 or other errors from
 
 
 env = environ.Env()
@@ -63,6 +69,7 @@ MIDDLEWARE = [
   'corsheaders.middleware.CorsMiddleware',
 ]
 
+MIDDLEWARE.append('ms_identity_web.django.middleware.MsalMiddleware')
 
 # White listing the localhost:3000 port
 
