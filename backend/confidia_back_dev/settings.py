@@ -13,9 +13,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import environ
+
+
 env = environ.Env()
-# reading .env file
-environ.Env.read_env()
+environ.Env.read_env()  # Load environment variables from .env file
+
+ALLOWED_HOSTS = env("LOCAL_ALLOWED_HOSTS").split(",")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -59,6 +62,7 @@ MIDDLEWARE = [
   'django.middleware.clickjacking.XFrameOptionsMiddleware',
   'corsheaders.middleware.CorsMiddleware',
 ]
+
 
 # White listing the localhost:3000 port
 
