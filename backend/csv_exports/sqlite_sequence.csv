@@ -1,0 +1,7 @@
+name,seq
+django_migrations,23
+django_admin_log,1
+django_content_type,10
+auth_permission,40
+auth_group,0
+auth_user,1

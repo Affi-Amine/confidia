@@ -1,0 +1,2 @@
+id,password,last_login,is_superuser,username,last_name,email,is_staff,is_active,date_joined,first_name
+1,pbkdf2_sha256$870000$Zg90Yuw1qQSSuwrdSpWNjC$o9WYF0r6uadZEGZnuTlYLU+iSZGg7+ddScoTOaQuYIA=,2024-08-23 15:59:54.453938,1,admin,,lollia.doriane@dsfords.fr,1,1,2023-05-23 15:01:38.891086,

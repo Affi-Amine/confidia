@@ -121,9 +121,9 @@ DATABASES = {
         'USER': 'dsfordslogin', 
         'PASSWORD': 'Dsford2024!', 
         'HOST': 'confidia-test-sql.database.windows.net',  
-        'PORT': '',
+        'PORT': '1433',
         'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',
+            'driver': 'ODBC Driver 18 for SQL Server',
         }
     }
 }

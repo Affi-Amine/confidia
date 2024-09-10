@@ -1,5 +1,6 @@
 import { LogLevel } from "@azure/msal-browser";
- 
+
+// Define B2C policies and authorities
 export const b2cPolicies = {
     names: {
         signUpSignIn: 'B2C_1_RegisterTestDSFORDS',
@@ -18,19 +19,21 @@ export const b2cPolicies = {
         },
     },
     authorityDomain: 'ConfidiaTestEntraIDB2C.b2clogin.com',
-}; 
+};
+
+// MSAL configuration
 export const msalConfig = {
     auth: {
-        clientId: 'd4983a08-45dc-4861-b57c-2b897e74509f', // Remplacez par votre propre ID client.
-        authority: b2cPolicies.authorities.signUpSignIn.authority,  // Utilisez votre politique d'inscription/connexion.
-        knownAuthorities: [b2cPolicies.authorityDomain], // Domaine de votre tenant B2C.
-        redirectUri: '/', // URI de redirection après la connexion.
-        postLogoutRedirectUri: '/', // URI à laquelle naviguer après la déconnexion.
-        navigateToLoginRequestUrl: false, // Ne naviguez pas vers l'URL de la demande de connexion après l'authentification.
+        clientId: 'd4983a08-45dc-4861-b57c-2b897e74509f', // Replace with your client ID
+        authority: b2cPolicies.authorities.signUpSignIn.authority,  // Use your sign-up/sign-in policy
+        knownAuthorities: [b2cPolicies.authorityDomain], // Your B2C tenant domain
+        redirectUri: '/', // Redirect URI after login
+        postLogoutRedirectUri: '/', // Redirect URI after logout
+        navigateToLoginRequestUrl: false, // Do not navigate to request URL after login
     },
     cache: {
-        cacheLocation: 'localStorage', // Configures cache location. "sessionStorage" is more secure, but "localStorage" gives you SSO between tabs.
-        storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
+        cacheLocation: 'localStorage', // Use localStorage for SSO between tabs
+        storeAuthStateInCookie: false, // Set to true if you have issues on IE11 or Edge
     },
     system: {
         loggerOptions: {
@@ -40,15 +43,19 @@ export const msalConfig = {
                 }
                 switch (level) {
                     case LogLevel.Error:
+                        // Uncomment to enable logging
                         // console.error(message);
                         return;
                     case LogLevel.Info:
+                        // Uncomment to enable logging
                         // console.info(message);
                         return;
                     case LogLevel.Verbose:
+                        // Uncomment to enable logging
                         // console.debug(message);
                         return;
                     case LogLevel.Warning:
+                        // Uncomment to enable logging
                         // console.warn(message);
                         return;
                     default:
@@ -57,16 +64,20 @@ export const msalConfig = {
             },
         },
     },
-}; 
+};
+
+// Define protected resources
 export const protectedResources = {
     apiTodoList: {
-        endpoint: process.env.REACT_APP_FRONT_URL,
+        endpoint: process.env.REACT_APP_FRONT_URL, // Ensure this is defined in your environment
         scopes: {
             read: ['https://ConfidiaTestEntraIDB2C.onmicrosoft.com/tasks-api-d4983a08-45dc-4861-b57c-2b897e74509f/LectureTaches'],
             write: ['https://ConfidiaTestEntraIDB2C.onmicrosoft.com/tasks-api-d4983a08-45dc-4861-b57c-2b897e74509f/EcritureTache'],
         },
     },
-}; 
+};
+
+// Define login request scopes
 export const loginRequest = {
     scopes: [...protectedResources.apiTodoList.scopes.read, ...protectedResources.apiTodoList.scopes.write],
 };
