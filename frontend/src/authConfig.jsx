@@ -24,16 +24,16 @@ export const b2cPolicies = {
 // MSAL configuration
 export const msalConfig = {
     auth: {
-        clientId: 'd4983a08-45dc-4861-b57c-2b897e74509f', // Replace with your client ID
-        authority: b2cPolicies.authorities.signUpSignIn.authority,  // Use your sign-up/sign-in policy
-        knownAuthorities: [b2cPolicies.authorityDomain], // Your B2C tenant domain
+        clientId: 'd4983a08-45dc-4861-b57c-2b897e74509f', 
+        authority: b2cPolicies.authorities.signUpSignIn.authority, 
+        knownAuthorities: [b2cPolicies.authorityDomain], 
         redirectUri: '/', // Redirect URI after login
         postLogoutRedirectUri: '/', // Redirect URI after logout
-        navigateToLoginRequestUrl: false, // Do not navigate to request URL after login
+        navigateToLoginRequestUrl: false, 
     },
     cache: {
-        cacheLocation: 'localStorage', // Use localStorage for SSO between tabs
-        storeAuthStateInCookie: false, // Set to true if you have issues on IE11 or Edge
+        cacheLocation: 'localStorage', 
+        storeAuthStateInCookie: false, 
     },
     system: {
         loggerOptions: {
@@ -69,7 +69,7 @@ export const msalConfig = {
 // Define protected resources
 export const protectedResources = {
     apiTodoList: {
-        endpoint: process.env.REACT_APP_FRONT_URL, // Ensure this is defined in your environment
+        endpoint: process.env.REACT_APP_FRONT_URL, 
         scopes: {
             read: ['https://ConfidiaTestEntraIDB2C.onmicrosoft.com/tasks-api-d4983a08-45dc-4861-b57c-2b897e74509f/LectureTaches'],
             write: ['https://ConfidiaTestEntraIDB2C.onmicrosoft.com/tasks-api-d4983a08-45dc-4861-b57c-2b897e74509f/EcritureTache'],

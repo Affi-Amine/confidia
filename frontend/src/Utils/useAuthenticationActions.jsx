@@ -2,10 +2,10 @@ import { useHistory } from 'react-router-dom';
 import { useMsal } from '@azure/msal-react';
 import { InteractionStatus } from "@azure/msal-browser";
 import { loginRequest, b2cPolicies } from '../authConfig'; 
-import { clearStorage } from './storageUtils.jsx'; // Assuming you still need storage management
+import { clearStorage } from './storageUtils.jsx'; 
 
 export function useAuthenticationActions() {
-  const { instance, inProgress } = useMsal(); // Keep if you plan to use Azure in other places
+  const { instance, inProgress } = useMsal(); 
   const history = useHistory();
   let activeAccount;
 
@@ -20,17 +20,17 @@ export function useAuthenticationActions() {
 
   // Update the handleLoginRedirect to also redirect to Django backend
   const handleLoginRedirect = () => {
-    window.location.href = "http://127.0.0.1:8000/auth/sign_in"; // Redirect to Django backend for login
+    window.location.href = `${msalConfig.auth.redirectUri}`; // Redirect to Django backend for login
   };
 
   // Handle logout with Azure (if still needed)
   const handleLogoutRedirect = () => {
-    instance.logoutRedirect(); // Keep this logic if Azure logout is still required
+    instance.logoutRedirect();
   };
 
   // Logout via popup
   const handleLogoutPopup = () => {
-    clearStorage(activeAccount); // Clear any stored session data
+    clearStorage(activeAccount); 
     instance.logoutPopup({
       mainWindowRedirectUri: '/', // Redirect back to home page after logout
       account: instance.getActiveAccount(),

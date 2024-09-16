@@ -24,7 +24,7 @@ ERROR_TEMPLATE = 'auth/{).html' # for rendering 401 or other errors from
 env = environ.Env()
 environ.Env.read_env()  # Load environment variables from .env file
 
-ALLOWED_HOSTS = env("LOCAL_ALLOWED_HOSTS").split(",")
+ALLOWED_HOSTS = env("LOCAL_ALLOWED_HOSTS", default="127.0.0.1,localhost").split(",")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -66,7 +66,6 @@ MIDDLEWARE = [
   'django.contrib.auth.middleware.AuthenticationMiddleware',
   'django.contrib.messages.middleware.MessageMiddleware',
   'django.middleware.clickjacking.XFrameOptionsMiddleware',
-  'corsheaders.middleware.CorsMiddleware',
 ]
 
 MIDDLEWARE.append('ms_identity_web.django.middleware.MsalMiddleware')
