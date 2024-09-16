@@ -20,7 +20,7 @@ export function useAuthenticationActions() {
 
   // Update the handleLoginRedirect to also redirect to Django backend
   const handleLoginRedirect = () => {
-    window.location.href = `${msalConfig.auth.redirectUri}`; // Redirect to Django backend for login
+    window.location.href = `http://127.0.0.1:8000/auth/redirect`; // Redirect to Django backend for login
   };
 
   // Handle logout with Azure (if still needed)
