@@ -46,6 +46,7 @@ import usePageSession from "./hooks/usePageSession.jsx";
 import useUserProfileWithReq from "./hooks/useUserProfileWithReq.jsx";
 
 // Contents ConfidiaBoard
+import { BrowserRouter as Router} from 'react-router-dom';
 import AddConnector from "./Contents/ConfidiaBoard/AddConnector.js";
 import AddNotification from "./Contents/ConfidiaBoard/AddNotification.js";
 import AddUser from "./Contents/ConfidiaBoard/AddUser.js";
@@ -61,6 +62,7 @@ import Users from "./Contents/ConfidiaBoard/Users.js";
 import ViewConnector from "./Contents/ConfidiaBoard/ViewConnector.js";
 import ViewProject from "./Contents/ConfidiaBoard/ViewProject.js";
 import ViewUser from "./Contents/ConfidiaBoard/ViewUser.js";
+
 
 // Icon fontawesome
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -285,6 +287,12 @@ export default function Pages() {
               path="/advantages/videos-evenements/:id"
               render={() => <VideoEvenements />}
             />
+             <Switch>
+        {/* Route menant à HomeLogin.js */}
+        <Route path="/homelogin" render={() => <HomeLogin />} />
+        {/* Optionnel : rediriger tout le reste vers homelogin */}
+        <Route path="/" exact component={HomeLogin} />
+      </Switch>
             <Route path="/homeLogin-confidia" render={() => <HomeLogin />} />
             <Route path="/home-confidia" render={() => <HomeConfidia />} />
             <Route

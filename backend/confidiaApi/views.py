@@ -8,7 +8,7 @@ from rest_framework.decorators import action, authentication_classes, permission
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-
+from django.shortcuts import redirect
 from django.http import JsonResponse
 
 from .utils.udfs import documentScriptElements, formatRes
@@ -61,3 +61,8 @@ def dtProject(request) :
     else :
         response = {'message': 'UNEXPECTED ERROR : No Content in POST request'}
         return Response(response, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET'])  # Définie la méthode HTTP GET
+def redirect_view(request):
+    # Cette vue redirige l'utilisateur vers une autre URL (par exemple "/home")
+    return redirect('http://localhost:3000/homelogin')

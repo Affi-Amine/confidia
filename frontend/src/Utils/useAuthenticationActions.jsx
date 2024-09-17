@@ -15,7 +15,7 @@ export function useAuthenticationActions() {
 
   // Update the handleLoginPopup to redirect to Django backend
   const handleLoginPopup = () => {
-    window.location.href = "http://127.0.0.1:8000/auth/sign_in"; // Redirect to Django backend for login
+    window.location.href = "http://localhost:8000/auth/sign_in"; // Redirect to Django backend for login
   };
 
   // Update the handleLoginRedirect to also redirect to Django backend
