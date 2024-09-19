@@ -23,19 +23,6 @@
     }
   },
   {
-    "email": "eines.bekri@gmail.com",
-    "date": "21/08/2024",
-    "key_earlyAdopter": "t798r4yjhg4jh5hg8i74fg651h5gk4",
-    "key_freeTrial": {
-      "freeTrial_duration": "1",
-      "freeTrial_Activate": "true"
-    },
-    "AccessType": {
-      "confidia": { "duration": "noLimit", "access": "noLimit" }
-    }
-  },
-
-  {
     "email": "julien.varoqueaux@gmail.com",
     "date": "01/08/2024",
     "key_freeTrial": {

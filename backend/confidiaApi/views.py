@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets, status
+from django.shortcuts import render
 
 from .models import Script, Test 
 from .serializers import ScriptSerializer
@@ -66,3 +67,7 @@ def dtProject(request) :
 def redirect_view(request):
     # Cette vue redirige l'utilisateur vers une autre URL (par exemple "/home")
     return redirect('http://localhost:3000/homelogin')
+
+# Add this view to render the index.html template
+def index_view(request):
+    return render(request, 'index.html')
