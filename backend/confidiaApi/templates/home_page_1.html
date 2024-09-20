@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Welcome to Home Page 1</h1>
+    <form action="{% url 'upgrade_role' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Subscribe</button>
+    </form>
+{% endblock %}

@@ -14,6 +14,10 @@ from django.http import JsonResponse
 
 from .utils.udfs import documentScriptElements, formatRes
 from datetime import datetime as dt
+from django.views.decorators.csrf import csrf_exempt 
+
+from django.contrib.auth.models import Group
+from django.contrib.auth.decorators import login_required, user_passes_test
 
 available_languages = ['fr','it','en']
 
@@ -68,6 +72,25 @@ def redirect_view(request):
     # Cette vue redirige l'utilisateur vers une autre URL (par exemple "/home")
     return redirect('http://localhost:3000/homelogin')
 
-# Add this view to render the index.html template
 def index_view(request):
+    if request.identity_context_data.authenticated:
+        return redirect('home_page_1')
     return render(request, 'index.html')
+
+def home_page_1(request):
+    return render(request, 'home_page_1.html')
+
+@csrf_exempt
+def upgrade_role(request):
+    if request.method == 'POST':
+        user = request.user
+        # Assuming you have a group named 'premium'
+        premium_group = Group.objects.get(name='premium')
+        user.groups.add(premium_group)
+        return redirect('home_page_2')
+    return redirect('home_page_1')
+
+@login_required
+@user_passes_test(lambda u: u.groups.filter(name='premium').exists())
+def home_page_2(request):
+    return render(request, 'home_page_2.html')

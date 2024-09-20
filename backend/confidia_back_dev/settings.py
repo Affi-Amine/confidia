@@ -3,6 +3,7 @@ import os
 import environ
 from ms_identity_web.configuration import AADConfig
 from ms_identity_web import IdentityWebPython
+import logging
 
 AAD_CONFIG = AADConfig.parse_json(file_path='aad.config.json')
 MS_IDENTITY_WEB = IdentityWebPython(AAD_CONFIG)
@@ -97,18 +98,39 @@ WSGI_APPLICATION = 'confidia_back_dev.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'confidia-db-migration',
-        'USER': 'dsfordslogin',
-        'PASSWORD': 'Dsford2024!',
-        'HOST': 'confidia-test-sql.database.windows.net',
-        'PORT': '1433',
-        'OPTIONS': {
-            'driver': 'ODBC Driver 18 for SQL Server',
-        }
-    }
+#DATABASES = {
+#   'default': {
+ #       'ENGINE': 'mssql',
+  #      'NAME': 'confidia-db-migration',
+   #     'USER': 'dsfordslogin',
+    #    'PASSWORD': 'Dsford2024!',
+     #   'HOST': 'confidia-test-sql.database.windows.net',
+      #  'PORT': '1433',
+       # 'OPTIONS': {
+        #    'driver': 'ODBC Driver 18 for SQL Server',
+        #}
+ #   }
+#}
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+    },
+    'loggers': {
+        'ms_identity_web': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
 }
 
 # Internationalization
