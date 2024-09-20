@@ -70,7 +70,7 @@ def dtProject(request) :
 @api_view(['GET'])  # Définie la méthode HTTP GET
 def redirect_view(request):
     # Cette vue redirige l'utilisateur vers une autre URL (par exemple "/home")
-    return redirect('http://localhost:3000/homelogin')
+    return redirect('home_page_1')
 
 def index_view(request):
     if request.identity_context_data.authenticated:
