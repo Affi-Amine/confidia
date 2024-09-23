@@ -5,9 +5,9 @@ from ms_identity_web.configuration import AADConfig
 from ms_identity_web import IdentityWebPython
 import logging
 
-AAD_CONFIG = AADConfig.parse_json(file_path='aad.config.json')
-MS_IDENTITY_WEB = IdentityWebPython(AAD_CONFIG)
-ERROR_TEMPLATE = 'auth/{}.html'  # for rendering 401 or other errors from msal_middleware
+#AAD_CONFIG = AADConfig.parse_json(file_path='aad.config.json')
+#MS_IDENTITY_WEB = IdentityWebPython(AAD_CONFIG)
+#ERROR_TEMPLATE = 'auth/{}.html'  # for rendering 401 or other errors from msal_middleware
 
 env = environ.Env()
 environ.Env.read_env()  # Load environment variables from .env file
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
   'rest_framework.authtoken',
   'confidiaApi',
   'django_extensions',
+  'oauth2_provider', 
 ]
 
 MIDDLEWARE = [
@@ -55,9 +56,36 @@ MIDDLEWARE = [
   'django.contrib.auth.middleware.AuthenticationMiddleware',
   'django.contrib.messages.middleware.MessageMiddleware',
   'django.middleware.clickjacking.XFrameOptionsMiddleware',
+  'oauth2_provider.middleware.OAuth2TokenMiddleware',
 ]
 
-MIDDLEWARE.append('ms_identity_web.django.middleware.MsalMiddleware')
+AUTHENTICATION_BACKENDS = [
+    'oauth2_provider.backends.OAuth2Backend',
+]
+
+OAUTH2_PROVIDER = {
+    'ACCESS_TOKEN_EXPIRE_SECONDS': 3600,  # 1 hour
+    'AUTHORIZATION_CODE_EXPIRE_SECONDS': 3600,
+    'REFRESH_TOKEN_EXPIRE_SECONDS': 2592000,  # 30 days
+    'SCOPES': {
+        'read': 'Read access',
+        'write': 'Write access',
+        'groups': 'Access to user groups',
+    },
+    'RESOURCE_OWNER_PASSWORD_CREDENTIALS': False,
+    'ALLOW_GET_REQUESTS_FOR_AUTH_CODE_GRANT': True,
+    'ACCESS_TOKEN_METHOD': 'POST',
+}
+
+CLIENT_ID = 'd4983a08-45dc-4861-b57c-2b897e74509f'  # Replace with your client ID
+CLIENT_SECRET = 'rTk8Q~tYBI-WBFD1ZhsSkPtDmvq1L6KNUpp1abCh'  # Replace with your client secret
+TENANT_NAME = 'authAppTestConfidia'  # Replace with your Azure AD B2C tenant name
+USER_FLOW = 'B2C_1_signupsignin1'  # Replace with your Azure AD B2C user flow name
+REDIRECT_URI = 'https://jwt.ms'  # Replace with your application's redirect URI
+LOGIN_REDIRECT_URL = '/' 
+LOGOUT_REDIRECT_URL = '/'
+
+#MIDDLEWARE.append('ms_identity_web.django.middleware.MsalMiddleware')
 
 # CORS_ALLOWED_ORIGINS = env("LOCAL_REACT_CORS_ALLOWED_ORIGINS").split(",")
 CORS_ALLOWED_ORIGINS = [
@@ -97,6 +125,13 @@ WSGI_APPLICATION = 'confidia_back_dev.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 #DATABASES = {
 #   'default': {

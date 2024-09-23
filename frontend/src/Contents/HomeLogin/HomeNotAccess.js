@@ -39,6 +39,7 @@ export default function HomeNotAcsess() {
 
   return (
     <div className="HomeNotAcsess">
+      <button onClick={history.push("frontend/src/Pages/TestPage.js")}>TESSSSST</button>
       {seeAdvantageModal && (
         <AdvantagesModal
           setSeeAdvantageModal={setSeeAdvantageModal}
