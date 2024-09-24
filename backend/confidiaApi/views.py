@@ -1,102 +1,115 @@
-from django.shortcuts import redirect, render
-from django.contrib.auth import login, logout
-from django.http import HttpResponse
+from django.shortcuts import render
+from rest_framework import status
+from rest_framework.decorators import action, api_view, authentication_classes, permission_classes
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from django.http import JsonResponse
+from .models import Script, Test
+from .serializers import ScriptSerializer
+from .utils.udfs import documentScriptElements, formatRes
+from datetime import datetime as dt
+from django.shortcuts import redirect
+from django.urls import reverse
+import logging
 import requests
-from django.conf import settings
-from oauth2_provider.views import AuthorizationView, TokenView, RevokeTokenView
-from oauth2_provider.models import get_application_model
-from django.contrib.auth.models import User, Group
 
-Application = get_application_model()
+available_languages = ['fr', 'it', 'en']
 
-# Create a sample application (replace with your app)
-app = Application.objects.create(
-    client_id='d4983a08-45dc-4861-b57c-2b897e74509f',
-    client_secret='rTk8Q~tYBI-WBFD1ZhsSkPtDmvq1L6KNUpp1abCh',
-    redirect_uris=['https://jwt.ms'],
-    name='Your Django App',
-)
+@api_view(['POST'])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def dtProject(request):
+    if 'content' in request.data.keys():
+        prjName = "Quick code documentation"
+        prjDesc = "Manual inserted script"
+        selConn = "Manual"
+        selLang = "TO DO"
+        selIntp = request.data['sriptLang']
+        selScrp = "TO DO"
+        currentManualScript = request.data['content']
+        prjInfo = {
+            "demoAlias": request.data['demoAlias'],
+            "demoDescription": request.data['demoDescription'],
+            "demoUserAlias": request.data['demoUserAlias']
+        }
 
-class MyAuthorizationView(AuthorizationView):
-    pass
+        compact_option = '' if request.data['frontCompactOption'] == 'compact' else '_minimum'
+        user_language = request.data['appLan'] if request.data['appLan'] in available_languages else 'fr'
+        user_image = request.data['projectImg']
 
-class MyTokenView(TokenView):
-    pass
+        selPrj = {
+            'contributor_ref': "TO DO",
+            'name': prjName,
+            'manager': "TO DO",
+            'description': prjDesc,
+            'connector_ref': selConn,
+            'interpreter_ref': selIntp,
+            'mainScript_ref': selScrp,
+            'tagId': "QuickCode",
+        }
 
-class MyRevokeTokenView(RevokeTokenView):
-    pass
+        outvar = {'conts': "TO DO", 'loginUser': "TO DO", 'selectedContr': "TO DO"}
+        outvar['selectedProject'] = selPrj
+        resultsDict, code_rows, oneline_rows, comm_rows = documentScriptElements(currentManualScript, True, user_language, selIntp, compact_option)
 
-def azure_ad_b2c_login(request):
-    """Redirects the user to Azure AD B2C for authentication."""
-    authorization_url = 'https://authAppTestConfidia.b2clogin.com/authAppTestConfidia.onmicrosoft.com/B2C_1_signupsignin1/oauth2/v2.0/authorize'
-    auth_params = {
-        'client_id': settings.CLIENT_ID,
-        'response_type': 'code',
-        'scope': 'openid groups',
-        'redirect_uri': settings.REDIRECT_URI,
-        'nonce': 'your_nonce',
-        'state': 'your_state',
-    }
-    return redirect(authorization_url + '?' + '&'.join(f'{key}={value}' for key, value in auth_params.items()))
+        print('--- DONE TECH DOC ---')
 
-def azure_ad_b2c_callback(request):
-    """Handles the callback from Azure AD B2C after successful authentication."""
+        formated_out = formatRes(resultsDict, code_rows, oneline_rows, comm_rows, prjInfo)
+        formated_out['dashboardDoc']['projectImg'] = user_image
+
+        return JsonResponse(formated_out)
+    else:
+        response = {'message': 'UNEXPECTED ERROR : No Content in POST request'}
+        return Response(response, status=status.HTTP_400_BAD_REQUEST)
+
+from django.shortcuts import render, redirect
+from django.urls import reverse
+import msal  # Make sure to install the MSAL package if you haven't already
+
+def login(request):
+    # Check if the user is already authenticated
+    if request.user.is_authenticated:
+        return redirect(reverse('dashboard'))  # Change this to your success view name
+
+    # Azure AD configuration
+    client_id = 'YOUR_CLIENT_ID'
+    tenant_id = 'YOUR_TENANT_ID'
+    redirect_uri = 'http://localhost:8000/auth/callback'  # Adjust to your callback URL
+    authority = f'https://login.microsoftonline.com/d4983a08-45dc-4861-b57c-2b897e74509f'
+
+    if request.method == 'GET':
+        return redirect('https://confidiatestentraidb2c.b2clogin.com/ConfidiaTestEntraIDB2C.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_signupsignin1&client_id=d4983a08-45dc-4861-b57c-2b897e74509f&nonce=defaultNonce&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fcallback&scope=openid&response_type=id_token&prompt=login')
+
+    # If it’s a POST request or any other method, return the login template
+    return render(request, 'login.html')
+
+logger = logging.getLogger(__name__)
+
+@api_view(['GET'])
+@authentication_classes([])  # No authentication required for the callback
+@permission_classes([])  # No permissions required for the callback
+def callback(request):
     code = request.GET.get('code')
-    token_endpoint = 'https://authAppTestConfidia.b2clogin.com/authAppTestConfidia.onmicrosoft.com/B2C_1_signupsignin1/oauth2/v2.0/token'
-    token_params = {
-        'grant_type': 'authorization_code',
-        'client_id': settings.CLIENT_ID,
-        'client_secret': settings.CLIENT_SECRET,
-        'code': code,
-        'redirect_uri': settings.REDIRECT_URI,
-    }
-    response = requests.post(token_endpoint, data=token_params)
-    access_token = response.json()['access_token']
+    logger.debug(f"Received code: {code}")
+    if not code:
+        return JsonResponse({'error': 'No code received from Azure AD.'}, status=400)
 
-    # Use the access token to retrieve user information and groups from Azure AD B2C
-    user_info_endpoint = 'https://authAppTestConfidia.b2clogin.com/authAppTestConfidia.onmicrosoft.com/B2C_1_signupsignin1/userinfo'
-    headers = {'Authorization': f'Bearer {access_token}'}
-    user_info_response = requests.get(user_info_endpoint, headers=headers)
-    user_data = user_info_response.json()
+    # Exchange the authorization code for tokens (implement this logic)
+    tokens = exchange_code_for_tokens(code)
 
-    # Create or update user in Django database if needed
-    user, created = User.objects.get_or_create(username=user_data['sub'])
-    user.first_name = user_data.get('given_name', '')
-    user.last_name = user_data.get('family_name', '')
-    user.email = user_data.get('email', '')
-    user.save()
+    if 'access_token' in tokens:
+        # Validate the token (optional)
+        if validate_token(tokens['access_token']):
+            return render(request, 'dashboard.html', {'access_token': tokens['access_token']})
+        else:
+            return JsonResponse({'error': 'Invalid token.'}, status=401)
 
-    # Get the user's group information from the userinfo response
-    groups = user_data.get('groups', [])
+    return render(request, 'login.html', {'error': 'Failed to obtain tokens.'})
 
-    # Add user to corresponding groups in Django
-    for group_name in groups:
-        try:
-            group, created = Group.objects.get_or_create(name=group_name)
-            user.groups.add(group)
-        except Exception as e:
-            print(f"Error adding user to group: {e}")
-
-    # Authenticate the user in Django
-    login(request, user)
-
-    return redirect(settings.LOGIN_REDIRECT_URL)
-
-def azure_ad_b2c_logout(request):
-    """Logs out the user from Azure AD B2C."""
-    logout_endpoint = 'https://authAppTestConfidia.b2clogin.com/authAppTestConfidia.onmicrosoft.com/B2C_1_signupsignin1/oauth2/v2.0/logout'
-    post_logout_redirect_uri = settings.LOGOUT_REDIRECT_URL
-    params = {
-        'post_logout_redirect_uri': post_logout_redirect_uri
-    }
-    logout(request)
-    return redirect(logout_endpoint + '?' + '&'.join(f'{key}={value}' for key, value in params.items()))
-
-urlpatterns = [
-    path('login/azure-ad-b2c/', azure_ad_b2c_login, name='login'),
-    path('callback/', azure_ad_b2c_callback, name='callback'),
-    path('logout/azure-ad-b2c/', azure_ad_b2c_logout, name='logout'),
-    path('o/authorize/', MyAuthorizationView.as_view(), name='authorize'),
-    path('o/token/', MyTokenView.as_view(), name='token'),
-    path('o/revoke_token/', MyRevokeTokenView.as_view(), name='revoke_token'),
-]
+@api_view(['POST'])
+@authentication_classes([TokenAuthentication])  # Requires authentication to logout
+@permission_classes([IsAuthenticated])
+def logout(request):
+    # Implement your logout logic (e.g., invalidate the session)
+    return JsonResponse({'message': 'Logged out successfully.'}, status=200)

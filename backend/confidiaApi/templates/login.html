@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded shadow-md w-full max-w-sm">
+        <h1 class="text-2xl font-bold mb-4">Login</h1>
+        <p class="mb-4">Please click the button below to sign in with your Microsoft account.</p>
+        <a href="{% url 'login' %}" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+            Sign in with Microsoft
+        </a>
+    </div>
+</body>
+</html>

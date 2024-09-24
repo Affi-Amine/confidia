@@ -1,19 +1,29 @@
-from django.conf import settings
+"""
+URL configuration for confidia_back_dev project.
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/4.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
 from django.contrib import admin
-from django.urls import path, include
-from django.shortcuts import redirect  # Importe redirect pour gérer les redirections
-from confidiaApi.views import redirect_view, index_view, home_page_1, upgrade_role, home_page_2
-from ms_identity_web.django.msal_views_and_urls import MsalViews
+from django.urls import path
+from django.conf.urls import include
+from rest_framework.authtoken.views import obtain_auth_token
+from django.urls import path
+from confidiaApi.views import login, dtProject, callback, logout
 
-msal_urls = MsalViews(settings.MS_IDENTITY_WEB).url_patterns()
-
-# Liste des URLs pour ton projet Django
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('confidiaApi/', include('confidiaApi.urls')),
-    path('', index_view, name='index'),  
-    path('home_page_1/', home_page_1, name='home_page_1'),
-    path('upgrade_role/', upgrade_role, name='upgrade_role'),
-    path('home_page_2/', home_page_2, name='home_page_2'),
-    path(f'{settings.AAD_CONFIG.django.auth_endpoints.prefix}/', include(msal_urls)),
+    path('auth/login/', login, name='login'),
+    path('auth/callback/', callback, name='callback'),
+    path('auth/logout/', logout, name='logout'),  # Optional logout
+    path('dtProject/', dtProject, name='dtProject'),
 ]
