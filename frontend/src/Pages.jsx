@@ -1,7 +1,6 @@
 import React, { Suspense, useEffect, useRef } from "react";
 import { Redirect, Route, Switch, useLocation } from "react-router-dom";
 import "./App.css";
-import "./sass/App.scss";
 // Azure
 import { AuthenticatedTemplate } from "@azure/msal-react";
 import useMsalEventCallback from "./hooks/useMsalEventCallback.jsx";
@@ -23,12 +22,10 @@ import {
   HomeConfidia,
   HomeLogin,
   HomePage,
-  HomeQuote,
   LegalNotice,
   NotFound,
   Offer,
   QuizForm,
-  Quote,
   Reglement24Q3,
   TechnicalSpecification,
   UserGuide,
@@ -49,6 +46,7 @@ import usePageSession from "./hooks/usePageSession.jsx";
 import useUserProfileWithReq from "./hooks/useUserProfileWithReq.jsx";
 
 // Contents ConfidiaBoard
+import { BrowserRouter as Router} from 'react-router-dom';
 import AddConnector from "./Contents/ConfidiaBoard/AddConnector.js";
 import AddNotification from "./Contents/ConfidiaBoard/AddNotification.js";
 import AddUser from "./Contents/ConfidiaBoard/AddUser.js";
@@ -64,6 +62,7 @@ import Users from "./Contents/ConfidiaBoard/Users.js";
 import ViewConnector from "./Contents/ConfidiaBoard/ViewConnector.js";
 import ViewProject from "./Contents/ConfidiaBoard/ViewProject.js";
 import ViewUser from "./Contents/ConfidiaBoard/ViewUser.js";
+
 
 // Icon fontawesome
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -154,9 +153,7 @@ export default function Pages() {
               />
             )}
           />
-          {accesEnv.includes(process.env.REACT_APP_ENVNAME) && (
-            <Route path="/offer" render={() => <Offer />} />
-          )}
+          <Route path="/offer" render={() => <Offer />} />
           <Route path="/CGU" render={() => <CGU />} />
           <Route path="/contact" render={() => <Contact />} />
           <Route path="/mentions-legal" render={() => <LegalNotice />} />
@@ -290,6 +287,12 @@ export default function Pages() {
               path="/advantages/videos-evenements/:id"
               render={() => <VideoEvenements />}
             />
+             <Switch>
+        {/* Route menant à HomeLogin.js */}
+        <Route path="/homelogin" render={() => <HomeLogin />} />
+        {/* Optionnel : rediriger tout le reste vers homelogin */}
+        <Route path="/" exact component={HomeLogin} />
+      </Switch>
             <Route path="/homeLogin-confidia" render={() => <HomeLogin />} />
             <Route path="/home-confidia" render={() => <HomeConfidia />} />
             <Route
@@ -317,8 +320,6 @@ export default function Pages() {
               render={() => <DocScript props={{ dataKeepChoice }} />}
             />
             <Route path="/user-guide" render={() => <UserGuide />} />
-            <Route path="/home-quote" render={() => <HomeQuote />} />
-            <Route path="/quote-devis_:id" render={() => <Quote />} />
           </AuthenticatedTemplate>
           <Route path="*" component={NotFound} />
         </Switch>
