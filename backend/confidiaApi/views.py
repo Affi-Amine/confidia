@@ -13,6 +13,13 @@ from django.shortcuts import redirect
 from django.urls import reverse
 import logging
 import requests
+from django.contrib.auth import login as auth_login
+from msal import ConfidentialClientApplication
+import base64
+import hashlib
+import os
+from django.views.decorators.csrf import csrf_exempt
+
 
 available_languages = ['fr', 'it', 'en']
 
@@ -67,45 +74,82 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 import msal  # Make sure to install the MSAL package if you haven't already
 
+
+def generate_code_verifier():
+    # Create a random string (code_verifier) of 128 characters
+    code_verifier = base64.urlsafe_b64encode(os.urandom(40)).rstrip(b'=').decode('utf-8')
+    return code_verifier
+
+def generate_code_challenge(code_verifier):
+    # Hash the code_verifier using SHA256 and encode it as base64url
+    code_challenge = base64.urlsafe_b64encode(hashlib.sha256(code_verifier.encode()).digest()).rstrip(b'=').decode('utf-8')
+    return code_challenge
+
 def login(request):
-    # Check if the user is already authenticated
     if request.user.is_authenticated:
-        return redirect(reverse('dashboard'))  # Change this to your success view name
+        return redirect(reverse('dashboard'))  # Redirect if user is already logged in
 
-    # Azure AD configuration
-    client_id = 'YOUR_CLIENT_ID'
-    tenant_id = 'YOUR_TENANT_ID'
-    redirect_uri = 'http://localhost:8000/auth/callback'  # Adjust to your callback URL
-    authority = f'https://login.microsoftonline.com/d4983a08-45dc-4861-b57c-2b897e74509f'
+    code_verifier = generate_code_verifier()  # Generate code_verifier
+    code_challenge = generate_code_challenge(code_verifier)  # Generate code_challenge
+    print("Generated code_verifier:", code_verifier)
+    print("Session contains code_verifier:", request.session.get('code_verifier'))
 
-    if request.method == 'GET':
-        return redirect('https://confidiatestentraidb2c.b2clogin.com/ConfidiaTestEntraIDB2C.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_signupsignin1&client_id=d4983a08-45dc-4861-b57c-2b897e74509f&nonce=defaultNonce&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fcallback&scope=openid&response_type=id_token&prompt=login')
+    # Save the code_verifier in session
+    request.session['code_verifier'] = code_verifier
 
-    # If it’s a POST request or any other method, return the login template
-    return render(request, 'login.html')
+    azure_ad_login_url = (
+        'https://ConfidiaTestEntraIDB2C.b2clogin.com/'
+        'ConfidiaTestEntraIDB2C.onmicrosoft.com/oauth2/v2.0/authorize?'
+        'p=B2C_1_signupsignin1&client_id=d4983a08-45dc-4861-b57c-2b897e74509f&'
+        f'redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fcallback&scope=openid&'
+        f'response_type=code&prompt=login&code_challenge={code_challenge}&code_challenge_method=S256'
+    )
 
-logger = logging.getLogger(__name__)
+    return redirect(azure_ad_login_url)
 
-@api_view(['GET'])
-@authentication_classes([])  # No authentication required for the callback
-@permission_classes([])  # No permissions required for the callback
+import jwt
+
+def decode_id_token(id_token):
+    # Decode the ID token (you'll need to provide your Azure AD B2C public keys for verification)
+    try:
+        decoded = jwt.decode(id_token, options={"verify_signature": False})  # Use actual verification in production
+        return decoded
+    except jwt.ExpiredSignatureError:
+        return {}
+    except jwt.InvalidTokenError:
+        return {}
+
+def dashboard(request):
+    id_token = request.POST.get('id_token') 
+    
+    # Decode the ID token to get user information
+    user_info = decode_id_token(id_token)
+
+    # Store relevant user information in the session
+    request.session['user_email'] = user_info.get('email')  # Adjust if necessary
+    request.session['inscrit'] = user_info.get('Inscrit')  # Adjust if necessary
+    user_email = request.session.get('user_email')
+    inscrit = request.session.get('inscrit')
+    context = {
+        'user_email': user_email,
+        'inscrit': inscrit,
+    }
+    return render(request, 'dashboard.html', context)
+
+@csrf_exempt
 def callback(request):
-    code = request.GET.get('code')
-    logger.debug(f"Received code: {code}")
-    if not code:
-        return JsonResponse({'error': 'No code received from Azure AD.'}, status=400)
+    # Simulating user info received from Azure AD B2C
+    user_info = {
+        'email': request.POST.get('email'),  # Assuming you have this from your form data
+        'name': request.POST.get('name'),    # Assuming you have this from your form data
+    }
 
-    # Exchange the authorization code for tokens (implement this logic)
-    tokens = exchange_code_for_tokens(code)
+    # Store user information in the session
+    request.session['user_email'] = user_info['email']
+    request.session['user_name'] = user_info['name']
 
-    if 'access_token' in tokens:
-        # Validate the token (optional)
-        if validate_token(tokens['access_token']):
-            return render(request, 'dashboard.html', {'access_token': tokens['access_token']})
-        else:
-            return JsonResponse({'error': 'Invalid token.'}, status=401)
-
-    return render(request, 'login.html', {'error': 'Failed to obtain tokens.'})
+    # Redirect to the desired page after login
+    return redirect('http://localhost:3000/testpage') 
 
 @api_view(['POST'])
 @authentication_classes([TokenAuthentication])  # Requires authentication to logout

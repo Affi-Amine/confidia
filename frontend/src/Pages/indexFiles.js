@@ -36,6 +36,7 @@ const QuizForm = React.lazy(() => import("./Quiz/QuizForm.js"));
 const Reglement24Q3 = React.lazy(() =>
   import("./Quiz/Reglements/Reglement24Q3.js")
 );
+const TestPage = React.lazy(() => import("./TestPage"));
 
 export {
   About,
@@ -66,4 +67,5 @@ export {
   VideoDemo,
   VideoEvenements,
   WhiteBook,
+  TestPage
 };
