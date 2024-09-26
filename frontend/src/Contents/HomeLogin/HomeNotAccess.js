@@ -21,6 +21,24 @@ export default function HomeNotAcsess() {
   const setSeeLimitedOfferM = useModalStore((s) => s.setSeeLimitedOfferM);
   const { language } = useGlobalParam();
 
+  const [isActivated, setIsActivated] = useState(false);
+
+  const handleButtonClick = () => {
+    // Display the form
+    setSeeLimitedOfferM(true);
+
+    // Change the activation state to true
+    setIsActivated(true);
+  };
+
+  const handleSubscription = () => {
+    // Change the activation state to true
+    setIsActivated(true);
+
+    // After the state is set, redirect to the login page
+    history.push("/homelogin");
+  };
+
   const stapeDisplayGoogleForm = useStapeDisplayGoogleForm();
 
   const [seeAdvantageModal, setSeeAdvantageModal] = useState(false);
@@ -39,7 +57,6 @@ export default function HomeNotAcsess() {
 
   return (
     <div className="HomeNotAcsess">
-      <button onClick={history.push("frontend/src/Pages/TestPage.js")}>TESSSSST</button>
       {seeAdvantageModal && (
         <AdvantagesModal
           setSeeAdvantageModal={setSeeAdvantageModal}

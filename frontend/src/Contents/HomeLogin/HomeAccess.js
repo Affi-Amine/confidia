@@ -9,7 +9,6 @@ import ParamPc from "../../assets/Pages/HomeLogin/ParamPc.png";
 import tabMW from "../../assets/Pages/HomeLogin/tabMW.png";
 
 import ImgBox from "../../Components/ImgBox";
-import useCheckAccessAndRedirect from "../../hooks/useCheckAccessAndRedirect";
 import useStapeDisplayGoogleForm from "../../Modals/hooks/stapeDisplayGoogleForm.hook";
 
 export default function HomeAccess() {
@@ -17,11 +16,15 @@ export default function HomeAccess() {
   let history = useHistory();
   const stapeDisplayGoogleForm = useStapeDisplayGoogleForm();
   const setSeeNewFeature = useModalStore((s) => s.setSeeNewFeature);
-  const checkAccessAndRedirect = useCheckAccessAndRedirect();
-  const handleCheckAccessRedirectClick = () => {
-    checkAccessAndRedirect();
-  };
+
   let accesEnv = ["TEST", "DEV"];
+
+  // Define the function here
+  const handleCheckAccessRedirectClick = () => {
+    // Your redirect logic here
+    history.push("/access-docs"); // Example route
+  };
+
   return (
     <div className="HomeAccess">
       <h1>{t("T.1")}</h1>

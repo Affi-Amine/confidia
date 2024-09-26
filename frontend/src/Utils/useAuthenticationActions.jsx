@@ -19,7 +19,7 @@ export function useAuthenticationActions() {
         ...loginRequest,
         redirectUri: `${window.location.origin}/.auth/login/aadb2c/callback`
       }).then(() => {
-        history.push('/testpage');
+        history.push('/HomeLogin');
       })
       .catch((error) => console.log(error));
   };
