@@ -1,7 +1,7 @@
 import { useHistory } from 'react-router-dom';
 import { useMsal } from '@azure/msal-react';
 import { InteractionStatus } from "@azure/msal-browser";
-import { loginRequest, b2cPolicies } from '../authConfig';
+import { loginRequest, b2cPolicies } from '../authConfig.jsx';
 import { clearStorage } from './storageUtils.jsx';
 
 export function useAuthenticationActions() {
@@ -14,55 +14,43 @@ export function useAuthenticationActions() {
   }
 
   const handleLoginPopup = () => {
-    instance.loginPopup({
-      scopes: ["openid", "profile", "user.read"],
-      redirectUri: "http://localhost:3000/testpage" // Explicit redirect URI for after login
-    })
-    .catch(error => {
-      console.error(error);
-    });
+    instance
+      .loginPopup({
+        ...loginRequest,
+        redirectUri: `${window.location.origin}/.auth/login/aadb2c/callback`
+      }).then(() => {
+        history.push('/testpage');
+      })
+      .catch((error) => console.log(error));
   };
 
-// Update the handleLoginRedirect to also redirect to Django backend
-const handleLoginRedirect = () => {
-  instance.loginRedirect({
-    scopes: ["openid", "profile", "user.read"],
-  })
-    .then(response => {
-      // On successful login, redirect to TestPage
-      history.push("/testpage");
-    })
-    .catch(error => {
-      console.error(error);
-    });
-};
+  const handleLoginRedirect = () => {
+    instance.loginRedirect(loginRequest).catch((error) => console.log(error));
+  };
 
-// Handle logout with Azure (if still needed)
-const handleLogoutRedirect = () => {
-  instance.logoutRedirect();
-};
+  const handleLogoutRedirect = () => {
+    instance.logoutRedirect();
+  };
 
-// Logout via popup
-const handleLogoutPopup = () => {
-  clearStorage(activeAccount);
-  instance.logoutPopup({
-    mainWindowRedirectUri: '/', // Redirect back to home page after logout
-    account: instance.getActiveAccount(),
-  }).catch((error) => console.log(error));
-};
+  const handleLogoutPopup = () => {
+    clearStorage(activeAccount);
 
-// Handle profile edit (optional - Azure logic)
-const handleProfileEdit = () => {
-  if (inProgress === InteractionStatus.None) {
-    instance.acquireTokenRedirect(b2cPolicies.authorities.editProfile); // Azure profile edit
-  }
-};
+    instance.logoutPopup({
+      mainWindowRedirectUri: '/', // redirects the top level app after logout
+      account: instance.getActiveAccount(),}).catch((error) => console.log(error));
+  };
 
-return {
-  handleLoginPopup,
-  handleLoginRedirect,
-  handleLogoutRedirect,
-  handleLogoutPopup,
-  handleProfileEdit,
-};
+  const handleProfileEdit = () => {
+    if (inProgress === InteractionStatus.None) {
+      instance.acquireTokenRedirect(b2cPolicies.authorities.editProfile);
+    }
+  };
+
+  return {
+    handleLoginPopup,
+    handleLoginRedirect,
+    handleLogoutRedirect,
+    handleLogoutPopup,
+    handleProfileEdit,
+  };
 }

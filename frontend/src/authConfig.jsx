@@ -3,13 +3,13 @@ import { LogLevel } from "@azure/msal-browser";
 // Define B2C policies and authorities
 export const b2cPolicies = {
     names: {
-        signUpSignIn: 'B2C_1_RegisterTestDSFORDS',
+        signUpSignIn: 'B2C_1_signuptestwithinscrite',
         forgotPassword: 'B2C_1_Test_reset_password_Confidia',
         editProfile: 'B2C_1_edit_profileTestConfidia',
     },
     authorities: {
         signUpSignIn: {
-            authority: 'https://ConfidiaTestEntraIDB2C.b2clogin.com/ConfidiaTestEntraIDB2C.onmicrosoft.com/B2C_1_RegisterTestDSFORDS',
+            authority: 'https://ConfidiaTestEntraIDB2C.b2clogin.com/ConfidiaTestEntraIDB2C.onmicrosoft.com/B2C_1_signuptestwithinscrite',
         },
         forgotPassword: {
             authority: 'https://ConfidiaTestEntraIDB2C.b2clogin.com/ConfidiaTestEntraIDB2C.onmicrosoft.com/B2C_1_Test_reset_password_Confidia',
