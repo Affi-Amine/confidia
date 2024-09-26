@@ -22,7 +22,7 @@ export default function TestPage() {
       <h1>{JSON.stringify(accountData)}</h1>
 
       {/* Phrase personnalisée avec le champ "extension_inscrite" */}
-      <h2>Le champ inscription : {extensionInscrite}</h2>
+      <h2>Le champs inscription : {extensionInscrite}</h2>
 
       <h1>THIS PAGE WORKS</h1>
     </div>
