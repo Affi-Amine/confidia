@@ -47,6 +47,7 @@ INSTALLED_APPS = [
   'rest_framework',
   'rest_framework.authtoken',
   'confidiaApi',
+  'subscriptions',
 ]
 
 MIDDLEWARE = [
@@ -112,9 +113,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'subscriptions': {  # New database for handling subscriptions
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "subscriptions.sqlite3",
     }
 }
 
+DATABASE_ROUTERS = ['confidia_back_dev.db_router.SubscriptionsRouter']
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

@@ -23,7 +23,8 @@ function LimitedOfferM() {
  const extensionInscrite = accountData?.extension_inscrite !== undefined
     ? accountData.extension_inscrite
     : null;
- console.log('a' + extensionInscrite)
+ console.log(extensionInscrite)
+ console.log(accountData)
   const [checkPrivacyPolicy, setCheckPrivacyPolicy] = useState(false);
   const [checkDemoCondition, setCheckDemoCondition] = useState(false);
   const [emailSend, setEmailSend] = useState(false);
