@@ -33,7 +33,7 @@ export default function HomeLogin() {
   // Optional: Redirect logic if necessary
   useEffect(() => {
     if (isSubscribed) {
-      history.push('/home');  // Redirect to /home if subscribed
+      history.push('/homelogin-confidia');  // Redirect to /home if subscribed
     }
     // Add more redirection logic if needed based on your app requirements
   }, [isSubscribed, history]);

@@ -42,7 +42,7 @@ export function useUpdateAzureAdUserExtension() {
       },
       data: {
         // Your Azure AD extension property update
-        extension_inscrite: true,
+        extension_inscrite: 'true',
       },
       url: `https://graph.microsoft.com/v1.0/users/${accountData.oid}`, // Use the user's Object ID
     };

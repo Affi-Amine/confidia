@@ -20,8 +20,10 @@ function LimitedOfferM() {
   const { seeLimitedOfferM, setSeeLimitedOfferM } = useModalStore();
 
   const accountData = accounts[0]?.idTokenClaims || userData[0]?.idTokenClaims;
-  const extensionInscrite = accountData?.extension_inscrite; // Consider using this variable if needed
-
+ const extensionInscrite = accountData?.extension_inscrite !== undefined
+    ? accountData.extension_inscrite
+    : null;
+ console.log('a' + extensionInscrite)
   const [checkPrivacyPolicy, setCheckPrivacyPolicy] = useState(false);
   const [checkDemoCondition, setCheckDemoCondition] = useState(false);
   const [emailSend, setEmailSend] = useState(false);
@@ -55,7 +57,8 @@ function LimitedOfferM() {
     if (validCondition) {
       SendMail();
       setEmailSend(true);
-      updateUserExtension(); // Call your update function here
+      updateUserExtension();
+      console.log(accountData)// Call your update function here
       history.push("/homelogin");
     }
   };
