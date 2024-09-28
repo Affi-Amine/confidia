@@ -11,8 +11,10 @@ import axios from 'axios';
 const HomeLogin = () => {
   const { t } = useTranslation(["HomeLogin", "Dashboard"]);
   const history = useHistory();
+  const { userData, AccessType } = useUserProfile();
   const { accounts } = useMsal();
-  const accountData = accounts[0]?.idTokenClaims;
+  const accountData = accounts[0]?.idTokenClaims || userData[0]?.idTokenClaims;
+  
   
   // State to manage subscription status and loading
   const [loading, setLoading] = useState(true);
@@ -22,10 +24,11 @@ const HomeLogin = () => {
     const checkSubscription = async () => {
       if (accountData) {
         const email = accountData.emails[0]; // Extract email from account data
+        console.log(email)
 
         try {
           // Check subscription status from the backend
-          const response = await axios.get('/api/check-subscription', {
+          const response = await axios.get('http://127.0.0.1:8000//api/check-subscription', {
             params: { email },
           });
 
