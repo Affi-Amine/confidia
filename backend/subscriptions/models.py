@@ -1,6 +1,6 @@
 from django.db import models
 
-class Subscription(models.Model):
+class UserSubscription(models.Model):
     email = models.EmailField(unique=True)
     is_subscribed = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
