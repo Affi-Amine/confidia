@@ -28,9 +28,14 @@ const HomeLogin = () => {
 
         try {
           // Check subscription status from the backend
-          const response = await axios.get('http://127.0.0.1:8000//api/check-subscription', {
-            params: { email },
-          });
+        const token = "21b7013def364268cb93b54466c30934c08bd695";  // Utilisez votre token ici
+
+const response = await axios.get('http://127.0.0.1:8000/api/check-subscription/', {
+    params: { email: 'b41gbkujcb@expressletter.net' },  // Remplacez par l'e-mail à tester
+    headers: {
+        'Authorization': `Token ${token}`  // Ajoutez le token dans l'en-tête
+    }
+});
 
           // Set the access state based on the subscription status
           setHasAccess(response.data.subscription_active);

@@ -2,8 +2,8 @@ import axios from "axios"; // Import axios for API calls
 import { useMsal } from "@azure/msal-react";
 import useUserProfile from "../Store/useUserProfile";
 
-// Define the scopes needed for your API calls
-const SCOPES = ["https://graph.microsoft.com/.default"]; // Adjust scopes as needed
+// Define the scopes needed for your API calls (ensure correct permissions)
+const SCOPES = ["User.ReadWrite.All", "Directory.ReadWrite.All"]; // Adjust the scopes
 
 // Custom hook to update Azure AD user extension
 export function useUpdateAzureAdUserExtension() {
@@ -51,7 +51,7 @@ export function useUpdateAzureAdUserExtension() {
       await axios(requestOptions);
       console.log("Extension property updated successfully.");
     } catch (error) {
-      console.error("Error updating extension property: ", error);
+      console.error("Error updating extension property: ", error.response?.data || error.message);
     }
   };
 

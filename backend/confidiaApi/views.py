@@ -149,7 +149,8 @@ def callback(request):
     request.session['user_name'] = user_info['name']
 
     # Redirect to the desired page after login
-    return redirect('http://localhost:3000/testpage') 
+    return redirect('http://localhost:3000/testpage')
+
 
 @api_view(['POST'])
 @authentication_classes([TokenAuthentication])  # Requires authentication to logout

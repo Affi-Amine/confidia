@@ -20,7 +20,9 @@ from django.conf.urls import include
 from rest_framework.authtoken.views import obtain_auth_token
 from django.urls import path
 from confidiaApi.views import dashboard, login, dtProject, callback, logout
-from subscriptions.views import check_subscription
+from subscriptions.views import CheckSubscription
+from rest_framework.authtoken import views
+
 
 urlpatterns = [
     path('auth/login/', login, name='login'),
@@ -28,6 +30,8 @@ urlpatterns = [
     path('auth/logout/', logout, name='logout'),  # Optional logout
     path('dtProject/', dtProject, name='dtProject'),
     path('dashboard/', dashboard, name='dashboard'),
-    path('api/check-subscription/', check_subscription, name='check_subscription'),
+    path('api/check-subscription/', CheckSubscription.as_view(), name='check_subscription'),
+    path('api-token-auth/', views.obtain_auth_token, name='api_token_auth'),
 
 ]
+
