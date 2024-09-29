@@ -17,6 +17,7 @@ const HomeLogin = () => {
 
   // State to manage subscription status and loading
   const [loading, setLoading] = useState(true);
+  let isSubbed = false;
   const [hasAccess, setHasAccess] = useState(null);
 
   useEffect(() => {
@@ -26,6 +27,12 @@ const HomeLogin = () => {
         console.log(email);
 
         const token = "21b7013def364268cb93b54466c30934c08bd695";  // Ajoutez ici votre token
+        /*const response = await axios.post('http://127.0.0.1:8000/api-token-auth/', {
+          username: 'your_username',
+          password: 'your_password'
+      });
+      
+      const token = response.data.token;*/
 
         try {
           const response = await axios.get('http://127.0.0.1:8000/api/check-subscription/', {
@@ -35,13 +42,15 @@ const HomeLogin = () => {
             }
           });
           console.log('Subscription data:', response.data);
-
+          console.log('Subscription data var:', response.data.is_subscribed);
+          isSubbed = response.data.is_subscribed;
           // Set the access state based on the subscription status
           setHasAccess(response.data.subscription_active);
         } catch (error) {
           if (error.response && error.response.status === 201) {
             console.log('Nouvel abonnement créé.');
             setHasAccess(true);  // L'utilisateur est ajouté automatiquement
+            isSubbed = true
           } else if (error.response && error.response.status === 404) {
             console.log('Abonnement non trouvé pour cet e-mail.');
             setHasAccess(false);
@@ -67,9 +76,10 @@ const HomeLogin = () => {
   return (
     <div className="HomeLogin">
       <h5 className="headband">{t("headband")}</h5>
-      {hasAccess ? <HomeAccess /> : <HomeNotAccess />}
+      {isSubbed ? <HomeAccess /> : <HomeNotAccess />}
     </div>
   );
 }
 
 export default HomeLogin;
+

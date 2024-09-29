@@ -8,6 +8,7 @@ import PolicyIubenda from "../Components/PolicyIubenda";
 import useModalStore from "../Store/useModalStore";
 import useUserProfile from "../Store/useUserProfile";
 import { useUpdateAzureAdUserExtension } from "../Utils/updateAzureAdUserExtension";
+import axios from "axios";
 
 import "../sass/Modals/LimitedOfferM.scss";
 
@@ -20,15 +21,15 @@ function LimitedOfferM() {
   const { seeLimitedOfferM, setSeeLimitedOfferM } = useModalStore();
 
   const accountData = accounts[0]?.idTokenClaims || userData[0]?.idTokenClaims;
- const extensionInscrite = accountData?.extension_inscrite !== undefined
+  const extensionInscrite = accountData?.extension_inscrite !== undefined
     ? accountData.extension_inscrite
     : null;
- console.log(extensionInscrite)
- console.log(accountData)
+  console.log(extensionInscrite)
+  console.log(accountData)
   const [checkPrivacyPolicy, setCheckPrivacyPolicy] = useState(false);
   const [checkDemoCondition, setCheckDemoCondition] = useState(false);
   const [emailSend, setEmailSend] = useState(false);
-  
+
   // Call your hook here
   const updateUserExtension = useUpdateAzureAdUserExtension();
 
@@ -54,13 +55,27 @@ function LimitedOfferM() {
       });
   };
 
-  const handleButtonClick = () => {
-    if (validCondition) {
-      SendMail();
-      setEmailSend(true);
-      updateUserExtension();
-      console.log(accountData)// Call your update function here
-      history.push("/homelogin");
+  const handleButtonClick = async () => {
+    if (validCondition || accountData) {
+      const email = accountData.emails[0];
+      console.log(email)
+      try {
+        // Make an API call to your backend to subscribe the user
+        const response = await axios.get(`http://127.0.0.1:8000/api/subscribe-user/?email=${email}`);
+
+        if (response.status === 200 || response.status === 201) {
+          // Subscription succeeded, perform other actions
+          SendMail();
+          setEmailSend(true);
+          updateUserExtension();
+          console.log(accountData);
+          // The backend will handle the redirection, no need for history.push
+        } else {
+          console.error("Subscription failed with status:", response.status);
+        }
+      } catch (error) {
+        console.error("API call failed:", error);
+      }
     }
   };
 
@@ -106,8 +121,8 @@ function LimitedOfferM() {
               className={!validCondition ? "blocked" : ""}
               onClick={handleButtonClick}
             >
-              {!AccessType || AccessType.key_freeTrial?.freeTrial_Activate === "sub" 
-                ? t("LimitedOfferM.button") 
+              {!AccessType || AccessType.key_freeTrial?.freeTrial_Activate === "sub"
+                ? t("LimitedOfferM.button")
                 : t("translation:ButtonsConnect.activateOffer")}
             </button>
           </div>

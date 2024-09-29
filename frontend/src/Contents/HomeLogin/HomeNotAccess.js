@@ -113,23 +113,12 @@ export default function HomeNotAcsess() {
       <section className="blockNoSubscrib">
         <h3 className="backC">{t("Desc.1")}</h3>
         <div className="boxTitleButt">
-          <h3>
-            {!AccessType ||
-            AccessType.key_freeTrial?.freeTrial_Activate === "sub" ? (
-              <>
-                {t("InscriDesc.2.1")}
-                <span className="textNoWrap"> {t("InscriDesc.2.2")}</span>
-              </>
-            ) : (
-              t("InscriDesc.activate2.1")
-            )}
+          <h3>           
+              {t("InscriDesc.activate2.1")}
           </h3>
 
           <button onClick={() => setSeeLimitedOfferM(true)}>
-            {!AccessType ||
-            AccessType.key_freeTrial?.freeTrial_Activate === "sub"
-              ? t("translation:ButtonsConnect.subscrib")
-              : t("translation:ButtonsConnect.activateOffer")}
+              {t("translation:ButtonsConnect.activateOffer")}
           </button>
         </div>
         <div className="descOffer">
