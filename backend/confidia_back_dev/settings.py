@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import environ
+from corsheaders.defaults import default_headers
+
 env = environ.Env()
 # reading .env file
 environ.Env.read_env()
@@ -48,6 +50,8 @@ INSTALLED_APPS = [
   'rest_framework.authtoken',
   'confidiaApi',
   'subscriptions',
+  'rest_framework_simplejwt',
+  'rest_framework_simplejwt.token_blacklist',
 ]
 
 MIDDLEWARE = [
@@ -74,17 +78,18 @@ AZURE_AD_B2C = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
-CORS_ALLOW_ALL_ORIGINS = True
 
+# Allow the custom header you're using
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    'X-User-Email',
+]
 
 REST_FRAMEWORK = {
-  'DEFAULT_AUTHENTICATION_CLASSES': [
-    'rest_framework.authentication.TokenAuthentication',
-  ],
-  'DEFAULT_PERMISSION_CLASSES': [
-    'rest_framework.permissions.IsAuthenticated',
-  ]
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
 }
+
 
 
 ROOT_URLCONF = 'confidia_back_dev.urls'

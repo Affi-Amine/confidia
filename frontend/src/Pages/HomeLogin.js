@@ -15,43 +15,37 @@ const HomeLogin = () => {
   const { accounts } = useMsal();
   const accountData = accounts[0]?.idTokenClaims || userData[0]?.idTokenClaims;
 
-  // State to manage subscription status and loading
+  // State to manage subscription status, loading, and token
   const [loading, setLoading] = useState(true);
-  let isSubbed = false;
   const [hasAccess, setHasAccess] = useState(null);
+  const [userToken, setUserToken] = useState(null);  // New state for user token
 
   useEffect(() => {
-    const checkSubscription = async () => {
+    const fetchTokenAndCheckSubscription = async () => {
       if (accountData) {
         const email = accountData.emails[0]; // Extract email from account data
         console.log(email);
 
-        const token = "21b7013def364268cb93b54466c30934c08bd695";  // Ajoutez ici votre token
-        /*const response = await axios.post('http://127.0.0.1:8000/api-token-auth/', {
-          username: 'your_username',
-          password: 'your_password'
-      });
-      
-      const token = response.data.token;*/
-
         try {
-          const response = await axios.get('http://127.0.0.1:8000/api/check-subscription/', {
-            params: { email },
-            headers: {
-              'Authorization': `Token ${token}`  // Ajoutez le token dans l'en-tête
-            }
+          // Generate token for the user
+          const tokenResponse = await axios.post('http://127.0.0.1:8000/api/generate-user-token/', {
+            email,
           });
-          console.log('Subscription data:', response.data);
-          console.log('Subscription data var:', response.data.is_subscribed);
-          isSubbed = response.data.is_subscribed;
-          // Set the access state based on the subscription status
-          setHasAccess(response.data.subscription_active);
+
+          const token = tokenResponse.data.access;
+          setUserToken(token);  // Save the token to state
+          console.log('Generated token:', token);
+
+          // Now check the subscription status
+          const subscriptionResponse = await axios.get('http://127.0.0.1:8000/api/check-subscription/', {
+            params: { email },
+          });
+
+          console.log('Subscription data:', subscriptionResponse.data);
+          console.log('Subscription data var:', subscriptionResponse.data.is_subscribed);
+          setHasAccess(subscriptionResponse.data.is_subscribed);
         } catch (error) {
-          if (error.response && error.response.status === 201) {
-            console.log('Nouvel abonnement créé.');
-            setHasAccess(true);  // L'utilisateur est ajouté automatiquement
-            isSubbed = true
-          } else if (error.response && error.response.status === 404) {
+          if (error.response && error.response.status === 404) {
             console.log('Abonnement non trouvé pour cet e-mail.');
             setHasAccess(false);
           } else {
@@ -66,7 +60,7 @@ const HomeLogin = () => {
       }
     };
 
-    checkSubscription();
+    fetchTokenAndCheckSubscription();
   }, [accountData]); // Run effect when accountData changes
 
   // Show loading state while checking subscription
@@ -76,10 +70,9 @@ const HomeLogin = () => {
   return (
     <div className="HomeLogin">
       <h5 className="headband">{t("headband")}</h5>
-      {isSubbed ? <HomeAccess /> : <HomeNotAccess />}
+      {hasAccess ? <HomeAccess /> : <HomeNotAccess />}
     </div>
   );
 }
 
 export default HomeLogin;
-
