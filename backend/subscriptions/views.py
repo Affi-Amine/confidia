@@ -27,19 +27,25 @@ class CheckSubscription(APIView):
             return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
 
 # New function-based view for subscribing user and redirecting
+@api_view(['GET'])
 def subscribe_user(request):
     email = request.GET.get('email')
 
     if not email:
-        return Response({'error': 'Email is required'}, status=status.HTTP_400_BAD_REQUEST)
+        return Response({'error': 'Email is required'}, status=status.HTTP_400_BAD_REQUEST, renderer='json')
 
-    # Fetch the user from the database and update the is_subscribed field
-    user = get_object_or_404(UserSubscription, email=email)
-    user.is_subscribed = True
-    user.save()
-
-    # Redirect back to the frontend homelogin page
-    return HttpResponseRedirect("http://localhost:3000/homelogin")
+    try:
+        # Fetch the user from the database and update the is_subscribed field
+        user = get_object_or_404(UserSubscription, email=email)
+        user.is_subscribed = True
+        user.save()
+        
+        # Return a success response
+        return Response({'success': 'User subscribed successfully'}, status=status.HTTP_200_OK)
+    except Exception as e:
+        # Catch and log any unexpected errors
+        print(f"Error subscribing user: {str(e)}")
+        return Response({'error': 'An error occurred while subscribing the user'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 # Function to generate a unique token for a user based on the email
 def generate_unique_token(email):
