@@ -7,7 +7,6 @@ import axios from "axios";
 
 import CheckboxText from "../Components/CheckboxText";
 import PolicyIubenda from "../Components/PolicyIubenda";
-import HomeAccess from "../Contents/HomeLogin/HomeAccess";
 
 import useModalStore from "../Store/useModalStore";
 import useUserProfile from "../Store/useUserProfile";
@@ -26,10 +25,8 @@ function LimitedOfferM() {
   const [checkDemoCondition, setCheckDemoCondition] = useState(false);
   const [emailSend, setEmailSend] = useState(false);
   const [isSubscribed, setIsSubscribed] = useState(false);
-  const [renderHomeAccess, setRenderHomeAccess] = useState(false);
 
   const accountData = accounts[0]?.idTokenClaims || userData[0]?.idTokenClaims;
-  const extensionInscrite = accountData?.extension_inscrite;
 
   useEffect(() => {
     if (!seeLimitedOfferM || !isAuthenticated || !accountData) {

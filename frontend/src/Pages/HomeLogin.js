@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";  // Import useState for state management
 import { useTranslation } from "react-i18next";
 import HomeAccess from "../Contents/HomeLogin/HomeAccess";
-import HomeNotAccess from "../Contents/HomeLogin/HomeNotAccess";  // Import the new component for users without access
+import HomeNotAccess from "../Contents/HomeLogin/HomeNotAccess";  
 import { useHistory } from 'react-router-dom';
 import "../sass/Pages/HomeLogin.scss";
 import { useMsal } from "@azure/msal-react";  // Import useMsal to get user account data
@@ -24,7 +24,6 @@ const HomeLogin = () => {
     const fetchTokenAndCheckSubscription = async () => {
       if (accountData) {
         const email = accountData.emails[0]; // Extract email from account data
-        console.log(email);
 
         try {
           // Generate token for the user
@@ -34,15 +33,11 @@ const HomeLogin = () => {
 
           const token = tokenResponse.data.access;
           setUserToken(token);  // Save the token to state
-          console.log('Generated token:', token);
 
           // Now check the subscription status
           const subscriptionResponse = await axios.get('http://127.0.0.1:8000/api/check-subscription/', {
             params: { email },
           });
-
-          console.log('Subscription data:', subscriptionResponse.data);
-          console.log('Subscription data var:', subscriptionResponse.data.is_subscribed);
           setHasAccess(subscriptionResponse.data.is_subscribed);
         } catch (error) {
           if (error.response && error.response.status === 404) {
@@ -65,8 +60,6 @@ const HomeLogin = () => {
 
   // Show loading state while checking subscription
   if (loading) return <div>Loading...</div>;
-
-  console.log("has access : ",hasAccess)
 
   // Conditional rendering based on access status
   return (

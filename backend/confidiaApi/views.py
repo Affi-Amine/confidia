@@ -140,8 +140,8 @@ def dashboard(request):
 def callback(request):
     # Simulating user info received from Azure AD B2C
     user_info = {
-        'email': request.POST.get('email'),  # Assuming you have this from your form data
-        'name': request.POST.get('name'),    # Assuming you have this from your form data
+        'email': request.POST.get('email'), 
+        'name': request.POST.get('name'),    
     }
 
     # Store user information in the session

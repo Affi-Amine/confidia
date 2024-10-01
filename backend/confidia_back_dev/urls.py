@@ -27,7 +27,7 @@ from rest_framework.authtoken import views
 urlpatterns = [
     path('auth/login/', login, name='login'),
     path('auth/callback/', callback, name='callback'),
-    path('auth/logout/', logout, name='logout'),  # Optional logout
+    path('auth/logout/', logout, name='logout'),  
     path('dtProject/', dtProject, name='dtProject'),
     path('dashboard/', dashboard, name='dashboard'),
     path('api/check-subscription/', CheckSubscription.as_view(), name='check_subscription'),
