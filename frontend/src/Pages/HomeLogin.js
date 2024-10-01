@@ -66,6 +66,8 @@ const HomeLogin = () => {
   // Show loading state while checking subscription
   if (loading) return <div>Loading...</div>;
 
+  console.log("has access : ",hasAccess)
+
   // Conditional rendering based on access status
   return (
     <div className="HomeLogin">

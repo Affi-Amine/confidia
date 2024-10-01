@@ -21,24 +21,6 @@ export default function HomeNotAcsess() {
   const setSeeLimitedOfferM = useModalStore((s) => s.setSeeLimitedOfferM);
   const { language } = useGlobalParam();
 
-  const [isActivated, setIsActivated] = useState(false);
-
-  const handleButtonClick = () => {
-    // Display the form
-    setSeeLimitedOfferM(true);
-
-    // Change the activation state to true
-    setIsActivated(true);
-  };
-
-  const handleSubscription = () => {
-    // Change the activation state to true
-    setIsActivated(true);
-
-    // After the state is set, redirect to the login page
-    history.push("/homelogin");
-  };
-
   const stapeDisplayGoogleForm = useStapeDisplayGoogleForm();
 
   const [seeAdvantageModal, setSeeAdvantageModal] = useState(false);
@@ -113,12 +95,23 @@ export default function HomeNotAcsess() {
       <section className="blockNoSubscrib">
         <h3 className="backC">{t("Desc.1")}</h3>
         <div className="boxTitleButt">
-          <h3>           
-              {t("InscriDesc.activate2.1")}
+          <h3>
+            {!AccessType ||
+            AccessType.key_freeTrial?.freeTrial_Activate === "sub" ? (
+              <>
+                {t("InscriDesc.2.1")}
+                <span className="textNoWrap"> {t("InscriDesc.2.2")}</span>
+              </>
+            ) : (
+              t("InscriDesc.activate2.1")
+            )}
           </h3>
 
           <button onClick={() => setSeeLimitedOfferM(true)}>
-              {t("translation:ButtonsConnect.activateOffer")}
+            {!AccessType ||
+            AccessType.key_freeTrial?.freeTrial_Activate === "sub"
+              ? t("translation:ButtonsConnect.subscrib")
+              : t("translation:ButtonsConnect.activateOffer")}
           </button>
         </div>
         <div className="descOffer">

@@ -62,6 +62,7 @@ function LimitedOfferM() {
       try {
         // Make an API call to your backend to subscribe the user
         const response = await axios.get(`http://127.0.0.1:8000/api/subscribe-user/?email=${email}`);
+        console.log("response :",response.data)
 
         if (response.status === 200 || response.status === 201) {
           // Subscription succeeded, perform other actions
