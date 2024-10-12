@@ -158,3 +158,22 @@ def callback(request):
 def logout(request):
     # Implement your logout logic (e.g., invalidate the session)
     return JsonResponse({'message': 'Logged out successfully.'}, status=200)
+
+## IUBENDA ##
+@csrf_exempt
+def get_iubenda_policy(request):
+    if request.method == "GET":
+        try:
+            # Replace 'your_policy_id' with your actual policy ID
+            iubenda_api_url = "https://www.iubenda.com/api/privacy-policy/90624318/section/data-processing-detailed-info/only-legal"
+            response = requests.get(iubenda_api_url)
+
+            if response.status_code == 200:
+                return JsonResponse({"policy": response.text})
+            else:
+                return JsonResponse({"error": "Failed to fetch policy content"}, status=500)
+
+        except Exception as e:
+            return JsonResponse({"error": str(e)}, status=500)
+
+    return JsonResponse({"error": "Invalid request method"}, status=405)

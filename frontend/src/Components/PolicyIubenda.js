@@ -1,13 +1,18 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-import Iubenda from "react-iubenda-policy";
+import { useHistory } from "react-router-dom";
+
 function PolicyIubenda({ text }) {
-  const { t } = useTranslation(["CG"]);
-  const myPolicy = 90624318;
+  const history = useHistory();
+
+  const handleNavigate = () => {
+    history.push("/policy");
+  };
+
   return (
-    <Iubenda id={myPolicy}>
-      {!text ? <span>{t("Policy.privacy")}</span> : <span>{text}</span>}
-    </Iubenda>
+    <button onClick={handleNavigate}>
+      {!text ? "Privacy Policy" : text}
+    </button>
   );
 }
+
 export default PolicyIubenda;

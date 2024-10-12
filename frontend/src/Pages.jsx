@@ -31,7 +31,8 @@ import {
   UserGuide,
   VideoDemo,
   WhiteBook,
-  TestPage
+  TestPage,
+  PrivacyPolicy, 
 } from "./Pages/indexFiles";
 // Utils
 import ScrollTop from "./Utils/ScrollTop";
@@ -154,6 +155,7 @@ export default function Pages() {
               />
             )}
           />
+          <Route path="/policy" render={() =><PrivacyPolicy />} />
           <Route path="/testpage" component={TestPage} />
           <Route path="/offer" render={() => <Offer />} />
           <Route path="/CGU" render={() => <CGU />} />

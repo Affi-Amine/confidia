@@ -25,6 +25,7 @@ const Blogs = React.lazy(() => import("./Advantages/Blogs"));
 const Evenements = React.lazy(() => import("./Advantages/Evenements"));
 const Freebies = React.lazy(() => import("./Advantages/Freebies"));
 const WhiteBook = React.lazy(() => import("./Advantages/WhiteBook"));
+const PrivacyPolicy = React.lazy(() => import("./PrivacyPolicy"));
 const VideoEvenements = React.lazy(() =>
   import("./Advantages/VideoEvenements")
 );
@@ -67,5 +68,6 @@ export {
   VideoDemo,
   VideoEvenements,
   WhiteBook,
-  TestPage
+  TestPage,
+  PrivacyPolicy, 
 };

@@ -14,7 +14,7 @@ router = routers.DefaultRouter()
 # Define your urlpatterns
 urlpatterns = [
     path('script/', dtProject),  # Ensure this points to the correct view
-path('api/check-subscription/', CheckSubscription.as_view(), name='check_subscription'),
-path('api-token-auth/', views.obtain_auth_token, name='api_token_auth'),
+    path('api/check-subscription/', CheckSubscription.as_view(), name='check_subscription'),
+    path('api-token-auth/', views.obtain_auth_token, name='api_token_auth'),
 ]
     # Use the correct reference to 'check_subscription' imported from 'subscriptions.views'
