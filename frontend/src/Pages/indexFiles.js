@@ -26,18 +26,18 @@ const Evenements = React.lazy(() => import("./Advantages/Evenements"));
 const Freebies = React.lazy(() => import("./Advantages/Freebies"));
 const WhiteBook = React.lazy(() => import("./Advantages/WhiteBook"));
 const PrivacyPolicy = React.lazy(() => import("./PrivacyPolicy"));
-const VideoEvenements = React.lazy(() =>
-  import("./Advantages/VideoEvenements")
-);
+const VideoEvenements = React.lazy(() => import("./Advantages/VideoEvenements"));
 const Expositions = React.lazy(() => import("./Community/Expositions"));
-const ActivityDetail = React.lazy(() =>
-  import("./Community/ActivityDetail.js")
-);
+const ActivityDetail = React.lazy(() => import("./Community/ActivityDetail.js"));
 const QuizForm = React.lazy(() => import("./Quiz/QuizForm.js"));
-const Reglement24Q3 = React.lazy(() =>
-  import("./Quiz/Reglements/Reglement24Q3.js")
-);
+const Reglement24Q3 = React.lazy(() => import("./Quiz/Reglements/Reglement24Q3.js"));
 const TestPage = React.lazy(() => import("./TestPage"));
+
+// Newly added policy-related pages
+const DataProcessingInfoPage = React.lazy(() => import("./DataProcessingInfoPage"));
+const FurtherDataInfoPage = React.lazy(() => import("./FurtherDataInfoPage"));
+const TechnicalCookiesPage = React.lazy(() => import("./TechnicalCookiesPage"));
+const OtherTypesCookiesPage = React.lazy(() => import("./OtherTypesCookiesPage"));
 
 export {
   About,
@@ -69,5 +69,9 @@ export {
   VideoEvenements,
   WhiteBook,
   TestPage,
-  PrivacyPolicy, 
+  PrivacyPolicy,
+  DataProcessingInfoPage,
+  FurtherDataInfoPage,
+  TechnicalCookiesPage,
+  OtherTypesCookiesPage,
 };

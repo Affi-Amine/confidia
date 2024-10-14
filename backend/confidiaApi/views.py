@@ -161,10 +161,9 @@ def logout(request):
 
 ## IUBENDA ##
 @csrf_exempt
-def get_iubenda_policy(request):
+def get_data_processing_info(request):
     if request.method == "GET":
         try:
-            # Replace 'your_policy_id' with your actual policy ID
             iubenda_api_url = "https://www.iubenda.com/api/privacy-policy/90624318/section/data-processing-detailed-info/only-legal"
             response = requests.get(iubenda_api_url)
 
@@ -176,4 +175,56 @@ def get_iubenda_policy(request):
         except Exception as e:
             return JsonResponse({"error": str(e)}, status=500)
 
+    return JsonResponse({"error": "Invalid request method"}, status=405)
+
+@csrf_exempt
+def get_further_data_info(request):
+    if request.method == "GET":
+        try:
+            iubenda_api_url = "https://www.iubenda.com/api/privacy-policy/90624318/section/further-data/only-legal"
+            response = requests.get(iubenda_api_url)
+
+            if response.status_code == 200:
+                return JsonResponse({"policy": response.text})
+            else:
+                return JsonResponse({"error": "Failed to fetch policy content"}, status=500)
+
+        except Exception as e:
+            return JsonResponse({"error": str(e)}, status=500)
+
+    return JsonResponse({"error": "Invalid request method"}, status=405)
+
+@csrf_exempt
+def get_technical_cookies_info(request):
+    if request.method == "GET":
+        try:
+            iubenda_api_url = "https://www.iubenda.com/api/privacy-policy/90624318/cookie-policy/section/technical-cookies/only-legal"
+            response = requests.get(iubenda_api_url)
+
+            if response.status_code == 200:
+                return JsonResponse({"policy": response.text})
+            else:
+                return JsonResponse({"error": "Failed to fetch policy content"}, status=500)
+
+        except Exception as e:
+            return JsonResponse({"error": str(e)}, status=500)
+
+    return JsonResponse({"error": "Invalid request method"}, status=405)
+
+@csrf_exempt
+def get_other_types_cookies_info(request):
+    if request.method == "GET":
+        try:
+            iubenda_api_url = "https://www.iubenda.com/api/privacy-policy/90624318/cookie-policy/section/other-types-cookies/only-legal"
+            response = requests.get(iubenda_api_url)
+
+            if response.status_code == 200:
+                return JsonResponse({"policy": response.text})
+            else:
+                return JsonResponse({"error": "Failed to fetch policy content"}, status=500)
+
+        except Exception as e:
+            return JsonResponse({"error": str(e)}, status=500)
+
+    return JsonResponse({"error": "Invalid request method"}, status=405)
     return JsonResponse({"error": "Invalid request method"}, status=405)

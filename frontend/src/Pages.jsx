@@ -32,7 +32,11 @@ import {
   VideoDemo,
   WhiteBook,
   TestPage,
-  PrivacyPolicy, 
+  PrivacyPolicy,
+  DataProcessingInfoPage,
+  FurtherDataInfoPage,
+  TechnicalCookiesPage,
+  OtherTypesCookiesPage,
 } from "./Pages/indexFiles";
 // Utils
 import ScrollTop from "./Utils/ScrollTop";
@@ -48,7 +52,7 @@ import usePageSession from "./hooks/usePageSession.jsx";
 import useUserProfileWithReq from "./hooks/useUserProfileWithReq.jsx";
 
 // Contents ConfidiaBoard
-import { BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import AddConnector from "./Contents/ConfidiaBoard/AddConnector.js";
 import AddNotification from "./Contents/ConfidiaBoard/AddNotification.js";
 import AddUser from "./Contents/ConfidiaBoard/AddUser.js";
@@ -155,7 +159,11 @@ export default function Pages() {
               />
             )}
           />
-          <Route path="/policy" render={() =><PrivacyPolicy />} />
+          <Route path="/data-processing-info" component={DataProcessingInfoPage} />
+          <Route path="/further-data-info" component={FurtherDataInfoPage} />
+          <Route path="/technical-cookies" component={TechnicalCookiesPage} />
+          <Route path="/other-types-cookies" component={OtherTypesCookiesPage} />
+          <Route path="/policy" render={() => <PrivacyPolicy />} />
           <Route path="/testpage" component={TestPage} />
           <Route path="/offer" render={() => <Offer />} />
           <Route path="/CGU" render={() => <CGU />} />
@@ -291,12 +299,12 @@ export default function Pages() {
               path="/advantages/videos-evenements/:id"
               render={() => <VideoEvenements />}
             />
-             <Switch>
-        {/* Route menant à HomeLogin.js */}
-        <Route path="/homelogin" render={() => <HomeLogin />} />
-        {/* Optionnel : rediriger tout le reste vers homelogin */}
-        <Route path="/" exact component={HomeLogin} />
-      </Switch>
+            <Switch>
+              {/* Route menant à HomeLogin.js */}
+              <Route path="/homelogin" render={() => <HomeLogin />} />
+              {/* Optionnel : rediriger tout le reste vers homelogin */}
+              <Route path="/" exact component={HomeLogin} />
+            </Switch>
             <Route path="/homeLogin-confidia" render={() => <HomeLogin />} />
             <Route path="/home-confidia" render={() => <HomeConfidia />} />
             <Route
