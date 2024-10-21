@@ -8,7 +8,8 @@ from confidiaApi.views import (
     get_data_processing_info,
     get_further_data_info,
     get_technical_cookies_info,
-    get_other_types_cookies_info
+    get_other_types_cookies_info,
+    stripe_webhook
 )
 from subscriptions.views import CheckSubscription, subscribe_user, generate_user_token
 from rest_framework.authtoken import views as authtoken_views  # Rename to avoid conflict
@@ -29,4 +30,7 @@ urlpatterns = [
     path('api/further-data-info/', get_further_data_info, name='get_further_data_info'),
     path('api/technical-cookies/', get_technical_cookies_info, name='get_technical_cookies_info'),
     path('api/other-types-cookies/', get_other_types_cookies_info, name='get_other_types_cookies_info'),
+    
+    #stripe
+    path('stripe/webhook/', stripe_webhook, name='stripe_webhook'),
 ]

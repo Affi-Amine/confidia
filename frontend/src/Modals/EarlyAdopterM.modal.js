@@ -6,7 +6,7 @@ import "../sass/Modals/EarlyAdopterM.scss";
 import useGlobalParam from "../Store/useGlobalParam";
 import useModalStore from "../Store/useModalStore";
 import useUserProfile from "../Store/useUserProfile";
-import { isEmailEarlyAdopterAuthorized } from "../Utils/isEmailAuthorized";
+import { isEmailAuthorized } from "../Utils/isEmailAuthorized"; // Updated import
 
 export default function EarlyAdopterM() {
   let history = useHistory();
@@ -29,19 +29,24 @@ export default function EarlyAdopterM() {
     it: "https://outlook.office.com/bookwithme/user/3a63d369006d454c8577a1533ba92701@dsfords.fr/meetingtype/eFLPxXA-4EuVMn0M2WTWrQ2?anonymous&ep=mCardFromTile",
   };
   if (!seeEarlyAdopterM || !accountData) return null;
-  function Submit(e) {
+
+  async function Submit(e) {
     e.preventDefault();
-    console.log(
-      "ici : ",
-      isEmailEarlyAdopterAuthorized(accountData.emails[0], access)
-    );
-    if (isEmailEarlyAdopterAuthorized(accountData.emails[0], access) === true) {
-      console.log("ici : ");
-      setUserEarlyAdopterCode(access);
-      setSeeEarlyAdopterM(false);
-      history.push("/documentation-script");
+    try {
+      const isAuthorized = await isEmailAuthorized(accountData.emails[0]);
+      if (isAuthorized) {
+        console.log("Authorized user");
+        setUserEarlyAdopterCode(access);
+        setSeeEarlyAdopterM(false);
+        history.push("/documentation-script");
+      } else {
+        console.log("Unauthorized user");
+      }
+    } catch (error) {
+      console.error("Error while authorizing user:", error);
     }
   }
+
   return (
     <div className="EarlyAdopterM">
       <button className="close" onClick={() => setSeeEarlyAdopterM(false)}>

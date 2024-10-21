@@ -19,6 +19,7 @@ import base64
 import hashlib
 import os
 from django.views.decorators.csrf import csrf_exempt
+import stripe
 
 
 available_languages = ['fr', 'it', 'en']
@@ -228,3 +229,34 @@ def get_other_types_cookies_info(request):
 
     return JsonResponse({"error": "Invalid request method"}, status=405)
     return JsonResponse({"error": "Invalid request method"}, status=405)
+
+@csrf_exempt
+def stripe_webhook(request):
+    payload = request.body
+    sig_header = request.META.get('HTTP_STRIPE_SIGNATURE')
+    endpoint_secret = settings.STRIPE_WEBHOOK_SECRET
+
+    try:
+        # Verify the event by constructing it with the provided secret
+        event = stripe.Webhook.construct_event(
+            payload, sig_header, endpoint_secret
+        )
+    except ValueError as e:
+        # Invalid payload
+        return JsonResponse({"error": "Invalid payload"}, status=400)
+    except stripe.error.SignatureVerificationError as e:
+        # Invalid signature
+        return JsonResponse({"error": "Invalid signature"}, status=400)
+
+    # Handle the event
+    if event['type'] == 'payment_intent.succeeded':
+        payment_intent = event['data']['object']  # contains a Stripe PaymentIntent
+        print('PaymentIntent was successful!')
+
+    elif event['type'] == 'payment_method.attached':
+        payment_method = event['data']['object']
+        print('PaymentMethod was attached to a Customer!')
+
+    # Add handling for more event types here if necessary
+
+    return JsonResponse({"status": "success"}, status=200)

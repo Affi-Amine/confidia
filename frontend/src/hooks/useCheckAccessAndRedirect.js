@@ -4,7 +4,7 @@ import useGlobalParam from "../Store/useGlobalParam";
 import useModalStore from "../Store/useModalStore";
 import useUserProfile from "../Store/useUserProfile";
 import { checkAccess } from "../Utils/accessUtils";
-import { isEmailEarlyAdopterAuthorized } from "../Utils/isEmailAuthorized";
+import { isEmailAuthorized } from "../Utils/isEmailAuthorized"; // Import updated function
 
 const useCheckAccessAndRedirect = () => {
   const history = useHistory();
@@ -15,22 +15,17 @@ const useCheckAccessAndRedirect = () => {
   const { setSeeLimitedOfferM, setSeeEarlyAdopterM } = useModalStore();
   const { userEarlyAdopterCode } = useGlobalParam();
 
-  // const urls = [
-  //   "https://dsfords.",
-  //   "https://dsfords.",
-  //   // "http://localhost:3000/",
-  // ];
   const urls = process.env.REACT_APP_ACCEPTED_URL_STARTWITH.split(",");
 
   if (!accountData) return null;
 
-  const checkAccessAndRedirect = () => {
+  const checkAccessAndRedirect = async () => {
+    // Check if the email is authorized
+    const isAuthorized = await isEmailAuthorized(accountData.emails[0]);
+
     if (
       urls.some((url) => window.location.href.startsWith(url)) ||
-      isEmailEarlyAdopterAuthorized(
-        accountData.emails[0],
-        userEarlyAdopterCode
-      ) === true
+      isAuthorized
     ) {
       if (checkAccess(AccessType)) {
         history.push("/documentation-script");
