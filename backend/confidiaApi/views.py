@@ -230,33 +230,69 @@ def get_other_types_cookies_info(request):
     return JsonResponse({"error": "Invalid request method"}, status=405)
     return JsonResponse({"error": "Invalid request method"}, status=405)
 
+import stripe
+from django.conf import settings
+from django.http import JsonResponse, HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+
+# Set your Stripe secret key from environment
+stripe.api_key = settings.STRIPE_SECRET_KEY
+
 @csrf_exempt
 def stripe_webhook(request):
+    if request.method != "POST":
+        return HttpResponseNotAllowed(['POST'])
+
     payload = request.body
     sig_header = request.META.get('HTTP_STRIPE_SIGNATURE')
     endpoint_secret = settings.STRIPE_WEBHOOK_SECRET
 
+    if not sig_header:
+        return JsonResponse({'error': 'Missing signature header'}, status=400)
+
     try:
-        # Verify the event by constructing it with the provided secret
         event = stripe.Webhook.construct_event(
             payload, sig_header, endpoint_secret
         )
     except ValueError as e:
         # Invalid payload
-        return JsonResponse({"error": "Invalid payload"}, status=400)
+        return JsonResponse({'error': 'Invalid payload'}, status=400)
     except stripe.error.SignatureVerificationError as e:
         # Invalid signature
-        return JsonResponse({"error": "Invalid signature"}, status=400)
+        return JsonResponse({'error': 'Invalid signature'}, status=400)
 
     # Handle the event
-    if event['type'] == 'payment_intent.succeeded':
-        payment_intent = event['data']['object']  # contains a Stripe PaymentIntent
-        print('PaymentIntent was successful!')
+    if event['type'] == 'checkout.session.completed':
+        session = event['data']['object']
+        # Fulfill the purchase here
+        print('Payment was successful:', session)
 
-    elif event['type'] == 'payment_method.attached':
-        payment_method = event['data']['object']
-        print('PaymentMethod was attached to a Customer!')
+    return JsonResponse({'status': 'success'}, status=200)
+@api_view(['POST'])
+def create_checkout_session(request):
+    try:
+        # Create a new checkout session
+        checkout_session = stripe.checkout.Session.create(
+            payment_method_types=['card'],
+            line_items=[
+                {
+                    'price_data': {
+                        'currency': 'usd',
+                        'product_data': {
+                            'name': 'Subscription Product',
+                        },
+                        'unit_amount': 5000,  # 50.00 USD (amount in cents)
+                    },
+                    'quantity': 1,
+                },
+            ],
+            mode='payment',
+            success_url=request.build_absolute_uri('/success'),
+            cancel_url=request.build_absolute_uri('/cancel'),
+        )
 
-    # Add handling for more event types here if necessary
+        # Return the session URL to redirect the user
+        return JsonResponse({'id': checkout_session.id, 'url': checkout_session.url})
 
-    return JsonResponse({"status": "success"}, status=200)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
