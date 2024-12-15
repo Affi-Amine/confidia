@@ -122,9 +122,16 @@ WSGI_APPLICATION = 'confidia_back_dev.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    },
+        'ENGINE': 'mssql',
+        'NAME': 'confidia-db-migration',  
+        'USER': 'dsfordslogin', 
+        'PASSWORD': 'Dsford2024!', 
+        'HOST': 'confidia-test-sql.database.windows.net',  
+        'PORT': 1433,
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+        }
+    }
     'subscriptions': {  # New database for handling subscriptions
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / "subscriptions.sqlite3",

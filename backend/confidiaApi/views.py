@@ -5,8 +5,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from django.http import JsonResponse
-from .models import Script, Test
-from .serializers import ScriptSerializer
+from .models import Script, Test, Project, User, Notification, Connector
 from .utils.udfs import documentScriptElements, formatRes
 from datetime import datetime as dt
 from django.shortcuts import redirect
@@ -20,6 +19,9 @@ import hashlib
 import os
 from django.views.decorators.csrf import csrf_exempt
 import stripe
+from .serializers import (
+    ProjectSerializer, UserSerializer, NotificationSerializer, ScriptSerializer
+)
 
 
 available_languages = ['fr', 'it', 'en']
@@ -76,15 +78,6 @@ from django.urls import reverse
 import msal  # Make sure to install the MSAL package if you haven't already
 
 
-def generate_code_verifier():
-    # Create a random string (code_verifier) of 128 characters
-    code_verifier = base64.urlsafe_b64encode(os.urandom(40)).rstrip(b'=').decode('utf-8')
-    return code_verifier
-
-def generate_code_challenge(code_verifier):
-    # Hash the code_verifier using SHA256 and encode it as base64url
-    code_challenge = base64.urlsafe_b64encode(hashlib.sha256(code_verifier.encode()).digest()).rstrip(b'=').decode('utf-8')
-    return code_challenge
 
 def login(request):
     if request.user.is_authenticated:
@@ -235,7 +228,6 @@ from django.conf import settings
 from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
-# Set your Stripe secret key from environment
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 @csrf_exempt
@@ -296,3 +288,167 @@ def create_checkout_session(request):
 
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
+    
+# Project Views
+class ProjectListView(APIView):
+    def get(self, request):
+        projects = Project.objects.all()
+        serializer = ProjectSerializer(projects, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = ProjectSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class ProjectDetailView(APIView):
+    def get(self, request, pk):
+        try:
+            project = Project.objects.get(project_id=pk)
+        except Project.DoesNotExist:
+            return Response({"error": "Project not found"}, status=status.HTTP_404_NOT_FOUND)
+        serializer = ProjectSerializer(project)
+        return Response(serializer.data)
+
+    def put(self, request, pk):
+        try:
+            project = Project.objects.get(project_id=pk)
+        except Project.DoesNotExist:
+            return Response({"error": "Project not found"}, status=status.HTTP_404_NOT_FOUND)
+        serializer = ProjectSerializer(project, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk):
+        try:
+            project = Project.objects.get(project_id=pk)
+        except Project.DoesNotExist:
+            return Response({"error": "Project not found"}, status=status.HTTP_404_NOT_FOUND)
+        project.delete()
+        return Response({"message": "Project deleted"}, status=status.HTTP_204_NO_CONTENT)
+
+# Add and View Users
+class UserListView(APIView):
+    def get(self, request):
+        users = User.objects.all()
+        serializer = UserSerializer(users, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = UserSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+# View and Edit a Single User
+class UserDetailView(APIView):
+    def get(self, request, pk):
+        try:
+            user = User.objects.get(id_user=pk)
+        except User.DoesNotExist:
+            return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
+        serializer = UserSerializer(user)
+        return Response(serializer.data)
+
+    def put(self, request, pk):
+        try:
+            user = User.objects.get(id_user=pk)
+        except User.DoesNotExist:
+            return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
+        serializer = UserSerializer(user, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+def add_connector(request):
+    if request.method == "POST":
+        name = request.POST.get("name")
+        connector_type = request.POST.get("type")
+        admin_id = request.POST.get("admin")
+        token = request.POST.get("token")
+        repo_user = request.POST.get("repo_user")
+        repo_name = request.POST.get("repo_name")
+        user_ids = request.POST.getlist("users")
+
+        admin = User.objects.get(id=admin_id)
+        connector = Connector.objects.create(
+            name=name,
+            type=connector_type,
+            admin=admin,
+            token=token,
+            repo_user=repo_user,
+            repo_name=repo_name,
+        )
+        connector.users.set(User.objects.filter(id__in=user_ids))
+        connector.save()
+
+        messages.success(request, "Connector added successfully.")
+        return redirect("view_connectors")
+
+    users = User.objects.all()
+    return render(request, "connectors/add_connector.html", {"users": users})
+
+def view_connectors(request):
+    connectors = Connector.objects.all()
+    return render(request, "connectors/view_connectors.html", {"connectors": connectors})
+
+def add_notification(request):
+    if request.method == "POST":
+        # Extract data from the form
+        type = request.POST.get("type")
+        title = request.POST.get("title")
+        message = request.POST.get("message")
+        context = request.POST.get("context")
+        author_id = request.POST.get("author")
+        user_ids = request.POST.getlist("users")  # List of user IDs
+        project_ids = request.POST.getlist("projects")  # List of project IDs
+
+        try:
+            # Fetch author (optional field)
+            author = User.objects.get(id_user=author_id) if author_id else None
+
+            # Create Notification
+            notification = Notification.objects.create(
+                type=type,
+                author=author,
+                notification_title=title,
+                notification_message=message,
+                context=context,
+            )
+
+            # Link users to the notification
+            for user_id in user_ids:
+                user = User.objects.get(id_user=user_id)
+                NotificationUser.objects.create(notification=notification, user=user)
+
+            # Link projects to the notification
+            for project_id in project_ids:
+                project = Project.objects.get(project_id=project_id)
+                NotificationProject.objects.create(notification=notification, project=project)
+
+            messages.success(request, "Notification added successfully.")
+            return redirect("view_notifications")
+
+        except Exception as e:
+            messages.error(request, f"An error occurred: {e}")
+    
+    users = User.objects.all()
+    projects = Project.objects.all()
+    return render(request, "notifications/add_notification.html", {"users": users, "projects": projects})
+
+def view_notifications(request):
+    # Retrieve notifications with related users and projects
+    notifications = Notification.objects.prefetch_related(
+        Prefetch("notificationuser_set", queryset=NotificationUser.objects.select_related("user")),
+        Prefetch("notificationproject_set", queryset=NotificationProject.objects.select_related("project"))
+    ).order_by("-created_at")
+
+    return render(request, "notifications/view_notifications.html", {
+        "notifications": notifications,
+    })

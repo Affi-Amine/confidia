@@ -1,0 +1,37 @@
+<form method="POST">
+    {% csrf_token %}
+    <label>Name:</label>
+    <input type="text" name="name" required />
+    
+    <label>Type:</label>
+    <select name="type" required>
+        <option value="GitHub">GitHub</option>
+        <option value="GitLab">GitLab</option>
+        <option value="Local">Local</option>
+    </select>
+
+    <label>Admin:</label>
+    <select name="admin" required>
+        {% for user in users %}
+        <option value="{{ user.id }}">{{ user.name }} ({{ user.email }})</option>
+        {% endfor %}
+    </select>
+
+    <label>Token:</label>
+    <input type="text" name="token" />
+
+    <label>Repo User:</label>
+    <input type="text" name="repo_user" />
+
+    <label>Repo Name:</label>
+    <input type="text" name="repo_name" />
+
+    <label>Users:</label>
+    <select name="users" multiple>
+        {% for user in users %}
+        <option value="{{ user.id }}">{{ user.name }} ({{ user.email }})</option>
+        {% endfor %}
+    </select>
+
+    <button type="submit">Add Connector</button>
+</form>

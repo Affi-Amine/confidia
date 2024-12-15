@@ -16,6 +16,10 @@ export default function HomeAccess() {
   let history = useHistory();
   const stapeDisplayGoogleForm = useStapeDisplayGoogleForm();
   const setSeeNewFeature = useModalStore((s) => s.setSeeNewFeature);
+  const { seeLimitedOfferM, setSeeLimitedOfferM } = useModalStore();
+
+
+  setSeeLimitedOfferM(false);
 
   let accesEnv = ["TEST", "DEV"];
 

@@ -1,0 +1,34 @@
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Title</th>
+            <th>Message</th>
+            <th>Author</th>
+            <th>Users</th>
+            <th>Projects</th>
+            <th>Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for notification in notifications %}
+        <tr>
+            <td>{{ notification.type }}</td>
+            <td>{{ notification.notification_title }}</td>
+            <td>{{ notification.notification_message }}</td>
+            <td>{{ notification.author.name if notification.author }}</td>
+            <td>
+                {% for user_link in notification.notificationuser_set.all %}
+                {{ user_link.user.name }} {{ user_link.user.surname }}<br />
+                {% endfor %}
+            </td>
+            <td>
+                {% for project_link in notification.notificationproject_set.all %}
+                {{ project_link.project.project_name }}<br />
+                {% endfor %}
+            </td>
+            <td>{{ notification.created_at }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

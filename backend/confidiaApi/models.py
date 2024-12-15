@@ -52,3 +52,12 @@ class NotificationProject(models.Model):
 class NotificationUser(models.Model):
     notification = models.ForeignKey(Notification, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    
+class Connector(models.Model):
+    name = models.CharField(max_length=255)
+    type = models.CharField(max_length=50)  
+    admin = models.ForeignKey(User, related_name="admin_connectors", on_delete=models.CASCADE)
+    users = models.ManyToManyField(User, related_name="connectors")
+    token = models.CharField(max_length=255, blank=True, null=True)
+    repo_user = models.CharField(max_length=255, blank=True, null=True)
+    repo_name = models.CharField(max_length=255, blank=True, null=True)
